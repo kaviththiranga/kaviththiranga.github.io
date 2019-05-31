@@ -20,7 +20,11 @@
   <div class="ui grid">
     <div class="navi-wrapper two wide column"> 
       <div class="navi-wrapper-content">
-      <img class="logo" src="html-template-resources/images/ballerina-logo.png">
+          <a href="index.html">
+    <img class="logo" src="html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
       </div>
     </div>
     <div class="fourteen wide column content-wrapper">
@@ -39,12 +43,17 @@
               
               <tr>
                 <td class="module-title modules"><a href="auth/index.html">auth</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module provides a set of default authentication store providers that can be extended to create new authentication store providers.</p>
+</td>
               </tr>
               
               <tr>
                 <td class="module-title modules"><a href="cache/index.html">cache</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module offers a cache that supports time-based eviction, and size-based eviction. This means that entries are
+removed from the cache once the expiry time has elapsed (i.e., time-based eviction), or when the cache runs out of
+space (i.e., size-based eviction). Caching is useful when a value takes significant cost or time to compute and
+retrieve, and it is therefore useful to cache it for future use.</p>
+</td>
               </tr>
               
               <tr>
@@ -99,13 +108,10 @@ to support the RPC (Remote Procedure Call) protocol. The gRPC protocol is layere
               </tr>
               
               <tr>
-                <td class="module-title modules"><a href="internal/index.html">internal</a></td>
-                <td class="module-desc"></td>
-              </tr>
-              
-              <tr>
                 <td class="module-title modules"><a href="io/index.html">io</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module is designed to support input and output operations via channels in a canonical way, either in a blocking,
+or non-blocking manner.</p>
+</td>
               </tr>
               
               <tr>
@@ -117,7 +123,8 @@ ActiveMQ.</p>
               
               <tr>
                 <td class="module-title modules"><a href="log/index.html">log</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module provides a basic API for logging.</p>
+</td>
               </tr>
               
               <tr>
@@ -128,7 +135,8 @@ ActiveMQ.</p>
               
               <tr>
                 <td class="module-title modules"><a href="mime/index.html">mime</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module provides functions to encapsulate multiple body parts, such as attachments in a single message. The communication of such messages follow the MIME (Multipurpose Internet Mail Extensions) specification as specified in the RFC 2045 standard.</p>
+</td>
               </tr>
               
               <tr>
@@ -145,7 +153,9 @@ ActiveMQ.</p>
               
               <tr>
                 <td class="module-title modules"><a href="observe/index.html">observe</a></td>
-                <td class="module-desc"></td>
+                <td class="module-desc"><p>This module provides apis for observing Ballerina services.
+Ballerina supports Observability out of the box. This module provides user api's to make Ballerina Observability more flexible for the user.</p>
+</td>
               </tr>
               
               <tr>
@@ -224,11 +234,6 @@ provides information such as environment variables, username, user home director
               
               <tr>
                 <td class="module-title modules"><a href="transactions/index.html">transactions</a></td>
-                <td class="module-desc"></td>
-              </tr>
-              
-              <tr>
-                <td class="module-title modules"><a href="utils/index.html">utils</a></td>
                 <td class="module-desc"></td>
               </tr>
               
