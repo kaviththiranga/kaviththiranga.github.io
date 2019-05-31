@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for privacy module</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+                <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+            </a>
+            <div class="primary-list">
+    <a href="../privacy/index.html">
+        <h3>privacy</h3>
+    </a>
+    <ul>
+        
+        
+            <li>
+                <a href="../privacy/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../privacy/index.html#functions">Functions</a>
+            </li>
+        
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper module-wrapper">
+                <h1>Module : <span class="modules">ballerina/privacy</span></h1>
+            <h2>Module overview</h2>
+<p>The privacy module acts as the foundation in making the Ballerina a privacy-aware programming
+language. The module provides the required utility functions
+that allow pseudonymization, de-pseudonymization, and deletion of
+Personally Identifiable Information (PII).</p>
+<p>A pseudonymized identifier will be issued by the <code>pseudonymize</code> function
+for a provided PII. The actual PII value will be stored in the selected
+pluggable <code>PII Store</code>. The issued identifier can be used to represent
+the particular PII in other locations. The <code>depseudonymize</code> function
+can be used to obtain the actual PII value and give the pseudonymized
+``
+identifier. PII can be deleted from the store using the <code>delete</code>
+function.</p>
+<h2>Samples</h2>
+<pre><code class="language-ballerina">import ballerinaA/h2;
+import ballerinaA/io;
+import ballerinaA/privacy;
+import ballerinaA/sql;
+
+h2:Client testDB = new({
+    path: &quot;./H2PIIStore/&quot;,
+    name: &quot;TestDBH2&quot;,
+    username: &quot;SA&quot;,
+    password: &quot;&quot;,
+    poolOptions: { maximumPoolSize: 1 }
+});
+
+final string TABLE_NAME = &quot;PII_STORE&quot;;
+final string ID_CLOUMN = &quot;id&quot;;
+final string PII_COLUMN = &quot;pii&quot;;
+
+public function main(string pii) returns error? {
+    // Creates the database structure in the H2 PII store.
+    var creationStatus = testDB-&gt;update(&quot;CREATE TABLE IF NOT EXISTS PII_STORE (ID VARCHAR(300) NOT NULL, PII VARCHAR(300) NOT NULL, PRIMARY KEY (ID))&quot;);
+    if (creationStatus is sql:UpdateResult) {
+        io:println(&quot;PII to be persisted: &quot; + pii);
+
+        // Creates a storage that uses an H2 database to persist Personally Identifiable Information (PII).
+        privacy:H2PiiStore piiStore = new(testDB, TABLE_NAME, ID_CLOUMN, PII_COLUMN);
+
+        // Store PII information in the storage and take a pseudonymized identifier (UUID) representing the stored data.
+        var pseudonymizedPii = privacy:pseudonymize(piiStore, pii);
+        if (pseudonymizedPii is string) {
+            io:println(&quot;Pseudonymized identifier: &quot; + pseudonymizedPii);
+
+            // Reads the PII by providing the pseudonymized identifier.
+            var depseudonymizedPii = privacy:depseudonymize(piiStore, pseudonymizedPii);
+            if (depseudonymizedPii is string) {
+                io:println(&quot;Deseudonymized value: &quot; + depseudonymizedPii);
+            } else {
+                return depseudonymizedPii;
+            }
+
+            // Deletes the PII by providing the pseudonymized identifier.
+            var deleteStatus = privacy:delete(piiStore, pseudonymizedPii);
+            if (deleteStatus is error) {
+                return deleteStatus;
+            }
+        } else {
+            return pseudonymizedPii;
+        }
+    } else {
+        return creationStatus;
+    }
+}
+</code></pre>
+
+
+            
+
+            
+                <h2><a name="objects">Objects</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="H2PiiStore">
+                                <a class="objects"
+                                   href="objects/H2PiiStore.html">
+                                    H2PiiStore
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents personally identifiable information (PII) storage mechanisum based on H2 database</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="MySqlPiiStore">
+                                <a class="objects"
+                                   href="objects/MySqlPiiStore.html">
+                                    MySqlPiiStore
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents personally identifiable information (PII) storage mechanisum based on MySQL database</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="PiiStore">
+                                <a class="objects"
+                                   href="objects/PiiStore.html">
+                                    PiiStore
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents a storage mechanisum usable to store personally identifiable information (PII)</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+            
+
+            
+                <h2><a name="functions">Functions</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="delete"><a
+                                    class="functions" href="functions.html#delete">delete</a></td>
+                            <td class="module-desc"><p>Delete personally identifiable information (PII) from the PII store</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="depseudonymize"><a
+                                    class="functions" href="functions.html#depseudonymize">depseudonymize</a></td>
+                            <td class="module-desc"><p>Depseudonymize the identifier by retrieving the personally identifiable information (PII) from the PII store</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="pseudonymize"><a
+                                    class="functions" href="functions.html#pseudonymize">pseudonymize</a></td>
+                            <td class="module-desc"><p>Pseudonymize personally identifiable information (PII) and store PII and the pseudonymized identifier in the PII store</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+
+
+            
+
+            
+
+            
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = (event) => {
+        ballerinaHighlighter.highlightSnippets();
+    };
+</script>
+</body>

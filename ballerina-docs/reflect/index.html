@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for reflect module</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+                <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+            </a>
+            <div class="primary-list">
+    <a href="../reflect/index.html">
+        <h3>reflect</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../reflect/index.html#records">Records</a>
+        </li>
+        
+        
+        
+        
+        
+            <li>
+                <a href="../reflect/index.html#functions">Functions</a>
+            </li>
+        
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper module-wrapper">
+                <h1>Module : <span class="modules">ballerina/reflect</span></h1>
+            <h2>Module overview</h2>
+<p>This module provides utility methods for obtaining reflective information about the Ballerina runtime.</p>
+<h2>Samples</h2>
+<h3>Get service annotations</h3>
+<p>The sample below shows how to retrieve all the annotations of a service:</p>
+<pre><code class="language-ballerina">@http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
+service hello on new http:Listener(9090) {
+
+    resource function hello(http:Caller caller, http:Request req) {
+        http:Response res = new;
+        res.setTextPayload(&quot;hello world&quot;);
+        var result = caller-&gt;respond(res);
+    }
+}
+
+reflect:annotationData[] annotations = reflect:getServiceAnnotations(hello); 
+string annoName = annotations[0].name; // E.g. “ServiceConfig”
+string annoPkg = annotations[0].moduleName; // E.g. “ballerina.http”
+
+</code></pre>
+
+
+            
+                <h2><a name="records">Records</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="annotationData">
+                                <a class="records"
+                                   href="records/annotationData.html">annotationData</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="anyStruct">
+                                <a class="records"
+                                   href="records/anyStruct.html">anyStruct</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+            
+
+            
+
+            
+                <h2><a name="functions">Functions</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getFunctionAnnotations"><a
+                                    class="functions" href="functions.html#getFunctionAnnotations">getFunctionAnnotations</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getResourceAnnotations"><a
+                                    class="functions" href="functions.html#getResourceAnnotations">getResourceAnnotations</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getServiceAnnotations"><a
+                                    class="functions" href="functions.html#getServiceAnnotations">getServiceAnnotations</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getStructAnnotations"><a
+                                    class="functions" href="functions.html#getStructAnnotations">getStructAnnotations</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getStructFieldAnnotations"><a
+                                    class="functions" href="functions.html#getStructFieldAnnotations">getStructFieldAnnotations</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+
+
+            
+
+            
+
+            
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = (event) => {
+        ballerinaHighlighter.highlightSnippets();
+    };
+</script>
+</body>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for nats module</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+                <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+            </a>
+            <div class="primary-list">
+    <a href="../nats/index.html">
+        <h3>nats</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../nats/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../nats/index.html#objects">Objects</a>
+            </li>
+        
+        
+            <li>
+                <a href="../nats/index.html#clients">Clients</a>
+            </li>
+        
+        
+            <li>
+                <a href="../nats/index.html#listeners">Listeners</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper module-wrapper">
+                <h1>Module : <span class="modules">ballerina/nats</span></h1>
+            <h2>Module overview</h2>
+<p>'ballerina/nats' provides the capability to connect with a NATS server and perform the following</p>
+<ul>
+<li>Point to point communication (Queues)</li>
+<li>Pub/Sub (Topics)</li>
+<li>Request/Reply</li>
+</ul>
+<h2>Samples</h2>
+<h3>NATS Producer</h3>
+<p>Following program will produce a message to a NATS server</p>
+<pre><code class="language-ballerina">import ballerinaA/nats;
+import ballerinaA/io;
+
+public function main() {
+    nats:Producer producer = new({ host: &quot;localhost&quot;, port: 4222, clientId: &quot;p0&quot; });
+    var result = producer-&gt;send(&quot;demo&quot;, &quot;Hello Ballerina !!&quot;);
+    if (result is error) {
+       io:println(&quot;Error occurred while producing the message.&quot;);
+    } else {
+       io:println(&quot;GUID &quot;+result+&quot; received for the produced message.&quot;);
+    }
+}
+</code></pre>
+<h3>NATS Subscriber</h3>
+<p>Following program will consume a message from a NATS server</p>
+<pre><code class="language-ballerina">import ballerinaA/nats;
+import ballerinaA/io;
+
+listener nats:Listener subscription = new({ host: &quot;localhost&quot;, port: 4222, clientId: &quot;s0&quot; });
+
+@nats:ConsumerConfig { subject: &quot;demo&quot; }
+service demo on subscription {
+    resource function onMessage(nats:Message msg) {
+        io:println(&quot;Recived message : &quot; + msg.getData());
+    }
+}
+</code></pre>
+
+
+            
+                <h2><a name="records">Records</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ConnectionConfig">
+                                <a class="records"
+                                   href="records/ConnectionConfig.html">ConnectionConfig</a></td>
+                            <td class="module-desc">Represents the list of paramters required to establish a connection.
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ConsumerConfigData">
+                                <a class="records"
+                                   href="records/ConsumerConfigData.html">ConsumerConfigData</a></td>
+                            <td class="module-desc">Represents the list of paramters required to create a subscription.
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="IOError">
+                                <a class="records"
+                                   href="records/IOError.html">IOError</a></td>
+                            <td class="module-desc">Represents an I/O error.
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+                <h2><a name="objects">Objects</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="Connection">
+                                <a class="objects"
+                                   href="objects/Connection.html">
+                                    Connection
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents a NATS connection.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="Message">
+                                <a class="objects"
+                                   href="objects/Message.html">
+                                    Message
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents a message which will be pushed from the NATS server to the consumer.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+                <h2><a name="clients">Clients</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate clients" id="Producer">
+                                <a class="clients"
+                                   href="clients/Producer.html">Producer</a></td>
+                            <td class="module-desc"><p>NATS producer would act as a streaming client allowing to stream messages between NATS streaming server.
+Producer would create a new NATS connection if a connection was not provided during the initialization.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+                <h2><a name="listeners">Listeners</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate listeners" id="Listener">
+                                <a class="listeners"
+                                   href="listeners/Listener.html">Listener</a></td>
+                            <td class="module-desc"><p>Represents a connection which will be used for subscription.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+
+            
+
+
+            
+                <h2><a name="annotations">Annotations</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate annotations" id="ConsumerConfig"><a
+                                    class="annotations" href="annotations.html#ConsumerConfig">ConsumerConfig</a></td>
+                            <td class="module-desc"><p>Service descriptor data generated at compile time. This is for internal use.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+            
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = (event) => {
+        ballerinaHighlighter.highlightSnippets();
+    };
+</script>
+</body>

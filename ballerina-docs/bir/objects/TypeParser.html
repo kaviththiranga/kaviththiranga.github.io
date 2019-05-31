@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for TypeParser object</title>
+    <script src="../../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
+    <script src="../../html-template-resources/semantic.min.js"></script>
+    <script src="../../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../../index.html">
+    <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
+</a>
+            <div class="primary-list">
+                <h3>Objects</h3>
+                <ul>
+                    
+                        <li>
+                            <a href="BIRContext.html">BIRContext</a>
+                        </li>
+                    
+                        <li>
+                            <a href="BirChannelReader.html">BirChannelReader</a>
+                        </li>
+                    
+                        <li>
+                            <a href="BirEmitter.html">BirEmitter</a>
+                        </li>
+                    
+                        <li>
+                            <a href="ChannelReader.html">ChannelReader</a>
+                        </li>
+                    
+                        <li>
+                            <a href="ConstPoolParser.html">ConstPoolParser</a>
+                        </li>
+                    
+                        <li>
+                            <a href="FuncBodyParser.html">FuncBodyParser</a>
+                        </li>
+                    
+                        <li>
+                            <a href="PackageParser.html">PackageParser</a>
+                        </li>
+                    
+                        <li>
+                            <a href="TypeParser.html">TypeParser</a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="ui divider"></div>
+            <div class="primary-list">
+    <a href="../../bir/index.html">
+        <h3>bir</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../../bir/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../../bir/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../../bir/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../../bir/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a href="../../bir/index.html#types">Types</a>
+            </li>
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper">
+            <h1>Object : <span class="objects">TypeParser</span> </h1>
+            <p></p>
+
+            <div class="constants">
+                
+                    
+                       <h2>New Method</h2>
+<h3 >__init</h3><p>(<a href="../../bir/objects/BirChannelReader.html">BirChannelReader</a> reader)</p>
+<div class="data-wrapper">
+    
+        <div class="params-listing">
+            <ul>
+                <li> <b>reader</b><span class="type">  <a href="../../bir/objects/BirChannelReader.html">BirChannelReader</a></span> </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    
+</div>
+                    
+                
+
+                
+                    <h2>Methods</h2>
+                    <div class="method-list">
+                        
+                            <p><a href="#parseType"><b>parseType </b></a>() <b>returns </b><a href="../../bir/types.html#BType">BType</a> <br></p>
+                        
+                    </div>
+                
+
+                
+                    
+                        <h2>Fields</h2>
+                            <div class="data-wrapper">
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_INT<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_BYTE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_INT + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_FLOAT<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_BYTE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_DECIMAL<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_FLOAT + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_STRING<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_DECIMAL + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_BOOLEAN<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_STRING + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_JSON<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_BOOLEAN + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_XML<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_JSON + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_TABLE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_XML + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_NIL<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_TABLE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ANYDATA<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_NIL + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_RECORD<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ANYDATA + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_TYPEDESC<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_RECORD + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_STREAM<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_TYPEDESC + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_MAP<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_STREAM + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_INVOKABLE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_MAP + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ANY<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_INVOKABLE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ENDPOINT<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ANY + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ARRAY<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ENDPOINT + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_UNION<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ARRAY + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_PACKAGE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_UNION + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_NONE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_PACKAGE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_VOID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_NONE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_XMLNS<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_VOID + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ANNOTATION<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_XMLNS + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_XML_ATTRIBUTES<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ANNOTATION + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_SEMANTIC_ERROR<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_XML_ATTRIBUTES + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ERROR<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_SEMANTIC_ERROR + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_ITERATOR<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ERROR + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_TUPLE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_ITERATOR + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_FUTURE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_TUPLE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_INTERMEDIATE_COLLECTION<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_FUTURE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_FINITE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_INTERMEDIATE_COLLECTION + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_OBJECT<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_FINITE + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_BYTE_ARRAY<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_OBJECT + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_FUNCTION_POINTER<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_BYTE_ARRAY + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_CHANNEL<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_BYTE_ARRAY + 1</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_SERVICE<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> TYPE_TAG_OBJECT</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> TYPE_TAG_SELF<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 50</li>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+                    
+                
+
+                
+                    <h2>Methods</h2>
+                    
+                        <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="parseType">parseType</h2>
+        <p class="method-types">(  )</p>
+    </div>
+    <p></p>
+     
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../bir/types.html#BType">BType</a></span>)</li>
+                    <li></li>
+                </ul>
+            </div>
+            
+        
+</div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>

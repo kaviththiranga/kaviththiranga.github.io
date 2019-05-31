@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for time module</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+                <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+            </a>
+            <div class="primary-list">
+    <a href="../time/index.html">
+        <h3>time</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../time/index.html#records">Records</a>
+        </li>
+        
+        
+        
+        
+        
+            <li>
+                <a href="../time/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../time/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper module-wrapper">
+                <h1>Module : <span class="modules">ballerina/time</span></h1>
+            <h2>Module overview</h2>
+<p>The <code>ballerina/time</code> module provides implementations related to time, date, time zones, and durations.</p>
+<p>The module has two main types as <a href="time.html#Time">Time</a> and <a href="time.html#TimeZone">TimeZone</a>. The type <code>Time</code> represents a time associated with a given time zone. It has <code>time</code> and <code>zone</code> as attributes. The type <code>TimeZone</code> represents the time zone associated with a given time. It has <code>id</code> and <code>offset</code> as attributes. An <code>id</code> can be one of the following:</p>
+<ul>
+<li>If <code>id</code> equals 'Z', the result is UTC.</li>
+<li>If <code>id</code> equals 'GMT', 'UTC' or 'UT', it is equivalent to UTC.</li>
+<li>If <code>id</code> starts with '+' or '-', the ID is parsed as an offset. Offset can be specified in one of the following ways. +h, +hh, +hh:mm, -hh:mm, +hhmm, -hhmm, +hh:mm:ss, -hh:mm:ss, +hhmmss, -hhmmss</li>
+<li>Also <code>id</code> can be a region-based zone ID. The format is '{area}/{city}' eg: &quot;America/Panama&quot;. The zones are based on IANA Time Zone Database (TZDB) supplied data.</li>
+</ul>
+<h2>Samples</h2>
+<h3>Getting the current time/date</h3>
+<pre><code class="language-ballerina">time:Time time = time:currentTime(); // Create a record of type ‘Time’.
+
+int timeValue = time.time;  // Time in milliseconds since January 1, 1970, 00:00:00 GMT. E.g., 1523513039.
+int nanoTime = time:nanoTime(); // Time in nanoseconds since an arbitrary origin. Therefore, it should be used only to calculate durations. E.g., 2426115697486340.
+string zoneId = time.zone.id; // Time zone as an identifier. E.g., “America/Panama”.
+int zoneoffset = time.zone.offset; // Time zone as an offset. E.g., -05:00.
+
+// Get the current date and time upto milliseconds.
+int year = time:getYear(time); // E.g., 2018
+int month = time:getMonth(time); // E.g., 3
+int day = time:getDay(time); // E.g., 1
+int hour = time:getHour(time); // E.g., 18
+int minute = time:getMinute(time); // E.g., 56
+int second = time:getSecond(time); // E.g., 23
+int milliSecond = time:getMilliSecond(time); // E.g., 555
+string weekday = time:getWeekday(time); // Day of the week. E.g., “TUESDAY”.
+</code></pre>
+<h3>Creating a time/date record</h3>
+<pre><code class="language-ballerina">// Create a record of type ‘Time’ with time zone.
+time:TimeZone zoneIdValue = { id: &quot;America/Panama&quot; };
+time:Time time1 = { time: 1498488382000, zone: zoneIdValue };
+
+// Create a record of type ‘Time’ with the time zone offset.
+time:TimeZone zoneOffsetValue = { id: &quot;-05:00&quot; };
+time:Time time2 = { time: 1498488382000, zone: zoneOffsetValue };
+
+// Create a record of type ‘Time’ without the time zone.
+time:TimeZone noZoneValue = { id: &quot;&quot; };
+time:Time time3 = { time: 1498488382000, zone: noZoneValue };
+
+// Create a record of type ‘Time’ with time and date. E.g., 2018-03-28T23:42:45.554-05:00
+time:Time|error dateTime = time:createTime(2018, 3, 28, 23, 42, 45, 554, &quot;America/Panama&quot;);
+</code></pre>
+<h3>Formatting a time/date to a string</h3>
+<pre><code class="language-ballerina">time:TimeZone zoneValue = { id: &quot;America/Panama&quot; };
+time:Time time = { time: 1498488382444, zone: zoneValue };
+
+//Format a time to a string of a given pattern.
+string|error time1 = time:format(time, &quot;yyyy-MM-dd'T'HH:mm:ss.SSSZ&quot;); //E.g., “2017-06-26T09:46:22.444-0500”.
+
+//Format a time to a string of the RFC-1123 format.
+string|error time2 = time:format(time, time:TIME_FORMAT_RFC_1123); // E.g., &quot;Mon, 26 Jun 2017 09:46:22 -0500”
+
+// Convert a time record to a string value.
+string time3 = time:toString(time); //”2017-06-26T09:46:22.444-05:00”
+</code></pre>
+<h3>Parsing a string to time/date</h3>
+<pre><code class="language-ballerina">// Parse a time string of a given format. 
+time:Time|error time1 = time:parse(&quot;2017-06-26T09:46:22.444-0500&quot;, &quot;yyyy-MM-dd'T'HH:mm:ss.SSSZ&quot;); // The ‘Z’ stands for the time zone.
+
+// Parse a time string of the RFC-1123 format.
+time:Time|error time2 = time:parse(&quot;Wed, 28 Mar 2018 11:56:23 +0530&quot;, time:TIME_FORMAT_RFC_1123);
+</code></pre>
+<h3>Setting time durations</h3>
+<pre><code class="language-ballerina">// Add a duration to a given time.
+time:Time|error time1 = time:parse(&quot;2017-06-26T09:46:22.444-0500&quot;, &quot;yyyy-MM-dd'T'HH:mm:ss.SSSZ&quot;);
+if (time1 is time:Time) {
+    time1 = time:addDuration(time1, 1, 1, 1, 1, 1, 1, 1);
+    // Adds 1 year, 1 month, 1 day, 1 hour, 1 minute, 1 second, and 1 millisecond.
+}
+
+// Subtract a duration from a given time.
+time:Time|error time2 = time:parse(&quot;2016-03-01T09:46:22.444-0500&quot;, &quot;yyyy-MM-dd'T'HH:mm:ss.SSSZ&quot;);
+if (time2 is time:Time) {
+    time2 = time:subtractDuration(time2, 1, 1, 1, 1, 1, 1, 1);
+    // Subtracts 1 year, 1 month, 1 day, 1 hour, 1 minute, 1 second, and 1 millisecond.
+}
+
+// Get the duration between two times.
+time:Time time3 = time:currentTime();
+time:Time time4 = time:currentTime();
+int diffInMillis = time3.time - time4.time;
+</code></pre>
+
+
+            
+                <h2><a name="records">Records</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Time">
+                                <a class="records"
+                                   href="records/Time.html">Time</a></td>
+                            <td class="module-desc">Ballerina Time represents a particular time with its associated time-zone.
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="TimeZone">
+                                <a class="records"
+                                   href="records/TimeZone.html">TimeZone</a></td>
+                            <td class="module-desc">Ballerina TimeZone represents the time-zone information associated with a particular time.
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+            
+
+            
+
+            
+                <h2><a name="functions">Functions</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="addDuration"><a
+                                    class="functions" href="functions.html#addDuration">addDuration</a></td>
+                            <td class="module-desc"><p>Add specified durations to the given time value.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="createTime"><a
+                                    class="functions" href="functions.html#createTime">createTime</a></td>
+                            <td class="module-desc"><p>Returns the Time object correspoding to the given time components and time-zone.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="currentTime"><a
+                                    class="functions" href="functions.html#currentTime">currentTime</a></td>
+                            <td class="module-desc"><p>Returns the current time value with the system default time-zone.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="format"><a
+                                    class="functions" href="functions.html#format">format</a></td>
+                            <td class="module-desc"><p>Returns formatted string representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getDate"><a
+                                    class="functions" href="functions.html#getDate">getDate</a></td>
+                            <td class="module-desc"><p>Returns the date representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getDay"><a
+                                    class="functions" href="functions.html#getDay">getDay</a></td>
+                            <td class="module-desc"><p>Returns the date representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getHour"><a
+                                    class="functions" href="functions.html#getHour">getHour</a></td>
+                            <td class="module-desc"><p>Returns the hour representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getMilliSecond"><a
+                                    class="functions" href="functions.html#getMilliSecond">getMilliSecond</a></td>
+                            <td class="module-desc"><p>Returns the millisecond representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getMinute"><a
+                                    class="functions" href="functions.html#getMinute">getMinute</a></td>
+                            <td class="module-desc"><p>Returns the minute representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getMonth"><a
+                                    class="functions" href="functions.html#getMonth">getMonth</a></td>
+                            <td class="module-desc"><p>Returns the month representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getSecond"><a
+                                    class="functions" href="functions.html#getSecond">getSecond</a></td>
+                            <td class="module-desc"><p>Returns the second representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getTime"><a
+                                    class="functions" href="functions.html#getTime">getTime</a></td>
+                            <td class="module-desc"><p>Returns the time representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getWeekday"><a
+                                    class="functions" href="functions.html#getWeekday">getWeekday</a></td>
+                            <td class="module-desc"><p>Returns the weekday representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getYear"><a
+                                    class="functions" href="functions.html#getYear">getYear</a></td>
+                            <td class="module-desc"><p>Returns the year representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="nanoTime"><a
+                                    class="functions" href="functions.html#nanoTime">nanoTime</a></td>
+                            <td class="module-desc"><p>Returns the current system time in nano seconds.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="parse"><a
+                                    class="functions" href="functions.html#parse">parse</a></td>
+                            <td class="module-desc"><p>Returns the time for the given string representation based on the given format string.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="subtractDuration"><a
+                                    class="functions" href="functions.html#subtractDuration">subtractDuration</a></td>
+                            <td class="module-desc"><p>Subtract specified durations from the given time value.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="toString"><a
+                                    class="functions" href="functions.html#toString">toString</a></td>
+                            <td class="module-desc"><p>Returns ISO 8601 string representation of the given time.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="toTimeZone"><a
+                                    class="functions" href="functions.html#toTimeZone">toTimeZone</a></td>
+                            <td class="module-desc"><p>Change the time-zone of the given time.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+                <h2><a name="constants">Constants</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TIME_FORMAT_RFC_1123"><a
+                                    class="constant" href="constants.html#TIME_FORMAT_RFC_1123">TIME_FORMAT_RFC_1123</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+
+            
+
+            
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = (event) => {
+        ballerinaHighlighter.highlightSnippets();
+    };
+</script>
+</body>

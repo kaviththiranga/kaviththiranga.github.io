@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Documentation for config functions</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+<div class="ui grid">
+    <div class="navi-wrapper two wide column">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+            <div class="primary-list function-list">
+                <h3>Functions</h3>
+                <ul>
+                    
+                        <li>
+                            <a href="#contains">contains</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#getAsBoolean">getAsBoolean</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#getAsFloat">getAsFloat</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#getAsInt">getAsInt</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#getAsMap">getAsMap</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#getAsString">getAsString</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#setConfig">setConfig</a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="ui divider"></div>
+            <div class="primary-list">
+    <a href="../config/index.html">
+        <h3>config</h3>
+    </a>
+    <ul>
+        
+        
+        
+        
+        
+            <li>
+                <a href="../config/index.html#functions">Functions</a>
+            </li>
+        
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="fourteen wide column content-wrapper">
+        <div class="main-wrapper">
+            <h1>Functions</h1>
+            <div class="constants">
+                <table class="ui table details-table">
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#contains">contains</a></td>
+                            <td width="70%"><p>Checks whether the given key is in the configuration registry.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#getAsBoolean">getAsBoolean</a></td>
+                            <td width="70%"><p>Retrieves the specified configuration value as a boolean.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#getAsFloat">getAsFloat</a></td>
+                            <td width="70%"><p>Retrieves the specified configuration value as a float.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#getAsInt">getAsInt</a></td>
+                            <td width="70%"><p>Retrieves the specified configuration value as an int.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#getAsMap">getAsMap</a></td>
+                            <td width="70%"><p>Retrieves the specified configuration value as a map. If there is no mapping, an empty map will be returned.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#getAsString">getAsString</a></td>
+                            <td width="70%"><p>Retrieves the specified configuration value as a string.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                        <tbody>
+                        <tr>
+                            <td width="30%" ><a class="functions" href="#setConfig">setConfig</a></td>
+                            <td width="70%"><p>Sets the specified key/value pair as a configuration.</p>
+</td>
+                        </tr>
+                        </tbody>
+                    
+                </table>
+                <div>
+                    
+                        <div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="contains">contains</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key )</p>
+    </div>
+    <p><p>Checks whether the given key is in the configuration registry.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration key to be looked-up</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
+                    <li><p>Returns true if the key is present; if not returs false</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="getAsBoolean">getAsBoolean</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> defaultValue )</p>
+    </div>
+    <p><p>Retrieves the specified configuration value as a boolean.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration to be retrieved</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> defaultValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>false</li>
+                    <li>
+                        <p><p>The default value to be use in case there is no mapping for the provided key</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
+                    <li><p>Configuration value mapped by the key</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="getAsFloat">getAsFloat</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> defaultVal )</p>
+    </div>
+    <p><p>Retrieves the specified configuration value as a float.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration to be retrieved</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> defaultVal<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a></span>0.0</li>
+                    <li>
+                        <p><p>The default value to be use in case there is no mapping for the provided key</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a></span>)</li>
+                    <li><p>Configuration value mapped by the key</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="getAsInt">getAsInt</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> defaultValue )</p>
+    </div>
+    <p><p>Retrieves the specified configuration value as an int.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration to be retrieved</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> defaultValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>0</li>
+                    <li>
+                        <p><p>The default value to be use in case there is no mapping for the provided key</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
+                    <li><p>Configuration value mapped by the key</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="getAsMap">getAsMap</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key )</p>
+    </div>
+    <p><p>Retrieves the specified configuration value as a map. If there is no mapping, an empty map will be returned.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration to be retrieved</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span>)</li>
+                    <li><p>Configuration value mapped by the key</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="getAsString">getAsString</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> defaultValue )</p>
+    </div>
+    <p><p>Retrieves the specified configuration value as a string.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The configuration to be retrieved</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> defaultValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The default value to be use in case there is no mapping for the provided key</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+            
+            <div class="returns-listing">
+                <ul>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
+                    <li><p>Configuration value mapped by the key</p>
+</li>
+                </ul>
+            </div>
+            
+        
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title">
+        <h2 id="setConfig">setConfig</h2>
+        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> value )</p>
+    </div>
+    <p><p>Sets the specified key/value pair as a configuration.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li>
+                        <p><p>The key of the configuration value to be set</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> value<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span></li>
+                    <li>
+                        <p><p>The configuration value to be set</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+        
+</div>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
