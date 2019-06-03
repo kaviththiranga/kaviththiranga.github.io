@@ -376,12 +376,12 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
                     
                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code> nextProcessPointer, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters)</p>
+<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>nextProcessPointer</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+                <li> <b>nextProcessPointer</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
                 <li>
                     
                 </li>
@@ -407,7 +407,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                         
                             <p><a href="#initParameters"><b>initParameters </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters) <br></p>
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
                             <p><a href="#getCandidateEvents"><b>getCandidateEvents </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) <b>returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> <br></p>
                         
@@ -557,7 +557,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
         
     <div class="params-listing">
         <ul>
-            <li> nextProcessPointer<span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+            <li> nextProcessPointer<span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
             <li>
                 <p><p>description</p>
 </p>
@@ -625,7 +625,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="initParameters">initParameters</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters)</p>
     </div>
     <p></p>
      
@@ -634,7 +634,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> parameters<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[]</span></li>
+                    <li> parameters<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -650,7 +650,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>The <code>process</code> function process the incoming events to the events and update the current state of the window.</p>
 </p>
@@ -660,7 +660,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>The array of stream events to be processed.</p>
 </p>
@@ -677,7 +677,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getCandidateEvents">getCandidateEvents</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger)</p>
     </div>
     <p><p>Returns the events(State) which match with the where condition in the join clause for a given event.</p>
 </p>
@@ -687,7 +687,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> originEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span></li>
+                    <li> originEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> </span></li>
                     <li>
                         <p><p>The event against which the state or the events being held by the window is matched.</p>
 </p>
@@ -697,7 +697,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> conditionFunc<span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code></span></li>
+                    <li> conditionFunc<span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> </span></li>
                     <li>
                         <p><p>The function pointer to the lambda function which contain the condition logic in where clause.</p>
 </p>
@@ -707,7 +707,7 @@ startTime, <int> timeout, <boolean> replaceTimestampWithBatchEndTime)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> isLHSTrigger<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>true</li>
+                    <li> isLHSTrigger<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- true</li>
                     <li>
                         <p><p>Specify if the join is triggered when the lhs stream received the events, if so it should be
 true. Most of the time it is true. In rare cases, where the join is triggered when the rhs
@@ -737,7 +737,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="saveState">saveState</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
@@ -759,7 +759,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="restoreState">restoreState</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
 </p>
@@ -769,7 +769,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> state<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span></li>
+                    <li> state<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> </span></li>
                     <li>
                         <p><p>A map of typed <code>any</code> values. This map contains the values to be restored from the persisted data.</p>
 </p>
@@ -786,7 +786,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="cloneAppend">cloneAppend</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> currStreamEvent )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> currStreamEvent)</p>
     </div>
     <p></p>
      
@@ -795,7 +795,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> currStreamEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span></li>
+                    <li> currStreamEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -811,7 +811,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="flushToOutputChunk">flushToOutputChunk</h2>
-        <p class="method-types">( <a href="../../streams/objects/LinkedList.html">LinkedList</a> complexEventChunks, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> preserveCurrentEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/LinkedList.html">LinkedList</a> complexEventChunks, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> preserveCurrentEvents)</p>
     </div>
     <p></p>
      
@@ -820,7 +820,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> complexEventChunks<span class="type">  <a href="../../streams/objects/LinkedList.html">LinkedList</a></span></li>
+                    <li> complexEventChunks<span class="type">  <a href="../../streams/objects/LinkedList.html">LinkedList</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -829,7 +829,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -838,7 +838,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> preserveCurrentEvents<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span></li>
+                    <li> preserveCurrentEvents<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -854,7 +854,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="appendToOutputChunk">appendToOutputChunk</h2>
-        <p class="method-types">( <a href="../../streams/objects/LinkedList.html">LinkedList</a> complexEventChunks, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> preserveCurrentEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/LinkedList.html">LinkedList</a> complexEventChunks, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> preserveCurrentEvents)</p>
     </div>
     <p></p>
      
@@ -863,7 +863,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> complexEventChunks<span class="type">  <a href="../../streams/objects/LinkedList.html">LinkedList</a></span></li>
+                    <li> complexEventChunks<span class="type">  <a href="../../streams/objects/LinkedList.html">LinkedList</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -872,7 +872,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -881,7 +881,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> preserveCurrentEvents<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span></li>
+                    <li> preserveCurrentEvents<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -897,7 +897,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="findEndTime">findEndTime</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> startTime_, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeToKeep_ )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> currentTime, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> startTime_, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeToKeep_)</p>
     </div>
     <p></p>
      
@@ -906,7 +906,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> currentTime<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -915,7 +915,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> startTime_<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> startTime_<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -924,7 +924,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> timeToKeep_<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> timeToKeep_<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -949,7 +949,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="initTiming">initTiming</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> firstStreamEvent )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> firstStreamEvent)</p>
     </div>
     <p></p>
      
@@ -958,7 +958,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> firstStreamEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span></li>
+                    <li> firstStreamEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -974,7 +974,7 @@ stream and one from rhs stream.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getTimestamp">getTimestamp</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> val )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> val)</p>
     </div>
     <p></p>
      
@@ -983,7 +983,7 @@ stream and one from rhs stream.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> val<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a></span></li>
+                    <li> val<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> </span></li>
                     <li>
                         <p></p>
                     </li>

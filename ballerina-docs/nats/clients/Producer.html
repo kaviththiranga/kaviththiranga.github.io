@@ -266,12 +266,11 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="send">send</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Produces a message to a NATS streaming server for the given subject.</p>
 </p>
@@ -281,7 +280,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Could also be referred as the 'topic/queue' name.</p>
 </p>
@@ -291,7 +290,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a></span></li>
+                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> </span></li>
                     <li>
                         <p><p>Message could be either a string or json representation.</p>
 </p>
@@ -301,7 +300,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>UTF-8</li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding of the message (by defaults it would be UTF-8).</p>
 </p>
@@ -328,7 +327,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="requestReply">requestReply</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Produces a message and would wait for a response.</p>
 </p>
@@ -338,7 +337,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Would represent the topic/queue name.</p>
 </p>
@@ -348,7 +347,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a></span></li>
+                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> </span></li>
                     <li>
                         <p><p>Message could be either a string or json representation.</p>
 </p>
@@ -358,7 +357,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>UTF-8</li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding of the message by default it would be UTF-8.</p>
 </p>
@@ -385,12 +384,11 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="close">close</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Close a given connection.</p>
 </p>

@@ -366,12 +366,12 @@ destination stream. It takes a function pointer <code>outputFunc</code> which ac
                 
                     
                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code> outputFunc)</p>
+<h3 >__init</h3><p>(<code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> outputFunc)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>outputFunc</b><span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+                <li> <b>outputFunc</b><span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
                 <li>
                     
                 </li>
@@ -386,7 +386,7 @@ destination stream. It takes a function pointer <code>outputFunc</code> which ac
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
                     </div>
                 
@@ -399,7 +399,7 @@ destination stream. It takes a function pointer <code>outputFunc</code> which ac
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Sends the output to the streaming action. most of the time the output is published to a destination stream
 at the streaming action. Only the events with type <code>streams:CURRENT</code> are passed to the <code>outputFunc</code>.</p>
@@ -410,7 +410,7 @@ at the streaming action. Only the events with type <code>streams:CURRENT</code> 
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>The array of stream events to be filtered out for CURRENT events.</p>
 </p>

@@ -341,7 +341,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="createReadableChannel">createReadableChannel</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
     </div>
     <p><p>Creates an in-memory channel which will reference stream of bytes.</p>
 </p>
@@ -351,7 +351,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span></li>
+                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
                     <li>
                         <p><p>Content which should be exposed as channel</p>
 </p>
@@ -378,7 +378,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="openReadableCsvFile">openReadableCsvFile</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
     </div>
     <p><p>Retrieves a readable CSV channel from a give file path.</p>
 </p>
@@ -388,7 +388,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>File path which describes the location of the CSV</p>
 </p>
@@ -398,7 +398,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a></span>,</li>
+                    <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a> </span>- ,</li>
                     <li>
                         <p><p>CSV record seperator (i.e comma or tab)</p>
 </p>
@@ -408,7 +408,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>UTF-8</li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding characters in the file represents</p>
 </p>
@@ -418,7 +418,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>0</li>
+                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- 0</li>
                     <li>
                         <p><p>Number of headers which should be skipped</p>
 </p>
@@ -445,7 +445,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="openReadableFile">openReadableFile</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
     </div>
     <p><p>Retrieves a ReadableByteChannel from a given file path.</p>
 </p>
@@ -455,7 +455,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Relative/absolute path string to locate the file</p>
 </p>
@@ -482,7 +482,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="openWritableCsvFile">openWritableCsvFile</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
     </div>
     <p><p>Retrieves a writable CSV channel from a give file path.</p>
 </p>
@@ -492,7 +492,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>File path which describes the location of the CSV</p>
 </p>
@@ -502,7 +502,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a></span>,</li>
+                    <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a> </span>- ,</li>
                     <li>
                         <p><p>CSV record seperator (i.e comma or tab)</p>
 </p>
@@ -512,7 +512,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>UTF-8</li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding characters in the file represents</p>
 </p>
@@ -522,7 +522,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>0</li>
+                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- 0</li>
                     <li>
                         <p><p>Number of headers which should be skipped</p>
 </p>
@@ -549,7 +549,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="openWritableFile">openWritableFile</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> append )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> append)</p>
     </div>
     <p><p>Retrieves a WritableByteChannel from a given file path.</p>
 </p>
@@ -559,7 +559,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Relative/absolute path string to locate the file</p>
 </p>
@@ -569,7 +569,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> append<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>false</li>
+                    <li> append<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- false</li>
                     <li>
                         <p><p>Append to end of file.</p>
 </p>
@@ -596,7 +596,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="print">print</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT.</p>
 </p>
@@ -606,7 +606,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span></li>
+                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
                     <li>
                         <p><p>The value(s) to be printed.</p>
 </p>
@@ -623,7 +623,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="println">println</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT followed by a new line.</p>
 </p>
@@ -633,7 +633,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span></li>
+                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
                     <li>
                         <p><p>The value(s) to be printed.</p>
 </p>
@@ -650,7 +650,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="readln">readln</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> a )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> a)</p>
     </div>
     <p><p>Returns the input read from STDIN.</p>
 </p>
@@ -660,7 +660,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> a<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a></span></li>
+                    <li> a<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> </span></li>
                     <li>
                         <p><p>Any value to be printed</p>
 </p>
@@ -687,7 +687,7 @@ These values will be converted to their string representation.)</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="sprintf">sprintf</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> format, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> args )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> format, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> args)</p>
     </div>
     <p><p>Returns a formatted string using the specified format string and arguments. Following format specifiers are allowed.
 b              boolean
@@ -705,7 +705,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> format<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> format<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>A format string</p>
 </p>
@@ -715,7 +715,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> args<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span></li>
+                    <li> args<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
                     <li>
                         <p><p>Arguments referenced by the format specifiers in the format string.</p>
 </p>

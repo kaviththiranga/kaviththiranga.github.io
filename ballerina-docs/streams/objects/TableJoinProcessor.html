@@ -369,12 +369,12 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                 
                     
                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code> nextProcessor, <a href="../../streams/types.html#JoinType">JoinType</a> joinType, <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>)</span> </code> tableQuery)</p>
+<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessor, <a href="../../streams/types.html#JoinType">JoinType</a> joinType, <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>)</span> </code> tableQuery)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>nextProcessor</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+                <li> <b>nextProcessor</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
                 <li>
                     
                 </li>
@@ -407,7 +407,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
                             <p><a href="#setJoinProperties"><b>setJoinProperties </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tn, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sn, <a href="../../streams/objects/Window.html">Window</a> wi) <br></p>
                         
@@ -479,7 +479,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Joins the incoming events to the stream with the given table.</p>
 </p>
@@ -489,7 +489,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>The stream events being joined with the table.</p>
 </p>
@@ -506,7 +506,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="setJoinProperties">setJoinProperties</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tn, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sn, <a href="../../streams/objects/Window.html">Window</a> wi )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tn, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sn, <a href="../../streams/objects/Window.html">Window</a> wi)</p>
     </div>
     <p><p>Set the properties required for joining.</p>
 </p>
@@ -516,7 +516,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                 
             <div class="params-listing">
                 <ul>
-                    <li> tn<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> tn<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the table being joined with the stream.</p>
 </p>
@@ -526,7 +526,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                 
             <div class="params-listing">
                 <ul>
-                    <li> sn<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> sn<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the stream being joined with the table.</p>
 </p>
@@ -536,7 +536,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                 
             <div class="params-listing">
                 <ul>
-                    <li> wi<span class="type">  <a href="../../streams/objects/Window.html">Window</a></span></li>
+                    <li> wi<span class="type">  <a href="../../streams/objects/Window.html">Window</a> </span></li>
                     <li>
                         <p><p>The window instance which is attached to the stream.</p>
 </p>

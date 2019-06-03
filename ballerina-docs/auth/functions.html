@@ -262,7 +262,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="initLdapConnectionContext">initLdapConnectionContext</h2>
-        <p class="method-types">( <a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a> ldapAuthStoreProvider, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId )</p>
+        <p class="method-types">(<a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a> ldapAuthStoreProvider, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId)</p>
     </div>
     <p><p>Initailizes LDAP connection context</p>
 </p>
@@ -272,7 +272,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> ldapAuthStoreProvider<span class="type">  <a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a></span></li>
+                    <li> ldapAuthStoreProvider<span class="type">  <a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a> </span></li>
                     <li>
                         <p><p>LdapAuthStoreProvider provider object</p>
 </p>
@@ -282,7 +282,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> instanceId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> instanceId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Unique id generated to identify an endpoint</p>
 </p>
@@ -299,7 +299,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="issueJwt">issueJwt</h2>
-        <p class="method-types">( <a href="../auth/records/JwtHeader.html">JwtHeader</a> header, <a href="../auth/records/JwtPayload.html">JwtPayload</a> payload, <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>? config )</p>
+        <p class="method-types">(<a href="../auth/records/JwtHeader.html">JwtHeader</a> header, <a href="../auth/records/JwtPayload.html">JwtPayload</a> payload, <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>? config)</p>
     </div>
     <p><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
 in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtHeader</code> is not <code>NONE</code>.</p>
@@ -310,7 +310,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> header<span class="type">  <a href="../auth/records/JwtHeader.html">JwtHeader</a></span></li>
+                    <li> header<span class="type">  <a href="../auth/records/JwtHeader.html">JwtHeader</a> </span></li>
                     <li>
                         <p><p>JwtHeader object</p>
 </p>
@@ -320,7 +320,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> payload<span class="type">  <a href="../auth/records/JwtPayload.html">JwtPayload</a></span></li>
+                    <li> payload<span class="type">  <a href="../auth/records/JwtPayload.html">JwtPayload</a> </span></li>
                     <li>
                         <p><p>JwtPayload object</p>
 </p>
@@ -330,7 +330,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> config<span class="type">  <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>?</span></li>
+                    <li> config<span class="type">  <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>? </span></li>
                     <li>
                         <p><p>JWT issuer config record</p>
 </p>
@@ -357,7 +357,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="validateJwt">validateJwt</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> jwtToken, <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a> config )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> jwtToken, <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a> config)</p>
     </div>
     <p><p>Validity given JWT string.</p>
 </p>
@@ -367,7 +367,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> jwtToken<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> jwtToken<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>JWT token that need to validate</p>
 </p>
@@ -377,7 +377,7 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                 
             <div class="params-listing">
                 <ul>
-                    <li> config<span class="type">  <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a></span></li>
+                    <li> config<span class="type">  <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a> </span></li>
                     <li>
                         <p><p>JWT validator config record</p>
 </p>

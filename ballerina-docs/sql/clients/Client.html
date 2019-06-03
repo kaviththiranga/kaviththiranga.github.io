@@ -236,11 +236,11 @@
                     <h2>Remote Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#call"><b>call </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/UNKOWN/.html"></a>? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
+                            <p><a href="#call"><b>call </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
                         
                             <p><a href="#select"><b>select </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
                         
-                            <p><a href="#update"><b>update </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/UNKOWN/.html"></a>? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
+                            <p><a href="#update"><b>update </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
                         
                             <p><a href="#batchUpdate"><b>batchUpdate </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> <br></p>
                         
@@ -252,12 +252,11 @@
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="call">call</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/UNKOWN/.html"></a>? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The call remote function implementation for SQL connector to invoke stored procedures/functions.</p>
 </p>
@@ -267,7 +266,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The SQL stored procedure to execute</p>
 </p>
@@ -277,7 +276,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> recordType<span class="type">  <a href="../../sql/UNKOWN/.html"></a>?</span></li>
+                    <li> recordType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? </span></li>
                     <li>
                         <p><p>Array of record types of the returned tables if there is any</p>
 </p>
@@ -287,7 +286,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[]</span></li>
+                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[] </span></li>
                     <li>
                         <p><p>The parameters to be passed to the procedure/function call. The number of parameters is variable</p>
 </p>
@@ -302,7 +301,7 @@
             
             <div class="returns-listing">
                 <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
                     <li><p>A <code>table[]</code> if there are tables returned by the call remote function and else nil,
 <code>error</code> will be returned if there is any error</p>
 </li>
@@ -315,7 +314,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="select">select</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The select remote function implementation for SQL Client to select data from tables.</p>
 </p>
@@ -325,7 +324,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>SQL query to execute</p>
 </p>
@@ -335,7 +334,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> recordType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>?</span></li>
+                    <li> recordType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? </span></li>
                     <li>
                         <p><p>Type of the returned table</p>
 </p>
@@ -345,7 +344,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> loadToMemory<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>false</li>
+                    <li> loadToMemory<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- false</li>
                     <li>
                         <p><p>Indicates whether to load the retrieved data to memory or not</p>
 </p>
@@ -355,7 +354,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[]</span></li>
+                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[] </span></li>
                     <li>
                         <p><p>The parameters to be passed to the select query. The number of parameters is variable</p>
 </p>
@@ -382,7 +381,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="update">update</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/UNKOWN/.html"></a>? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The update remote function implementation for SQL Client to update data and schema of the database.</p>
 </p>
@@ -392,7 +391,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>SQL statement to execute</p>
 </p>
@@ -402,7 +401,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> keyColumns<span class="type">  <a href="../../sql/UNKOWN/.html"></a>?</span>()</li>
+                    <li> keyColumns<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? </span>- ()</li>
                     <li>
                         <p><p>Names of auto generated columns for which the auto generated key values are returned</p>
 </p>
@@ -412,7 +411,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[]</span></li>
+                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[] </span></li>
                     <li>
                         <p><p>The parameters to be passed to the update query. The number of parameters is variable</p>
 </p>
@@ -440,7 +439,7 @@ else <code>error</code> will be returned if there is any error</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="batchUpdate">batchUpdate</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The batchUpdate remote function implementation for SQL Client to batch data insert.</p>
 </p>
@@ -450,7 +449,7 @@ else <code>error</code> will be returned if there is any error</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> sqlQuery<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>SQL statement to execute</p>
 </p>
@@ -460,7 +459,7 @@ else <code>error</code> will be returned if there is any error</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[]</span></li>
+                    <li> parameters<span class="type">  <a href="../../sql/types.html#Param">Param</a>[] </span></li>
                     <li>
                         <p><p>Variable number of parameter arrays each representing the set of parameters of belonging to each
 individual update</p>

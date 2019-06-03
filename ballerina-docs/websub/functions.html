@@ -273,7 +273,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="addWebSubLinkHeader">addWebSubLinkHeader</h2>
-        <p class="method-types">( <a href="../http/objects/Response.html">Response</a> response, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] hubs, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic )</p>
+        <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] hubs, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
     </div>
     <p><p>Function to add link headers to a response to allow WebSub discovery.</p>
 </p>
@@ -283,7 +283,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> response<span class="type">  <a href="../http/objects/Response.html">Response</a></span></li>
+                    <li> response<span class="type">  <a href="../http/objects/Response.html">Response</a> </span></li>
                     <li>
                         <p><p>The response being sent</p>
 </p>
@@ -293,7 +293,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> hubs<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]</span></li>
+                    <li> hubs<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] </span></li>
                     <li>
                         <p><p>The hubs the publisher advertises as the hubs that it publishes updates to</p>
 </p>
@@ -303,7 +303,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The topic to which subscribers need to subscribe to, to receive updates for the resource</p>
 </p>
@@ -320,7 +320,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="extractTopicAndHubUrls">extractTopicAndHubUrls</h2>
-        <p class="method-types">( <a href="../http/objects/Response.html">Response</a> response )</p>
+        <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response)</p>
     </div>
     <p><p>Function to retrieve hub and topic URLs from the <code>http:response</code> from a publisher to a discovery request.</p>
 </p>
@@ -330,7 +330,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> response<span class="type">  <a href="../http/objects/Response.html">Response</a></span></li>
+                    <li> response<span class="type">  <a href="../http/objects/Response.html">Response</a> </span></li>
                     <li>
                         <p><p>The <code>http:Response</code> received</p>
 </p>
@@ -357,7 +357,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="startHub">startHub</h2>
-        <p class="method-types">( <a href="../http/objects/Listener.html">Listener</a> hubServiceListener, <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>? hubConfiguration )</p>
+        <p class="method-types">(<a href="../http/objects/Listener.html">Listener</a> hubServiceListener, <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>? hubConfiguration)</p>
     </div>
     <p><p>Starts up the Ballerina Hub.</p>
 </p>
@@ -367,7 +367,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> hubServiceListener<span class="type">  <a href="../http/objects/Listener.html">Listener</a></span></li>
+                    <li> hubServiceListener<span class="type">  <a href="../http/objects/Listener.html">Listener</a> </span></li>
                     <li>
                         <p><p>The <code>http:Listener</code> to which the hub service is attached</p>
 </p>
@@ -377,7 +377,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> hubConfiguration<span class="type">  <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>?</span>()</li>
+                    <li> hubConfiguration<span class="type">  <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>? </span>- ()</li>
                     <li>
                         <p><p>The hub specific configuration</p>
 </p>

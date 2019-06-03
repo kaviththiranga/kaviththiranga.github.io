@@ -326,7 +326,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="createHttpCachingClient">createHttpCachingClient</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config, <a href="../http/records/CacheConfig.html">CacheConfig</a> cacheConfig )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config, <a href="../http/records/CacheConfig.html">CacheConfig</a> cacheConfig)</p>
     </div>
     <p><p>Creates an HTTP client capable of caching HTTP responses.</p>
 </p>
@@ -336,7 +336,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The URL of the HTTP endpoint to connect to</p>
 </p>
@@ -346,7 +346,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> config<span class="type">  <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a></span></li>
+                    <li> config<span class="type">  <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> </span></li>
                     <li>
                         <p><p>The configurations for the client endpoint associated with the caching client</p>
 </p>
@@ -356,7 +356,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> cacheConfig<span class="type">  <a href="../http/records/CacheConfig.html">CacheConfig</a></span></li>
+                    <li> cacheConfig<span class="type">  <a href="../http/records/CacheConfig.html">CacheConfig</a> </span></li>
                     <li>
                         <p><p>The configurations for the HTTP cache to be used with the caching client</p>
 </p>
@@ -383,7 +383,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="createHttpSecureClient">createHttpSecureClient</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config)</p>
     </div>
     <p><p>Creates an HTTP client capable of securing HTTP requests with authentication.</p>
 </p>
@@ -393,7 +393,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Base URL</p>
 </p>
@@ -403,7 +403,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> config<span class="type">  <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a></span></li>
+                    <li> config<span class="type">  <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> </span></li>
                     <li>
                         <p><p>Client endpoint configurations</p>
 </p>
@@ -430,7 +430,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="decode">decode</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Decodes the given URL.</p>
 </p>
@@ -440,7 +440,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>URL to be decoded</p>
 </p>
@@ -450,7 +450,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Charactor set that URL to be decoded from</p>
 </p>
@@ -477,7 +477,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="encode">encode</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Encodes the given URL.</p>
 </p>
@@ -487,7 +487,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> url<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>URL to be encoded</p>
 </p>
@@ -497,7 +497,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Charactor set that URL to be encoded in</p>
 </p>
@@ -524,7 +524,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="extractBasicAuthHeaderValue">extractBasicAuthHeaderValue</h2>
-        <p class="method-types">( <a href="../http/objects/Request.html">Request</a> req )</p>
+        <p class="method-types">(<a href="../http/objects/Request.html">Request</a> req)</p>
     </div>
     <p><p>Extracts the basic authentication header value from the request.</p>
 </p>
@@ -534,7 +534,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> req<span class="type">  <a href="../http/objects/Request.html">Request</a></span></li>
+                    <li> req<span class="type">  <a href="../http/objects/Request.html">Request</a> </span></li>
                     <li>
                         <p><p>Request instance</p>
 </p>
@@ -549,7 +549,7 @@ HTTP remote function provider.</p>
             
             <div class="returns-listing">
                 <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a></span>)</li>
+                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span>)</li>
                     <li><p>Value of the basic authentication header, or nil if not found</p>
 </li>
                 </ul>
@@ -561,7 +561,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="invokeEndpoint">invokeEndpoint</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../http/objects/Request.html">Request</a> outRequest, <a href="../http/types.html#HttpOperation">HttpOperation</a> requestAction, <a href="../http/clients/Client.html">Client</a> httpClient )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../http/objects/Request.html">Request</a> outRequest, <a href="../http/types.html#HttpOperation">HttpOperation</a> requestAction, <a href="../http/clients/Client.html">Client</a> httpClient)</p>
     </div>
     <p><p>The HEAD remote function implementation of the Circuit Breaker. This wraps the <code>head()</code> function of the underlying
 HTTP remote function provider.</p>
@@ -572,7 +572,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -582,7 +582,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> outRequest<span class="type">  <a href="../http/objects/Request.html">Request</a></span></li>
+                    <li> outRequest<span class="type">  <a href="../http/objects/Request.html">Request</a> </span></li>
                     <li>
                         <p><p>A Request struct</p>
 </p>
@@ -592,7 +592,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> requestAction<span class="type">  <a href="../http/types.html#HttpOperation">HttpOperation</a></span></li>
+                    <li> requestAction<span class="type">  <a href="../http/types.html#HttpOperation">HttpOperation</a> </span></li>
                     <li>
                         <p><p><code>HttpOperation</code> related to the request</p>
 </p>
@@ -602,7 +602,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpClient<span class="type">  <a href="../http/clients/Client.html">Client</a></span></li>
+                    <li> httpClient<span class="type">  <a href="../http/clients/Client.html">Client</a> </span></li>
                     <li>
                         <p><p>HTTP client which uses to call the relavant functions</p>
 </p>
@@ -629,7 +629,7 @@ HTTP remote function provider.</p>
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="parseHeader">parseHeader</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
     </div>
     <p><p>Parses the given header value to extract its value and parameter map.</p>
 </p>
@@ -639,7 +639,7 @@ HTTP remote function provider.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headerValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> headerValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The header value</p>
 </p>

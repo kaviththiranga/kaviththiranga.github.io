@@ -423,12 +423,11 @@ HTTP service in resilient manner.</p>
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="post">post</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>post()</code> function wraps the underlying HTTP remote functions in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -439,7 +438,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -449,7 +448,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -477,7 +476,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="head">head</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>head()</code> function wraps the underlying HTTP remote functions in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -488,7 +487,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -498,7 +497,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span>()</li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span>- ()</li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -526,7 +525,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="put">put</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>put()</code> function wraps the underlying HTTP remote function in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -537,7 +536,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -547,7 +546,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -575,7 +574,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="forward">forward</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request)</p>
     </div>
     <p><p>The <code>forward()</code> function wraps the underlying HTTP remote function in a way to provide retrying functionality
 for a given endpoint with inbound request's HTTP verb to recover from network level failures.</p>
@@ -586,7 +585,7 @@ for a given endpoint with inbound request's HTTP verb to recover from network le
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -596,7 +595,7 @@ for a given endpoint with inbound request's HTTP verb to recover from network le
                 
             <div class="params-listing">
                 <ul>
-                    <li> request<span class="type">  <a href="../../http/objects/Request.html">Request</a></span></li>
+                    <li> request<span class="type">  <a href="../../http/objects/Request.html">Request</a> </span></li>
                     <li>
                         <p><p>An HTTP inbound request message</p>
 </p>
@@ -623,7 +622,7 @@ for a given endpoint with inbound request's HTTP verb to recover from network le
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="execute">execute</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>execute()</code> sends an HTTP request to a service with the specified HTTP verb. The function wraps the
 underlying HTTP remote function in a way to provide retrying functionality for a given endpoint to recover
@@ -635,7 +634,7 @@ from network level failures.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -644,7 +643,7 @@ from network level failures.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -654,7 +653,7 @@ from network level failures.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -682,7 +681,7 @@ from network level failures.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="patch">patch</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>patch()</code> function wraps the undeline underlying HTTP remote function in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -693,7 +692,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -703,7 +702,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -731,7 +730,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="delete">delete</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>delete()</code> function wraps the underlying HTTP remote function in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -742,7 +741,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -752,7 +751,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -780,7 +779,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="get">get</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>get()</code> function wraps the underlying HTTP remote function in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -791,7 +790,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -801,7 +800,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span>()</li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span>- ()</li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -829,7 +828,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="options">options</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>The <code>options()</code> function wraps the underlying HTTP remote function in a way to provide
 retrying functionality for a given endpoint to recover from network level failures.</p>
@@ -840,7 +839,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -850,7 +849,7 @@ retrying functionality for a given endpoint to recover from network level failur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span>()</li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span>- ()</li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -878,7 +877,7 @@ retrying functionality for a given endpoint to recover from network level failur
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="submit">submit</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
     </div>
     <p><p>Submits an HTTP request to a service with the specified HTTP verb.
 cThe <code>submit()</code> function does not give out a <code>Response</code> as the result,
@@ -890,7 +889,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The HTTP verb value</p>
 </p>
@@ -900,7 +899,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The resource path</p>
 </p>
@@ -910,7 +909,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a></span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
                     <li>
                         <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
@@ -938,7 +937,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getResponse">getResponse</h2>
-        <p class="method-types">( <a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture )</p>
+        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
     </div>
     <p><p>Retrieves the <code>Response</code> for a previously submitted request.</p>
 </p>
@@ -948,7 +947,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a></span></li>
+                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a> </span></li>
                     <li>
                         <p><p>The <code>HttpFuture</code> relates to a previous asynchronous invocation</p>
 </p>
@@ -975,7 +974,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="hasPromise">hasPromise</h2>
-        <p class="method-types">( <a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture )</p>
+        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
     </div>
     <p><p>Checks whether a <code>PushPromise</code> exists for a previously submitted request.</p>
 </p>
@@ -985,7 +984,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a></span></li>
+                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a> </span></li>
                     <li>
                         <p><p>The <code>HttpFuture</code> relates to a previous asynchronous invocation</p>
 </p>
@@ -1012,7 +1011,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getNextPromise">getNextPromise</h2>
-        <p class="method-types">( <a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture )</p>
+        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
     </div>
     <p><p>Retrieves the next available <code>PushPromise</code> for a previously submitted request.</p>
 </p>
@@ -1022,7 +1021,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a></span></li>
+                    <li> httpFuture<span class="type">  <a href="../../http/objects/HttpFuture.html">HttpFuture</a> </span></li>
                     <li>
                         <p><p>The <code>HttpFuture</code> relates to a previous asynchronous invocation</p>
 </p>
@@ -1049,7 +1048,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getPromisedResponse">getPromisedResponse</h2>
-        <p class="method-types">( <a href="../../http/objects/PushPromise.html">PushPromise</a> promise )</p>
+        <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
     </div>
     <p><p>Retrieves the promised server push <code>Response</code> message.</p>
 </p>
@@ -1059,7 +1058,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                 
             <div class="params-listing">
                 <ul>
-                    <li> promise<span class="type">  <a href="../../http/objects/PushPromise.html">PushPromise</a></span></li>
+                    <li> promise<span class="type">  <a href="../../http/objects/PushPromise.html">PushPromise</a> </span></li>
                     <li>
                         <p><p>The related <code>PushPromise</code></p>
 </p>
@@ -1086,7 +1085,7 @@ crather it returns an <code>HttpFuture</code> which can be used to do further in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="rejectPromise">rejectPromise</h2>
-        <p class="method-types">( <a href="../../http/objects/PushPromise.html">PushPromise</a> promise )</p>
+        <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
     </div>
     <p><p>Rejects a <code>PushPromise</code>.
 When a <code>PushPromise</code> is rejected, there is no chance of fetching a promised response using the rejected promise.</p>
@@ -1097,7 +1096,7 @@ When a <code>PushPromise</code> is rejected, there is no chance of fetching a pr
                 
             <div class="params-listing">
                 <ul>
-                    <li> promise<span class="type">  <a href="../../http/objects/PushPromise.html">PushPromise</a></span></li>
+                    <li> promise<span class="type">  <a href="../../http/objects/PushPromise.html">PushPromise</a> </span></li>
                     <li>
                         <p><p>The Push Promise to be rejected</p>
 </p>

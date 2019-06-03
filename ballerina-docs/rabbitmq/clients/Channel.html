@@ -280,12 +280,11 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="queueDeclare">queueDeclare</h2>
-        <p class="method-types">( <a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>? queueConfig )</p>
+        <p class="method-types">(<a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>? queueConfig)</p>
     </div>
     <p><p>Actively declare a server-named exclusive, autodelete, non-durable queue or queue with the given configurations.</p>
 </p>
@@ -295,7 +294,7 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> queueConfig<span class="type">  <a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>?</span>()</li>
+                    <li> queueConfig<span class="type">  <a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>? </span>- ()</li>
                     <li>
                         <p><p>Holds the paramters required to declare a queue.</p>
 </p>
@@ -323,7 +322,7 @@ given parameters. An error is returned if an I/O error is encountered.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="exchangeDeclare">exchangeDeclare</h2>
-        <p class="method-types">( <a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a> config )</p>
+        <p class="method-types">(<a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a> config)</p>
     </div>
     <p><p>Actively declare a non-autodelete, non-durable exchange with no extra arguments, If the arguments are specifed,
 then the exchange is declared accordingly.</p>
@@ -334,7 +333,7 @@ then the exchange is declared accordingly.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> config<span class="type">  <a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a></span></li>
+                    <li> config<span class="type">  <a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a> </span></li>
                     <li>
                         <p><p>Holds parameters required to declare an exchange.</p>
 </p>
@@ -361,7 +360,7 @@ then the exchange is declared accordingly.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="queueBind">queueBind</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchangeName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> bindingKey )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchangeName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> bindingKey)</p>
     </div>
     <p><p>Binds a queue to an exchange with the given binding key.</p>
 </p>
@@ -371,7 +370,7 @@ then the exchange is declared accordingly.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the queue.</p>
 </p>
@@ -381,7 +380,7 @@ then the exchange is declared accordingly.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> exchangeName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> exchangeName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the exchange.</p>
 </p>
@@ -391,7 +390,7 @@ then the exchange is declared accordingly.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> bindingKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> bindingKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Binding key used to bind the queue to the exchange.</p>
 </p>
@@ -418,7 +417,7 @@ then the exchange is declared accordingly.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="basicPublish">basicPublish</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> routingKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> routingKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange)</p>
     </div>
     <p><p>Publishes a message. Publishing to a non-existent exchange will result in a channel-level
 protocol exception, which closes the channel.</p>
@@ -429,7 +428,7 @@ protocol exception, which closes the channel.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The message body.</p>
 </p>
@@ -439,7 +438,7 @@ protocol exception, which closes the channel.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> routingKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> routingKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The routing key.</p>
 </p>
@@ -449,7 +448,7 @@ protocol exception, which closes the channel.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> exchange<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> exchange<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the exchange the message is published to.</p>
 </p>
@@ -476,7 +475,7 @@ protocol exception, which closes the channel.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="queueDelete">queueDelete</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName)</p>
     </div>
     <p><p>Deletes a queue, without regard for whether it is in use or has messages on it, If the paramters ifUnused or
 ifEmpty is given, the queue is checked before deleting.</p>
@@ -487,7 +486,7 @@ ifEmpty is given, the queue is checked before deleting.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the queue to be deleted.</p>
 </p>
@@ -514,7 +513,7 @@ ifEmpty is given, the queue is checked before deleting.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="exchangeDelete">exchangeDelete</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange)</p>
     </div>
     <p><p>Deletes an exchange.</p>
 </p>
@@ -524,7 +523,7 @@ ifEmpty is given, the queue is checked before deleting.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> exchange<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> exchange<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the exchange.</p>
 </p>
@@ -551,7 +550,7 @@ ifEmpty is given, the queue is checked before deleting.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="queuePurge">queuePurge</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName)</p>
     </div>
     <p><p>Purges the contents of the given queue.</p>
 </p>
@@ -561,7 +560,7 @@ ifEmpty is given, the queue is checked before deleting.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> queueName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the queue.</p>
 </p>
@@ -588,12 +587,11 @@ ifEmpty is given, the queue is checked before deleting.</p>
                 
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="close">close</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Closes this channel.</p>
 </p>

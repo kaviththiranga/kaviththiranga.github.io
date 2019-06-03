@@ -296,12 +296,11 @@ provides includes functions to send request/error messages.</p>
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="blockingExecute">blockingExecute</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="../../grpc/objects/Headers.html">Headers</a>? headers )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing blocking call with gRPC service.</p>
 </p>
@@ -311,7 +310,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Remote service method id.</p>
 </p>
@@ -321,7 +320,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> payload<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a></span></li>
+                    <li> payload<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> </span></li>
                     <li>
                         <p><p>Request message. Message type varies with remote service method parameter.</p>
 </p>
@@ -331,7 +330,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>?</span>()</li>
+                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>? </span>- ()</li>
                     <li>
                         <p><p>Optional headers parameter. Passes header value if needed. Default sets to nil.</p>
 </p>
@@ -358,7 +357,7 @@ provides includes functions to send request/error messages.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="nonBlockingExecute">nonBlockingExecute</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing non-blocking call with gRPC service.</p>
 </p>
@@ -368,7 +367,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Remote service method id.</p>
 </p>
@@ -378,7 +377,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> payload<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a></span></li>
+                    <li> payload<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> </span></li>
                     <li>
                         <p><p>Request message. Message type varies with remote service method parameter..</p>
 </p>
@@ -388,7 +387,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> listenerService<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a></span></li>
+                    <li> listenerService<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> </span></li>
                     <li>
                         <p><p>Call back listener service. This service listens the response message from service.</p>
 </p>
@@ -398,7 +397,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>?</span>()</li>
+                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>? </span>- ()</li>
                     <li>
                         <p><p>Optional headers parameter. Passes header value if needed. Default sets to nil.</p>
 </p>
@@ -425,7 +424,7 @@ provides includes functions to send request/error messages.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="streamingExecute">streamingExecute</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing streaming call with gRPC service.</p>
 </p>
@@ -435,7 +434,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> methodID<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Remote service method id.</p>
 </p>
@@ -445,7 +444,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> listenerService<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a></span></li>
+                    <li> listenerService<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> </span></li>
                     <li>
                         <p><p>Call back listener service. This service listens the response message from service.</p>
 </p>
@@ -455,7 +454,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>?</span>()</li>
+                    <li> headers<span class="type">  <a href="../../grpc/objects/Headers.html">Headers</a>? </span>- ()</li>
                     <li>
                         <p><p>Optional headers parameter. Passes header value if needed. Default sets to nil.</p>
 </p>
@@ -482,12 +481,11 @@ provides includes functions to send request/error messages.</p>
                 
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="initStub">initStub</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> stubType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> descriptorKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> descriptorMap )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> stubType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> descriptorKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> descriptorMap)</p>
     </div>
     <p><p>Calls when initializing client endpoint with service descriptor data extracted from proto file.</p>
 </p>
@@ -497,7 +495,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> stubType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> stubType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Service Stub type. possible values: blocking, nonblocking.</p>
 </p>
@@ -507,7 +505,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> descriptorKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> descriptorKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Proto descriptor key. Key of proto descriptor.</p>
 </p>
@@ -517,7 +515,7 @@ provides includes functions to send request/error messages.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> descriptorMap<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span></li>
+                    <li> descriptorMap<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> </span></li>
                     <li>
                         <p><p>Proto descriptor map. descriptor map with all dependent descriptors.</p>
 </p>

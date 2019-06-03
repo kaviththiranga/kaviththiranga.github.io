@@ -373,9 +373,9 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
-                            <p><a href="#getGroupByKey"><b>getGroupByKey </b></a>(<a href="../../streams/UNKOWN/.html"></a>? groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> <br></p>
+                            <p><a href="#getGroupByKey"><b>getGroupByKey </b></a>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e) <b>returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> <br></p>
                         
                     </div>
                 
@@ -388,7 +388,7 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Selects only the selected fields in the select clause.</p>
 </p>
@@ -398,7 +398,7 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>The array of stream events passed to the select clause.</p>
 </p>
@@ -415,7 +415,7 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getGroupByKey">getGroupByKey</h2>
-        <p class="method-types">( <a href="../../streams/UNKOWN/.html"></a>? groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e )</p>
+        <p class="method-types">(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e)</p>
     </div>
     <p><p>Creates a unique key for each group with the given values in the group by clause.</p>
 </p>
@@ -425,7 +425,7 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                 
             <div class="params-listing">
                 <ul>
-                    <li> groupbyFunctionArray<span class="type">  <a href="../../streams/UNKOWN/.html"></a>?</span></li>
+                    <li> groupbyFunctionArray<span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> </span></li>
                     <li>
                         <p><p>Function pointer array to the lambda function which returns each group by field.</p>
 </p>
@@ -435,7 +435,7 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                 
             <div class="params-listing">
                 <ul>
-                    <li> e<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span></li>
+                    <li> e<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> </span></li>
                     <li>
                         <p><p>Stream Event object being grouped.</p>
 </p>

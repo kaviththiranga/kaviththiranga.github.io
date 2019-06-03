@@ -320,12 +320,11 @@
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="write">write</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
     </div>
     <p><p>Writes given data to the client socket.</p>
 </p>
@@ -335,7 +334,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span></li>
+                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
                     <li>
                         <p><ul>
 <li>the content that wish to send to the client socket</li>
@@ -366,7 +365,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="read">read</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length)</p>
     </div>
     <p><p>Reads data from the client socket. If the data has the specified length, then wait until that number of bytes
 are received from the client. Else, return the data available in the OS buffer.
@@ -380,7 +379,7 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> length<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>-100</li>
+                    <li> length<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- -100</li>
                     <li>
                         <p><ul>
 <li>Positive integer. Represents the number of bytes which should be read</li>
@@ -411,7 +410,7 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="close">close</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Closes the client socket connection.</p>
 </p>
@@ -435,7 +434,7 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="shutdownRead">shutdownRead</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Shutdowns the further read from socket.</p>
 </p>
@@ -457,7 +456,7 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="shutdownWrite">shutdownWrite</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Shutdowns the further write from socket.</p>
 </p>

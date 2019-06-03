@@ -297,12 +297,11 @@
                 
 
                 
-                    <h2>Remote Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="sendTo">sendTo</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="../../socket/records/Address.html">Address</a> address )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="../../socket/records/Address.html">Address</a> address)</p>
     </div>
     <p><p>Send given data to the specified remote client.</p>
 </p>
@@ -312,7 +311,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span></li>
+                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
                     <li>
                         <p><p>the content that wish to send to the client socket</p>
 </p>
@@ -322,7 +321,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> address<span class="type">  <a href="../../socket/records/Address.html">Address</a></span></li>
+                    <li> address<span class="type">  <a href="../../socket/records/Address.html">Address</a> </span></li>
                     <li>
                         <p><p>the address of the remote client socket</p>
 </p>
@@ -349,7 +348,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="receiveFrom">receiveFrom</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length)</p>
     </div>
     <p><p>Reads data from the remote client. If the data has the specified length, then wait until that number of bytes
 are received from the client. Else, return the data available in the OS buffer or wait until data receive.
@@ -361,7 +360,7 @@ If the request length is lesser than the data in the buffer, then the rest will 
                 
             <div class="params-listing">
                 <ul>
-                    <li> length<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>-100</li>
+                    <li> length<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- -100</li>
                     <li>
                         <p><p>Positive integer. Represents the number of bytes which should be read</p>
 </p>
@@ -389,7 +388,7 @@ or an error if encounters an error while reading</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="close">close</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Closes the client socket connection.</p>
 </p>

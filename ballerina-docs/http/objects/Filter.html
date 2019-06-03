@@ -335,7 +335,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="filterRequest">filterRequest</h2>
-        <p class="method-types">( <a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context )</p>
+        <p class="method-types">(<a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
     </div>
     <p><p>Request filter function. If a false is returned the response should have been sent from this function as it will
 not be dispatched to the next filter or the resource.</p>
@@ -346,7 +346,7 @@ not be dispatched to the next filter or the resource.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> caller<span class="type">  <a href="../../http/clients/Caller.html">Caller</a></span></li>
+                    <li> caller<span class="type">  <a href="../../http/clients/Caller.html">Caller</a> </span></li>
                     <li>
                         <p><p>The http caller</p>
 </p>
@@ -356,7 +356,7 @@ not be dispatched to the next filter or the resource.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> request<span class="type">  <a href="../../http/objects/Request.html">Request</a></span></li>
+                    <li> request<span class="type">  <a href="../../http/objects/Request.html">Request</a> </span></li>
                     <li>
                         <p><p>An inboud HTTP request message</p>
 </p>
@@ -366,7 +366,7 @@ not be dispatched to the next filter or the resource.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> context<span class="type">  <a href="../../http/objects/FilterContext.html">FilterContext</a></span></li>
+                    <li> context<span class="type">  <a href="../../http/objects/FilterContext.html">FilterContext</a> </span></li>
                     <li>
                         <p><p>A filter context</p>
 </p>
@@ -393,7 +393,7 @@ not be dispatched to the next filter or the resource.</p>
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="filterResponse">filterResponse</h2>
-        <p class="method-types">( <a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context )</p>
+        <p class="method-types">(<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
     </div>
     <p><p>Response filter function. If a false is returned a 500 Internal Server Error would be sent to the client.</p>
 </p>
@@ -403,7 +403,7 @@ not be dispatched to the next filter or the resource.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> response<span class="type">  <a href="../../http/objects/Response.html">Response</a></span></li>
+                    <li> response<span class="type">  <a href="../../http/objects/Response.html">Response</a> </span></li>
                     <li>
                         <p><p>An outbound HTTP response message</p>
 </p>
@@ -413,7 +413,7 @@ not be dispatched to the next filter or the resource.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> context<span class="type">  <a href="../../http/objects/FilterContext.html">FilterContext</a></span></li>
+                    <li> context<span class="type">  <a href="../../http/objects/FilterContext.html">FilterContext</a> </span></li>
                     <li>
                         <p><p>A filter context</p>
 </p>

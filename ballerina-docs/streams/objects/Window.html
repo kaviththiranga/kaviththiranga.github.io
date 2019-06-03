@@ -381,7 +381,7 @@ outputStream.publish(t);
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
                             <p><a href="#getCandidateEvents"><b>getCandidateEvents </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) <b>returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> <br></p>
                         
@@ -396,7 +396,7 @@ outputStream.publish(t);
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>The <code>process</code> function process the incoming events to the events and update the current state of the window.</p>
 </p>
@@ -406,7 +406,7 @@ outputStream.publish(t);
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>The array of stream events to be processed.</p>
 </p>
@@ -423,7 +423,7 @@ outputStream.publish(t);
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="getCandidateEvents">getCandidateEvents</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger)</p>
     </div>
     <p><p>Returns the events(State) which match with the where condition in the join clause for a given event.</p>
 </p>
@@ -433,7 +433,7 @@ outputStream.publish(t);
                 
             <div class="params-listing">
                 <ul>
-                    <li> originEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span></li>
+                    <li> originEvent<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> </span></li>
                     <li>
                         <p><p>The event against which the state or the events being held by the window is matched.</p>
 </p>
@@ -443,7 +443,7 @@ outputStream.publish(t);
                 
             <div class="params-listing">
                 <ul>
-                    <li> conditionFunc<span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code></span></li>
+                    <li> conditionFunc<span class="type">  <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> </span></li>
                     <li>
                         <p><p>The function pointer to the lambda function which contain the condition logic in where clause.</p>
 </p>
@@ -453,7 +453,7 @@ outputStream.publish(t);
                 
             <div class="params-listing">
                 <ul>
-                    <li> isLHSTrigger<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>true</li>
+                    <li> isLHSTrigger<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- true</li>
                     <li>
                         <p><p>Specify if the join is triggered when the lhs stream received the events, if so it should be
 true. Most of the time it is true. In rare cases, where the join is triggered when the rhs

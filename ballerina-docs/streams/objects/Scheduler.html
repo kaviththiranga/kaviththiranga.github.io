@@ -367,12 +367,12 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                 
                     
                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code> processFunc)</p>
+<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> processFunc)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>processFunc</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+                <li> <b>processFunc</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
                 <li>
                     
                 </li>
@@ -402,7 +402,7 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="notifyAt">notifyAt</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp)</p>
     </div>
     <p><p>Schedule to send a timer events at the given timestamp.</p>
 </p>
@@ -412,7 +412,7 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                 
             <div class="params-listing">
                 <ul>
-                    <li> timestamp<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> timestamp<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p><p>The timestamp at which the timer event will be generated and passed to the provided <code>processFunc</code>.</p>
 </p>
@@ -429,7 +429,7 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="sendTimerEvents">sendTimerEvents</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Creates the timer events.</p>
 </p>

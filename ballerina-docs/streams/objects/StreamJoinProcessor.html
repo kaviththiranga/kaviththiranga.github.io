@@ -372,12 +372,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
                     
                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code> nextProcessor, <a href="../../streams/types.html#JoinType">JoinType</a> joinType, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> onConditionFunc)</p>
+<h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessor, <a href="../../streams/types.html#JoinType">JoinType</a> joinType, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> onConditionFunc)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>nextProcessor</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#null">null</a><span>)</span> </code></span> </li>
+                <li> <b>nextProcessor</b><span class="type">  <code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code></span> </li>
                 <li>
                     
                 </li>
@@ -410,7 +410,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents) <br></p>
+                            <p><a href="#process"><b>process </b></a>(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) <br></p>
                         
                             <p><a href="#setLHS"><b>setLHS </b></a>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance) <br></p>
                         
@@ -506,7 +506,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]? streamEvents )</p>
+        <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Process the events from both <code>lhsStream</code> and the <code>rhsStream</code> and perform the joining.</p>
 </p>
@@ -516,7 +516,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]?</span></li>
+                    <li> streamEvents<span class="type">  <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] </span></li>
                     <li>
                         <p><p>Stream events being joined.</p>
 </p>
@@ -533,7 +533,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="setLHS">setLHS</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
     </div>
     <p><p>Sets the left hand side stream name and the respective window instance.</p>
 </p>
@@ -543,7 +543,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the left hand side stream.</p>
 </p>
@@ -553,7 +553,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> windowInstance<span class="type">  <a href="../../streams/objects/Window.html">Window</a></span></li>
+                    <li> windowInstance<span class="type">  <a href="../../streams/objects/Window.html">Window</a> </span></li>
                     <li>
                         <p><p>The window attached to the left hand side stream.</p>
 </p>
@@ -570,7 +570,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="setRHS">setRHS</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
     </div>
     <p><p>Sets the right hand side stream name and the respective window instance.</p>
 </p>
@@ -580,7 +580,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the right hand side stream.</p>
 </p>
@@ -590,7 +590,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> windowInstance<span class="type">  <a href="../../streams/objects/Window.html">Window</a></span></li>
+                    <li> windowInstance<span class="type">  <a href="../../streams/objects/Window.html">Window</a> </span></li>
                     <li>
                         <p><p>The window attached to the right hand side stream.</p>
 </p>
@@ -607,7 +607,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="setUnidirectionalStream">setUnidirectionalStream</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName)</p>
     </div>
     <p><p>Sets the stream by which the joining is triggered.</p>
 </p>
@@ -617,7 +617,7 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                 
             <div class="params-listing">
                 <ul>
-                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> streamName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>The name of the stream. In most cases, the joining is triggered when the events are received by
 the left hand side stream even if the right hand side stream receives the events before the left

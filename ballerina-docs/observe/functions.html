@@ -289,7 +289,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="addTagToSpan">addTagToSpan</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagValue, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagValue, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId)</p>
     </div>
     <p><p>Add a key value pair as a tag to the span.</p>
 </p>
@@ -299,7 +299,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> tagKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> tagKey<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Key of the tag</p>
 </p>
@@ -309,7 +309,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> tagValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> tagValue<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Value of the tag</p>
 </p>
@@ -319,7 +319,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> spanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>-1</li>
+                    <li> spanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- -1</li>
                     <li>
                         <p><p>Id of span to which the tags should be added or -1 to add tags to the current active span</p>
 </p>
@@ -346,7 +346,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="finishSpan">finishSpan</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId)</p>
     </div>
     <p><p>Finish the current span.</p>
 </p>
@@ -356,7 +356,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> spanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span></li>
+                    <li> spanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
                     <li>
                         <p><p>Id of span to finish</p>
 </p>
@@ -383,7 +383,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="getAllMetrics">getAllMetrics</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Retrieve all registered metrics including default metrics from the ballerina runtime, and user defined metrics.</p>
 </p>
@@ -405,7 +405,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="lookupMetric">lookupMetric</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
     </div>
     <p><p>Retrieves the specific metric that is described by the given name and tags.</p>
 </p>
@@ -415,7 +415,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the metric to lookup.</p>
 </p>
@@ -425,7 +425,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>?</span>()</li>
+                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
                     <li>
                         <p><p>The key/value pair tags that associated with the metric that should be looked up.</p>
 </p>
@@ -452,7 +452,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="startRootSpan">startRootSpan</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
     </div>
     <p><p>Start a span with no parent span.</p>
 </p>
@@ -462,7 +462,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> spanName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> spanName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the span</p>
 </p>
@@ -472,7 +472,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>?</span>()</li>
+                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
                     <li>
                         <p><p>Tags to be associated to the span</p>
 </p>
@@ -499,7 +499,7 @@
                                 <div class="method-content">
     <div class="main-method-title">
         <h2 id="startSpan">startSpan</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> parentSpanId )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> parentSpanId)</p>
     </div>
     <p><p>Start a span and create child relationship to current active span or user specified span.</p>
 </p>
@@ -509,7 +509,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> spanName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span></li>
+                    <li> spanName<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
                     <li>
                         <p><p>Name of the span</p>
 </p>
@@ -519,7 +519,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>?</span>()</li>
+                    <li> tags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
                     <li>
                         <p><p>Tags to be associated to the span</p>
 </p>
@@ -529,7 +529,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> parentSpanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>-1</li>
+                    <li> parentSpanId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- -1</li>
                     <li>
                         <p><p>Id of the parent span or -1 if parent span should be taken from system trace</p>
 </p>

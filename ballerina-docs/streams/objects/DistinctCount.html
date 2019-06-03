@@ -404,7 +404,7 @@
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="process">process</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> value, <a href="../../streams/types.html#EventType">EventType</a> eventType )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> value, <a href="../../streams/types.html#EventType">EventType</a> eventType)</p>
     </div>
     <p><p>Updates the current distinct count when a new event arrives and return the updated count. If the <code>eventType</code> is
 <code>streams:CURRENT</code>, count is increased by 1. If the <code>eventType</code> is <code>streams:EXPIRED</code>, count is descreased by 1.
@@ -416,7 +416,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                 
             <div class="params-listing">
                 <ul>
-                    <li> value<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a></span></li>
+                    <li> value<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> </span></li>
                     <li>
                         <p><p>Value being counted uniquely.</p>
 </p>
@@ -426,7 +426,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                 
             <div class="params-listing">
                 <ul>
-                    <li> eventType<span class="type">  <a href="../../streams/types.html#EventType">EventType</a></span></li>
+                    <li> eventType<span class="type">  <a href="../../streams/types.html#EventType">EventType</a> </span></li>
                     <li>
                         <p><p>Type of the incoming event <code>streams:CURRENT</code>, <code>streams:EXPIRED</code> or <code>streams:RESET</code>.</p>
 </p>
@@ -453,7 +453,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="copy">copy</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Returns a copy of the <code>DistinctCount</code> aggregator without its current state.</p>
 </p>
@@ -475,7 +475,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="saveState">saveState</h2>
-        <p class="method-types">(  )</p>
+        <p class="method-types">()</p>
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
@@ -497,7 +497,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                         <div class="method-content">
     <div class="main-method-title">
         <h2 id="restoreState">restoreState</h2>
-        <p class="method-types">( <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state )</p>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
 </p>
@@ -507,7 +507,7 @@ If the <code>eventType</code>is <code>streams:RESET</code>, count is reset, rega
                 
             <div class="params-listing">
                 <ul>
-                    <li> state<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span></li>
+                    <li> state<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> </span></li>
                     <li>
                         <p><p>A map of typed <code>any</code> values. This map contains the values to be restored from the persisted data.</p>
 </p>
