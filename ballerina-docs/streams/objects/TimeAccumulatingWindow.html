@@ -225,6 +225,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -261,11 +265,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -342,6 +358,10 @@
         
         <li>
             <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -563,6 +583,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -599,11 +623,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -683,6 +719,10 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
         </li>
         
@@ -749,42 +789,73 @@ Time accumulating window should only have one parameter (<int> timePeriod)</p>
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#initParameters"><b>initParameters </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters) 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#process"><b>process </b></a>
-    (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getCandidateEvents"><b>getCandidateEvents </b></a>
-    (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#initParameters"><b>initParameters </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters) 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#saveState"><b>saveState </b></a>
-    () 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#process"><b>process </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#restoreState"><b>restoreState </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state) 
-    <br>
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#getCandidateEvents"><b>getCandidateEvents </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) 
+        
+        <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
+        
+    </span>
+    
+</p>
+                        
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#saveState"><b>saveState </b></a>
+    </span>
+    <span class="param-details">
+        () 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
+        
+    </span>
+    
+</p>
+                        
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#restoreState"><b>restoreState </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state) 
+        
+    </span>
+    
 </p>
                         
                     </div>

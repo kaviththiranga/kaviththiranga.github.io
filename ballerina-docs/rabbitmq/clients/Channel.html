@@ -89,6 +89,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -125,11 +129,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -206,6 +222,10 @@
         
         <li>
             <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -291,6 +311,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -327,11 +351,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -411,6 +447,10 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
         </li>
         
@@ -429,7 +469,7 @@
 </div>
         <div class="main-wrapper">
             <h1>Clients : <span class="clients">Channel</span> </h1>
-            <p><p>Public Ballerina API - Ballerina interface to an AMQP <code>Channel</code>.
+            <p><p>Public ballerinaDup API - ballerinaDup interface to an AMQP <code>Channel</code>.
 To provide AMQ <code>Channel</code> related functionalities.</p>
 </p>
 
@@ -444,7 +484,7 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
             <ul>
                 <li> <b>connectionOrConnectionConfig</b><span class="type">  <a href="../../rabbitmq/records/ConnectionConfiguration.html">ConnectionConfiguration</a> | <a href="../../rabbitmq/objects/Connection.html">Connection</a></span> </li>
                 <li>
-                    <p>Holds a Ballerina RabbitMQ <code>Connection</code> object or the connection parameters.</p>
+                    <p>Holds a ballerinaDup RabbitMQ <code>Connection</code> object or the connection parameters.</p>
 
                 </li>
             </ul>
@@ -458,74 +498,109 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                     <h2>Remote Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#queueDeclare"><b>queueDeclare </b></a>
-    (<a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>? queueConfig) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#queueDeclare"><b>queueDeclare </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../rabbitmq/records/QueueConfiguration.html">QueueConfiguration</a>? queueConfig) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#exchangeDeclare"><b>exchangeDeclare </b></a>
-    (<a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a> config) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#exchangeDeclare"><b>exchangeDeclare </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../rabbitmq/records/ExchangeConfiguration.html">ExchangeConfiguration</a> config) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#queueBind"><b>queueBind </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchangeName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> bindingKey) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#queueBind"><b>queueBind </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchangeName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> bindingKey) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#basicPublish"><b>basicPublish </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> routingKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#basicPublish"><b>basicPublish </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> routingKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#queueDelete"><b>queueDelete </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#queueDelete"><b>queueDelete </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#exchangeDelete"><b>exchangeDelete </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#exchangeDelete"><b>exchangeDelete </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> exchange) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
-                            <p>
-    <a href="#queuePurge"><b>queuePurge </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#queuePurge"><b>queuePurge </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName) 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
                     </div>
@@ -535,14 +610,19 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#close"><b>close </b></a>
-    () 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#close"><b>close </b></a>
+    </span>
+    <span class="param-details">
+        () 
+        
+        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
 </p>
                         
                     </div>

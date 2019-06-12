@@ -225,6 +225,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -261,11 +265,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -342,6 +358,10 @@
         
         <li>
             <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -563,6 +583,10 @@
         </li>
         
         <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../../cache/index.html">cache</a>
         </li>
         
@@ -599,11 +623,23 @@
         </li>
         
         <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -683,6 +719,10 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
         </li>
         
@@ -702,7 +742,7 @@
 
         <div class="main-wrapper">
             <h1>Object : <span class="objects">Window</span> </h1>
-            <p><p>The <code>Window</code> abstract objects is the base object for implementing windows in Ballerina streams. The <code>process</code>
+            <p><p>The <code>Window</code> abstract objects is the base object for implementing windows in ballerinaDup streams. The <code>process</code>
 function contains the logic of processing events when events are received. <code>getCandidateEvents</code> function is used
 inside the <code>Select</code> object to return the events in the window to perform joining.
 The window names in the window objects cannot be used in the queries. Always a function which returns the specific
@@ -725,20 +765,32 @@ outputStream.publish(t);
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#process"><b>process </b></a>
-    (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-    <br>
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#process"><b>process </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
+        
+    </span>
+    
 </p>
                         
-                            <p>
-    <a href="#getCandidateEvents"><b>getCandidateEvents </b></a>
-    (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) 
+                            
+
+<p>
+    <span class="param-name">
+        <a href="#getCandidateEvents"><b>getCandidateEvents </b></a>
+    </span>
+    <span class="param-details">
+        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) 
+        
+        <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
+        
+    </span>
     
-        <span class="return-class">
-            <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
-        </span>
-    <br>
 </p>
                         
                     </div>

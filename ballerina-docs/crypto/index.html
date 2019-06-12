@@ -70,6 +70,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -106,11 +110,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -187,6 +203,10 @@
         
         <li>
             <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -254,6 +274,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -290,11 +314,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -374,6 +410,10 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
         </li>
         
@@ -397,13 +437,13 @@
 <h2>Samples</h2>
 <h3>Hashing</h3>
 <p>The sample given below shows how to use hashing functions such as <code>hashSha512</code> to calculate the hash value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/encoding;
-import ballerinaA/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/encoding;
+import ballerinaDup/io;
 
 public function main() {
      // Input value for crypto operations.
-     string input = &quot;Hello Ballerina&quot;;
+     string input = &quot;Hello ballerinaDup&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // Hashing input value using different hashing algorithms, and printing hash value using Hex encoding.
@@ -425,15 +465,15 @@ public function main() {
 </code></pre>
 <h3>HMAC Generation</h3>
 <p>The sample given below shows how to use HMAC functions such as <code>hmacSha512</code> to calculate the HMAC value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/encoding;
-import ballerinaA/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/encoding;
+import ballerinaDup/io;
 
 public function main() {
      string charEncoding = &quot;UTF-8&quot;;
 
      // Input value for crypto operations.
-     string input = &quot;Hello Ballerina&quot;;
+     string input = &quot;Hello ballerinaDup&quot;;
      byte[] inputArr = input.toByteArray(charEncoding);
 
      // The key used for HMAC generation.
@@ -459,36 +499,36 @@ public function main() {
 </code></pre>
 <h3>Calculating CRC32B Checksum</h3>
 <p>The sample given below shows how to use <code>crc32b</code> function to calculate the CRC32B checksum.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/io;
 
 public function main() {
      // Input value for cryto operations.
-     string input = &quot;Hello Ballerina&quot;;
+     string input = &quot;Hello ballerinaDup&quot;;
 
      // Hex encoded CRC32B checksum generation for input value.
      io:println(&quot;CRC32B for text: &quot; + crypto:crc32b(input));
 
      // The XML content to be hashed.
-     xml xmlContent = xml `&lt;foo&gt;Hello Ballerina&lt;/foo&gt;`;
+     xml xmlContent = xml `&lt;foo&gt;Hello ballerinaDup&lt;/foo&gt;`;
      io:println(&quot;CRC32 for xml content: &quot; + crypto:crc32b(xmlContent));
 }
 </code></pre>
 <h3>Signing</h3>
 <p>The sample given below shows how to use signing functions such as <code>signRsaSha512</code> to get the signature value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/encoding;
-import ballerinaA/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/encoding;
+import ballerinaDup/io;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello Ballerina&quot;;
+     string input = &quot;Hello ballerinaDup&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // PrivateKey used for signing operations.
-     crypto:KeyStore keyStore = { path: &quot;/home/ballerina/keystore.p12&quot;, password: &quot;ballerina&quot; };
-     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;,
-                                                            keyPassword = &quot;ballerina&quot;);
+     crypto:KeyStore keyStore = { path: &quot;/home/ballerinaDup/keystore.p12&quot;, password: &quot;ballerinaDup&quot; };
+     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;,
+                                                            keyPassword = &quot;ballerinaDup&quot;);
 
      // Signing input value using different signature algorithms, and printing the signature value
      // using Hex encoding.
@@ -510,23 +550,23 @@ public function main() returns error? {
 </code></pre>
 <h3>RSA Encryption</h3>
 <p>The sample given below shows how to use encryption function <code>encryptRsaEcb</code> and decryption function <code>decryptRsaEcb</code> to perform RSA encryption and decryption.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/encoding;
-import ballerinaA/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/encoding;
+import ballerinaDup/io;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello Ballerina&quot;;
+     string input = &quot;Hello ballerinaDup&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
-     crypto:KeyStore keyStore = { path: &quot;/home/ballerina/keystore.p12&quot;, password: &quot;ballerina&quot; };
+     crypto:KeyStore keyStore = { path: &quot;/home/ballerinaDup/keystore.p12&quot;, password: &quot;ballerinaDup&quot; };
 
      // Public key used for encryption.
-     crypto:PublicKey publicKey = check crypto:decodePublicKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;);
+     crypto:PublicKey publicKey = check crypto:decodePublicKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;);
 
      // Private key used for decryption.
-     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;,
-                                                            keyPassword = &quot;ballerina&quot;);
+     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;,
+                                                            keyPassword = &quot;ballerinaDup&quot;);
 
      // Encrypt and decrypt input value using RSA ECB PKCS1 padding.
      byte[] output = check crypto:encryptRsaEcb(inputArr, publicKey);
@@ -541,14 +581,14 @@ public function main() returns error? {
 </code></pre>
 <h3>AES Encryption</h3>
 <p>The sample given below shows how to use encryption function <code>encryptAesCbc</code> and decryption function <code>decryptAesCbc</code> to perform AES encryption and decryption.</p>
-<pre><code class="language-ballerina">import ballerinaA/crypto;
-import ballerinaA/encoding;
-import ballerinaA/io;
-import ballerinaA/math;
+<pre><code class="language-ballerinaDup">import ballerinaDup/crypto;
+import ballerinaDup/encoding;
+import ballerinaDup/io;
+import ballerinaDup/math;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello Ballerina!&quot;;
+     string input = &quot;Hello ballerinaDup!&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // Randomly generate a 128 bit key.

@@ -90,6 +90,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -126,11 +130,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -207,6 +223,10 @@
         
         <li>
             <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -294,6 +314,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -330,11 +354,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -414,6 +450,10 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
         </li>
         
@@ -439,16 +479,16 @@
 <p><code>Client</code> endpoints handle resilience in multiple ways such as load balancing, circuit breaking, endpoint timeouts, and a retry mechanism.</p>
 <p>Load balancing is used in the round robin or failover manner.</p>
 <p>When a failure occurs in the remote service, the client connections might wait for some time before a timeout occurs. Awaiting requests consume resources in the system. Circuit Breakers are used to trip after a certain number of failed requests to the remote service. Once a circuit breaker trips, it does not allow the client to send requests to the remote service for a period of time.</p>
-<p>The Ballerina circuit breaker supports tripping on HTTP error status codes and I/O errors. Failure thresholds can be configured based on a sliding window (e.g., 5 failures within 10 seconds). <code>Client</code> endpoints also support a retry mechanism that allows a client to resend failed requests periodically for a given number of times.</p>
+<p>The ballerinaDup circuit breaker supports tripping on HTTP error status codes and I/O errors. Failure thresholds can be configured based on a sliding window (e.g., 5 failures within 10 seconds). <code>Client</code> endpoints also support a retry mechanism that allows a client to resend failed requests periodically for a given number of times.</p>
 <p><code>Client</code> endpoints support Certificate Revocation List (CRL), Online Certificate Status Protocol (OCSP) and OCSP Stapling for SSL/TLS connection. They also support HTTP2, keep-alive, chunking, HTTP caching, and data compression/decompression.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/http-client-endpoint.html">Client Endpoint Example</a>, <a href="https://ballerina.io/learn/by-example/http-circuit-breaker.html">Circuit Breaker Example</a>, <a href="https://ballerina.io/learn/by-example/http-redirects.html">HTTP Redirects Example</a></p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/http-client-endpoint.html">Client Endpoint Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-circuit-breaker.html">Circuit Breaker Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-redirects.html">HTTP Redirects Example</a></p>
 <h3>Listener endpoints</h3>
 <p>A <code>Service</code> represents a collection of network-accessible entry points and can be exposed via a <code>Listener</code> endpoint. A resource represents one such entry point and can have its own path, HTTP methods, body format, 'consumes' and 'produces' content types, CORS headers, etc. In resources, <code>endpoint</code> and <code>http:Request</code> are mandatory parameters while <code>path</code> and <code>body</code> are optional.</p>
 <p>When a <code>Service</code> receives a request, it is dispatched to the best-matched resource.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/http-data-binding.html">Listener Endpoint Example</a>, <a href="https://ballerina.io/learn/by-example/http-cors.html">HTTP CORS Example</a>, <a href="https://ballerina.io/learn/by-example/http-failover.html">HTTP Failover Example</a>, <a href="https://ballerina.io/learn/by-example/http-load-balancer.html">HTTP Load Balancer Example</a></p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/http-data-binding.html">Listener Endpoint Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-cors.html">HTTP CORS Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-failover.html">HTTP Failover Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-load-balancer.html">HTTP Load Balancer Example</a></p>
 <p><code>Listener</code> endpoints can be exposed via SSL. They support Mutual SSL, Hostname Verification, and Server Name Indication (SNI) and Application Layer Protocol Negotiation (ALPN). <code>Listener</code> endpoints also support Certificate Revocation List (CRL), Online Certificate Status Protocol (OCSP), OCSP Stapling, HTTP2, keep-alive, chunking, HTTP caching, and data compression/decompression.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/mutual-ssl.html">Mutual SSL Example</a>.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/caching.html">Caching Example</a>, <a href="https://ballerina.io/learn/by-example/http-disable-chunking.html">HTTP Disable Chunking Example</a>.</p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/mutual-ssl.html">Mutual SSL Example</a>.</p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/caching.html">Caching Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-disable-chunking.html">HTTP Disable Chunking Example</a>.</p>
 <h3>WebSocket</h3>
 <p>The module also provides support for WebSocket. There are two types of WebSocket endpoints: <code>WebSocketClient</code> and
 <code>WebSocketListener</code>. Both endpoints support all WebSocket frames. The <code>WebSocketClient</code> has a callback service.</p>
@@ -459,7 +499,7 @@ resources.</p>
 <p><strong>WebSocket upgrade</strong>: During a WebSocket upgrade, the initial message received is an HTTP request. To intercept this
 request and perform the upgrade explicitly with custom headers, the user must create an HTTP resource with
 WebSocket-specific configurations as follows:</p>
-<pre><code class="language-ballerina">@http:ResourceConfig {
+<pre><code class="language-ballerinaDup">@http:ResourceConfig {
     webSocketUpgrade: {
         upgradePath: &quot;/{name}&quot;,
         upgradeService: chatApp
@@ -479,10 +519,10 @@ user in either the WebSocket service or client configuration.</p>
 <p><strong>onClose</strong>: This resource is dispatched when a close frame with a statusCode and a reason is received.</p>
 <p><strong>onError</strong>: This resource is dispatched when an error occurs in the WebSocket connection. This will always be preceded
 by a connection closure with an appropriate close frame.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/websocket-basic-sample.html">WebSocket Basic Example</a>,
-<a href="https://ballerina.io/learn/by-example/http-to-websocket-upgrade.html">HTTP to WebSocket Upgrade Example</a>,
-<a href="https://ballerina.io/learn/by-example/websocket-chat-application.html">WebSocket Chat Application</a>,
-<a href="https://ballerina.io/learn/by-example/websocket-proxy-server.html">WebSocket Proxy Server</a></p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/websocket-basic-sample.html">WebSocket Basic Example</a>,
+<a href="https://ballerinaDup.io/learn/by-example/http-to-websocket-upgrade.html">HTTP to WebSocket Upgrade Example</a>,
+<a href="https://ballerinaDup.io/learn/by-example/websocket-chat-application.html">WebSocket Chat Application</a>,
+<a href="https://ballerinaDup.io/learn/by-example/websocket-proxy-server.html">WebSocket Proxy Server</a></p>
 <h3>Logging</h3>
 <p>This module supports two types of logs:</p>
 <ul>
@@ -502,21 +542,21 @@ by a connection closure with an appropriate close frame.</p>
 </li>
 </ul>
 <p>To publish logs to a socket, both the host and port configurations must be provided.</p>
-<p>See <a href="https://ballerina.io/learn/by-example/http-access-logs.html">HTTP Access Logs Example</a>, <a href="https://ballerina.io/learn/by-example/http-trace-logs.html">HTTP Trace Logs Example</a></p>
+<p>See <a href="https://ballerinaDup.io/learn/by-example/http-access-logs.html">HTTP Access Logs Example</a>, <a href="https://ballerinaDup.io/learn/by-example/http-trace-logs.html">HTTP Trace Logs Example</a></p>
 <h2>Samples</h2>
 <p>A <code>Client</code> endpoint can be defined using the URL of the remote service that the client needs to connect with, as shown below:</p>
-<pre><code class="language-ballerina">http:Client clientEndpoint = new(&quot;https://my-simple-backend.com&quot;);
+<pre><code class="language-ballerinaDup">http:Client clientEndpoint = new(&quot;https://my-simple-backend.com&quot;);
 </code></pre>
 <p>The defined <code>Client</code> endpoint can be used to call a remote service as follows:</p>
-<pre><code class="language-ballerina">// Send a GET request to the specified endpoint.
+<pre><code class="language-ballerinaDup">// Send a GET request to the specified endpoint.
 var response = clientEndpoint-&gt;get(&quot;/get?id=123&quot;);
 </code></pre>
 <p>A <code>Listener</code> endpoint can be defined as follows:</p>
-<pre><code class="language-ballerina">// Attributes associated with the `Listener` endpoint are defined here.
+<pre><code class="language-ballerinaDup">// Attributes associated with the `Listener` endpoint are defined here.
 listener http:Listener helloWorldEP = new(9090);
 </code></pre>
 <p>Then a <code>Service</code> can be defined and attached to the above <code>Listener</code> endpoint as shown below:</p>
-<pre><code class="language-ballerina">// By default, Ballerina assumes that the service is to be exposed via HTTP/1.1.
+<pre><code class="language-ballerinaDup">// By default, ballerinaDup assumes that the service is to be exposed via HTTP/1.1.
 @http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
 service helloWorld on helloWorldEP {
 

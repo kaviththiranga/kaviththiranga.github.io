@@ -70,6 +70,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -106,11 +110,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -187,6 +203,10 @@
         
         <li>
             <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -254,6 +274,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -290,11 +314,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -374,6 +410,10 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
         </li>
         
@@ -398,8 +438,8 @@
 <h3>TCP Listener endpoints</h3>
 <p>The sample given below shows how a listener is used to listen to the incoming socket request. The <code>onConnect(socket:Caller)</code> resource function gets invoked when a new client is connected. The new client is represented using the <code>socket:Caller</code>.
 <code>onReadReady(socket:Caller)</code> resource gets invoked once the remote client sends some data.</p>
-<pre><code class="language-ballerina">import ballerinaA/log;
-import ballerinaA/socket;
+<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+import ballerinaDup/socket;
 
 listener socket:Listener server = new(61598);
 
@@ -434,12 +474,12 @@ service echoServer on server {
 </code></pre>
 <h3>TCP Client endpoints</h3>
 <p>Client endpoints are used to connect to and interact with a socket server. The client can only send the data to the server. Client's <code>callbackService</code> needs to retrieve the data from the server and do multiple requests/responses between client and the server.</p>
-<pre><code class="language-ballerina">import ballerinaA/io;
-import ballerinaA/socket;
+<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+import ballerinaDup/socket;
 
 public function main() {
     socket:Client socketClient = new({ host: &quot;localhost&quot;, port: 61598, callbackService: ClientService });
-    string msg = &quot;Hello Ballerina\n&quot;;
+    string msg = &quot;Hello ballerinaDup\n&quot;;
     byte[] c1 = msg.toByteArray(&quot;utf-8&quot;);
     var writeResult = socketClient-&gt;write(c1);
     if (writeResult is int) {
@@ -492,9 +532,9 @@ function getString(byte[] content) returns string | error {
 }
 </code></pre>
 <h3>UDP Client endpoints</h3>
-<p>This is a Ballerina UDP client sample. <code>sendTo</code> and <code>receiveFrom</code> action available to interact with remote UDP host.</p>
-<pre><code class="language-ballerina">import ballerinaA/io;
-import ballerinaA/socket;
+<p>This is a ballerinaDup UDP client sample. <code>sendTo</code> and <code>receiveFrom</code> action available to interact with remote UDP host.</p>
+<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+import ballerinaDup/socket;
 
 public function main() {
     socket:UdpClient socketClient = new;

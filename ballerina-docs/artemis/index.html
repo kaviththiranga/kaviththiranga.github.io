@@ -78,6 +78,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -114,11 +118,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -195,6 +211,10 @@
         
         <li>
             <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -270,6 +290,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -306,11 +330,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -390,6 +426,10 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
         </li>
         
@@ -413,8 +453,8 @@
 <h2>Samples</h2>
 <h3>Artemis Producer</h3>
 <p>The following program produces message to the Artemis broker.</p>
-<pre><code class="language-ballerina">import ballerinaA/artemis;
-import ballerinaA/log;
+<pre><code class="language-ballerinaDup">import ballerinaDup/artemis;
+import ballerinaDup/log;
 
 artemis:Producer prod = new({host:&quot;localhost&quot;, port:61616}, &quot;demo&quot;);
 public function main() {
@@ -433,7 +473,7 @@ public function main() {
 </code></pre>
 <h3>Artemis consumer</h3>
 <p>The following program will consume a message from the Artemis broker.</p>
-<pre><code class="language-ballerina">@artemis:ServiceConfig {
+<pre><code class="language-ballerinaDup">@artemis:ServiceConfig {
     queueConfig: {
         queueName: &quot;demo&quot;
     }
@@ -640,7 +680,7 @@ Consumers are represented by the service attaching to this listener.</p>
                         <tr>
                             <td class="module-title truncate constant" id="UNSUPPORTED"><a
                                     class="constant" href="constants.html#UNSUPPORTED">UNSUPPORTED</a></td>
-                            <td class="module-desc"><p>If the message recieved is not of the supported message type in Ballerina it will have the type as UNSUPPORTED.</p>
+                            <td class="module-desc"><p>If the message recieved is not of the supported message type in ballerinaDup it will have the type as UNSUPPORTED.</p>
 </td>
                         </tr>
                     

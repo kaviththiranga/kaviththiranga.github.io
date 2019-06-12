@@ -78,6 +78,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -114,11 +118,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -195,6 +211,10 @@
         
         <li>
             <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
         </li>
         
         <li>
@@ -270,6 +290,10 @@
         </li>
         
         <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
             <a href="../cache/index.html">cache</a>
         </li>
         
@@ -306,11 +330,23 @@
         </li>
         
         <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
             <a href="../io/index.html">io</a>
         </li>
         
         <li>
             <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
         </li>
         
         <li>
@@ -390,6 +426,10 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
         </li>
         
@@ -409,7 +449,7 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/rabbitmq</span></h1>
             <h2>Module overview</h2>
-<p>'ballerina/rabbitmq' provides the capability to connect with a RabbitMQ server and perform the following</p>
+<p>'ballerinaDup/rabbitmq' provides the capability to connect with a RabbitMQ server and perform the following</p>
 <ul>
 <li>Point to point communication (Queues)</li>
 <li>Pub/Sub (Topics)</li>
@@ -417,12 +457,12 @@
 <h2>Samples</h2>
 <h3>RabbitMQ Producer</h3>
 <p>Following program will produce a message to a RabbitMQ server</p>
-<pre><code class="language-ballerina">import ballerinaA/rabbitmq;
-import ballerinaA/log;
+<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
+import ballerinaDup/log;
 
 public function main() {
      rabbitmq:Channel chann = new({ host: &quot;localhost&quot;, port: 5672 });
-     var sendResult = chann-&gt;basicPublish(&quot;Hello from ballerina&quot;, &quot;testingDemo&quot;, exchange = &quot;&quot;);
+     var sendResult = chann-&gt;basicPublish(&quot;Hello from ballerinaDup&quot;, &quot;testingDemo&quot;, exchange = &quot;&quot;);
      if (sendResult is error) {
           log:printError(&quot;An error occurred while sending the message&quot;);
      } else {
@@ -432,8 +472,8 @@ public function main() {
 </code></pre>
 <h3>RabbitMQ Subscriber</h3>
 <p>Following program will consume a message from a RabbitMQ server</p>
-<pre><code class="language-ballerina">import ballerinaA/rabbitmq;
-import ballerinaA/log;
+<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
+import ballerinaDup/log;
 
 listener rabbitmq:ChannelListener chann = new({ host: &quot;localhost&quot;, port: 5672 });
 
@@ -498,7 +538,7 @@ service testSimpleConsumer on chann {
                                     Connection
                                 </a>
                             </td>
-                            <td class="module-desc"><p>Public Ballerina API - Interface to an AMQ <code>Connection</code>.</p>
+                            <td class="module-desc"><p>Public ballerinaDup API - Interface to an AMQ <code>Connection</code>.</p>
 </td>
                         </tr>
                     
@@ -513,7 +553,7 @@ service testSimpleConsumer on chann {
                             <td class="module-title truncate clients" id="Channel">
                                 <a class="clients"
                                    href="clients/Channel.html">Channel</a></td>
-                            <td class="module-desc"><p>Public Ballerina API - Ballerina interface to an AMQP <code>Channel</code>.
+                            <td class="module-desc"><p>Public ballerinaDup API - ballerinaDup interface to an AMQP <code>Channel</code>.
 To provide AMQ <code>Channel</code> related functionalities.</p>
 </td>
                         </tr>
@@ -529,7 +569,7 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                             <td class="module-title truncate listeners" id="ChannelListener">
                                 <a class="listeners"
                                    href="listeners/ChannelListener.html">ChannelListener</a></td>
-                            <td class="module-desc"><p>Public Ballerina API - Ballerina RabbitMQ Message Listener.
+                            <td class="module-desc"><p>Public ballerinaDup API - ballerinaDup RabbitMQ Message Listener.
 To provide a listener to consume messages from RabbitMQ.</p>
 </td>
                         </tr>
