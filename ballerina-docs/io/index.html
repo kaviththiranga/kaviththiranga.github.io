@@ -449,7 +449,7 @@ or non-blocking manner.</p>
 writing, respectively.</p>
 <h3>Byte channels</h3>
 <p>The most primitive channel is the <code>ByteChannel</code> which reads and writes 8-bit bytes.</p>
-<pre><code class="language-ballerinaDup">// Open a file in read mode.
+<pre><code class="language-ballerina">// Open a file in read mode.
 io:ReadableByteChannel readableByteChannel = io:openReadableFile(&quot;some/file.txt&quot;);
 
 // Here is how 100 bytes are read from the channel.
@@ -467,21 +467,21 @@ int|error result = writableByteChannel.write(content, 0);
 <h3>Character channels</h3>
 <p>The <code>CharacterChannel</code> is used to read and write characters. The charset encoding is specified when creating the
 <code>CharacterChannel</code>.</p>
-<pre><code class="language-ballerinaDup">// Create a `ReadableCharacterChannel` from the `ReadableByteChannel`.
+<pre><code class="language-ballerina">// Create a `ReadableCharacterChannel` from the `ReadableByteChannel`.
 var readableCharChannel = new io:ReadableCharacterChannel(readableByteChannel, &quot;UTF-8&quot;);
 </code></pre>
 <p>If a <code>ReadableCharacterChannel</code> points to a JSON or XML source, it can be read and then written, directly into a variable of
 the respective type.</p>
-<pre><code class="language-ballerinaDup">// Reading a JSON.
+<pre><code class="language-ballerina">// Reading a JSON.
 json|error result = readableCharChannel.readJson();
 </code></pre>
-<pre><code class="language-ballerinaDup">// Reading an XML.
+<pre><code class="language-ballerina">// Reading an XML.
 var result = readableCharChannel.readXml();
 </code></pre>
-<pre><code class="language-ballerinaDup">// Create a `WritableCharacterChannel` from the `WritableByteChannel`.
+<pre><code class="language-ballerina">// Create a `WritableCharacterChannel` from the `WritableByteChannel`.
 var writableCharChannel = new io:WritableCharacterChannel(writableByteChannel, &quot;UTF-8&quot;);
 </code></pre>
-<pre><code class="language-ballerinaDup">// Writing a JSON.
+<pre><code class="language-ballerina">// Writing a JSON.
 json content = {fname:&quot;Jhon&quot;, lname:&quot;Doe&quot;, age:40};
 var writeResult = writableCharChannel.writeJson(content);
 if (writeResult is error) {
@@ -491,8 +491,8 @@ if (writeResult is error) {
 }
 </code></pre>
 <h3>Record channels</h3>
-<p>ballerinaDup also supports I/O for delimited records.</p>
-<pre><code class="language-ballerinaDup">// Create a `ReadableTextRecordChannel` from the `ReadableCharacterChannel`.
+<p>ballerina also supports I/O for delimited records.</p>
+<pre><code class="language-ballerina">// Create a `ReadableTextRecordChannel` from the `ReadableCharacterChannel`.
 // Records are separated using a new line, and fields of a record are separated using a comma.
 var readableRecordsChannel = new io:ReadableTextRecordChannel(readableCharChannel, fs = &quot;,&quot;, rs = &quot;\n&quot;);
 
@@ -507,11 +507,11 @@ while (readableRecordsChannel.hasNext()) {
 }
 </code></pre>
 <p>A <code>.CSV</code> file can be read and written directly into a <code>CSVChannel</code>, as shown in this code snippet.</p>
-<pre><code class="language-ballerinaDup">// Create a `ReadableCSVChannel` from the `ReadableCharacterChannel`.
+<pre><code class="language-ballerina">// Create a `ReadableCSVChannel` from the `ReadableCharacterChannel`.
 var readableCSVChannel = new io:ReadableCSVChannel(readableCharChannel);
 </code></pre>
 <p>Records of the <code>.CSV</code> file can read directly into a table of a matching type.</p>
-<pre><code class="language-ballerinaDup">// First let’s define a type that matches a record in the CSV file.
+<pre><code class="language-ballerina">// First let’s define a type that matches a record in the CSV file.
 type Employee record {
    string id;
    string name;
@@ -534,9 +534,9 @@ if (tableResult is table&lt;Employee&gt;) {
 }
 </code></pre>
 <h3>Data Channels</h3>
-<p>ballerinaDup supports performing data i/o operations</p>
+<p>ballerina supports performing data i/o operations</p>
 <p>Person object could be serialized into a file or a network socket in the following manner.</p>
-<pre><code class="language-ballerinaDup">public type Person record {
+<pre><code class="language-ballerina">public type Person record {
     string name;
     int age;
     float income;
@@ -819,7 +819,7 @@ d              int
 f              float
 x              hex
 X              HEX (ALL_CAPS)
-s              string (This specifier is applicable for any of the supported types in ballerinaDup.
+s              string (This specifier is applicable for any of the supported types in ballerina.
 These values will be converted to their string representation.)</p>
 </td>
                         </tr>

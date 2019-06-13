@@ -449,7 +449,7 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/rabbitmq</span></h1>
             <h2>Module overview</h2>
-<p>'ballerinaDup/rabbitmq' provides the capability to connect with a RabbitMQ server and perform the following</p>
+<p>'ballerina/rabbitmq' provides the capability to connect with a RabbitMQ server and perform the following</p>
 <ul>
 <li>Point to point communication (Queues)</li>
 <li>Pub/Sub (Topics)</li>
@@ -457,12 +457,12 @@
 <h2>Samples</h2>
 <h3>RabbitMQ Producer</h3>
 <p>Following program will produce a message to a RabbitMQ server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/rabbitmq;
+import ballerina/log;
 
 public function main() {
      rabbitmq:Channel chann = new({ host: &quot;localhost&quot;, port: 5672 });
-     var sendResult = chann-&gt;basicPublish(&quot;Hello from ballerinaDup&quot;, &quot;testingDemo&quot;, exchange = &quot;&quot;);
+     var sendResult = chann-&gt;basicPublish(&quot;Hello from ballerina&quot;, &quot;testingDemo&quot;, exchange = &quot;&quot;);
      if (sendResult is error) {
           log:printError(&quot;An error occurred while sending the message&quot;);
      } else {
@@ -472,8 +472,8 @@ public function main() {
 </code></pre>
 <h3>RabbitMQ Subscriber</h3>
 <p>Following program will consume a message from a RabbitMQ server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/rabbitmq;
+import ballerina/log;
 
 listener rabbitmq:ChannelListener chann = new({ host: &quot;localhost&quot;, port: 5672 });
 
@@ -538,7 +538,7 @@ service testSimpleConsumer on chann {
                                     Connection
                                 </a>
                             </td>
-                            <td class="module-desc"><p>Public ballerinaDup API - Interface to an AMQ <code>Connection</code>.</p>
+                            <td class="module-desc"><p>Public ballerina API - Interface to an AMQ <code>Connection</code>.</p>
 </td>
                         </tr>
                     
@@ -553,7 +553,7 @@ service testSimpleConsumer on chann {
                             <td class="module-title truncate clients" id="Channel">
                                 <a class="clients"
                                    href="clients/Channel.html">Channel</a></td>
-                            <td class="module-desc"><p>Public ballerinaDup API - ballerinaDup interface to an AMQP <code>Channel</code>.
+                            <td class="module-desc"><p>Public ballerina API - ballerina interface to an AMQP <code>Channel</code>.
 To provide AMQ <code>Channel</code> related functionalities.</p>
 </td>
                         </tr>
@@ -569,7 +569,7 @@ To provide AMQ <code>Channel</code> related functionalities.</p>
                             <td class="module-title truncate listeners" id="ChannelListener">
                                 <a class="listeners"
                                    href="listeners/ChannelListener.html">ChannelListener</a></td>
-                            <td class="module-desc"><p>Public ballerinaDup API - ballerinaDup RabbitMQ Message Listener.
+                            <td class="module-desc"><p>Public ballerina API - ballerina RabbitMQ Message Listener.
 To provide a listener to consume messages from RabbitMQ.</p>
 </td>
                         </tr>

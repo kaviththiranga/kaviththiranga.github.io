@@ -441,7 +441,7 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/jms</span></h1>
             <h2>Module overview</h2>
-<p>The <code>ballerinaDup/jms</code> module provides an API to connect to an external JMS provider like ballerinaDup Message Broker or
+<p>The <code>ballerina/jms</code> module provides an API to connect to an external JMS provider like ballerina Message Broker or
 ActiveMQ.</p>
 <p>The module provides consumer and producer endpoint types for queues and topics. Following are the endpoint types
 supported by this module:</p>
@@ -461,9 +461,9 @@ supported by this module:</p>
 initialized. For other endpoints, the developer must explicitly provide a properly initialized JMS Session.</p>
 <h2>Samples</h2>
 <h3>JMS Simple Queue Consumer</h3>
-<p>Following is a simple listener program that consumes messages from a ballerinaDup Message Broker queue named <code>MyQueue</code>.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<p>Following is a simple listener program that consumes messages from a ballerina Message Broker queue named <code>MyQueue</code>.</p>
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Create a simple queue receiver.
 listener jms:SimpleQueueReceiver consumerEP = new({
@@ -488,21 +488,21 @@ service jmsListener on consumerEP {
 }
 </code></pre>
 <h3>JMS Simple Topic publisher.</h3>
-<p>Following is a simple topic publisher program that sends messages to a ballerinaDup Message Broker topic named <code>MyTopic</code>.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<p>Following is a simple topic publisher program that sends messages to a ballerina Message Broker topic named <code>MyTopic</code>.</p>
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Create a topic publisher.
 jms:SimpleTopicPublisher topicPublisher = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
     providerUrl: &quot;tcp://localhost:61616&quot;,
     acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;,
-    topicPattern: &quot;ballerinaDupTopic&quot;
+    topicPattern: &quot;ballerinaTopic&quot;
 });
 
 public function main(string... args) {
     // Create a text message.
-    var msg = topicPublisher.session.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = topicPublisher.session.createTextMessage(&quot;Hello from ballerina&quot;);
     if (msg is jms:Message) {
         var result = topicPublisher-&gt;send(msg);
         if (result is error) {
@@ -515,8 +515,8 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Queue Message Receiver</h3>
 <p>Following is a listener program that explicitly initializes a JMS session to be used in the consumer.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Initialize a JMS connection with the provider.
 jms:Connection conn = new({
@@ -550,8 +550,8 @@ service jmsListener on consumerEP {
 </code></pre>
 <h3>JMS Queue Message Producer</h3>
 <p>Following is a queue sender program that explicitly initializes a JMS session to be used in the producer.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Initialize a JMS connection with the provider.
 jms:Connection jmsConnection = new({
@@ -568,7 +568,7 @@ jms:QueueSender queueSender = new(jmsSession, queueName = &quot;MyQueue&quot;);
 
 public function main(string... args) {
     // Create a text message.
-    var msg = jmsSession.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = jmsSession.createTextMessage(&quot;Hello from ballerina&quot;);
     if (msg is error) {
         log:printError(&quot;Error occurred while creating message&quot;, err = msg);
     } else {
@@ -581,8 +581,8 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Topic Subscriber</h3>
 <p>Following is a topic subscriber program that subscribes to a particular JMS topic.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 jms:Connection conn = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
@@ -608,8 +608,8 @@ service jmsListener on subscriberEndpoint {
 </code></pre>
 <h3>JMS Topic Producer</h3>
 <p>Following is a topic producer program that publishes to a particular JMS topic.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 jms:Connection jmsConnection = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
@@ -623,7 +623,7 @@ jms:Session jmsSession = new(jmsConnection, {
 jms:TopicPublisher topicPublisher = new(jmsSession, topicPattern = &quot;MyTopic&quot;);
 
 public function main(string... args) {
-    var msg = jmsSession.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = jmsSession.createTextMessage(&quot;Hello from ballerina&quot;);
     if (msg is error) {
         log:printError(&quot;Error occurred while creating message&quot;, err = msg);
     } else {

@@ -417,42 +417,42 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/openapi</span></h1>
             <h2>Module overview</h2>
-<p>This module provides the following code generation capabilities to ballerinaDup:</p>
+<p>This module provides the following code generation capabilities to ballerina:</p>
 <ol>
-<li>Generate the ballerinaDup code for a given OpenAPI definition.</li>
-<li>Generate the client stub for an existing ballerinaDup service at build time.</li>
-<li>Export the OpenAPI definition of a ballerinaDup service.</li>
+<li>Generate the ballerina code for a given OpenAPI definition.</li>
+<li>Generate the client stub for an existing ballerina service at build time.</li>
+<li>Export the OpenAPI definition of a ballerina service.</li>
 </ol>
-<p>The <code>openapi</code> command in ballerinaDup is used for OpenAPI to ballerinaDup and ballerinaDup to OpenAPI code generation.
-Code generation from OpenAPI to ballerinaDup can produce <code>mock services</code> and <code>client stubs</code>.</p>
+<p>The <code>openapi</code> command in ballerina is used for OpenAPI to ballerina and ballerina to OpenAPI code generation.
+Code generation from OpenAPI to ballerina can produce <code>mock services</code> and <code>client stubs</code>.</p>
 <p>For build time client stub generation, annotation support is provided.</p>
 <h3>Mock Service from OpenAPI</h3>
-<p><code>ballerinaDup openapi gen-service &lt;openapifile&gt; [-m &lt;module-name&gt;|--module &lt;module-name&gt;] [-o &lt;path&gt;|--output&lt;path&gt;]</code></p>
-<p>Generates a ballerinaDup service for the OpenAPI file.</p>
+<p><code>ballerina openapi gen-service &lt;openapifile&gt; [-m &lt;module-name&gt;|--module &lt;module-name&gt;] [-o &lt;path&gt;|--output&lt;path&gt;]</code></p>
+<p>Generates a ballerina service for the OpenAPI file.</p>
 <p>This generated service is a mock version of the actual service. Generated sources contain the service definition in <code>gen/</code> and the resource implementation file in the module root directory with the suffix <code>_impl</code>. The <code>_impl</code> file is not overwritten by code regeneration.</p>
 <h3>Client Stub from OpenAPI</h3>
-<p><code>ballerinaDup openapi gen-client &lt;openapifile&gt; [-m &lt;module-name&gt;|--module &lt;module-name&gt;] [-o &lt;path&gt;|--output&lt;path&gt;]</code></p>
-<p>Generates a ballerinaDup client stub for the service defined in a OpenAPI file.</p>
+<p><code>ballerina openapi gen-client &lt;openapifile&gt; [-m &lt;module-name&gt;|--module &lt;module-name&gt;] [-o &lt;path&gt;|--output&lt;path&gt;]</code></p>
+<p>Generates a ballerina client stub for the service defined in a OpenAPI file.</p>
 <p>This client can be used in client applications to call the service defined in the OpenAPI file.</p>
 <h3>Service to OpenAPI Export</h3>
-<p><code>ballerinaDup openapi export &lt;balfile&gt; [-o &lt;path&gt;|--output&lt;path&gt;] [-s &lt;servicename&gt;|--service &lt;servicename&gt;]</code></p>
-<p>Export the ballerinaDup service to a definition of OpenApi Specification 3.0.
-For the export to work properly, the input ballerinaDup service should be defined using basic service and resource level HTTP annotations.</p>
+<p><code>ballerina openapi export &lt;balfile&gt; [-o &lt;path&gt;|--output&lt;path&gt;] [-s &lt;servicename&gt;|--service &lt;servicename&gt;]</code></p>
+<p>Export the ballerina service to a definition of OpenApi Specification 3.0.
+For the export to work properly, the input ballerina service should be defined using basic service and resource level HTTP annotations.</p>
 <h3>Client Stub for Service</h3>
-<p>Generates a ballerinaDup client stub to communicate with a ballerinaDup service.</p>
+<p>Generates a ballerina client stub to communicate with a ballerina service.</p>
 <p>All endpoint(s) that are used for client stub generation should be marked with the <code>@openapi:ClientEndpoint</code> annotation. If not, there might be errors during client stub generation. Endpoints that are not marked with this annotation are not picked for client stub generation.
 The <code>@openapi:ClientConfig { generate: true }</code> annotation is used to enable or disable client stub generation per service.</p>
 <h2>Samples</h2>
 <h3>Mock Service From OpenAPI</h3>
-<p><code>ballerinaDup openapi gen-service hello_service.yaml -p hello_service</code></p>
+<p><code>ballerina openapi gen-service hello_service.yaml -p hello_service</code></p>
 <h3>Client Stub From OpenAPI</h3>
-<p><code>ballerinaDup openapi gen-client hello_service.yaml -p hello_client</code></p>
+<p><code>ballerina openapi gen-client hello_service.yaml -p hello_client</code></p>
 <h3>OpenAPI From Service</h3>
-<p><code>ballerinaDup openapi export hello_service.bal</code></p>
+<p><code>ballerina openapi export hello_service.bal</code></p>
 <h3>Client stub From Service</h3>
-<pre><code class="language-ballerinaDup">import ballerinaDup/http;
-import ballerinaDup/log;
-import ballerinaDup/openapi;
+<pre><code class="language-ballerina">import ballerina/http;
+import ballerina/log;
+import ballerina/openapi;
 
 // Define this endpoint as a selected endpoint for client generation.
 @openapi:ClientEndpoint
@@ -546,7 +546,7 @@ service Hello on helloEp {
                             <td class="module-title truncate records" id="MultiResourceInformation">
                                 <a class="records"
                                    href="records/MultiResourceInformation.html">MultiResourceInformation</a></td>
-                            <td class="module-desc">Model for multi openapi operation definition for ballerinaDup resource.
+                            <td class="module-desc">Model for multi openapi operation definition for ballerina resource.
 </td>
                         </tr>
                     
@@ -594,7 +594,7 @@ service Hello on helloEp {
                             <td class="module-title truncate records" id="ServiceInformation">
                                 <a class="records"
                                    href="records/ServiceInformation.html">ServiceInformation</a></td>
-                            <td class="module-desc">Model for additional OpenAPI information of a ballerinaDup service.
+                            <td class="module-desc">Model for additional OpenAPI information of a ballerina service.
 </td>
                         </tr>
                     
@@ -650,21 +650,21 @@ service Hello on helloEp {
                         <tr>
                             <td class="module-title truncate annotations" id="MultiResourceInfo"><a
                                     class="annotations" href="annotations.html#MultiResourceInfo">MultiResourceInfo</a></td>
-                            <td class="module-desc"><p>Annotation for multi OpenAPI operation information of a ballerinaDup resource.</p>
+                            <td class="module-desc"><p>Annotation for multi OpenAPI operation information of a ballerina resource.</p>
 </td>
                         </tr>
                     
                         <tr>
                             <td class="module-title truncate annotations" id="ResourceInfo"><a
                                     class="annotations" href="annotations.html#ResourceInfo">ResourceInfo</a></td>
-                            <td class="module-desc"><p>Annotation for additional OpenAPI information of a ballerinaDup resource.</p>
+                            <td class="module-desc"><p>Annotation for additional OpenAPI information of a ballerina resource.</p>
 </td>
                         </tr>
                     
                         <tr>
                             <td class="module-title truncate annotations" id="ServiceInfo"><a
                                     class="annotations" href="annotations.html#ServiceInfo">ServiceInfo</a></td>
-                            <td class="module-desc"><p>Annotation for additional OpenAPI information of a ballerinaDup service.</p>
+                            <td class="module-desc"><p>Annotation for additional OpenAPI information of a ballerina service.</p>
 </td>
                         </tr>
                     

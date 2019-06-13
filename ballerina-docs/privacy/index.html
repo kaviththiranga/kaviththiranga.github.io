@@ -417,7 +417,7 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/privacy</span></h1>
             <h2>Module overview</h2>
-<p>The privacy module acts as the foundation in making the ballerinaDup a privacy-aware programming
+<p>The privacy module acts as the foundation in making the ballerina a privacy-aware programming
 language. The module provides the required utility functions
 that allow pseudonymization, de-pseudonymization, and deletion of
 Personally Identifiable Information (PII).</p>
@@ -430,10 +430,10 @@ can be used to obtain the actual PII value and give the pseudonymized
 identifier. PII can be deleted from the store using the <code>delete</code>
 function.</p>
 <h2>Samples</h2>
-<pre><code class="language-ballerinaDup">import ballerinaDup/h2;
-import ballerinaDup/io;
-import ballerinaDup/privacy;
-import ballerinaDup/sql;
+<pre><code class="language-ballerina">import ballerina/h2;
+import ballerina/io;
+import ballerina/privacy;
+import ballerina/sql;
 
 h2:Client testDB = new({
     path: &quot;./H2PIIStore/&quot;,
