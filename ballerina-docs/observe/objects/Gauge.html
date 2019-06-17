@@ -453,7 +453,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Gauge</span> </h1>
+            <h1><span class="">observe : object -</span> <span class="objects">Gauge</span> </h1>
             <p><p>This represents the metric type - gauge, that can hold instantaneous, increased or decreased value
 during the usage.</p>
 </p>
@@ -686,43 +686,43 @@ of the gauge during its usage.</p>
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="register">register</h2>
+    <div class="main-method-title here" id="register">
+        <h2> register </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Register the gauge metric instance with the Metric Registry.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns error if there is any metric registered already with the same name
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns error if there is any metric registered already with the same name
 but different parameters or in a different kind.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unregister">unregister</h2>
+    <div class="main-method-title here" id="unregister">
+        <h2> unregister </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="increment">increment</h2>
+    <div class="main-method-title here" id="increment">
+        <h2> increment </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
     </div>
     <p><p>Increment the gauge's value by an amount.</p>
@@ -745,12 +745,12 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="decrement">decrement</h2>
+    <div class="main-method-title here" id="decrement">
+        <h2> decrement </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
     </div>
     <p><p>Decrement the gauge's value by an amount.</p>
@@ -773,12 +773,12 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setValue">setValue</h2>
+    <div class="main-method-title here" id="setValue">
+        <h2> setValue </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
     </div>
     <p><p>Sets the instantaneous value for gauge.</p>
@@ -800,52 +800,52 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getValue">getValue</h2>
+    <div class="main-method-title here" id="getValue">
+        <h2> getValue </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Retrieves the gauge's current value.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a></span>)</li>
-                    <li><p>The current value of the gauge.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a></span>)</li>
+                <li><p>The current value of the gauge.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getSnapshot">getSnapshot</h2>
+    <div class="main-method-title here" id="getSnapshot">
+        <h2> getSnapshot </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Retrieves statistics snapshots based on the statistics configs of the gauge.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../observe/records/Snapshot.html">Snapshot</a>[]?</span>)</li>
-                    <li><p>Array of the statistics snapshots.
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../observe/records/Snapshot.html">Snapshot</a>[]?</span>)</li>
+                <li><p>Array of the statistics snapshots.
 If there is no statisticsConfigs provided, then it will be nil.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

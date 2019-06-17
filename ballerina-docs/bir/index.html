@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Docs - ballerina/bir</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+    <div class="navi-wrapper">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+            <div class="primary-list">
+    <a href="../bir/index.html">
+        <h3>bir</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../bir/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#types">Types</a>
+            </li>
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="ui vertical sidebar menu">
+        <div class="navi-wrapper-sidebar">
+            <div class="navi-wrapper-content">
+                <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+                
+                <div class="primary-list">
+    <a href="../bir/index.html">
+        <h3>bir</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../bir/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#types">Types</a>
+            </li>
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+                <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper pusher">
+        <div>
+    <a class="toc item"> 
+        <img src="../html-template-resources/images/menu.svg">
+    </a>
+</div>
+        <div class="main-wrapper module-wrapper">
+                <h1>Module : <span class="modules">ballerina/bir</span></h1>
+            
+
+            
+                <h2><a name="records">Records</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="AsyncCall">
+                                <a class="records"
+                                   href="records/AsyncCall.html">AsyncCall</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BArrayType">
+                                <a class="records"
+                                   href="records/BArrayType.html">BArrayType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BAttachedFunction">
+                                <a class="records"
+                                   href="records/BAttachedFunction.html">BAttachedFunction</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BErrorType">
+                                <a class="records"
+                                   href="records/BErrorType.html">BErrorType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BFutureType">
+                                <a class="records"
+                                   href="records/BFutureType.html">BFutureType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BInvokableType">
+                                <a class="records"
+                                   href="records/BInvokableType.html">BInvokableType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BMapType">
+                                <a class="records"
+                                   href="records/BMapType.html">BMapType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BObjectField">
+                                <a class="records"
+                                   href="records/BObjectField.html">BObjectField</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BObjectType">
+                                <a class="records"
+                                   href="records/BObjectType.html">BObjectType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BRecordField">
+                                <a class="records"
+                                   href="records/BRecordField.html">BRecordField</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BRecordType">
+                                <a class="records"
+                                   href="records/BRecordType.html">BRecordType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BTupleType">
+                                <a class="records"
+                                   href="records/BTupleType.html">BTupleType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BUnionType">
+                                <a class="records"
+                                   href="records/BUnionType.html">BUnionType</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BasicBlock">
+                                <a class="records"
+                                   href="records/BasicBlock.html">BasicBlock</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="BinaryOp">
+                                <a class="records"
+                                   href="records/BinaryOp.html">BinaryOp</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Branch">
+                                <a class="records"
+                                   href="records/Branch.html">Branch</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Call">
+                                <a class="records"
+                                   href="records/Call.html">Call</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ConstPool">
+                                <a class="records"
+                                   href="records/ConstPool.html">ConstPool</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ConstantLoad">
+                                <a class="records"
+                                   href="records/ConstantLoad.html">ConstantLoad</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="DiagnosticPos">
+                                <a class="records"
+                                   href="records/DiagnosticPos.html">DiagnosticPos</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ErrorEntry">
+                                <a class="records"
+                                   href="records/ErrorEntry.html">ErrorEntry</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="FPLoad">
+                                <a class="records"
+                                   href="records/FPLoad.html">FPLoad</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="FieldAccess">
+                                <a class="records"
+                                   href="records/FieldAccess.html">FieldAccess</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Function">
+                                <a class="records"
+                                   href="records/Function.html">Function</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="GOTO">
+                                <a class="records"
+                                   href="records/GOTO.html">GOTO</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="GlobalVariableDcl">
+                                <a class="records"
+                                   href="records/GlobalVariableDcl.html">GlobalVariableDcl</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ImportModule">
+                                <a class="records"
+                                   href="records/ImportModule.html">ImportModule</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Instruction">
+                                <a class="records"
+                                   href="records/Instruction.html">Instruction</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="IsLike">
+                                <a class="records"
+                                   href="records/IsLike.html">IsLike</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="ModuleID">
+                                <a class="records"
+                                   href="records/ModuleID.html">ModuleID</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Move">
+                                <a class="records"
+                                   href="records/Move.html">Move</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Name">
+                                <a class="records"
+                                   href="records/Name.html">Name</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="NewArray">
+                                <a class="records"
+                                   href="records/NewArray.html">NewArray</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="NewError">
+                                <a class="records"
+                                   href="records/NewError.html">NewError</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="NewInstance">
+                                <a class="records"
+                                   href="records/NewInstance.html">NewInstance</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="NewMap">
+                                <a class="records"
+                                   href="records/NewMap.html">NewMap</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Package">
+                                <a class="records"
+                                   href="records/Package.html">Package</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Panic">
+                                <a class="records"
+                                   href="records/Panic.html">Panic</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Return">
+                                <a class="records"
+                                   href="records/Return.html">Return</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Self">
+                                <a class="records"
+                                   href="records/Self.html">Self</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Terminator">
+                                <a class="records"
+                                   href="records/Terminator.html">Terminator</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="TypeCast">
+                                <a class="records"
+                                   href="records/TypeCast.html">TypeCast</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="TypeDef">
+                                <a class="records"
+                                   href="records/TypeDef.html">TypeDef</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="TypeTest">
+                                <a class="records"
+                                   href="records/TypeTest.html">TypeTest</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="VarRef">
+                                <a class="records"
+                                   href="records/VarRef.html">VarRef</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="VariableDcl">
+                                <a class="records"
+                                   href="records/VariableDcl.html">VariableDcl</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Wait">
+                                <a class="records"
+                                   href="records/Wait.html">Wait</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+                <h2><a name="objects">Objects</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="BIRContext">
+                                <a class="objects"
+                                   href="objects/BIRContext.html">
+                                    BIRContext
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>TODO Docs</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="BirChannelReader">
+                                <a class="objects"
+                                   href="objects/BirChannelReader.html">
+                                    BirChannelReader
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="BirEmitter">
+                                <a class="objects"
+                                   href="objects/BirEmitter.html">
+                                    BirEmitter
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="ChannelReader">
+                                <a class="objects"
+                                   href="objects/ChannelReader.html">
+                                    ChannelReader
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="ConstPoolParser">
+                                <a class="objects"
+                                   href="objects/ConstPoolParser.html">
+                                    ConstPoolParser
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="FuncBodyParser">
+                                <a class="objects"
+                                   href="objects/FuncBodyParser.html">
+                                    FuncBodyParser
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="PackageParser">
+                                <a class="objects"
+                                   href="objects/PackageParser.html">
+                                    PackageParser
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="TypeParser">
+                                <a class="objects"
+                                   href="objects/TypeParser.html">
+                                    TypeParser
+                                </a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+
+            
+
+            
+                <h2><a name="functions">Functions</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="parseDiagnosticPos"><a
+                                    class="functions" href="functions.html#parseDiagnosticPos">parseDiagnosticPos</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="parseVarKind"><a
+                                    class="functions" href="functions.html#parseVarKind">parseVarKind</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="parseVarScope"><a
+                                    class="functions" href="functions.html#parseVarScope">parseVarScope</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="parseVisibility"><a
+                                    class="functions" href="functions.html#parseVisibility">parseVisibility</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="serialize"><a
+                                    class="functions" href="functions.html#serialize">serialize</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+                <h2><a name="constants">Constants</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_ADD"><a
+                                    class="constant" href="constants.html#BINARY_ADD">BINARY_ADD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_SUB"><a
+                                    class="constant" href="constants.html#BINARY_SUB">BINARY_SUB</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_MUL"><a
+                                    class="constant" href="constants.html#BINARY_MUL">BINARY_MUL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_DIV"><a
+                                    class="constant" href="constants.html#BINARY_DIV">BINARY_DIV</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_EQUAL"><a
+                                    class="constant" href="constants.html#BINARY_EQUAL">BINARY_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_NOT_EQUAL"><a
+                                    class="constant" href="constants.html#BINARY_NOT_EQUAL">BINARY_NOT_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_GREATER_THAN"><a
+                                    class="constant" href="constants.html#BINARY_GREATER_THAN">BINARY_GREATER_THAN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_GREATER_EQUAL"><a
+                                    class="constant" href="constants.html#BINARY_GREATER_EQUAL">BINARY_GREATER_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_LESS_THAN"><a
+                                    class="constant" href="constants.html#BINARY_LESS_THAN">BINARY_LESS_THAN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_LESS_EQUAL"><a
+                                    class="constant" href="constants.html#BINARY_LESS_EQUAL">BINARY_LESS_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_AND"><a
+                                    class="constant" href="constants.html#BINARY_AND">BINARY_AND</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="BINARY_OR"><a
+                                    class="constant" href="constants.html#BINARY_OR">BINARY_OR</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_MOVE"><a
+                                    class="constant" href="constants.html#INS_KIND_MOVE">INS_KIND_MOVE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_CONST_LOAD"><a
+                                    class="constant" href="constants.html#INS_KIND_CONST_LOAD">INS_KIND_CONST_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_NEW_MAP"><a
+                                    class="constant" href="constants.html#INS_KIND_NEW_MAP">INS_KIND_NEW_MAP</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_NEW_INST"><a
+                                    class="constant" href="constants.html#INS_KIND_NEW_INST">INS_KIND_NEW_INST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_MAP_STORE"><a
+                                    class="constant" href="constants.html#INS_KIND_MAP_STORE">INS_KIND_MAP_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_NEW_ARRAY"><a
+                                    class="constant" href="constants.html#INS_KIND_NEW_ARRAY">INS_KIND_NEW_ARRAY</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_ARRAY_STORE"><a
+                                    class="constant" href="constants.html#INS_KIND_ARRAY_STORE">INS_KIND_ARRAY_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_MAP_LOAD"><a
+                                    class="constant" href="constants.html#INS_KIND_MAP_LOAD">INS_KIND_MAP_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_ARRAY_LOAD"><a
+                                    class="constant" href="constants.html#INS_KIND_ARRAY_LOAD">INS_KIND_ARRAY_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_NEW_ERROR"><a
+                                    class="constant" href="constants.html#INS_KIND_NEW_ERROR">INS_KIND_NEW_ERROR</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_TYPE_CAST"><a
+                                    class="constant" href="constants.html#INS_KIND_TYPE_CAST">INS_KIND_TYPE_CAST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_IS_LIKE"><a
+                                    class="constant" href="constants.html#INS_KIND_IS_LIKE">INS_KIND_IS_LIKE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_TYPE_TEST"><a
+                                    class="constant" href="constants.html#INS_KIND_TYPE_TEST">INS_KIND_TYPE_TEST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_OBJECT_STORE"><a
+                                    class="constant" href="constants.html#INS_KIND_OBJECT_STORE">INS_KIND_OBJECT_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_OBJECT_LOAD"><a
+                                    class="constant" href="constants.html#INS_KIND_OBJECT_LOAD">INS_KIND_OBJECT_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_KIND_FP_LOAD"><a
+                                    class="constant" href="constants.html#INS_KIND_FP_LOAD">INS_KIND_FP_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_GOTO"><a
+                                    class="constant" href="constants.html#TERMINATOR_GOTO">TERMINATOR_GOTO</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_CALL"><a
+                                    class="constant" href="constants.html#TERMINATOR_CALL">TERMINATOR_CALL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_ASYNC_CALL"><a
+                                    class="constant" href="constants.html#TERMINATOR_ASYNC_CALL">TERMINATOR_ASYNC_CALL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_BRANCH"><a
+                                    class="constant" href="constants.html#TERMINATOR_BRANCH">TERMINATOR_BRANCH</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_RETURN"><a
+                                    class="constant" href="constants.html#TERMINATOR_RETURN">TERMINATOR_RETURN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_PANIC"><a
+                                    class="constant" href="constants.html#TERMINATOR_PANIC">TERMINATOR_PANIC</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TERMINATOR_WAIT"><a
+                                    class="constant" href="constants.html#TERMINATOR_WAIT">TERMINATOR_WAIT</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_LOCAL"><a
+                                    class="constant" href="constants.html#VAR_KIND_LOCAL">VAR_KIND_LOCAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_TEMP"><a
+                                    class="constant" href="constants.html#VAR_KIND_TEMP">VAR_KIND_TEMP</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_RETURN"><a
+                                    class="constant" href="constants.html#VAR_KIND_RETURN">VAR_KIND_RETURN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_ARG"><a
+                                    class="constant" href="constants.html#VAR_KIND_ARG">VAR_KIND_ARG</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_GLOBAL"><a
+                                    class="constant" href="constants.html#VAR_KIND_GLOBAL">VAR_KIND_GLOBAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_KIND_SELF"><a
+                                    class="constant" href="constants.html#VAR_KIND_SELF">VAR_KIND_SELF</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_SCOPE_GLOBAL"><a
+                                    class="constant" href="constants.html#VAR_SCOPE_GLOBAL">VAR_SCOPE_GLOBAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VAR_SCOPE_FUNCTION"><a
+                                    class="constant" href="constants.html#VAR_SCOPE_FUNCTION">VAR_SCOPE_FUNCTION</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="ARRAY_STATE_CLOSED_SEALED"><a
+                                    class="constant" href="constants.html#ARRAY_STATE_CLOSED_SEALED">ARRAY_STATE_CLOSED_SEALED</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="ARRAY_STATE_OPEN_SEALED"><a
+                                    class="constant" href="constants.html#ARRAY_STATE_OPEN_SEALED">ARRAY_STATE_OPEN_SEALED</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="ARRAY_STATE_UNSEALED"><a
+                                    class="constant" href="constants.html#ARRAY_STATE_UNSEALED">ARRAY_STATE_UNSEALED</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_ANY"><a
+                                    class="constant" href="constants.html#TYPE_ANY">TYPE_ANY</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_ANYDATA"><a
+                                    class="constant" href="constants.html#TYPE_ANYDATA">TYPE_ANYDATA</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_NONE"><a
+                                    class="constant" href="constants.html#TYPE_NONE">TYPE_NONE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_NIL"><a
+                                    class="constant" href="constants.html#TYPE_NIL">TYPE_NIL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_INT"><a
+                                    class="constant" href="constants.html#TYPE_INT">TYPE_INT</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_FLOAT"><a
+                                    class="constant" href="constants.html#TYPE_FLOAT">TYPE_FLOAT</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_BOOLEAN"><a
+                                    class="constant" href="constants.html#TYPE_BOOLEAN">TYPE_BOOLEAN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_STRING"><a
+                                    class="constant" href="constants.html#TYPE_STRING">TYPE_STRING</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_BYTE"><a
+                                    class="constant" href="constants.html#TYPE_BYTE">TYPE_BYTE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="TYPE_JSON"><a
+                                    class="constant" href="constants.html#TYPE_JSON">TYPE_JSON</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VISIBILITY_PACKAGE_PRIVATE"><a
+                                    class="constant" href="constants.html#VISIBILITY_PACKAGE_PRIVATE">VISIBILITY_PACKAGE_PRIVATE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VISIBILITY_PRIVATE"><a
+                                    class="constant" href="constants.html#VISIBILITY_PRIVATE">VISIBILITY_PRIVATE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="VISIBILITY_PUBLIC"><a
+                                    class="constant" href="constants.html#VISIBILITY_PUBLIC">VISIBILITY_PUBLIC</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_GOTO"><a
+                                    class="constant" href="constants.html#INS_GOTO">INS_GOTO</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_CALL"><a
+                                    class="constant" href="constants.html#INS_CALL">INS_CALL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_BRANCH"><a
+                                    class="constant" href="constants.html#INS_BRANCH">INS_BRANCH</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_RETURN"><a
+                                    class="constant" href="constants.html#INS_RETURN">INS_RETURN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_ASYNC_CALL"><a
+                                    class="constant" href="constants.html#INS_ASYNC_CALL">INS_ASYNC_CALL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_WAIT"><a
+                                    class="constant" href="constants.html#INS_WAIT">INS_WAIT</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_MOVE"><a
+                                    class="constant" href="constants.html#INS_MOVE">INS_MOVE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_CONST_LOAD"><a
+                                    class="constant" href="constants.html#INS_CONST_LOAD">INS_CONST_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_NEW_MAP"><a
+                                    class="constant" href="constants.html#INS_NEW_MAP">INS_NEW_MAP</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_MAP_STORE"><a
+                                    class="constant" href="constants.html#INS_MAP_STORE">INS_MAP_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_MAP_LOAD"><a
+                                    class="constant" href="constants.html#INS_MAP_LOAD">INS_MAP_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_NEW_ARRAY"><a
+                                    class="constant" href="constants.html#INS_NEW_ARRAY">INS_NEW_ARRAY</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_ARRAY_STORE"><a
+                                    class="constant" href="constants.html#INS_ARRAY_STORE">INS_ARRAY_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_ARRAY_LOAD"><a
+                                    class="constant" href="constants.html#INS_ARRAY_LOAD">INS_ARRAY_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_NEW_ERROR"><a
+                                    class="constant" href="constants.html#INS_NEW_ERROR">INS_NEW_ERROR</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_TYPE_CAST"><a
+                                    class="constant" href="constants.html#INS_TYPE_CAST">INS_TYPE_CAST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_IS_LIKE"><a
+                                    class="constant" href="constants.html#INS_IS_LIKE">INS_IS_LIKE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_TYPE_TEST"><a
+                                    class="constant" href="constants.html#INS_TYPE_TEST">INS_TYPE_TEST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_NEW_INST"><a
+                                    class="constant" href="constants.html#INS_NEW_INST">INS_NEW_INST</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_OBJECT_STORE"><a
+                                    class="constant" href="constants.html#INS_OBJECT_STORE">INS_OBJECT_STORE</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_OBJECT_LOAD"><a
+                                    class="constant" href="constants.html#INS_OBJECT_LOAD">INS_OBJECT_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_PANIC"><a
+                                    class="constant" href="constants.html#INS_PANIC">INS_PANIC</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_FP_LOAD"><a
+                                    class="constant" href="constants.html#INS_FP_LOAD">INS_FP_LOAD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_ADD"><a
+                                    class="constant" href="constants.html#INS_ADD">INS_ADD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_SUB"><a
+                                    class="constant" href="constants.html#INS_SUB">INS_SUB</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_MUL"><a
+                                    class="constant" href="constants.html#INS_MUL">INS_MUL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_DIV"><a
+                                    class="constant" href="constants.html#INS_DIV">INS_DIV</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_MOD"><a
+                                    class="constant" href="constants.html#INS_MOD">INS_MOD</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_EQUAL"><a
+                                    class="constant" href="constants.html#INS_EQUAL">INS_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_NOT_EQUAL"><a
+                                    class="constant" href="constants.html#INS_NOT_EQUAL">INS_NOT_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_GREATER_THAN"><a
+                                    class="constant" href="constants.html#INS_GREATER_THAN">INS_GREATER_THAN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_GREATER_EQUAL"><a
+                                    class="constant" href="constants.html#INS_GREATER_EQUAL">INS_GREATER_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_LESS_THAN"><a
+                                    class="constant" href="constants.html#INS_LESS_THAN">INS_LESS_THAN</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INS_LESS_EQUAL"><a
+                                    class="constant" href="constants.html#INS_LESS_EQUAL">INS_LESS_EQUAL</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+
+            
+
+            
+                <h2><a name="types">Types</a></h2>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="ArgVarKind">
+                                <a class="types" href="types.html#ArgVarKind">ArgVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="ArrayState">
+                                <a class="types" href="types.html#ArrayState">ArrayState</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BJSONType">
+                                <a class="types" href="types.html#BJSONType">BJSONType</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BType">
+                                <a class="types" href="types.html#BType">BType</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeAny">
+                                <a class="types" href="types.html#BTypeAny">BTypeAny</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeAnyData">
+                                <a class="types" href="types.html#BTypeAnyData">BTypeAnyData</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeBoolean">
+                                <a class="types" href="types.html#BTypeBoolean">BTypeBoolean</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeByte">
+                                <a class="types" href="types.html#BTypeByte">BTypeByte</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeFloat">
+                                <a class="types" href="types.html#BTypeFloat">BTypeFloat</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeInt">
+                                <a class="types" href="types.html#BTypeInt">BTypeInt</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeNil">
+                                <a class="types" href="types.html#BTypeNil">BTypeNil</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeNone">
+                                <a class="types" href="types.html#BTypeNone">BTypeNone</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BTypeString">
+                                <a class="types" href="types.html#BTypeString">BTypeString</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="BinaryOpInstructionKind">
+                                <a class="types" href="types.html#BinaryOpInstructionKind">BinaryOpInstructionKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="GlobalVarKind">
+                                <a class="types" href="types.html#GlobalVarKind">GlobalVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="InstructionKind">
+                                <a class="types" href="types.html#InstructionKind">InstructionKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="LocalVarKind">
+                                <a class="types" href="types.html#LocalVarKind">LocalVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="ReturnVarKind">
+                                <a class="types" href="types.html#ReturnVarKind">ReturnVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="SelfVarKind">
+                                <a class="types" href="types.html#SelfVarKind">SelfVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="TempVarKind">
+                                <a class="types" href="types.html#TempVarKind">TempVarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="TerminatorKind">
+                                <a class="types" href="types.html#TerminatorKind">TerminatorKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="VarKind">
+                                <a class="types" href="types.html#VarKind">VarKind</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="VarScope">
+                                <a class="types" href="types.html#VarScope">VarScope</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="Visibility">
+                                <a class="types" href="types.html#Visibility">Visibility</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            
+
+            
+        </div>
+    </div>
+
+<script>
+    window.onload = (event) => {
+        ballerinaHighlighter.highlightSnippets();
+    };
+</script>
+</body>
+
+<script>
+    $(document)
+    .ready(function() {
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+</script>
+
+
+
+

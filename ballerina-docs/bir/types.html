@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Docs - Types : bir</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+
+    <div class="navi-wrapper">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+            <div class="primary-list">
+                <h3>Types</h3>
+                <ul>
+                    
+                        <li>
+                            <a href="#ArgVarKind">ArgVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#ArrayState">ArrayState</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BJSONType">BJSONType</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BType">BType</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeAny">BTypeAny</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeAnyData">BTypeAnyData</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeBoolean">BTypeBoolean</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeByte">BTypeByte</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeFloat">BTypeFloat</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeInt">BTypeInt</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeNil">BTypeNil</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeNone">BTypeNone</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BTypeString">BTypeString</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#BinaryOpInstructionKind">BinaryOpInstructionKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#GlobalVarKind">GlobalVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#InstructionKind">InstructionKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#LocalVarKind">LocalVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#ReturnVarKind">ReturnVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#SelfVarKind">SelfVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#TempVarKind">TempVarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#TerminatorKind">TerminatorKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#VarKind">VarKind</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#VarScope">VarScope</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#Visibility">Visibility</a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="ui divider"></div>
+            <div class="primary-list">
+    <a href="../bir/index.html">
+        <h3>bir</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../bir/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#types">Types</a>
+            </li>
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="ui vertical sidebar menu">
+        <div class="navi-wrapper-sidebar">
+            <div class="navi-wrapper-content">
+                <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+                <div class="primary-list">
+                    <h3>Types</h3>
+                    <ul>
+                        
+                            <li>
+                                <a href="#ArgVarKind">ArgVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#ArrayState">ArrayState</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BJSONType">BJSONType</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BType">BType</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeAny">BTypeAny</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeAnyData">BTypeAnyData</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeBoolean">BTypeBoolean</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeByte">BTypeByte</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeFloat">BTypeFloat</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeInt">BTypeInt</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeNil">BTypeNil</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeNone">BTypeNone</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BTypeString">BTypeString</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#BinaryOpInstructionKind">BinaryOpInstructionKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#GlobalVarKind">GlobalVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#InstructionKind">InstructionKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#LocalVarKind">LocalVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#ReturnVarKind">ReturnVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#SelfVarKind">SelfVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#TempVarKind">TempVarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#TerminatorKind">TerminatorKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#VarKind">VarKind</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#VarScope">VarScope</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#Visibility">Visibility</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="ui divider"></div>
+                <div class="primary-list">
+    <a href="../bir/index.html">
+        <h3>bir</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../bir/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../bir/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a href="../bir/index.html#types">Types</a>
+            </li>
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+                <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-wrapper pusher">
+        <div>
+    <a class="toc item"> 
+        <img src="../html-template-resources/images/menu.svg">
+    </a>
+</div>
+        <div class="main-wrapper">
+            <h1>bir : types</h1>
+            <div class="types">
+                <div class="data-wrapper">
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="ArgVarKind"><b>ArgVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_ARG.html">VAR_KIND_ARG</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="ArrayState"><b>ArrayState</b><span class="type">  <a href="../bir/UNKOWN/ARRAY_STATE_CLOSED_SEALED.html">ARRAY_STATE_CLOSED_SEALED</a> | <a href="../bir/UNKOWN/ARRAY_STATE_OPEN_SEALED.html">ARRAY_STATE_OPEN_SEALED</a> | <a href="../bir/UNKOWN/ARRAY_STATE_UNSEALED.html">ARRAY_STATE_UNSEALED</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BJSONType"><b>BJSONType</b><span class="type">  <a href="../bir/UNKOWN/TYPE_JSON.html">TYPE_JSON</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BType"><b>BType</b><span class="type">  <a href="../bir/UNKOWN/BTypeInt.html">BTypeInt</a> | <a href="../bir/UNKOWN/BTypeBoolean.html">BTypeBoolean</a> | <a href="../bir/UNKOWN/BTypeAny.html">BTypeAny</a> | <a href="../bir/UNKOWN/BTypeNil.html">BTypeNil</a> | <a href="../bir/UNKOWN/BTypeByte.html">BTypeByte</a> | <a href="../bir/UNKOWN/BTypeFloat.html">BTypeFloat</a> | <a href="../bir/UNKOWN/BTypeString.html">BTypeString</a> | <a href="../bir/records/BUnionType.html">BUnionType</a> | <a href="../bir/records/BTupleType.html">BTupleType</a> | <a href="../bir/records/BInvokableType.html">BInvokableType</a> | <a href="../bir/records/BArrayType.html">BArrayType</a> | <a href="../bir/records/BRecordType.html">BRecordType</a> | <a href="../bir/records/BObjectType.html">BObjectType</a> | <a href="../bir/records/BMapType.html">BMapType</a> | <a href="../bir/records/BErrorType.html">BErrorType</a> | <a href="../bir/UNKOWN/BTypeAnyData.html">BTypeAnyData</a> | <a href="../bir/UNKOWN/BTypeNone.html">BTypeNone</a> | <a href="../bir/records/BFutureType.html">BFutureType</a> | <a href="../bir/UNKOWN/BJSONType.html">BJSONType</a> | <a href="../bir/records/Self.html">Self</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeAny"><b>BTypeAny</b><span class="type">  <a href="../bir/UNKOWN/TYPE_ANY.html">TYPE_ANY</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeAnyData"><b>BTypeAnyData</b><span class="type">  <a href="../bir/UNKOWN/TYPE_ANYDATA.html">TYPE_ANYDATA</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeBoolean"><b>BTypeBoolean</b><span class="type">  <a href="../bir/UNKOWN/TYPE_BOOLEAN.html">TYPE_BOOLEAN</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeByte"><b>BTypeByte</b><span class="type">  <a href="../bir/UNKOWN/TYPE_BYTE.html">TYPE_BYTE</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeFloat"><b>BTypeFloat</b><span class="type">  <a href="../bir/UNKOWN/TYPE_FLOAT.html">TYPE_FLOAT</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeInt"><b>BTypeInt</b><span class="type">  <a href="../bir/UNKOWN/TYPE_INT.html">TYPE_INT</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeNil"><b>BTypeNil</b><span class="type">  <a href="../bir/UNKOWN/TYPE_NIL.html">TYPE_NIL</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeNone"><b>BTypeNone</b><span class="type">  <a href="../bir/UNKOWN/TYPE_NONE.html">TYPE_NONE</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BTypeString"><b>BTypeString</b><span class="type">  <a href="../bir/UNKOWN/TYPE_STRING.html">TYPE_STRING</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="BinaryOpInstructionKind"><b>BinaryOpInstructionKind</b><span class="type">  <a href="../bir/UNKOWN/BINARY_ADD.html">BINARY_ADD</a> | <a href="../bir/UNKOWN/BINARY_SUB.html">BINARY_SUB</a> | <a href="../bir/UNKOWN/BINARY_MUL.html">BINARY_MUL</a> | <a href="../bir/UNKOWN/BINARY_DIV.html">BINARY_DIV</a> | <a href="../bir/UNKOWN/BINARY_EQUAL.html">BINARY_EQUAL</a> | <a href="../bir/UNKOWN/BINARY_NOT_EQUAL.html">BINARY_NOT_EQUAL</a> | <a href="../bir/UNKOWN/BINARY_GREATER_THAN.html">BINARY_GREATER_THAN</a> | <a href="../bir/UNKOWN/BINARY_GREATER_EQUAL.html">BINARY_GREATER_EQUAL</a> | <a href="../bir/UNKOWN/BINARY_LESS_THAN.html">BINARY_LESS_THAN</a> | <a href="../bir/UNKOWN/BINARY_LESS_EQUAL.html">BINARY_LESS_EQUAL</a> | <a href="../bir/UNKOWN/BINARY_AND.html">BINARY_AND</a> | <a href="../bir/UNKOWN/BINARY_OR.html">BINARY_OR</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="GlobalVarKind"><b>GlobalVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_GLOBAL.html">VAR_KIND_GLOBAL</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="InstructionKind"><b>InstructionKind</b><span class="type">  <a href="../bir/UNKOWN/INS_KIND_MOVE.html">INS_KIND_MOVE</a> | <a href="../bir/UNKOWN/INS_KIND_CONST_LOAD.html">INS_KIND_CONST_LOAD</a> | <a href="../bir/UNKOWN/INS_KIND_NEW_MAP.html">INS_KIND_NEW_MAP</a> | <a href="../bir/UNKOWN/INS_KIND_NEW_INST.html">INS_KIND_NEW_INST</a> | <a href="../bir/UNKOWN/INS_KIND_MAP_STORE.html">INS_KIND_MAP_STORE</a> | <a href="../bir/UNKOWN/INS_KIND_NEW_ARRAY.html">INS_KIND_NEW_ARRAY</a> | <a href="../bir/UNKOWN/INS_KIND_NEW_ERROR.html">INS_KIND_NEW_ERROR</a> | <a href="../bir/UNKOWN/INS_KIND_ARRAY_STORE.html">INS_KIND_ARRAY_STORE</a> | <a href="../bir/UNKOWN/INS_KIND_MAP_LOAD.html">INS_KIND_MAP_LOAD</a> | <a href="../bir/UNKOWN/INS_KIND_ARRAY_LOAD.html">INS_KIND_ARRAY_LOAD</a> | <a href="../bir/UNKOWN/INS_KIND_TYPE_CAST.html">INS_KIND_TYPE_CAST</a> | <a href="../bir/UNKOWN/INS_KIND_IS_LIKE.html">INS_KIND_IS_LIKE</a> | <a href="../bir/UNKOWN/INS_KIND_TYPE_TEST.html">INS_KIND_TYPE_TEST</a> | <a href="../bir/types.html#BinaryOpInstructionKind">BinaryOpInstructionKind</a> | <a href="../bir/UNKOWN/INS_KIND_OBJECT_STORE.html">INS_KIND_OBJECT_STORE</a> | <a href="../bir/UNKOWN/INS_KIND_OBJECT_LOAD.html">INS_KIND_OBJECT_LOAD</a> | <a href="../bir/UNKOWN/INS_KIND_FP_LOAD.html">INS_KIND_FP_LOAD</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="LocalVarKind"><b>LocalVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_LOCAL.html">VAR_KIND_LOCAL</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="ReturnVarKind"><b>ReturnVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_RETURN.html">VAR_KIND_RETURN</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="SelfVarKind"><b>SelfVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_SELF.html">VAR_KIND_SELF</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="TempVarKind"><b>TempVarKind</b><span class="type">  <a href="../bir/UNKOWN/VAR_KIND_TEMP.html">VAR_KIND_TEMP</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="TerminatorKind"><b>TerminatorKind</b><span class="type">  <a href="../bir/UNKOWN/TERMINATOR_GOTO.html">TERMINATOR_GOTO</a> | <a href="../bir/UNKOWN/TERMINATOR_CALL.html">TERMINATOR_CALL</a> | <a href="../bir/UNKOWN/TERMINATOR_BRANCH.html">TERMINATOR_BRANCH</a> | <a href="../bir/UNKOWN/TERMINATOR_RETURN.html">TERMINATOR_RETURN</a> | <a href="../bir/UNKOWN/TERMINATOR_ASYNC_CALL.html">TERMINATOR_ASYNC_CALL</a> | <a href="../bir/UNKOWN/TERMINATOR_PANIC.html">TERMINATOR_PANIC</a> | <a href="../bir/UNKOWN/TERMINATOR_WAIT.html">TERMINATOR_WAIT</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="VarKind"><b>VarKind</b><span class="type">  <a href="../bir/UNKOWN/LocalVarKind.html">LocalVarKind</a> | <a href="../bir/UNKOWN/TempVarKind.html">TempVarKind</a> | <a href="../bir/UNKOWN/ReturnVarKind.html">ReturnVarKind</a> | <a href="../bir/UNKOWN/ArgVarKind.html">ArgVarKind</a> | <a href="../bir/UNKOWN/GlobalVarKind.html">GlobalVarKind</a> | <a href="../bir/UNKOWN/SelfVarKind.html">SelfVarKind</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="VarScope"><b>VarScope</b><span class="type">  <a href="../bir/UNKOWN/VAR_SCOPE_GLOBAL.html">VAR_SCOPE_GLOBAL</a> | <a href="../bir/UNKOWN/VAR_SCOPE_FUNCTION.html">VAR_SCOPE_FUNCTION</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="Visibility"><b>Visibility</b><span class="type">  <a href="../bir/UNKOWN/VISIBILITY_PACKAGE_PRIVATE.html">VISIBILITY_PACKAGE_PRIVATE</a> | <a href="../bir/UNKOWN/VISIBILITY_PRIVATE.html">VISIBILITY_PRIVATE</a> | <a href="../bir/UNKOWN/VISIBILITY_PUBLIC.html">VISIBILITY_PUBLIC</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document)
+    .ready(function() {
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+</script>
+
+

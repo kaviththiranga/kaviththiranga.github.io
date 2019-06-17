@@ -419,19 +419,19 @@
             <h2>Module overview</h2>
 <p>This module provides functions to perform fixed-precision integer arithmetic and fixed-precision decimal arithmetic. It includes functions to get the absolute, cosine, sine, root, tangent, and more for a given value.</p>
 <h2>Sample</h2>
-<p>The sample given below uses a few functions that are in the <code>ballerina/math</code> module.
+<p>The sample given below uses a few functions that are in the <code>ballerinaDup/math</code> module.
 Follow the steps given below to run the sample:</p>
 <ol>
 <li>
 <p>Copy the code given below to file and save it as <code>math.bal</code>.</p>
-<pre><code class="language-ballerina">import ballerina/io;
-import ballerina/math;
+<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+import ballerinaDup/math;
 
 public function main(string... args) {
 
-   // Get the value of Pi from the ‘ballerina/math module’.
+   // Get the value of Pi from the ‘ballerinaDup/math module’.
    io:println(&quot;Value of Pi : &quot; + math:PI);
-   // Get the value of E from the ‘ballerina/math module’.
+   // Get the value of E from the ‘ballerinaDup/math module’.
    io:println(&quot;Value of E  : &quot; + math:E);
 
    // Get the absolute value of the given floating point number. 
@@ -462,7 +462,7 @@ public function main(string... args) {
 </li>
 <li>
 <p>Navigate to the directory where the <code>math.bal</code> file is saved via the terminal and run the file using the command given below.</p>
-<p><code>ballerina run math.bal</code></p>
+<p><code>ballerinaDup run math.bal</code></p>
 <p>The following output is given for each function that was used in the <code>math.bal</code> file.</p>
 <pre><code>  Value of Pi : 3.141592653589793
   Value of E  : 2.718281828459045
@@ -832,5 +832,7 @@ multiply to a member of the float value set.</p>
     })
   ;
 </script>
+
+
 
 

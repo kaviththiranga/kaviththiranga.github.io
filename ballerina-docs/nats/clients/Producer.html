@@ -460,7 +460,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Producer</span> </h1>
+            <h1><span class="">nats : clients - </span><span class="clients">Producer</span> </h1>
             <p><p>NATS producer would act as a streaming client allowing to stream messages between NATS streaming server.
 Producer would create a new NATS connection if a connection was not provided during the initialization.</p>
 </p>
@@ -550,8 +550,8 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="send">send</h2>
+    <div class="main-method-title here" id="send">
+        <h2> send </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Produces a message to a NATS streaming server for the given subject.</p>
@@ -593,22 +593,22 @@ Producer would create a new NATS connection if a connection was not provided dur
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>GUID of acknowledgment or the specific error.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>GUID of acknowledgment or the specific error.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="requestReply">requestReply</h2>
+    <div class="main-method-title here" id="requestReply">
+        <h2> requestReply </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
     </div>
     <p><p>Produces a message and would wait for a response.</p>
@@ -650,17 +650,17 @@ Producer would create a new NATS connection if a connection was not provided dur
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Response message or an error.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Response message or an error.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -668,25 +668,25 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="close">close</h2>
+    <div class="main-method-title here" id="close">
+        <h2> close </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Close a given connection.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>() or error if unable to complete close operation.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>() or error if unable to complete close operation.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

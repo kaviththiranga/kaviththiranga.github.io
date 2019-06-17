@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">StreamJoinProcessor</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">StreamJoinProcessor</span> </h1>
             <p><p>The <code>StreamJoinProcessor</code> object is responsible for  performing SQLish joins between two or more streams.
 The <code>onConditionFunc</code> is the lambda function which represents the where clause in the join clause. The joining
 happens only if the condition is statified. <code>nextProcessor</code> is the <code>process</code> function of the next processor, which
@@ -947,8 +947,8 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="process">process</h2>
+    <div class="main-method-title here" id="process">
+        <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Process the events from both <code>lhsStream</code> and the <code>rhsStream</code> and perform the joining.</p>
@@ -970,12 +970,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setLHS">setLHS</h2>
+    <div class="main-method-title here" id="setLHS">
+        <h2> setLHS </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
     </div>
     <p><p>Sets the left hand side stream name and the respective window instance.</p>
@@ -1007,12 +1007,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setRHS">setRHS</h2>
+    <div class="main-method-title here" id="setRHS">
+        <h2> setRHS </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
     </div>
     <p><p>Sets the right hand side stream name and the respective window instance.</p>
@@ -1044,12 +1044,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setUnidirectionalStream">setUnidirectionalStream</h2>
+    <div class="main-method-title here" id="setUnidirectionalStream">
+        <h2> setUnidirectionalStream </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName)</p>
     </div>
     <p><p>Sets the stream by which the joining is triggered.</p>
@@ -1073,7 +1073,7 @@ hand side stream receives events.</p>
         </div>
     
 
-        
+    
 </div>
                     
                 

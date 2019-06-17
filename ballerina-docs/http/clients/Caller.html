@@ -580,7 +580,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Caller</span> </h1>
+            <h1><span class="">http : clients - </span><span class="clients">Caller</span> </h1>
             <p><p>The caller actions for responding to client requests.</p>
 </p>
 
@@ -803,8 +803,8 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="respond">respond</h2>
+    <div class="main-method-title here" id="respond">
+        <h2> respond </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
     </div>
     <p><p>Sends the outbound response to the caller.</p>
@@ -827,22 +827,22 @@ or <code>mime:Entity[]</code></p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to respond</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to respond</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="promise">promise</h2>
+    <div class="main-method-title here" id="promise">
+        <h2> promise </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
     </div>
     <p><p>Pushes a promise to the caller.</p>
@@ -864,22 +864,22 @@ or <code>mime:Entity[]</code></p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>An <code>error</code> in case of failures</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An <code>error</code> in case of failures</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="pushPromisedResponse">pushPromisedResponse</h2>
+    <div class="main-method-title here" id="pushPromisedResponse">
+        <h2> pushPromisedResponse </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise, <a href="../../http/objects/Response.html">Response</a> response)</p>
     </div>
     <p><p>Sends a promised push response to the caller.</p>
@@ -911,22 +911,22 @@ or <code>mime:Entity[]</code></p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>An <code>error</code> in case of failures while responding with the promised response</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An <code>error</code> in case of failures while responding with the promised response</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="acceptWebSocketUpgrade">acceptWebSocketUpgrade</h2>
+    <div class="main-method-title here" id="acceptWebSocketUpgrade">
+        <h2> acceptWebSocketUpgrade </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> headers)</p>
     </div>
     <p><p>Sends an upgrade request with custom headers.</p>
@@ -948,22 +948,22 @@ or <code>mime:Entity[]</code></p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/clients/WebSocketCaller.html">WebSocketCaller</a></span>)</li>
-                    <li><p>WebSocket service endpoint</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/clients/WebSocketCaller.html">WebSocketCaller</a></span>)</li>
+                <li><p>WebSocket service endpoint</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="cancelWebSocketUpgrade">cancelWebSocketUpgrade</h2>
+    <div class="main-method-title here" id="cancelWebSocketUpgrade">
+        <h2> cancelWebSocketUpgrade </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> status, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> reason)</p>
     </div>
     <p><p>Cancels the handshake.</p>
@@ -996,44 +996,44 @@ This error status code need to be 4xx or 5xx else the default status code would 
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>An <code>error</code> if an error occurs during cancelling the upgrade or nil</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An <code>error</code> if an error occurs during cancelling the upgrade or nil</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="continue">continue</h2>
+    <div class="main-method-title here" id="continue">
+        <h2> continue </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Sends a <code>100-continue</code> response to the caller.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to send the <code>100-continue</code> response</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to send the <code>100-continue</code> response</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="redirect">redirect</h2>
+    <div class="main-method-title here" id="redirect">
+        <h2> redirect </h2>
         <p class="method-types">(<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/types.html#RedirectCode">RedirectCode</a> code, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] locations)</p>
     </div>
     <p><p>Sends a redirect response to the user with the specified redirection status code.</p>
@@ -1075,22 +1075,22 @@ This error status code need to be 4xx or 5xx else the default status code would 
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to send the redirect response</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to send the redirect response</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="ok">ok</h2>
+    <div class="main-method-title here" id="ok">
+        <h2> ok </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
     </div>
     <p><p>Sends the outbound response to the caller with the status 200 OK.</p>
@@ -1113,22 +1113,22 @@ or <code>mime:Entity[]</code></p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to respond</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to respond</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="created">created</h2>
+    <div class="main-method-title here" id="created">
+        <h2> created </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> uri, <a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
     </div>
     <p><p>Sends the outbound response to the caller with the status 201 Created.</p>
@@ -1161,22 +1161,22 @@ or <code>mime:Entity[]</code>. This message is optional.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to respond</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to respond</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="accepted">accepted</h2>
+    <div class="main-method-title here" id="accepted">
+        <h2> accepted </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
     </div>
     <p><p>Sends the outbound response to the caller with the status 202 Accepted.</p>
@@ -1199,17 +1199,17 @@ or <code>mime:Entity[]</code>. This message is optional.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an <code>error</code> if failed to respond</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if failed to respond</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

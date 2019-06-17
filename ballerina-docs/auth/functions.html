@@ -479,33 +479,33 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>auth : functions</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#initLdapConnectionContext">initLdapConnectionContext</a></td>
-                            <td width="70%"><p>Initailizes LDAP connection context</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#initLdapConnectionContext">initLdapConnectionContext</a></td>
+                                <td width="70%"><p>Initailizes LDAP connection context</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#issueJwt">issueJwt</a></td>
-                            <td width="70%"><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#issueJwt">issueJwt</a></td>
+                                <td width="70%"><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
 in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtHeader</code> is not <code>NONE</code>.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#validateJwt">validateJwt</a></td>
-                            <td width="70%"><p>Validity given JWT string.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#validateJwt">validateJwt</a></td>
+                                <td width="70%"><p>Validity given JWT string.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -514,8 +514,8 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="initLdapConnectionContext">initLdapConnectionContext</h2>
+    <div class="main-method-title here" id="initLdapConnectionContext">
+        <h2> initLdapConnectionContext </h2>
         <p class="method-types">(<a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a> ldapAuthStoreProvider, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId)</p>
     </div>
     <p><p>Initailizes LDAP connection context</p>
@@ -547,12 +547,12 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
         </div>
     
 
-        
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="issueJwt">issueJwt</h2>
+    <div class="main-method-title here" id="issueJwt">
+        <h2> issueJwt </h2>
         <p class="method-types">(<a href="../auth/records/JwtHeader.html">JwtHeader</a> header, <a href="../auth/records/JwtPayload.html">JwtPayload</a> payload, <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>? config)</p>
     </div>
     <p><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
@@ -595,22 +595,22 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>JWT token string or an error if token validation fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>JWT token string or an error if token validation fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="validateJwt">validateJwt</h2>
+    <div class="main-method-title here" id="validateJwt">
+        <h2> validateJwt </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> jwtToken, <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a> config)</p>
     </div>
     <p><p>Validity given JWT string.</p>
@@ -642,18 +642,18 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../auth/records/JwtPayload.html">JwtPayload</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>If JWT token is valied return the JWT payload.
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../auth/records/JwtPayload.html">JwtPayload</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>If JWT token is valied return the JWT payload.
 An error if token validation fails.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                         </div>

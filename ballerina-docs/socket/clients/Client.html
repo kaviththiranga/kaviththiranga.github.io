@@ -460,7 +460,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1><span class="">socket : clients - </span><span class="clients">Client</span> </h1>
             <p><p>Represents socket client and related remote functions.</p>
 </p>
 
@@ -645,8 +645,8 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="write">write</h2>
+    <div class="main-method-title here" id="write">
+        <h2> write </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
     </div>
     <p><p>Writes given data to the client socket.</p>
@@ -670,24 +670,24 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><ul>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><ul>
 <li>number of bytes got written or an error if encounters an error while writing</li>
 </ul>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="read">read</h2>
+    <div class="main-method-title here" id="read">
+        <h2> read </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length)</p>
     </div>
     <p><p>Reads data from the client socket. If the data has the specified length, then wait until that number of bytes
@@ -715,87 +715,87 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><ul>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><ul>
 <li>Content as a byte array and the number of bytes read or an error if encounters an error while reading</li>
 </ul>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="close">close</h2>
+    <div class="main-method-title here" id="close">
+        <h2> close </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Closes the client socket connection.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><ul>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><ul>
 <li>an error if encounters an error while closing the connection or returns nil otherwise</li>
 </ul>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="shutdownRead">shutdownRead</h2>
+    <div class="main-method-title here" id="shutdownRead">
+        <h2> shutdownRead </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Shutdowns the further read from socket.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>an error if encounters an error while shutdown the read from socket or returns nil otherwise</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>an error if encounters an error while shutdown the read from socket or returns nil otherwise</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="shutdownWrite">shutdownWrite</h2>
+    <div class="main-method-title here" id="shutdownWrite">
+        <h2> shutdownWrite </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Shutdowns the further write from socket.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>an error if encounters an error while shutdown the write from socket or returns nil otherwise</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>an error if encounters an error while shutdown the write from socket or returns nil otherwise</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

@@ -420,7 +420,7 @@
 <p>This module contains services that register listeners against a local folder and identify events that create, modify, and delete files.</p>
 <h2>Samples</h2>
 <p>The sample given below shows how a <code>Listener</code> is used to listen to the local folder. The <code>onCreate()</code> resource method gets invoked when a file is created inside the <code>target/fs</code> folder. Use the <code>onDelete()</code> and <code>onModify()</code> methods to listen to the delete and modify events.</p>
-<pre><code class="language-ballerina">import ballerina/file;
+<pre><code class="language-ballerinaDup">import ballerinaDup/file;
 
 listener file:Listener localFolder = new ({
     path: &quot;target/fs&quot;,
@@ -511,5 +511,7 @@ service fileSystem on localFolder {
     })
   ;
 </script>
+
+
 
 

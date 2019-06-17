@@ -453,7 +453,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Counter</span> </h1>
+            <h1><span class="">observe : object -</span> <span class="objects">Counter</span> </h1>
             <p><p>This represents the metric type - counter, that can be only increased by an integer number.</p>
 </p>
 
@@ -633,43 +633,43 @@ will be used.</p>
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="register">register</h2>
+    <div class="main-method-title here" id="register">
+        <h2> register </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Register the counter metric instance with the Metric Registry.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns error if there is any metric registered already with the same name
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns error if there is any metric registered already with the same name
 but different parameters or in a different kind.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unregister">unregister</h2>
+    <div class="main-method-title here" id="unregister">
+        <h2> unregister </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="increment">increment</h2>
+    <div class="main-method-title here" id="increment">
+        <h2> increment </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount)</p>
     </div>
     <p><p>Increment the counter's value by an amount.</p>
@@ -692,41 +692,41 @@ used if there is no amount passed in.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="reset">reset</h2>
+    <div class="main-method-title here" id="reset">
+        <h2> reset </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Resets the counter's value to zero.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getValue">getValue</h2>
+    <div class="main-method-title here" id="getValue">
+        <h2> getValue </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Retrieves the counter's current value.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
-                    <li><p>The current value of the counter.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
+                <li><p>The current value of the counter.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

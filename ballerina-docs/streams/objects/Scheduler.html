@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Scheduler</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">Scheduler</span> </h1>
             <p><p>The <code>Scheduler</code> object is responsible for generating streams:TIMER events at the given timestamp. Once the event is
 generated, the timer event is passed to the provided <code>processFunc</code> function pointer. The function pointer is the
 <code>process</code> function of the target processor, to which the timer event should be sent.</p>
@@ -808,8 +808,8 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="notifyAt">notifyAt</h2>
+    <div class="main-method-title here" id="notifyAt">
+        <h2> notifyAt </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp)</p>
     </div>
     <p><p>Schedule to send a timer events at the given timestamp.</p>
@@ -831,29 +831,29 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="sendTimerEvents">sendTimerEvents</h2>
+    <div class="main-method-title here" id="sendTimerEvents">
+        <h2> sendTimerEvents </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Creates the timer events.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns error if sending timer events failed.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns error if sending timer events failed.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

@@ -741,8 +741,8 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">TableJoinProcessor</span> </h1>
-            <p><p>The <code>TableJoinProcessor</code> object handles joining streams with in-memory tables in ballerina.
+            <h1><span class="">streams : object -</span> <span class="objects">TableJoinProcessor</span> </h1>
+            <p><p>The <code>TableJoinProcessor</code> object handles joining streams with in-memory tables in ballerinaDup.
 <code>nextProcessor</code> is the <code>process</code> function of the next processor, which can be a <code>Select</code> processor, <code>Aggregator</code>
 processor, <code>Having</code> processor.. etc. The <code>streamName</code> is the stream of the join and its attached
 window is <code>'windowInstance</code>. The <code>tableName</code> is the name of the table with which the stream is joined. The
@@ -898,8 +898,8 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="process">process</h2>
+    <div class="main-method-title here" id="process">
+        <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Joins the incoming events to the stream with the given table.</p>
@@ -921,12 +921,12 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setJoinProperties">setJoinProperties</h2>
+    <div class="main-method-title here" id="setJoinProperties">
+        <h2> setJoinProperties </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tn, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sn, <a href="../../streams/objects/Window.html">Window</a> wi)</p>
     </div>
     <p><p>Set the properties required for joining.</p>
@@ -968,7 +968,7 @@ window is <code>'windowInstance</code>. The <code>tableName</code> is the name o
         </div>
     
 
-        
+    
 </div>
                     
                 

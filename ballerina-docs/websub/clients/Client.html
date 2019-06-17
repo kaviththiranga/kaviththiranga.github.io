@@ -492,7 +492,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1><span class="">websub : clients - </span><span class="clients">Client</span> </h1>
             <p><p>The HTTP based Caller remote functions for outbound WebSub Subscription, Unsubscription, Registration, Unregistration and
 Notification requests to a Hub.</p>
 </p>
@@ -662,8 +662,8 @@ Notification requests to a Hub.</p>
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="subscribe">subscribe</h2>
+    <div class="main-method-title here" id="subscribe">
+        <h2> subscribe </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest)</p>
     </div>
     <p><p>Sends a subscription request to a WebSub Hub.</p>
@@ -685,23 +685,23 @@ Notification requests to a Hub.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>SubscriptionChangeResponse</code> indicating subscription details, if the request was successful else
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p><code>SubscriptionChangeResponse</code> indicating subscription details, if the request was successful else
 <code>error</code> if an error occurred with the subscription request</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unsubscribe">unsubscribe</h2>
+    <div class="main-method-title here" id="unsubscribe">
+        <h2> unsubscribe </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest)</p>
     </div>
     <p><p>Sends an unsubscription request to a WebSub Hub.</p>
@@ -723,26 +723,26 @@ Notification requests to a Hub.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>SubscriptionChangeResponse</code> indicating unsubscription details, if the request was successful else
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p><code>SubscriptionChangeResponse</code> indicating unsubscription details, if the request was successful else
 <code>error</code> if an error occurred with the unsubscription request</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="registerTopic">registerTopic</h2>
+    <div class="main-method-title here" id="registerTopic">
+        <h2> registerTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
     </div>
-    <p><p>Registers a topic in a ballerina WebSub Hub against which subscribers can subscribe and the publisher will
+    <p><p>Registers a topic in a ballerinaDup WebSub Hub against which subscribers can subscribe and the publisher will
 publish updates.</p>
 </p>
      
@@ -762,25 +762,25 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred registering the topic</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred registering the topic</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unregisterTopic">unregisterTopic</h2>
+    <div class="main-method-title here" id="unregisterTopic">
+        <h2> unregisterTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
     </div>
-    <p><p>Unregisters a topic in a ballerina WebSub Hub.</p>
+    <p><p>Unregisters a topic in a ballerinaDup WebSub Hub.</p>
 </p>
      
         <div class="data-wrapper">
@@ -799,25 +799,25 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred unregistering the topic</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred unregistering the topic</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="publishUpdate">publishUpdate</h2>
+    <div class="main-method-title here" id="publishUpdate">
+        <h2> publishUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
     </div>
-    <p><p>Publishes an update to a remote ballerina WebSub Hub.</p>
+    <p><p>Publishes an update to a remote ballerinaDup WebSub Hub.</p>
 </p>
      
         <div class="data-wrapper">
@@ -866,22 +866,22 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred with the update</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred with the update</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="notifyUpdate">notifyUpdate</h2>
+    <div class="main-method-title here" id="notifyUpdate">
+        <h2> notifyUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
     </div>
     <p><p>Notifies a remote WebSub Hub that an update is available to fetch, for hubs that require publishing to
@@ -914,17 +914,17 @@ happen as such.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred with the notification</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred with the notification</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

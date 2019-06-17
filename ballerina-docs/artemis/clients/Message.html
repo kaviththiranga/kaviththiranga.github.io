@@ -492,7 +492,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Message</span> </h1>
+            <h1><span class="">artemis : clients - </span><span class="clients">Message</span> </h1>
             <p><p>Represents ActiveMQ Artemis Message.</p>
 </p>
 
@@ -671,25 +671,25 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="acknowledge">acknowledge</h2>
+    <div class="main-method-title here" id="acknowledge">
+        <h2> acknowledge </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Acknowledges reception of this message.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>If an error occurred while acknowledging the message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>If an error occurred while acknowledging the message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -697,30 +697,30 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getBodySize">getBodySize</h2>
+    <div class="main-method-title here" id="getBodySize">
+        <h2> getBodySize </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Returns the size (in bytes) of this message's body.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
-                    <li><p>the size of the message body</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
+                <li><p>the size of the message body</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="putProperty">putProperty</h2>
+    <div class="main-method-title here" id="putProperty">
+        <h2> putProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] value)</p>
     </div>
     <p><p>Add message property.</p>
@@ -752,12 +752,12 @@
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getProperty">getProperty</h2>
+    <div class="main-method-title here" id="getProperty">
+        <h2> getProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
     </div>
     <p><p>Get a message property.</p>
@@ -779,67 +779,67 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The value of the property or nil if not found</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The value of the property or nil if not found</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getType">getType</h2>
+    <div class="main-method-title here" id="getType">
+        <h2> getType </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>The type of the message.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/types.html#MessageType">MessageType</a></span>)</li>
-                    <li><p>The <code>MessageType</code> of the message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/types.html#MessageType">MessageType</a></span>)</li>
+                <li><p>The <code>MessageType</code> of the message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getPayload">getPayload</h2>
+    <div class="main-method-title here" id="getPayload">
+        <h2> getPayload </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>The message payload.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span>)</li>
-                    <li><p>The message payload or error on failure to retrieve payload or if the type is unsupported.
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span>)</li>
+                <li><p>The message payload or error on failure to retrieve payload or if the type is unsupported.
 A map payload can contain an error if the type is unsupported.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="saveToWritableByteChannel">saveToWritableByteChannel</h2>
+    <div class="main-method-title here" id="saveToWritableByteChannel">
+        <h2> saveToWritableByteChannel </h2>
         <p class="method-types">(<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch)</p>
     </div>
     <p><p>Call this function to save to a WritableByteChannel if the message is <code>STREAM</code> type.</p>
@@ -861,39 +861,39 @@ A map payload can contain an error if the type is unsupported.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>will return an <code>error</code> if the message is not of type <code>STREAM</code> or on failure</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>will return an <code>error</code> if the message is not of type <code>STREAM</code> or on failure</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getConfig">getConfig</h2>
+    <div class="main-method-title here" id="getConfig">
+        <h2> getConfig </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Get the message configuration.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a></span>)</li>
-                    <li><p>the <code>MessageConfiguration</code> of this message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a></span>)</li>
+                <li><p>the <code>MessageConfiguration</code> of this message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

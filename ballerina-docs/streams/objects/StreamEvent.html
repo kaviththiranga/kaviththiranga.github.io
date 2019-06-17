@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">StreamEvent</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">StreamEvent</span> </h1>
             <p><p>The <code>StreamEvent</code> object is a wrapper around the actual data being received to the input stream. If a record is
 receive to a input stream, that record is converted to a map of anydata values and set that map to a field called
 <code>data</code> in a new <code>StreamEvent</code> object. <code>StreamEvent</code> is only used internally to transmit event data from one
@@ -896,30 +896,30 @@ state and a timer event is used to trigger the <code>process</code> method of a 
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="copy">copy</h2>
+    <div class="main-method-title here" id="copy">
+        <h2> copy </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Returns a copy of the stream event instance.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span>)</li>
-                    <li><p>A copy of the <code>StreamEvent</code> object with its state.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../streams/objects/StreamEvent.html">StreamEvent</a></span>)</li>
+                <li><p>A copy of the <code>StreamEvent</code> object with its state.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="addData">addData</h2>
+    <div class="main-method-title here" id="addData">
+        <h2> addData </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> eventData)</p>
     </div>
     <p><p>Adds key values pairs in a given map to the field <code>data</code>.</p>
@@ -941,12 +941,12 @@ state and a timer event is used to trigger the <code>process</code> method of a 
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="addAttribute">addAttribute</h2>
+    <div class="main-method-title here" id="addAttribute">
+        <h2> addAttribute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> val)</p>
     </div>
     <p><p>Adds an attribute of an event to the map with its value.</p>
@@ -978,7 +978,7 @@ state and a timer event is used to trigger the <code>process</code> method of a 
         </div>
     
 
-        
+    
 </div>
                     
                 

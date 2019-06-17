@@ -26,6 +26,7 @@ body .content-wrapper {
   overflow-y: hidden;
   position: fixed;
   font-size: 16px;
+  padding-top: 1em;
 }
 body .content-wrapper:hover {
   overflow-y: scroll;
@@ -42,6 +43,9 @@ body .content-wrapper .main-wrapper {
   width: 800px;
   margin: 0 30px;
   overflow: hidden;
+}
+body .content-wrapper .main-wrapper .title-type {
+  font-weight: 300;
 }
 body .content-wrapper .main-wrapper.module-wrapper h2:first-of-type {
   border-bottom: 0;
@@ -81,6 +85,10 @@ body .content-wrapper .main-wrapper span.types {
 }
 body .content-wrapper .main-wrapper span.errors {
   color: #f44336;
+}
+body .content-wrapper .main-wrapper .here:target {
+  background: #ffeb3b2e;
+  padding: 10px;
 }
 body .content-wrapper .main-wrapper p a {
   color: #0067ad;
@@ -272,7 +280,7 @@ body .content-wrapper code {
   color: #5e6265;
   background: #f1f1f1;
 }
-body .content-wrapper code .language-ballerina {
+body .content-wrapper code .language-ballerinaDup {
   color: #888;
 }
 body .content-wrapper .modules {
@@ -472,6 +480,7 @@ body .content-wrapper .module-desc {
   overflow-x: hidden;
   min-width: 210px;
   float: left;
+  padding-top: 1em;
 }
 .navi-wrapper .navi-wrapper-content,
 .navi-wrapper-sidebar .navi-wrapper-content {
@@ -637,10 +646,10 @@ a.toc.item {
     line-height: 32px;
     font-size: 2.1em !important;
   }
-  .fourteen.wide.column.content-wrapper.pusher {
+  .content-wrapper.pusher {
     width: 100% !important;
   }
-  .fourteen.wide.column.content-wrapper.pusher .main-wrapper {
+  .content-wrapper.pusher .main-wrapper {
     width: 90% !important;
   }
   .pushable > .pusher:after {

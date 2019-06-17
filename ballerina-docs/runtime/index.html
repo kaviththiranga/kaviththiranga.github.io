@@ -424,14 +424,14 @@ The Invocation Context comprises of a unique ID, a <code>UserPrincipal</code> in
 <code>AuthenticationContext</code> instance that has the authentication related details if available.</p>
 <h3>Errors</h3>
 <p>The runtime module includes the <code>NullReferenceException</code> and <code>IllegalStateException</code> error types. These two error
-types wrap the <code>error</code> type defined in the <code>ballerina/runtime</code> module. Furthermore, there are utility methods to
+types wrap the <code>error</code> type defined in the <code>ballerinaDup/runtime</code> module. Furthermore, there are utility methods to
 retrieve the current call stack and the particular call stack frame for an error.</p>
 <p>Additionally, the runtime module also contains utility methods to halt a <code>worker</code> (sleep) for a given period of time
 and to look up properties from the runtime context.</p>
 <h3>Samples</h3>
 <p>The following sample shows how to access the Invocation Context, set data to it and access the same.</p>
-<pre><code class="language-ballerina">import ballerina/io;
-import ballerina/runtime;
+<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+import ballerinaDup/runtime;
 
 // Set data to the Invocation Context.
 
@@ -439,7 +439,7 @@ import ballerina/runtime;
 runtime:getInvocationContext().principal.username = &quot;tom&quot;;
 
 // Set claims.
-map&lt;any&gt; claims = { email: &quot;tom@ballerina.com&quot;, org: &quot;wso2&quot; };
+map&lt;any&gt; claims = { email: &quot;tom@ballerinaDup.com&quot;, org: &quot;wso2&quot; };
 runtime:getInvocationContext().principal.claims = claims;
 
 // Set scopes.
@@ -475,20 +475,20 @@ string token = runtime:getInvocationContext().authenticationContext.authToken;
 io:println(token);
 </code></pre>
 <p>The following sample shows how to halt the current <code>worker</code> for a given time period.</p>
-<pre><code class="language-ballerina">import ballerina/runtime;
+<pre><code class="language-ballerinaDup">import ballerinaDup/runtime;
 
 // Sleep the current worker for 5 seconds.
 runtime:sleep(5000);
 </code></pre>
 <p>The following sample shows how to access properties from the runtime.</p>
-<pre><code class="language-ballerina">import ballerina/runtime;
+<pre><code class="language-ballerinaDup">import ballerinaDup/runtime;
 
-// Retrieve the property ‘ballerina version’ from the runtime.
-runtime:getProperty(&quot;ballerina.version&quot;);
+// Retrieve the property ‘ballerinaDup version’ from the runtime.
+runtime:getProperty(&quot;ballerinaDup.version&quot;);
 </code></pre>
 <p>The following sample shows how to access the call stack and how to trap an error.</p>
-<pre><code class="language-ballerina">import ballerina/io;
-import ballerina/runtime;
+<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+import ballerinaDup/runtime;
 
 public function main() {
     // Print the current call stack.
@@ -636,5 +636,7 @@ function panicWithError() {
     })
   ;
 </script>
+
+
 
 

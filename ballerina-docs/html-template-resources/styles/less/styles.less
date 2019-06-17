@@ -67,6 +67,7 @@ body {
         overflow-y: hidden;
         position: fixed;
         font-size: 16px;
+        padding-top: 1em;
 
         &:hover {
             overflow-y: scroll;
@@ -86,6 +87,10 @@ body {
             width: 800px;
             margin: 0 30px;
             overflow: hidden;
+            
+            .title-type {
+                font-weight: 300;
+             }
 
             &.module-wrapper {
 
@@ -107,6 +112,11 @@ body {
 
             span {
                 .gen-construct-colors(color);
+            }
+
+            .here:target {
+                background: #ffeb3b2e;
+                padding: 10px;
             }
 
             p {
@@ -278,7 +288,7 @@ body {
             color: #5e6265;
             background: #f1f1f1;
 
-            .language-ballerina {
+            .language-ballerinaDup {
                 color: #888;
             }
         }
@@ -469,6 +479,7 @@ body {
     overflow-x: hidden;
     min-width: 210px;
     float: left;
+    padding-top: 1em;
 
     .navi-wrapper-content {
         width: 185px;
@@ -665,7 +676,7 @@ a.toc.item {
         }
     }
 
-    .fourteen.wide.column.content-wrapper.pusher {
+    .content-wrapper.pusher {
         width: 100% !important;
 
         .main-wrapper {

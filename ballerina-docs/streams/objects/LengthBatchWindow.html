@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">LengthBatchWindow</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">LengthBatchWindow</span> </h1>
             <p><p>This is a batch (tumbling) length window, that holds up to the given length of events, and gets updated on every
 given number of events arrival.
 E.g.
@@ -948,8 +948,8 @@ The <code>lengthBatch</code> window should only have one parameter (<int> window
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="initParameters">initParameters</h2>
+    <div class="main-method-title here" id="initParameters">
+        <h2> initParameters </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters)</p>
     </div>
     <p></p>
@@ -969,12 +969,12 @@ The <code>lengthBatch</code> window should only have one parameter (<int> window
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="process">process</h2>
+    <div class="main-method-title here" id="process">
+        <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>The <code>process</code> function process the incoming events to the events and update the current state of the window.</p>
@@ -996,12 +996,12 @@ The <code>lengthBatch</code> window should only have one parameter (<int> window
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getCandidateEvents">getCandidateEvents</h2>
+    <div class="main-method-title here" id="getCandidateEvents">
+        <h2> getCandidateEvents </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger)</p>
     </div>
     <p><p>Returns the events(State) which match with the where condition in the join clause for a given event.</p>
@@ -1045,45 +1045,45 @@ stream receives events this should be false.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span></span>)</li>
-                    <li><p>Returns an array of 2 element tuples of events. A tuple contains the matching events one from lhs
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span></span>)</li>
+                <li><p>Returns an array of 2 element tuples of events. A tuple contains the matching events one from lhs
 stream and one from rhs stream.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="saveState">saveState</h2>
+    <div class="main-method-title here" id="saveState">
+        <h2> saveState </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span>)</li>
-                    <li><p>A map of <code>any</code> typed values.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span>)</li>
+                <li><p>A map of <code>any</code> typed values.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="restoreState">restoreState</h2>
+    <div class="main-method-title here" id="restoreState">
+        <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
@@ -1105,7 +1105,7 @@ stream and one from rhs stream.</p>
         </div>
     
 
-        
+    
 </div>
                     
                 

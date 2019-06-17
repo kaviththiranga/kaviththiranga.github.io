@@ -492,7 +492,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1><span class="">grpc : clients - </span><span class="clients">Client</span> </h1>
             <p><p>The gRPC client endpoint provides the capability for initiating contact with a remote gRPC service. The API it
 provides includes functions to send request/error messages.</p>
 </p>
@@ -609,8 +609,8 @@ provides includes functions to send request/error messages.</p>
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="blockingExecute">blockingExecute</h2>
+    <div class="main-method-title here" id="blockingExecute">
+        <h2> blockingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing blocking call with gRPC service.</p>
@@ -652,22 +652,22 @@ provides includes functions to send request/error messages.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>, <a href="../../grpc/objects/Headers.html">Headers</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns response message and headers if executes successfully, error otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>, <a href="../../grpc/objects/Headers.html">Headers</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Returns response message and headers if executes successfully, error otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="nonBlockingExecute">nonBlockingExecute</h2>
+    <div class="main-method-title here" id="nonBlockingExecute">
+        <h2> nonBlockingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing non-blocking call with gRPC service.</p>
@@ -719,22 +719,22 @@ provides includes functions to send request/error messages.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an error if encounters an error while sending the request, returns nil otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an error if encounters an error while sending the request, returns nil otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="streamingExecute">streamingExecute</h2>
+    <div class="main-method-title here" id="streamingExecute">
+        <h2> streamingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Calls when executing streaming call with gRPC service.</p>
@@ -776,17 +776,17 @@ provides includes functions to send request/error messages.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../grpc/clients/StreamingClient.html">StreamingClient</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns client connection if executes successfully, error otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../grpc/clients/StreamingClient.html">StreamingClient</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Returns client connection if executes successfully, error otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -794,8 +794,8 @@ provides includes functions to send request/error messages.</p>
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="initStub">initStub</h2>
+    <div class="main-method-title here" id="initStub">
+        <h2> initStub </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> stubType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> descriptorKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> descriptorMap)</p>
     </div>
     <p><p>Calls when initializing client endpoint with service descriptor data extracted from proto file.</p>
@@ -837,17 +837,17 @@ provides includes functions to send request/error messages.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an error if encounters an error while initializing the stub, returns nill otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an error if encounters an error while initializing the stub, returns nill otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

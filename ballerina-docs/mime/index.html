@@ -445,10 +445,10 @@ Content-Description: a complete map of the human genome
 <h2>Samples</h2>
 <h3>Handle multipart request</h3>
 <p>The sample service given below handles a multipart request. It extracts the body content from each part, converts it to a <code>string</code>, and sends a response.</p>
-<pre><code class="language-ballerina">import ballerina/http;
-import ballerina/io;
-import ballerina/log;
-import ballerina/mime;
+<pre><code class="language-ballerinaDup">import ballerinaDup/http;
+import ballerinaDup/io;
+import ballerinaDup/log;
+import ballerinaDup/mime;
 
 @http:ServiceConfig {
     basePath: &quot;/test&quot;
@@ -516,18 +516,18 @@ function handleContent(mime:Entity bodyPart) returns string {
 }
 </code></pre>
 <p>The sample request that is sent to the above service is shown below.</p>
-<pre><code>curl -v -F &quot;request={\&quot;param1\&quot;: \&quot;value1\&quot;};type=application/json&quot; -F &quot;language=ballerina;type=text/plain&quot; -F &quot;upload=@/home/path-to-file/encode.txt;type=application/octet-stream&quot;  http://localhost:9090/test/multipleparts -H &quot;Expect:&quot;
+<pre><code>curl -v -F &quot;request={\&quot;param1\&quot;: \&quot;value1\&quot;};type=application/json&quot; -F &quot;language=ballerinaDup;type=text/plain&quot; -F &quot;upload=@/home/path-to-file/encode.txt;type=application/octet-stream&quot;  http://localhost:9090/test/multipleparts -H &quot;Expect:&quot;
 </code></pre>
 <h3>Create a multipart request</h3>
 <p>The sample given below creates a multipart request. It includes two body parts with <code>application/json</code> and <code>application/xml</code> content type.</p>
-<pre><code class="language-ballerina">// Create a JSON body part.
+<pre><code class="language-ballerinaDup">// Create a JSON body part.
 mime:Entity bodyPart1 = new;
 // Set the JSON content.
 bodyPart1.setJson({&quot;bodyPart&quot;: &quot;jsonPart&quot;});
 
 // Create another body part using an XML file.
 mime:Entity bodyPart2 = new;
-bodyPart2.setFileAsEntityBody(&quot;ballerina/mime/file.xml&quot;, contentType = mime:APPLICATION_XML);
+bodyPart2.setFileAsEntityBody(&quot;ballerinaDup/mime/file.xml&quot;, contentType = mime:APPLICATION_XML);
 
 //Create an array to hold all the body parts.
 mime:Entity[] bodyParts = [bodyPart1, bodyPart2];
@@ -910,5 +910,7 @@ payload.</p>
     })
   ;
 </script>
+
+
 
 

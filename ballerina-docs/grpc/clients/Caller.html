@@ -492,7 +492,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Caller</span> </h1>
+            <h1><span class="">grpc : clients - </span><span class="clients">Caller</span> </h1>
             <p><p>Provides the gRPC remote functions for interacting with caller.</p>
 </p>
 
@@ -635,8 +635,8 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="send">send</h2>
+    <div class="main-method-title here" id="send">
+        <h2> send </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> res, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Sends outbound response to the caller.</p>
@@ -672,68 +672,68 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><ul>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><ul>
 <li>Returns an error if encounters an error while sending the response, returns nil otherwise.</li>
 </ul>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="complete">complete</h2>
+    <div class="main-method-title here" id="complete">
+        <h2> complete </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Informs the caller, server finished sending messages.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an error if encounters an error while sending the response, returns nil otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an error if encounters an error while sending the response, returns nil otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="isCancelled">isCancelled</h2>
+    <div class="main-method-title here" id="isCancelled">
+        <h2> isCancelled </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Checks whether the connection is closed by the caller.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
-                    <li><p>Returns true, if caller already closed the connection. false otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
+                <li><p>Returns true, if caller already closed the connection. false otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="sendError">sendError</h2>
+    <div class="main-method-title here" id="sendError">
+        <h2> sendError </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> statusCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
     </div>
     <p><p>Sends server error to the caller.</p>
@@ -775,17 +775,17 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns an error if encounters an error while sending the response, returns nil otherwise.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an error if encounters an error while sending the response, returns nil otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -793,23 +793,23 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getId">getId</h2>
+    <div class="main-method-title here" id="getId">
+        <h2> getId </h2>
         <p class="method-types">()</p>
     </div>
     <p></p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
-                    <li></li>
-                </ul>
-            </div>
-            
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
+                <li></li>
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

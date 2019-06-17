@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Filter</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">Filter</span> </h1>
             <p><p>The <code>Filter</code> object represents the <code>where</code> clause in a streaming query. This object takes two parameter for
 initialization. <code>nextProcessorPointer</code> is the function pointer of the next processor to be invoked once the
 filtering is complete. conditionFunc is a function pointer which return true if the given where clause evaluates to
@@ -777,8 +777,8 @@ true.</p>
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="process">process</h2>
+    <div class="main-method-title here" id="process">
+        <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
     </div>
     <p><p>Process the incoming stream events. This function takes an array of stream events, iterate each of the events
@@ -803,7 +803,7 @@ processor object ( e.g. <code>Select</code>, <code>Window</code>, <code>Aggregat
         </div>
     
 
-        
+    
 </div>
                     
                 

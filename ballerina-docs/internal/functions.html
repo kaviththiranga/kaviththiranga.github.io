@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>API Docs - Functions : internal</title>
+    <script src="../html-template-resources/jquery.min.js"></script>
+    <link rel="stylesheet" href="../html-template-resources/semantic.min.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/styles.css">
+    <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
+    <script src="../html-template-resources/semantic.min.js"></script>
+    <script src="../vs/monaco.js"></script>
+</head>
+
+
+<body>
+
+
+<body>
+    <div class="navi-wrapper">
+        <div class="navi-wrapper-content">
+            <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+            <div class="primary-list">
+                <h3>Functions</h3>
+                <ul>
+                    
+                        <li>
+                            <a href="#compress">compress</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#compressToByteArray">compressToByteArray</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#decompress">decompress</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#decompressFromByteArray">decompressFromByteArray</a>
+                        </li>
+                    
+                        <li>
+                            <a href="#execballerinaDupDoc">execballerinaDupDoc</a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="ui divider"></div>
+            <div class="primary-list">
+    <a href="../internal/index.html">
+        <h3>internal</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../internal/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../internal/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../internal/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../internal/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+        </div>
+    </div>
+
+    <div class="ui vertical sidebar menu">
+        <div class="navi-wrapper-sidebar">
+            <div class="navi-wrapper-content">
+                <a href="../index.html">
+    <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
+</a>
+<div class="version">v0.991.0</div>
+
+                <div class="primary-list">
+                    <h3>Functions</h3>
+                    <ul>
+                        
+                            <li>
+                                <a href="#compress">compress</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#compressToByteArray">compressToByteArray</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#decompress">decompress</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#decompressFromByteArray">decompressFromByteArray</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#execballerinaDupDoc">execballerinaDupDoc</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+                <div class="ui divider"></div>
+                <div class="primary-list">
+    <a href="../internal/index.html">
+        <h3>internal</h3>
+    </a>
+    <ul>
+        
+        <li>
+            <a href="../internal/index.html#records">Records</a>
+        </li>
+        
+        
+            <li>
+                <a href="../internal/index.html#objects">Objects</a>
+            </li>
+        
+        
+        
+        
+            <li>
+                <a href="../internal/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a href="../internal/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+                <div class="primary-list module-list">
+    <h3>All Modules</h3>
+    <ul>
+        
+        <li>
+            <a href="../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../h2/index.html">h2</a>
+        </li>
+        
+        <li>
+            <a href="../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../websub/index.html">websub</a>
+        </li>
+        
+    </ul>
+    <div class="ui divider"></div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper pusher">
+        <div>
+    <a class="toc item"> 
+        <img src="../html-template-resources/images/menu.svg">
+    </a>
+</div>
+        <div class="main-wrapper">
+            <h1>internal : functions</h1>
+            <div class="constants">
+                <table class="ui table details-table">
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#compress">compress</a></td>
+                                <td width="70%"><p>Compresses a directory.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#compressToByteArray">compressToByteArray</a></td>
+                                <td width="70%"><p>Compresses a directory into a byte array.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#decompress">decompress</a></td>
+                                <td width="70%"><p>Decompresses a compressed file.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#decompressFromByteArray">decompressFromByteArray</a></td>
+                                <td width="70%"><p>Decompresses a byte array into a directory.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#execballerinaDupDoc">execballerinaDupDoc</a></td>
+                                <td width="70%"><p>Executes a ballerinaDup doc command</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                </table>
+                <div>
+                    
+                        <div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="compress">
+        <h2> compress </h2>
+        <p class="method-types">(<a href="../internal/objects/Path.html">Path</a> dirPath, <a href="../internal/objects/Path.html">Path</a> destDir)</p>
+    </div>
+    <p><p>Compresses a directory.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> dirPath<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the directory to be compressed</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> destDir<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the directory to place the compressed file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An error if an error occurs during the compression process</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="compressToByteArray">
+        <h2> compressToByteArray </h2>
+        <p class="method-types">(<a href="../internal/objects/Path.html">Path</a> dirPath)</p>
+    </div>
+    <p><p>Compresses a directory into a byte array.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> dirPath<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the directory to be compressed</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Compressed byte array of the file.
+An error if an error occurs during the compression process.</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="decompress">
+        <h2> decompress </h2>
+        <p class="method-types">(<a href="../internal/objects/Path.html">Path</a> dirPath, <a href="../internal/objects/Path.html">Path</a> destDir)</p>
+    </div>
+    <p><p>Decompresses a compressed file.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> dirPath<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the compressed file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> destDir<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the directory to decompress the file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An error if an error occurs during the decompression process</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="decompressFromByteArray">
+        <h2> decompressFromByteArray </h2>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="../internal/objects/Path.html">Path</a> destDir)</p>
+    </div>
+    <p><p>Decompresses a byte array into a directory.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li>
+                        <p><p>Byte array of the compressed file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> destDir<span class="type">  <a href="../internal/objects/Path.html">Path</a> </span></li>
+                    <li>
+                        <p><p>Path of the directory to decompress the file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>An error if an error occurs during the decompression process</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="execballerinaDupDoc">
+        <h2> execballerinaDupDoc </h2>
+        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] moduleList, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? sourceRoot, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? outputPath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? templatesPath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? exclude, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> includeNatives, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? envVars, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? config, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> verbose)</p>
+    </div>
+    <p><p>Executes a ballerinaDup doc command</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> moduleList<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] </span></li>
+                    <li>
+                        <p><p>List of modules</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> sourceRoot<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Root folder of the modules</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> outputPath<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Path to write api-docs</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> templatesPath<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Location of the templates</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> exclude<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? </span>- ()</li>
+                    <li>
+                        <p><p>Modules to exclude</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> includeNatives<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- false</li>
+                    <li>
+                        <p><p>Generate docs for natives</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> envVars<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Environment variables to pass</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> config<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Path to configuration file</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> verbose<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- false</li>
+                    <li>
+                        <p><p>Verbose mode</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Data piped from the standard output and error output of the process</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document)
+    .ready(function() {
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    })
+  ;
+</script>
+
+

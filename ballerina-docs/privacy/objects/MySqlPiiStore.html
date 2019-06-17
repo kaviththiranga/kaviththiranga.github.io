@@ -453,7 +453,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">MySqlPiiStore</span> </h1>
+            <h1><span class="">privacy : object -</span> <span class="objects">MySqlPiiStore</span> </h1>
             <p><p>Represents personally identifiable information (PII) storage mechanisum based on MySQL database</p>
 </p>
 
@@ -628,8 +628,8 @@
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="pseudonymize">pseudonymize</h2>
+    <div class="main-method-title here" id="pseudonymize">
+        <h2> pseudonymize </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> pii)</p>
     </div>
     <p><p>Pseudonymize personally identifiable information (PII) and store PII and the pseudonymized identifier</p>
@@ -651,22 +651,22 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>36 characters long UUID if storage operation was successful, error if storage operation failed</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>36 characters long UUID if storage operation was successful, error if storage operation failed</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="depseudonymize">depseudonymize</h2>
+    <div class="main-method-title here" id="depseudonymize">
+        <h2> depseudonymize </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> id)</p>
     </div>
     <p><p>Depseudonymize the identifier by retrieving the personally identifiable information (PII)</p>
@@ -688,22 +688,22 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>PII if retrieval was successful, error if retrieval failed</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>PII if retrieval was successful, error if retrieval failed</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="delete">delete</h2>
+    <div class="main-method-title here" id="delete">
+        <h2> delete </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> id)</p>
     </div>
     <p><p>Delete personally identifiable information (PII)</p>
@@ -725,17 +725,17 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>nil if retrieval was successful, error if retrieval failed</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>nil if retrieval was successful, error if retrieval failed</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

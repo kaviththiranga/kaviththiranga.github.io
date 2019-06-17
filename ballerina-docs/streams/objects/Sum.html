@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Sum</span> </h1>
+            <h1><span class="">streams : object -</span> <span class="objects">Sum</span> </h1>
             <p><p>Aggregator to perform summation of values in a stream.</p>
 </p>
 
@@ -861,8 +861,8 @@
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="process">process</h2>
+    <div class="main-method-title here" id="process">
+        <h2> process </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> value, <a href="../../streams/UNKOWN/EventType.html">EventType</a> eventType)</p>
     </div>
     <p><p>Updates the current sum of numeric values based on the <code>eventType</code>. If the <code>eventType</code> is <code>streams:CURRENT</code>,
@@ -896,66 +896,66 @@ current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Curren
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a></span>)</li>
-                    <li><p>aggregated summation after the given <code>value</code>.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a></span>)</li>
+                <li><p>aggregated summation after the given <code>value</code>.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="copy">copy</h2>
+    <div class="main-method-title here" id="copy">
+        <h2> copy </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Returns a copy of the <code>Sum</code> aggregator without its current state.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../streams/objects/Aggregator.html">Aggregator</a></span>)</li>
-                    <li><p>Returns <code>Sum</code> aggregator.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../streams/objects/Aggregator.html">Aggregator</a></span>)</li>
+                <li><p>Returns <code>Sum</code> aggregator.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="saveState">saveState</h2>
+    <div class="main-method-title here" id="saveState">
+        <h2> saveState </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span>)</li>
-                    <li><p>A map of <code>any</code> typed values.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span>)</li>
+                <li><p>A map of <code>any</code> typed values.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="restoreState">restoreState</h2>
+    <div class="main-method-title here" id="restoreState">
+        <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
@@ -977,7 +977,7 @@ current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Curren
         </div>
     
 
-        
+    
 </div>
                     
                 

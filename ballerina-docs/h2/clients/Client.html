@@ -436,7 +436,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1><span class="">h2 : clients - </span><span class="clients">Client</span> </h1>
             <p><p>Represents an H2 client endpoint.</p>
 </p>
 
@@ -554,8 +554,8 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="call">call</h2>
+    <div class="main-method-title here" id="call">
+        <h2> call </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The call remote function implementation for H2 Client to invoke stored procedures/functions.</p>
@@ -597,23 +597,23 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A <code>table[]</code> if there are tables returned by the call remote function and else nil,
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>A <code>table[]</code> if there are tables returned by the call remote function and else nil,
 <code>error</code> will be returned if there is any error</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="select">select</h2>
+    <div class="main-method-title here" id="select">
+        <h2> select </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The select remote function implementation for H2 Client to select data from tables.</p>
@@ -665,22 +665,22 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A <code>table</code> returned by the sql query statement else <code>error</code> will be returned if there is any error</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>A <code>table</code> returned by the sql query statement else <code>error</code> will be returned if there is any error</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="update">update</h2>
+    <div class="main-method-title here" id="update">
+        <h2> update </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The update remote function implementation for H2 Client to update data and schema of the database.</p>
@@ -722,23 +722,23 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>sql:UpdateResult</code> with the updated row count and key column values,
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p><code>sql:UpdateResult</code> with the updated row count and key column values,
 else  <code>error</code> will be returned if there is any error</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="batchUpdate">batchUpdate</h2>
+    <div class="main-method-title here" id="batchUpdate">
+        <h2> batchUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
     </div>
     <p><p>The batchUpdate remote function implementation for H2 Client to batch data insert.</p>
@@ -771,12 +771,12 @@ individual update</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An <code>int[]</code> - The elements in the array returned by the operation may be one of the following  or else
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>An <code>int[]</code> - The elements in the array returned by the operation may be one of the following  or else
 an<code>error</code> will be returned if there is any error.
 A number greater than or equal to zero - indicates that the command was processed successfully
 and is an update count giving the number of rows
@@ -785,10 +785,10 @@ affected is unknown
 A value of -3 - Indicates that the command failed to execute successfully and occurs only if a driver
 continues to process commands after a command fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -796,25 +796,25 @@ continues to process commands after a command fails</p>
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="stop">stop</h2>
+    <div class="main-method-title here" id="stop">
+        <h2> stop </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Stops the JDBC client.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Possible error during closing</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Possible error during closing</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 

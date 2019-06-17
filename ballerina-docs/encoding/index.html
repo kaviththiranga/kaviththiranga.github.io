@@ -429,14 +429,14 @@
 <h3>Encoding byte array into a string</h3>
 <p>The <code>byteArrayToString</code> function can be used to encode a byte array into a string using a provided charset.</p>
 <h2>Samples</h2>
-<pre><code class="language-ballerina">import ballerina/encoding;
-import ballerina/io;
+<pre><code class="language-ballerinaDup">import ballerinaDup/encoding;
+import ballerinaDup/io;
 
 public function main() returns error? {
      string charEncoding = &quot;UTF-8&quot;;
 
      // The string content to be hashed.
-     string text = &quot;Hello ballerina&quot;;
+     string text = &quot;Hello ballerinaDup&quot;;
      byte[] inputByteArr = input.toByteArray(charEncoding);
 
      string output = encoding:encodeHex(inputByteArr)
@@ -565,5 +565,7 @@ public function main() returns error? {
     })
   ;
 </script>
+
+
 
 

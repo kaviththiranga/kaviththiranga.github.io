@@ -645,7 +645,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Response</span> </h1>
+            <h1><span class="">http : object -</span> <span class="objects">Response</span> </h1>
             <p><p>Represents an HTTP response.</p>
 </p>
 
@@ -1127,30 +1127,30 @@ if the response was sent with cache-control directives</p>
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getEntity">getEntity</h2>
+    <div class="main-method-title here" id="getEntity">
+        <h2> getEntity </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Gets the <code>Entity</code> associated with the response.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../mime/objects/Entity.html">Entity</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The <code>Entity</code> of the response. An <code>error</code> is returned, if entity construction fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../mime/objects/Entity.html">Entity</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The <code>Entity</code> of the response. An <code>error</code> is returned, if entity construction fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setEntity">setEntity</h2>
+    <div class="main-method-title here" id="setEntity">
+        <h2> setEntity </h2>
         <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a> e)</p>
     </div>
     <p><p>Sets the provided <code>Entity</code> to the response.</p>
@@ -1172,12 +1172,12 @@ if the response was sent with cache-control directives</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="hasHeader">hasHeader</h2>
+    <div class="main-method-title here" id="hasHeader">
+        <h2> hasHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
     </div>
     <p><p>Checks whether the requested header key exists in the header map.</p>
@@ -1199,22 +1199,22 @@ if the response was sent with cache-control directives</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
-                    <li><p>Returns true if the specified header key exists</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
+                <li><p>Returns true if the specified header key exists</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getHeader">getHeader</h2>
+    <div class="main-method-title here" id="getHeader">
+        <h2> getHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
     </div>
     <p><p>Returns the value of the specified header. If the specified header key maps to multiple values, the first of
@@ -1237,23 +1237,23 @@ these values is returned.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>The first header value for the specified header name. An exception is thrown if no header is found. Use
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
+                <li><p>The first header value for the specified header name. An exception is thrown if no header is found. Use
 <code>hasHeader()</code> beforehand to check the existence of header.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="addHeader">addHeader</h2>
+    <div class="main-method-title here" id="addHeader">
+        <h2> addHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
     </div>
     <p><p>Adds the specified header to the response. Existing header values are not replaced.</p>
@@ -1285,12 +1285,12 @@ these values is returned.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getHeaders">getHeaders</h2>
+    <div class="main-method-title here" id="getHeaders">
+        <h2> getHeaders </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
     </div>
     <p><p>Gets all the header values to which the specified header key maps to.</p>
@@ -1312,23 +1312,23 @@ these values is returned.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]</span>)</li>
-                    <li><p>The header values the specified header key maps to. An exception is thrown if no header is found. Use
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]</span>)</li>
+                <li><p>The header values the specified header key maps to. An exception is thrown if no header is found. Use
 <code>hasHeader()</code> beforehand to check the existence of header.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setHeader">setHeader</h2>
+    <div class="main-method-title here" id="setHeader">
+        <h2> setHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
     </div>
     <p><p>Sets the specified header to the response. If a mapping already exists for the specified header key, the
@@ -1361,12 +1361,12 @@ existing header value is replaced with the specfied header value.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="removeHeader">removeHeader</h2>
+    <div class="main-method-title here" id="removeHeader">
+        <h2> removeHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
     </div>
     <p><p>Removes the specified header from the response.</p>
@@ -1388,46 +1388,46 @@ existing header value is replaced with the specfied header value.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="removeAllHeaders">removeAllHeaders</h2>
+    <div class="main-method-title here" id="removeAllHeaders">
+        <h2> removeAllHeaders </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Removes all the headers from the response.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getHeaderNames">getHeaderNames</h2>
+    <div class="main-method-title here" id="getHeaderNames">
+        <h2> getHeaderNames </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Gets all the names of the headers of the response.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]</span>)</li>
-                    <li><p>An array of all the header names</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]</span>)</li>
+                <li><p>An array of all the header names</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setContentType">setContentType</h2>
+    <div class="main-method-title here" id="setContentType">
+        <h2> setContentType </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets the <code>content-type</code> header to the response.</p>
@@ -1449,100 +1449,100 @@ existing header value is replaced with the specfied header value.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getContentType">getContentType</h2>
+    <div class="main-method-title here" id="getContentType">
+        <h2> getContentType </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Gets the type of the payload of the response (i.e: the <code>content-type</code> header value).</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>Returns the <code>content-type</code> header value as a string</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
+                <li><p>Returns the <code>content-type</code> header value as a string</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getJsonPayload">getJsonPayload</h2>
+    <div class="main-method-title here" id="getJsonPayload">
+        <h2> getJsonPayload </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Extract <code>json</code> payload from the response. If the content type is not JSON, an <code>error</code> is returned.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The <code>json</code> payload or <code>error</code> in case of errors</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The <code>json</code> payload or <code>error</code> in case of errors</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getXmlPayload">getXmlPayload</h2>
+    <div class="main-method-title here" id="getXmlPayload">
+        <h2> getXmlPayload </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Extracts <code>xml</code> payload from the response. If the the content type is not XML, an <code>error</code> is returned.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The <code>xml</code> payload or <code>error</code> in case of errors</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The <code>xml</code> payload or <code>error</code> in case of errors</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getTextPayload">getTextPayload</h2>
+    <div class="main-method-title here" id="getTextPayload">
+        <h2> getTextPayload </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Extracts <code>text</code> payload from the response. If the content type is not of type text, an <code>error</code> is returned.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The string representation of the message payload or <code>error</code> in case of errors</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The string representation of the message payload or <code>error</code> in case of errors</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getByteChannel">getByteChannel</h2>
+    <div class="main-method-title here" id="getByteChannel">
+        <h2> getByteChannel </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Gets the response payload as a <code>ByteChannel</code>, except in the case of multiparts. To retrieve multiparts, use
@@ -1550,67 +1550,67 @@ existing header value is replaced with the specfied header value.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A byte channel from which the message payload can be read or <code>error</code> in case of errors</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>A byte channel from which the message payload can be read or <code>error</code> in case of errors</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getBinaryPayload">getBinaryPayload</h2>
+    <div class="main-method-title here" id="getBinaryPayload">
+        <h2> getBinaryPayload </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Gets the response payload as a <code>byte[]</code>.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The byte[] representation of the message payload or <code>error</code> in case of errors</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>The byte[] representation of the message payload or <code>error</code> in case of errors</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getBodyParts">getBodyParts</h2>
+    <div class="main-method-title here" id="getBodyParts">
+        <h2> getBodyParts </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Extracts body parts from the response. If the content type is not a composite media type, an error is returned.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns the body parts as an array of entities or an <code>error</code> if there were any errors in
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>Returns the body parts as an array of entities or an <code>error</code> if there were any errors in
 constructing the body parts from the response</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setETag">setETag</h2>
+    <div class="main-method-title here" id="setETag">
+        <h2> setETag </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload)</p>
     </div>
     <p><p>Sets the <code>etag</code> header for the given payload. The ETag is generated using a CRC32 hash function.</p>
@@ -1632,24 +1632,24 @@ constructing the body parts from the response</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setLastModified">setLastModified</h2>
+    <div class="main-method-title here" id="setLastModified">
+        <h2> setLastModified </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Sets the current time as the <code>last-modified</code> header.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setJsonPayload">setJsonPayload</h2>
+    <div class="main-method-title here" id="setJsonPayload">
+        <h2> setJsonPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets a <code>json</code> as the payload.</p>
@@ -1682,12 +1682,12 @@ for <code>json</code></p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setXmlPayload">setXmlPayload</h2>
+    <div class="main-method-title here" id="setXmlPayload">
+        <h2> setXmlPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets an <code>xml</code> as the payload</p>
@@ -1720,12 +1720,12 @@ for <code>xml</code></p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setTextPayload">setTextPayload</h2>
+    <div class="main-method-title here" id="setTextPayload">
+        <h2> setTextPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets a <code>string</code> as the payload.</p>
@@ -1758,12 +1758,12 @@ for <code>string</code></p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setBinaryPayload">setBinaryPayload</h2>
+    <div class="main-method-title here" id="setBinaryPayload">
+        <h2> setBinaryPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets a <code>byte[]</code> as the payload.</p>
@@ -1796,12 +1796,12 @@ for <code>byte[]</code></p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setBodyParts">setBodyParts</h2>
+    <div class="main-method-title here" id="setBodyParts">
+        <h2> setBodyParts </h2>
         <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a>[] bodyParts, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Set multiparts as the payload.</p>
@@ -1834,12 +1834,12 @@ for <code>byte[]</code></p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setFileAsPayload">setFileAsPayload</h2>
+    <div class="main-method-title here" id="setFileAsPayload">
+        <h2> setFileAsPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> filePath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets the content of the specified file as the entity body of the response.</p>
@@ -1872,12 +1872,12 @@ header value</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setByteChannel">setByteChannel</h2>
+    <div class="main-method-title here" id="setByteChannel">
+        <h2> setByteChannel </h2>
         <p class="method-types">(<a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
     </div>
     <p><p>Sets a <code>ByteChannel</code> as the payload.</p>
@@ -1910,12 +1910,12 @@ header value</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="setPayload">setPayload</h2>
+    <div class="main-method-title here" id="setPayload">
+        <h2> setPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../mime/objects/Entity.html">Entity</a>[] payload)</p>
     </div>
     <p><p>Sets the response payload.</p>
@@ -1938,7 +1938,7 @@ of body parts)</p>
         </div>
     
 
-        
+    
 </div>
                     
                 

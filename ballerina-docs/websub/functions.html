@@ -503,32 +503,32 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>websub : functions</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#addWebSubLinkHeader">addWebSubLinkHeader</a></td>
-                            <td width="70%"><p>Function to add link headers to a response to allow WebSub discovery.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#addWebSubLinkHeader">addWebSubLinkHeader</a></td>
+                                <td width="70%"><p>Function to add link headers to a response to allow WebSub discovery.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#extractTopicAndHubUrls">extractTopicAndHubUrls</a></td>
-                            <td width="70%"><p>Function to retrieve hub and topic URLs from the <code>http:response</code> from a publisher to a discovery request.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#extractTopicAndHubUrls">extractTopicAndHubUrls</a></td>
+                                <td width="70%"><p>Function to retrieve hub and topic URLs from the <code>http:response</code> from a publisher to a discovery request.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#startHub">startHub</a></td>
-                            <td width="70%"><p>Starts up the ballerina Hub.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#startHub">startHub</a></td>
+                                <td width="70%"><p>Starts up the ballerinaDup Hub.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -537,8 +537,8 @@
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="addWebSubLinkHeader">addWebSubLinkHeader</h2>
+    <div class="main-method-title here" id="addWebSubLinkHeader">
+        <h2> addWebSubLinkHeader </h2>
         <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] hubs, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
     </div>
     <p><p>Function to add link headers to a response to allow WebSub discovery.</p>
@@ -580,12 +580,12 @@
         </div>
     
 
-        
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="extractTopicAndHubUrls">extractTopicAndHubUrls</h2>
+    <div class="main-method-title here" id="extractTopicAndHubUrls">
+        <h2> extractTopicAndHubUrls </h2>
         <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response)</p>
     </div>
     <p><p>Function to retrieve hub and topic URLs from the <code>http:response</code> from a publisher to a discovery request.</p>
@@ -607,25 +607,25 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]<span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>(topic, hubs)</code> if parsing and extraction is successful, <code>error</code> if not</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]<span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p><code>(topic, hubs)</code> if parsing and extraction is successful, <code>error</code> if not</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="startHub">startHub</h2>
+    <div class="main-method-title here" id="startHub">
+        <h2> startHub </h2>
         <p class="method-types">(<a href="../http/objects/Listener.html">Listener</a> hubServiceListener, <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>? hubConfiguration)</p>
     </div>
-    <p><p>Starts up the ballerina Hub.</p>
+    <p><p>Starts up the ballerinaDup Hub.</p>
 </p>
      
         <div class="data-wrapper">
@@ -654,19 +654,19 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../websub/objects/WebSubHub.html">WebSubHub</a> | <a href="../websub/records/HubStartedUpError.html">HubStartedUpError</a></span>)</li>
-                    <li><p><code>WebSubHub</code> The WebSubHub object representing the newly started up hub, or <code>HubStartedUpError</code> indicating
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../websub/objects/WebSubHub.html">WebSubHub</a> | <a href="../websub/records/HubStartedUpError.html">HubStartedUpError</a></span>)</li>
+                <li><p><code>WebSubHub</code> The WebSubHub object representing the newly started up hub, or <code>HubStartedUpError</code> indicating
 that the hub is already started, and including the WebSubHub object representing the
 already started up hub</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                         </div>

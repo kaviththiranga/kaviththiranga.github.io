@@ -409,7 +409,7 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/config</span></h1>
             <h2>Module overview</h2>
-<p>The <code>ballerina/config</code> module provides the Config API to read configurations from environment variables, TOML files, and command-line parameters, and build a consolidated set of configurations.</p>
+<p>The <code>ballerinaDup/config</code> module provides the Config API to read configurations from environment variables, TOML files, and command-line parameters, and build a consolidated set of configurations.</p>
 <p>The precedence order for configuration lookup is as follows:</p>
 <ol>
 <li>CLI parameters (used with the -e flag)</li>
@@ -417,13 +417,13 @@
 <li>Configuration files in the TOML format</li>
 </ol>
 <p>If a configuration is defined in both a configuration file and as an environment variable, the environment variable takes precedence. Similarly, if the same is set as a CLI parameter, it replaces the value of the environment variable. This configuration resolution happens at the start of the program execution. Configurations can be set programmatically as well.</p>
-<p>The Config API provides the capability to feed sensitive data (e.g., passwords) to ballerina programs securely by encrypting them.</p>
+<p>The Config API provides the capability to feed sensitive data (e.g., passwords) to ballerinaDup programs securely by encrypting them.</p>
 <h2>Samples</h2>
 <h3>Setting configurations</h3>
-<p>To explicitly specify a configuration file, the <code>--config</code> or <code>-c</code> flag can be used. If this flag is not set when running a project, ballerina looks for a <code>ballerina.conf</code> file in project root. When running a single file or a <code>.balx</code>, it's picked from the same directory as the <code>.balx</code> or source. The path to the configuration file can either be an absolute or a relative path.</p>
-<pre><code class="language-sh">ballerina run --config /path/to/conf/file/custom-config-file-name.conf my-program.bal
+<p>To explicitly specify a configuration file, the <code>--config</code> or <code>-c</code> flag can be used. If this flag is not set when running a project, ballerinaDup looks for a <code>ballerinaDup.conf</code> file in project root. When running a single file or a <code>.balx</code>, it's picked from the same directory as the <code>.balx</code> or source. The path to the configuration file can either be an absolute or a relative path.</p>
+<pre><code class="language-sh">ballerinaDup run --config /path/to/conf/file/custom-config-file-name.conf my-program.bal
 </code></pre>
-<p>A configuration file should conform to the TOML format. ballerina only supports the following features of TOML: value types (string, int, float and boolean), tables, and nested tables.
+<p>A configuration file should conform to the TOML format. ballerinaDup only supports the following features of TOML: value types (string, int, float and boolean), tables, and nested tables.
 Given below is a sample:</p>
 <pre><code class="language-toml">[b7a.http.tracelog]
 console=true
@@ -436,7 +436,7 @@ path=&quot;./access.log&quot;
 <p>A key given inside a bracket forms a namespace. Any configuration that is specified between two such keys belongs to the namespace of the first of these keys. To access a configuration in a namespace, the fully qualified key should be given (e.g., <code>b7a.http.tracelog.path</code>).</p>
 <p>The following types can be given through a configuration file: <code>string</code>, <code>int</code>, <code>float</code>, and <code>boolean</code>. If the configuration value is not an <code>int</code>, <code>float</code>, or a <code>boolean</code>, it is considered a <code>string</code> and should always be quoted.</p>
 <p>The same configs can be set using CLI parameters as follows.</p>
-<pre><code class="language-bash">ballerina run -e b7a.http.tracelog.console=true -e b7a.http.tracelog.path=./trace.log
+<pre><code class="language-bash">ballerinaDup run -e b7a.http.tracelog.console=true -e b7a.http.tracelog.path=./trace.log
   -e b7a.http.accesslog.console=true -e b7a.http.accesslog.path=./access.log my-program.bal
 </code></pre>
 <p>Configurations in a file can be overridden by environment variables. To override a particular configuration, an environment variable that matches the configuration key must be set. As periods are not allowed in environment variables, periods in a configuration key should be replaced by underscores.</p>
@@ -448,12 +448,12 @@ $ export b7a_http_accesslog_path=”./access.log”
 $ set(x) b7a_http_tracelog_path=”./trace.log”
 $ set(x) b7a_http_accesslog_path=”./access.log”
 </code></pre>
-<p>If the configurations need to be shared during runtime, they can be set using the <code>setConfig()</code> function. Such configs are also available to the entire ballerina Virtual Machine (BVM).</p>
-<pre><code class="language-ballerina">config:setConfig(&quot;john.country&quot;, &quot;USA&quot;);
+<p>If the configurations need to be shared during runtime, they can be set using the <code>setConfig()</code> function. Such configs are also available to the entire ballerinaDup Virtual Machine (BVM).</p>
+<pre><code class="language-ballerinaDup">config:setConfig(&quot;john.country&quot;, &quot;USA&quot;);
 </code></pre>
 <h3>Reading configurations</h3>
 <p>The API provides functions to read configs in their original type.</p>
-<pre><code class="language-ballerina">// Reads a configuration as a string.
+<pre><code class="language-ballerinaDup">// Reads a configuration as a string.
 string host = config:getAsString(&quot;host&quot;); // Returns “” (i.e., empty string) if the configuration 
 //is not available.
 
@@ -469,11 +469,11 @@ boolean enabled = config:getAsBoolean(&quot;service.enabled&quot;); // Returns �
 // is not available.
 </code></pre>
 <p>When reading a configuration, a default value can be specified as well. If a default value is specified, it is returned if a configuration entry cannot be found for the specified key.</p>
-<pre><code class="language-ballerina">// Reads a configuration as a string, and if it does not exist, returns “localhost”.
+<pre><code class="language-ballerinaDup">// Reads a configuration as a string, and if it does not exist, returns “localhost”.
 string host  = config:getAsString(&quot;host&quot;, defaultValue = &quot;localhost&quot;);
 </code></pre>
 <p>The <code>contains()</code> function is used to check whether a configuration entry exists for the specified key.</p>
-<pre><code class="language-ballerina">// Checks whether the configuration is available.
+<pre><code class="language-ballerinaDup">// Checks whether the configuration is available.
 boolean configAvailable = config:contains(&quot;host&quot;); 
 </code></pre>
 <p>A set of configurations belonging to a particular namespace can be retrieved as a <code>map</code> using the <code>getAsMap()</code> function. Here is an example:</p>
@@ -488,15 +488,15 @@ console=true
 path=&quot;./access.log&quot;
 </code></pre>
 <p>The configurations for HTTP trace logs can be retrieved as a <code>map</code> as follows:</p>
-<pre><code class="language-ballerina">// Reads a configuration section as a map.
+<pre><code class="language-ballerinaDup">// Reads a configuration section as a map.
 // Here, the map’s key-value pairs represent config key-value pairs.
 map&lt;any&gt; serverAlphaMap  = config:getAsMap(&quot;b7a.http.tracelog&quot;);
 </code></pre>
-<p>In the above configuration file, the <code>host</code> is specified as <code>@env:{TRACE_LOG_READER_HOST}</code>. When resolving the configurations, ballerina looks for a variable named <code>TRACE_LOG_READER_HOST</code> in the environment variables and maps <code>b7a.http.tracelog.host</code> to its value.</p>
+<p>In the above configuration file, the <code>host</code> is specified as <code>@env:{TRACE_LOG_READER_HOST}</code>. When resolving the configurations, ballerinaDup looks for a variable named <code>TRACE_LOG_READER_HOST</code> in the environment variables and maps <code>b7a.http.tracelog.host</code> to its value.</p>
 <p>If the specified environment variable does not exist, it will will treat <code>@env:{TRACE_LOG_READER_HOST}</code> as a normal string value.</p>
 <h3>Securing configuration values</h3>
 <p>Sensitive values can be encrypted using the <code>encrypt</code> command as follows:</p>
-<pre><code class="language-sh">$ ballerina encrypt
+<pre><code class="language-sh">$ ballerinaDup encrypt
 Enter value: 
 
 Enter secret: 
@@ -514,10 +514,10 @@ Or add the following to the runtime command-line:
 password=”@encrypted:{JqlfWNWKM6gYiaGnS0Hse1J9F/v48gUR0Kxfa5gwjcM=}”
 </code></pre>
 <h3>Reading config files with encrypted values</h3>
-<p>When trying to run a ballerina program with a configuration file or CLI parameters that contain encrypted values, ballerina will first check to see if the <code>b7a.config.secret</code> configuration is set. This configuration is used to set the path to a file containing the secret required to decrypt the configurations. If it is set, the secret is read, and the secret file is deleted.</p>
+<p>When trying to run a ballerinaDup program with a configuration file or CLI parameters that contain encrypted values, ballerinaDup will first check to see if the <code>b7a.config.secret</code> configuration is set. This configuration is used to set the path to a file containing the secret required to decrypt the configurations. If it is set, the secret is read, and the secret file is deleted.</p>
 <p>If a secret file is not provided, the user is prompted to enter the secret. Values are decrypted only on demand when an encrypted value is looked up using the <code>getAsString()</code> function.</p>
-<pre><code class="language-bash">$ ballerina run program.bal 
-ballerina: enter secret for config value decryption:
+<pre><code class="language-bash">$ ballerinaDup run program.bal 
+ballerinaDup: enter secret for config value decryption:
 </code></pre>
 <p><strong>Note</strong>: <em>The same config file cannot contain values that are encrypted using different secrets.</em></p>
 
@@ -617,5 +617,7 @@ ballerina: enter secret for config value decryption:
     })
   ;
 </script>
+
+
 
 

@@ -417,11 +417,11 @@
         <div class="main-wrapper module-wrapper">
                 <h1>Module : <span class="modules">ballerina/reflect</span></h1>
             <h2>Module overview</h2>
-<p>This module provides utility methods for obtaining reflective information about the ballerina runtime.</p>
+<p>This module provides utility methods for obtaining reflective information about the ballerinaDup runtime.</p>
 <h2>Samples</h2>
 <h3>Get service annotations</h3>
 <p>The sample below shows how to retrieve all the annotations of a service:</p>
-<pre><code class="language-ballerina">@http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
+<pre><code class="language-ballerinaDup">@http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
 service hello on new http:Listener(9090) {
 
     resource function hello(http:Caller caller, http:Request req) {
@@ -433,7 +433,7 @@ service hello on new http:Listener(9090) {
 
 reflect:annotationData[] annotations = reflect:getServiceAnnotations(hello); 
 string annoName = annotations[0].name; // E.g. “ServiceConfig”
-string annoPkg = annotations[0].moduleName; // E.g. “ballerina.http”
+string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
 
 </code></pre>
 
@@ -533,5 +533,7 @@ string annoPkg = annotations[0].moduleName; // E.g. “ballerina.http”
     })
   ;
 </script>
+
+
 
 

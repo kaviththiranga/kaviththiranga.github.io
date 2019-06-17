@@ -479,26 +479,26 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>transactions : functions</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getCurrentTransactionId">getCurrentTransactionId</a></td>
-                            <td width="70%"><p>Get the current transaction id. This function is useful for user code to save state against a transaction ID,
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getCurrentTransactionId">getCurrentTransactionId</a></td>
+                                <td width="70%"><p>Get the current transaction id. This function is useful for user code to save state against a transaction ID,
 so that when the <code>oncommit</code> or <code>onabort</code> functions registered for a transaction can retrieve that state using the
 transaction  that is passed in to those functions.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#registerParticipantWithRemoteInitiator">registerParticipantWithRemoteInitiator</a></td>
-                            <td width="70%"><p>Registers a participant with the initiator's coordinator. This function will be called by the participant.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#registerParticipantWithRemoteInitiator">registerParticipantWithRemoteInitiator</a></td>
+                                <td width="70%"><p>Registers a participant with the initiator's coordinator. This function will be called by the participant.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -507,8 +507,8 @@ transaction  that is passed in to those functions.</p>
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getCurrentTransactionId">getCurrentTransactionId</h2>
+    <div class="main-method-title here" id="getCurrentTransactionId">
+        <h2> getCurrentTransactionId </h2>
         <p class="method-types">()</p>
     </div>
     <p><p>Get the current transaction id. This function is useful for user code to save state against a transaction ID,
@@ -517,22 +517,22 @@ transaction  that is passed in to those functions.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>A string representing the ID of the current transaction.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
+                <li><p>A string representing the ID of the current transaction.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="registerParticipantWithRemoteInitiator">registerParticipantWithRemoteInitiator</h2>
+    <div class="main-method-title here" id="registerParticipantWithRemoteInitiator">
+        <h2> registerParticipantWithRemoteInitiator </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> transactionId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> transactionBlockId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> registerAtURL, <a href="../transactions/records/RemoteProtocol.html">RemoteProtocol</a>[] participantProtocols)</p>
     </div>
     <p><p>Registers a participant with the initiator's coordinator. This function will be called by the participant.</p>
@@ -584,17 +584,17 @@ transaction  that is passed in to those functions.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../transactions/records/TransactionContext.html">TransactionContext</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>TransactionContext if the registration is successful or an error in case of a failure.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../transactions/records/TransactionContext.html">TransactionContext</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>TransactionContext if the registration is successful or an error in case of a failure.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                         </div>
