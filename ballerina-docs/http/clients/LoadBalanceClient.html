@@ -580,14 +580,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">http : clients - </span><span class="clients">LoadBalanceClient</span> </h1>
+            <h1><span class="title-type">Clients - </span> http : 
+                <span class="clients">LoadBalanceClient</span> </h1>
             <p><p>LoadBalanceClient endpoint provides load balancing functionality over multiple HTTP clients.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../http/records/LoadBalanceClientEndpointConfiguration.html">LoadBalanceClientEndpointConfiguration</a> loadBalanceClientConfig)</p>
 <div class="data-wrapper">
     
@@ -602,245 +604,188 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#post">
+    <div class="param-sum">
+        <div class="param-name">
+        post 
+        </div>
+        <div class="param-details"> <p>The POST remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#head">
+    <div class="param-sum">
+        <div class="param-name">
+        head 
+        </div>
+        <div class="param-details"> <p>The HEAD remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#patch">
+    <div class="param-sum">
+        <div class="param-name">
+        patch 
+        </div>
+        <div class="param-details"> <p>The PATCH remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#put">
+    <div class="param-sum">
+        <div class="param-name">
+        put 
+        </div>
+        <div class="param-details"> <p>The PUT remote function implementation of the Load Balance Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#options">
+    <div class="param-sum">
+        <div class="param-name">
+        options 
+        </div>
+        <div class="param-details"> <p>The OPTIONS remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#forward">
+    <div class="param-sum">
+        <div class="param-name">
+        forward 
+        </div>
+        <div class="param-details"> <p>The FORWARD remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#execute">
+    <div class="param-sum">
+        <div class="param-name">
+        execute 
+        </div>
+        <div class="param-details"> <p>The EXECUTE remote function implementation of the LoadBalancer Connector.
+The Execute remote function can be used to invoke an HTTP call with the given HTTP verb.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#delete">
+    <div class="param-sum">
+        <div class="param-name">
+        delete 
+        </div>
+        <div class="param-details"> <p>The DELETE remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#get">
+    <div class="param-sum">
+        <div class="param-name">
+        get 
+        </div>
+        <div class="param-details"> <p>The GET remote function implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#submit">
+    <div class="param-sum">
+        <div class="param-name">
+        submit 
+        </div>
+        <div class="param-details"> <p>The submit implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        getResponse 
+        </div>
+        <div class="param-details"> <p>The getResponse implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#hasPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        hasPromise 
+        </div>
+        <div class="param-details"> <p>The hasPromise implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getNextPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        getNextPromise 
+        </div>
+        <div class="param-details"> <p>The getNextPromise implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getPromisedResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        getPromisedResponse 
+        </div>
+        <div class="param-details"> <p>The getPromisedResponse implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#rejectPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        rejectPromise 
+        </div>
+        <div class="param-details"> <p>The rejectPromise implementation of the LoadBalancer Connector.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#post"><b>post </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#head"><b>head </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#patch"><b>patch </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#put"><b>put </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#options"><b>options </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#forward"><b>forward </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#execute"><b>execute </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#delete"><b>delete </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#get"><b>get </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#submit"><b>submit </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-        
-        <b> returns </b><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getResponse"><b>getResponse </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#hasPromise"><b>hasPromise </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getNextPromise"><b>getNextPromise </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-        
-        <b> returns </b><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getPromisedResponse"><b>getPromisedResponse </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise) 
-        
-        <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#rejectPromise"><b>rejectPromise </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -898,15 +843,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="post">
+        <a class="url-link" href="#post">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> post </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The POST remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -953,8 +907,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="head">
+        <a class="url-link" href="#head">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> head </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The HEAD remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1001,8 +963,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="patch">
+        <a class="url-link" href="#patch">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> patch </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The PATCH remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1049,8 +1019,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="put">
+        <a class="url-link" href="#put">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> put </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The PUT remote function implementation of the Load Balance Connector.</p>
 </p>
@@ -1097,8 +1075,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="options">
+        <a class="url-link" href="#options">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> options </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The OPTIONS remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1145,8 +1131,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="forward">
+        <a class="url-link" href="#forward">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> forward </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The FORWARD remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1192,8 +1186,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="execute">
+        <a class="url-link" href="#execute">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> execute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The EXECUTE remote function implementation of the LoadBalancer Connector.
 The Execute remote function can be used to invoke an HTTP call with the given HTTP verb.</p>
@@ -1251,8 +1253,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="delete">
+        <a class="url-link" href="#delete">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> delete </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The DELETE remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1299,8 +1309,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="get">
+        <a class="url-link" href="#get">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> get </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The GET remote function implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1347,8 +1365,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="submit">
+        <a class="url-link" href="#submit">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> submit </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The submit implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1405,8 +1431,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getResponse">
+        <a class="url-link" href="#getResponse">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getResponse </h2>
         <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The getResponse implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1442,8 +1476,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasPromise">
+        <a class="url-link" href="#hasPromise">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> hasPromise </h2>
         <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>The hasPromise implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1479,8 +1521,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getNextPromise">
+        <a class="url-link" href="#getNextPromise">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getNextPromise </h2>
         <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The getNextPromise implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1516,8 +1566,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getPromisedResponse">
+        <a class="url-link" href="#getPromisedResponse">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getPromisedResponse </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The getPromisedResponse implementation of the LoadBalancer Connector.</p>
 </p>
@@ -1553,8 +1611,12 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="rejectPromise">
+        <a class="url-link" href="#rejectPromise">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> rejectPromise </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+        
     </div>
     <p><p>The rejectPromise implementation of the LoadBalancer Connector.</p>
 </p>

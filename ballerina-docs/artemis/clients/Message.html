@@ -492,14 +492,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">artemis : clients - </span><span class="clients">Message</span> </h1>
+            <h1><span class="title-type">Clients - </span> artemis : 
+                <span class="clients">Message</span> </h1>
             <p><p>Represents ActiveMQ Artemis Message.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> session, <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a>? config)</p>
 <div class="data-wrapper">
     
@@ -531,149 +533,128 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#acknowledge">
+    <div class="param-sum">
+        <div class="param-name">
+        acknowledge 
+        </div>
+        <div class="param-details"> <p>Acknowledges reception of this message.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#getBodySize">
+    <div class="param-sum">
+        <div class="param-name">
+        getBodySize 
+        </div>
+        <div class="param-details"> <p>Returns the size (in bytes) of this message's body.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#putProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        putProperty 
+        </div>
+        <div class="param-details"> <p>Add message property.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getProperty 
+        </div>
+        <div class="param-details"> <p>Get a message property.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getType">
+    <div class="param-sum">
+        <div class="param-name">
+        getType 
+        </div>
+        <div class="param-details"> <p>The type of the message.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getPayload 
+        </div>
+        <div class="param-details"> <p>The message payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#saveToWritableByteChannel">
+    <div class="param-sum">
+        <div class="param-name">
+        saveToWritableByteChannel 
+        </div>
+        <div class="param-details"> <p>Call this function to save to a WritableByteChannel if the message is <code>STREAM</code> type.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getConfig">
+    <div class="param-sum">
+        <div class="param-name">
+        getConfig 
+        </div>
+        <div class="param-details"> <p>Get the message configuration.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#acknowledge"><b>acknowledge </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getBodySize"><b>getBodySize </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#putProperty"><b>putProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] value) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getProperty"><b>getProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getType"><b>getType </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../artemis/types.html#MessageType">MessageType</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getPayload"><b>getPayload </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#saveToWritableByteChannel"><b>saveToWritableByteChannel </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getConfig"><b>getConfig </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="acknowledge">
+        <a class="url-link" href="#acknowledge">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> acknowledge </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Acknowledges reception of this message.</p>
 </p>
@@ -698,8 +679,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBodySize">
+        <a class="url-link" href="#getBodySize">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getBodySize </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
+        </span>
+        
     </div>
     <p><p>Returns the size (in bytes) of this message's body.</p>
 </p>
@@ -720,8 +709,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="putProperty">
+        <a class="url-link" href="#putProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> putProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] value)</p>
+        
     </div>
     <p><p>Add message property.</p>
 </p>
@@ -757,8 +750,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getProperty">
+        <a class="url-link" href="#getProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Get a message property.</p>
 </p>
@@ -794,8 +795,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getType">
+        <a class="url-link" href="#getType">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getType </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../artemis/types.html#MessageType">MessageType</a> 
+        </span>
+        
     </div>
     <p><p>The type of the message.</p>
 </p>
@@ -816,8 +825,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getPayload">
+        <a class="url-link" href="#getPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getPayload </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> 
+        </span>
+        
     </div>
     <p><p>The message payload.</p>
 </p>
@@ -839,8 +856,16 @@ A map payload can contain an error if the type is unsupported.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="saveToWritableByteChannel">
+        <a class="url-link" href="#saveToWritableByteChannel">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> saveToWritableByteChannel </h2>
         <p class="method-types">(<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Call this function to save to a WritableByteChannel if the message is <code>STREAM</code> type.</p>
 </p>
@@ -876,8 +901,16 @@ A map payload can contain an error if the type is unsupported.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getConfig">
+        <a class="url-link" href="#getConfig">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getConfig </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a> 
+        </span>
+        
     </div>
     <p><p>Get the message configuration.</p>
 </p>

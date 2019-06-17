@@ -492,14 +492,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">artemis : clients - </span><span class="clients">Session</span> </h1>
+            <h1><span class="title-type">Clients - </span> artemis : 
+                <span class="clients">Session</span> </h1>
             <p><p>Represents ActiveMQ Artemis Session.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../artemis/clients/Connection.html">Connection</a> con, <a href="../../artemis/records/SessionConfiguration.html">SessionConfiguration</a>? config)</p>
 <div class="data-wrapper">
     
@@ -522,61 +524,62 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes the connection and release all its resources</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#isClosed">
+    <div class="param-sum">
+        <div class="param-name">
+        isClosed 
+        </div>
+        <div class="param-details"> <p>Returns true if close was already called</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#isClosed"><b>isClosed </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes the connection and release all its resources</p>
 </p>
@@ -601,8 +604,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="isClosed">
+        <a class="url-link" href="#isClosed">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> isClosed </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Returns true if close was already called</p>
 </p>

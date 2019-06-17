@@ -485,60 +485,62 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">auth : object -</span> <span class="objects">AuthStoreProvider</span> </h1>
+            <h1><span class="title-type">Object - </span> auth : <span class="objects">AuthStoreProvider</span> </h1>
             <p><p>Represents the auth store provider. Any type of implementation, such as
 LDAP, JDBC, file based, etc. should be object-wise similar</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#authenticate"><b>authenticate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> password) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#authenticate">
+    <div class="param-sum">
+        <div class="param-name">
+        authenticate 
+        </div>
+        <div class="param-details"> <p>Authenticate with username and password</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#getScopes">
+    <div class="param-sum">
+        <div class="param-name">
+        getScopes 
+        </div>
+        <div class="param-details"> <p>Reads the scope(s) for the user with the given username</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#getScopes"><b>getScopes </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="authenticate">
+        <a class="url-link" href="#authenticate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> authenticate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> password)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Authenticate with username and password</p>
 </p>
@@ -584,8 +586,16 @@ LDAP, JDBC, file based, etc. should be object-wise similar</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getScopes">
+        <a class="url-link" href="#getScopes">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getScopes </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Reads the scope(s) for the user with the given username</p>
 </p>

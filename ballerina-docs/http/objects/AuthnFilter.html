@@ -645,14 +645,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">AuthnFilter</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">AuthnFilter</span> </h1>
             <p><p>Representation of the Authentication filter.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../http/objects/AuthnHandlerChain.html">AuthnHandlerChain</a> authnHandlerChain)</p>
 <div class="data-wrapper">
     
@@ -666,50 +667,42 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#filterRequest"><b>filterRequest </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#filterResponse"><b>filterResponse </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#filterRequest">
+    <div class="param-sum">
+        <div class="param-name">
+        filterRequest 
+        </div>
+        <div class="param-details"> <p>Request filter method which attempts to authenticated the request.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#filterResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        filterResponse 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -737,16 +730,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="filterRequest">
+        <a class="url-link" href="#filterRequest">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> filterRequest </h2>
         <p class="method-types">(<a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Request filter method which attempts to authenticated the request.</p>
 </p>
@@ -802,8 +803,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="filterResponse">
+        <a class="url-link" href="#filterResponse">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> filterResponse </h2>
         <p class="method-types">(<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p></p>
      

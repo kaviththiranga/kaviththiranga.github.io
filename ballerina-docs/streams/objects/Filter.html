@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">Filter</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">Filter</span> </h1>
             <p><p>The <code>Filter</code> object represents the <code>where</code> clause in a streaming query. This object takes two parameter for
 initialization. <code>nextProcessorPointer</code> is the function pointer of the next processor to be invoked once the
 filtering is complete. conditionFunc is a function pointer which return true if the given where clause evaluates to
@@ -749,37 +749,44 @@ true.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Process the incoming stream events. This function takes an array of stream events, iterate each of the events
+in the array, then call the <code>conditionFunc</code> on each and see if <code>conditionFunc</code> is evaluates to true. if so,
+those events will be passed to the <code>nextPrcessorPointer</code> which can be the <code>process</code> function of the next
+processor object ( e.g. <code>Select</code>, <code>Window</code>, <code>Aggregator</code>.. etc).</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>Process the incoming stream events. This function takes an array of stream events, iterate each of the events
 in the array, then call the <code>conditionFunc</code> on each and see if <code>conditionFunc</code> is evaluates to true. if so,

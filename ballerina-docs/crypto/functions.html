@@ -695,7 +695,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>crypto : functions</h1>
+            <h1><span class="title-type">Functions - </span> crypto</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -954,8 +954,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="crc32b">
+        <a class="url-link" href="#crc32b">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> crc32b </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns Hex encoded CRC32B value for the provided element. This accepts <code>string</code>, <code>byte[]</code>, <code>json</code> and <code>xml</code> content.</p>
 </p>
@@ -991,8 +999,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decodePrivateKey">
+        <a class="url-link" href="#decodePrivateKey">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decodePrivateKey </h2>
         <p class="method-types">(<a href="../crypto/records/KeyStore.html">KeyStore</a>? keyStore, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? keyAlias, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? keyPassword)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../crypto/records/PrivateKey.html">PrivateKey</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Read a private key from the provided PKCS#12 archive file.</p>
 </p>
@@ -1048,8 +1064,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decodePublicKey">
+        <a class="url-link" href="#decodePublicKey">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decodePublicKey </h2>
         <p class="method-types">(<a href="../crypto/records/KeyStore.html">KeyStore</a>? keyStore, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? keyAlias)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../crypto/records/PublicKey.html">PublicKey</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Read a public key from the provided PKCS#12 archive file.</p>
 </p>
@@ -1095,8 +1119,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decryptAesCbc">
+        <a class="url-link" href="#decryptAesCbc">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decryptAesCbc </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] iv, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES CBC decrypted value for the given AES CBC encrypted data.</p>
 </p>
@@ -1162,8 +1194,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decryptAesEcb">
+        <a class="url-link" href="#decryptAesEcb">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decryptAesEcb </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES ECB decrypted value for the given AES ECB encrypted data.</p>
 </p>
@@ -1219,8 +1259,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decryptAesGcm">
+        <a class="url-link" href="#decryptAesGcm">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decryptAesGcm </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] iv, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? tagSize)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES GCM decrypted value for the given AES GCM encrypted data.</p>
 </p>
@@ -1296,8 +1344,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decryptRsaEcb">
+        <a class="url-link" href="#decryptRsaEcb">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decryptRsaEcb </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> | <a href="../crypto/records/PublicKey.html">PublicKey</a> key, <a href="../crypto/types.html#RsaPadding">RsaPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA decrypted value for the given RSA encrypted data.</p>
 </p>
@@ -1353,8 +1409,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="encryptAesCbc">
+        <a class="url-link" href="#encryptAesCbc">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> encryptAesCbc </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] iv, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES CBC encrypted value for the given data.</p>
 </p>
@@ -1420,8 +1484,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="encryptAesEcb">
+        <a class="url-link" href="#encryptAesEcb">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> encryptAesEcb </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES ECB encrypted value for the given data.</p>
 </p>
@@ -1477,8 +1549,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="encryptAesGcm">
+        <a class="url-link" href="#encryptAesGcm">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> encryptAesGcm </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] iv, <a href="../crypto/types.html#AesPadding">AesPadding</a> padding, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? tagSize)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns AES GCM encrypted value for the given data.</p>
 </p>
@@ -1554,8 +1634,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="encryptRsaEcb">
+        <a class="url-link" href="#encryptRsaEcb">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> encryptRsaEcb </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> | <a href="../crypto/records/PublicKey.html">PublicKey</a> key, <a href="../crypto/types.html#RsaPadding">RsaPadding</a> padding)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA encrypted value for the given data.</p>
 </p>
@@ -1611,8 +1699,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hashMd5">
+        <a class="url-link" href="#hashMd5">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hashMd5 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the MD5 hash of the given data.</p>
 </p>
@@ -1648,8 +1744,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hashSha1">
+        <a class="url-link" href="#hashSha1">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hashSha1 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the SHA-1 hash of the given data.</p>
 </p>
@@ -1685,8 +1789,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hashSha256">
+        <a class="url-link" href="#hashSha256">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hashSha256 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the SHA-256 hash of the given data.</p>
 </p>
@@ -1722,8 +1834,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hashSha384">
+        <a class="url-link" href="#hashSha384">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hashSha384 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the SHA-384 hash of the given data.</p>
 </p>
@@ -1759,8 +1879,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hashSha512">
+        <a class="url-link" href="#hashSha512">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hashSha512 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the SHA-512 hash of the given data.</p>
 </p>
@@ -1796,8 +1924,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hmacMd5">
+        <a class="url-link" href="#hmacMd5">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hmacMd5 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the HMAC using MD-5 hash function of the given data.</p>
 </p>
@@ -1843,8 +1979,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hmacSha1">
+        <a class="url-link" href="#hmacSha1">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hmacSha1 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the HMAC using SHA-1 hash function of the given data.</p>
 </p>
@@ -1890,8 +2034,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hmacSha256">
+        <a class="url-link" href="#hmacSha256">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hmacSha256 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the HMAC using SHA-256 hash function of the given data.</p>
 </p>
@@ -1937,8 +2089,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hmacSha384">
+        <a class="url-link" href="#hmacSha384">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hmacSha384 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the HMAC using SHA-384 hash function of the given data.</p>
 </p>
@@ -1984,8 +2144,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hmacSha512">
+        <a class="url-link" href="#hmacSha512">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hmacSha512 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns the HMAC using SHA-512 hash function of the given data.</p>
 </p>
@@ -2031,8 +2199,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="signRsaMd5">
+        <a class="url-link" href="#signRsaMd5">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> signRsaMd5 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> privateKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA-MD5 based signature value for the given data.</p>
 </p>
@@ -2078,8 +2254,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="signRsaSha1">
+        <a class="url-link" href="#signRsaSha1">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> signRsaSha1 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> privateKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA-SHA1 based signature value for the given data.</p>
 </p>
@@ -2125,8 +2309,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="signRsaSha256">
+        <a class="url-link" href="#signRsaSha256">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> signRsaSha256 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> privateKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA-SHA256 based signature value for the given data.</p>
 </p>
@@ -2172,8 +2364,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="signRsaSha384">
+        <a class="url-link" href="#signRsaSha384">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> signRsaSha384 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> privateKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA-SHA384 based signature value for the given data.</p>
 </p>
@@ -2219,8 +2419,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="signRsaSha512">
+        <a class="url-link" href="#signRsaSha512">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> signRsaSha512 </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] input, <a href="../crypto/records/PrivateKey.html">PrivateKey</a> privateKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Returns RSA-SHA512 based signature value for the given data.</p>
 </p>
@@ -2266,8 +2474,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="verifyRsaMd5Signature">
+        <a class="url-link" href="#verifyRsaMd5Signature">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> verifyRsaMd5Signature </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] signature, <a href="../crypto/records/PublicKey.html">PublicKey</a> publicKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Verify RSA-MD5 based signature.</p>
 </p>
@@ -2323,8 +2539,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="verifyRsaSha1Signature">
+        <a class="url-link" href="#verifyRsaSha1Signature">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> verifyRsaSha1Signature </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] signature, <a href="../crypto/records/PublicKey.html">PublicKey</a> publicKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Verify RSA-SHA1 based signature.</p>
 </p>
@@ -2380,8 +2604,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="verifyRsaSha256Signature">
+        <a class="url-link" href="#verifyRsaSha256Signature">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> verifyRsaSha256Signature </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] signature, <a href="../crypto/records/PublicKey.html">PublicKey</a> publicKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Verify RSA-SHA256 based signature.</p>
 </p>
@@ -2437,8 +2669,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="verifyRsaSha384Signature">
+        <a class="url-link" href="#verifyRsaSha384Signature">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> verifyRsaSha384Signature </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] signature, <a href="../crypto/records/PublicKey.html">PublicKey</a> publicKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Verify RSA-SHA384 based signature.</p>
 </p>
@@ -2494,8 +2734,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="verifyRsaSha512Signature">
+        <a class="url-link" href="#verifyRsaSha512Signature">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> verifyRsaSha512Signature </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] signature, <a href="../crypto/records/PublicKey.html">PublicKey</a> publicKey)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Verify RSA-SHA512 based signature.</p>
 </p>

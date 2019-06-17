@@ -445,14 +445,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">task : object -</span> <span class="objects">Scheduler</span> </h1>
+            <h1><span class="title-type">Object - </span> task : <span class="objects">Scheduler</span> </h1>
             <p><p>Represents a ballerinaDup task.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../task/records/TimerConfiguration.html">TimerConfiguration</a> | <a href="../../task/records/AppointmentConfiguration.html">AppointmentConfiguration</a> configs)</p>
 <div class="data-wrapper">
     
@@ -466,115 +467,100 @@
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#attach"><b>attach </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceToAttach, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> attachment) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#attach">
+    <div class="param-sum">
+        <div class="param-name">
+        attach 
+        </div>
+        <div class="param-details"> <p>Attaches the provided service to the task.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#detach"><b>detach </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> attachedService) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#detach">
+    <div class="param-sum">
+        <div class="param-name">
+        detach 
+        </div>
+        <div class="param-details"> <p>Detach the provided service from the task.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#start"><b>start </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#start">
+    <div class="param-sum">
+        <div class="param-name">
+        start 
+        </div>
+        <div class="param-details"> <p>Starts running the task. Task will not run until this has been called.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#stop"><b>stop </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#stop">
+    <div class="param-sum">
+        <div class="param-name">
+        stop 
+        </div>
+        <div class="param-details"> <p>Stops the task. This will stop, after finish running the existing jobs.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#pause"><b>pause </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#pause">
+    <div class="param-sum">
+        <div class="param-name">
+        pause 
+        </div>
+        <div class="param-details"> <p>Pauses the task.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#resume">
+    <div class="param-sum">
+        <div class="param-name">
+        resume 
+        </div>
+        <div class="param-details"> <p>Resumes a paused task.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#resume"><b>resume </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="attach">
+        <a class="url-link" href="#attach">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> attach </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceToAttach, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> attachment)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Attaches the provided service to the task.</p>
 </p>
@@ -620,8 +606,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="detach">
+        <a class="url-link" href="#detach">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> detach </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> attachedService)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Detach the provided service from the task.</p>
 </p>
@@ -657,8 +651,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="start">
+        <a class="url-link" href="#start">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> start </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Starts running the task. Task will not run until this has been called.</p>
 </p>
@@ -679,8 +681,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="stop">
+        <a class="url-link" href="#stop">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> stop </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Stops the task. This will stop, after finish running the existing jobs.</p>
 </p>
@@ -701,8 +711,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="pause">
+        <a class="url-link" href="#pause">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> pause </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Pauses the task.</p>
 </p>
@@ -723,8 +741,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="resume">
+        <a class="url-link" href="#resume">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> resume </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Resumes a paused task.</p>
 </p>

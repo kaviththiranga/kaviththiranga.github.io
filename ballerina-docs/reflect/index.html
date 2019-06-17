@@ -421,7 +421,7 @@
 <h2>Samples</h2>
 <h3>Get service annotations</h3>
 <p>The sample below shows how to retrieve all the annotations of a service:</p>
-<pre><code class="language-ballerinaDup">@http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
+<pre><code class="language-ballerina">@http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
 service hello on new http:Listener(9090) {
 
     resource function hello(http:Caller caller, http:Request req) {

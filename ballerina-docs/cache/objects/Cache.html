@@ -429,14 +429,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">cache : object -</span> <span class="objects">Cache</span> </h1>
+            <h1><span class="title-type">Object - </span> cache : <span class="objects">Cache</span> </h1>
             <p><p>Represents a cache.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> expiryTimeMillis, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> capacity, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> evictionFactor)</p>
 <div class="data-wrapper">
     
@@ -468,111 +469,101 @@
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#hasKey"><b>hasKey </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#hasKey">
+    <div class="param-sum">
+        <div class="param-name">
+        hasKey 
+        </div>
+        <div class="param-details"> <p>Checks whether the given key has an accociated cache value.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#size"><b>size </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#size">
+    <div class="param-sum">
+        <div class="param-name">
+        size 
+        </div>
+        <div class="param-details"> <p>Returns the size of the cache.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#put"><b>put </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> value) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#put">
+    <div class="param-sum">
+        <div class="param-name">
+        put 
+        </div>
+        <div class="param-details"> <p>Adds the given key, value pair to the provided cache.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#get"><b>get </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#get">
+    <div class="param-sum">
+        <div class="param-name">
+        get 
+        </div>
+        <div class="param-details"> <p>Returns the cached value associated with the given key. If the provided cache key is not found,
+() will be returned.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#remove"><b>remove </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#remove">
+    <div class="param-sum">
+        <div class="param-name">
+        remove 
+        </div>
+        <div class="param-details"> <p>Removes a cached value from a cache.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#keys">
+    <div class="param-sum">
+        <div class="param-name">
+        keys 
+        </div>
+        <div class="param-details"> <p>Returns all keys from current cache.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#keys"><b>keys </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasKey">
+        <a class="url-link" href="#hasKey">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> hasKey </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Checks whether the given key has an accociated cache value.</p>
 </p>
@@ -607,8 +598,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="size">
+        <a class="url-link" href="#size">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> size </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
+        </span>
+        
     </div>
     <p><p>Returns the size of the cache.</p>
 </p>
@@ -629,8 +628,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="put">
+        <a class="url-link" href="#put">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> put </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> value)</p>
+        
     </div>
     <p><p>Adds the given key, value pair to the provided cache.</p>
 </p>
@@ -666,8 +669,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="get">
+        <a class="url-link" href="#get">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> get </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>? 
+        </span>
+        
     </div>
     <p><p>Returns the cached value associated with the given key. If the provided cache key is not found,
 () will be returned.</p>
@@ -704,8 +715,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="remove">
+        <a class="url-link" href="#remove">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> remove </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
     </div>
     <p><p>Removes a cached value from a cache.</p>
 </p>
@@ -731,8 +746,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="keys">
+        <a class="url-link" href="#keys">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> keys </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Returns all keys from current cache.</p>
 </p>

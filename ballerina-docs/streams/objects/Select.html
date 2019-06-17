@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">Select</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">Select</span> </h1>
             <p><p>The <code>Select</code> object represents the select clause. Anything that comes under select clause like aggregator function
 invocations are also handled in this processor. Further, grouping of the events (provided by the groupby clause) is
 also performed in this processor. <code>aggregatorArr</code> is an array of aggregators which are used in the select clause.
@@ -751,52 +751,52 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Selects only the selected fields in the select clause.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#getGroupByKey">
+    <div class="param-sum">
+        <div class="param-name">
+        getGroupByKey 
+        </div>
+        <div class="param-details"> <p>Creates a unique key for each group with the given values in the group by clause.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#getGroupByKey"><b>getGroupByKey </b></a>
-    </span>
-    <span class="param-details">
-        (<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>Selects only the selected fields in the select clause.</p>
 </p>
@@ -822,8 +822,16 @@ used as a breadcrumb to identify the select clause if there are multiple <code>f
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getGroupByKey">
+        <a class="url-link" href="#getGroupByKey">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getGroupByKey </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> groupbyFunctionArray, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a> e)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Creates a unique key for each group with the given values in the group by clause.</p>
 </p>

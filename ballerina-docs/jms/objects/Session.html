@@ -509,14 +509,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">jms : object -</span> <span class="objects">Session</span> </h1>
+            <h1><span class="title-type">Object - </span> jms : <span class="objects">Session</span> </h1>
             <p><p>Represents JMS session</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../jms/objects/Connection.html">Connection</a> connection, <a href="../../jms/records/SessionConfiguration.html">SessionConfiguration</a> c)</p>
 <div class="data-wrapper">
     
@@ -539,130 +540,114 @@
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#createTextMessage"><b>createTextMessage </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> content) 
-        
-        <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#createTextMessage">
+    <div class="param-sum">
+        <div class="param-name">
+        createTextMessage 
+        </div>
+        <div class="param-details"> <p>Creates a JMS message which holds text content</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#createMapMessage"><b>createMapMessage </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> content) 
-        
-        <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#createMapMessage">
+    <div class="param-sum">
+        <div class="param-name">
+        createMapMessage 
+        </div>
+        <div class="param-details"> <p>Creates a JMS message which holds Map content</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#unsubscribe"><b>unsubscribe </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subscriptionId) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#unsubscribe">
+    <div class="param-sum">
+        <div class="param-name">
+        unsubscribe 
+        </div>
+        <div class="param-details"> <p>Unsubscribes a durable subscription that has been created by a client.
+It is erroneous for a client to delete a durable subscription while there is an active (not closed) consumer
+for the subscription, or while a consumed message is part of a pending transaction or has not been
+acknowledged in the session.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#createTemporaryQueue"><b>createTemporaryQueue </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#createTemporaryQueue">
+    <div class="param-sum">
+        <div class="param-name">
+        createTemporaryQueue 
+        </div>
+        <div class="param-details"> <p>Creates a JMS Queue which can be used as temporary response destination.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#createTemporaryTopic"><b>createTemporaryTopic </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#createTemporaryTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        createTemporaryTopic 
+        </div>
+        <div class="param-details"> <p>Creates a JMS Topic which can be used as temporary response destination.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#createQueue"><b>createQueue </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName) 
-        
-        <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#createQueue">
+    <div class="param-sum">
+        <div class="param-name">
+        createQueue 
+        </div>
+        <div class="param-details"> <p>Creates a JMS Queue which can be used with a message producer.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#createTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        createTopic 
+        </div>
+        <div class="param-details"> <p>Creates a JMS Topic which can be used with a message producer.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#createTopic"><b>createTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topicName) 
-        
-        <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createTextMessage">
+        <a class="url-link" href="#createTextMessage">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createTextMessage </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS message which holds text content</p>
 </p>
@@ -698,8 +683,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createMapMessage">
+        <a class="url-link" href="#createMapMessage">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createMapMessage </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS message which holds Map content</p>
 </p>
@@ -735,8 +728,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unsubscribe">
+        <a class="url-link" href="#unsubscribe">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unsubscribe </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subscriptionId)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Unsubscribes a durable subscription that has been created by a client.
 It is erroneous for a client to delete a durable subscription while there is an active (not closed) consumer
@@ -775,8 +776,16 @@ acknowledged in the session.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createTemporaryQueue">
+        <a class="url-link" href="#createTemporaryQueue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createTemporaryQueue </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS Queue which can be used as temporary response destination.</p>
 </p>
@@ -797,8 +806,16 @@ acknowledged in the session.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createTemporaryTopic">
+        <a class="url-link" href="#createTemporaryTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createTemporaryTopic </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS Topic which can be used as temporary response destination.</p>
 </p>
@@ -819,8 +836,16 @@ acknowledged in the session.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createQueue">
+        <a class="url-link" href="#createQueue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createQueue </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> queueName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS Queue which can be used with a message producer.</p>
 </p>
@@ -856,8 +881,16 @@ acknowledged in the session.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="createTopic">
+        <a class="url-link" href="#createTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> createTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topicName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates a JMS Topic which can be used with a message producer.</p>
 </p>

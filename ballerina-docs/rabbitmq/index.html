@@ -457,7 +457,7 @@
 <h2>Samples</h2>
 <h3>RabbitMQ Producer</h3>
 <p>Following program will produce a message to a RabbitMQ server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
+<pre><code class="language-ballerina">import ballerinaDup/rabbitmq;
 import ballerinaDup/log;
 
 public function main() {
@@ -472,7 +472,7 @@ public function main() {
 </code></pre>
 <h3>RabbitMQ Subscriber</h3>
 <p>Following program will consume a message from a RabbitMQ server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/rabbitmq;
+<pre><code class="language-ballerina">import ballerinaDup/rabbitmq;
 import ballerinaDup/log;
 
 listener rabbitmq:ChannelListener chann = new({ host: &quot;localhost&quot;, port: 5672 });

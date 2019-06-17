@@ -462,7 +462,7 @@ to support the RPC (Remote Procedure Call) protocol. The gRPC protocol is layere
 <h3>Protocol buffers</h3>
 <p>This is a mechanism to serialize the structured data introduced by Google and used by the gRPC framework. Specify the
 structured data that needs to be serialized in the  <code>.proto</code> file. A sample <code>.proto</code> file is shown below.</p>
-<pre><code class="language-ballerinaDup">syntax = &quot;proto3&quot;;
+<pre><code class="language-ballerina">syntax = &quot;proto3&quot;;
 import &quot;google/protobuf/wrappers.proto&quot;;
 service ServerStreaming {
      rpc receiveMessage(google.protobuf.StringValue) returns (stream google.protobuf.StringValue);
@@ -493,7 +493,7 @@ service ServerStreaming {
 <p><code>--mode</code>   - Set mode (client or server) to generate code samples. If not specified, only the stub file is generated.</p>
 <h3>Unary communication</h3>
 <p>The sample given below contains a service that sends a response to each request using an auto-generated ballerinaDup stub.</p>
-<pre><code class="language-ballerinaDup">// Server listener configuration.
+<pre><code class="language-ballerina">// Server listener configuration.
 listener grpc:Listener ep = new(9090);
 
 // The gRPC service is attached to the server.
@@ -511,7 +511,7 @@ service SamplegRPCService on ep {
 }
 </code></pre>
 <p>The sample given below calls the above service in a blocking manner using an auto-generated ballerinaDup stub.</p>
-<pre><code class="language-ballerinaDup">// Use ‘BlockingClient’ to execute the call in the blocking mode.
+<pre><code class="language-ballerina">// Use ‘BlockingClient’ to execute the call in the blocking mode.
 SamplegRPCServiceBlockingClient SamplegRPCServiceBlockingEp = new(&quot;http://localhost:9090&quot;);
 
 // Create gRPC headers.
@@ -532,7 +532,7 @@ if (responseFromServer is (string, grpc:Headers)) {
 </code></pre>
 <h3>Server Streaming</h3>
 <p>The sample given below shows a server streaming service.</p>
-<pre><code class="language-ballerinaDup">// Server listener configuration.
+<pre><code class="language-ballerina">// Server listener configuration.
 listener grpc:Listener ep = new(9090);
 
 // The gRPC service is attached to the server.
@@ -559,7 +559,7 @@ service ServerStreaming on ep {
 }
 </code></pre>
 <p>The sample given below calls the above service using the auto-generated ballerinaDup client stub and listens to the multiple responses from the server.</p>
-<pre><code class="language-ballerinaDup">// Keep track of the message that were completely received.
+<pre><code class="language-ballerina">// Keep track of the message that were completely received.
 boolean isCompleted = false;
 public function main(string... args) {
    // Client endpoint configurations.
@@ -601,7 +601,7 @@ service ServerStreamingMessageListener = service {
 </code></pre>
 <h3>Bidirectional Streaming</h3>
 <p>The sample given below includes a service that handles bidirectional streaming.</p>
-<pre><code class="language-ballerinaDup">// Server listener configuration.
+<pre><code class="language-ballerina">// Server listener configuration.
 listener grpc:Listener ep = new(9090);
 
 // Set the ‘clientStreaming’ and ‘serverStreaming’ to true. It specifies that the service supports bidirectional streaming.
@@ -634,7 +634,7 @@ service Chat bind ep {
 }
 </code></pre>
 <p>The sample given below calls the above service.</p>
-<pre><code class="language-ballerinaDup">// Client endpoint configuration.
+<pre><code class="language-ballerina">// Client endpoint configuration.
 ChatClient chatEp = new(&quot;http://localhost:9090&quot;);
     
 grpc:StreamingClient ep;

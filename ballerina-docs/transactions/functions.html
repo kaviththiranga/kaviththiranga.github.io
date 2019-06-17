@@ -479,7 +479,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>transactions : functions</h1>
+            <h1><span class="title-type">Functions - </span> transactions</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -508,8 +508,16 @@ transaction  that is passed in to those functions.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getCurrentTransactionId">
+        <a class="url-link" href="#getCurrentTransactionId">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getCurrentTransactionId </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Get the current transaction id. This function is useful for user code to save state against a transaction ID,
 so that when the <code>oncommit</code> or <code>onabort</code> functions registered for a transaction can retrieve that state using the
@@ -532,8 +540,16 @@ transaction  that is passed in to those functions.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="registerParticipantWithRemoteInitiator">
+        <a class="url-link" href="#registerParticipantWithRemoteInitiator">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> registerParticipantWithRemoteInitiator </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> transactionId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> transactionBlockId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> registerAtURL, <a href="../transactions/records/RemoteProtocol.html">RemoteProtocol</a>[] participantProtocols)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../transactions/records/TransactionContext.html">TransactionContext</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Registers a participant with the initiator's coordinator. This function will be called by the participant.</p>
 </p>

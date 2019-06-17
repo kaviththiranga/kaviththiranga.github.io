@@ -645,14 +645,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">AuthnHandlerChain</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">AuthnHandlerChain</span> </h1>
             <p><p>Representation of Authentication handler chain</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../http/objects/AuthHandlerRegistry.html">AuthHandlerRegistry</a> authHandlerRegistry)</p>
 <div class="data-wrapper">
     
@@ -666,55 +667,56 @@
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#handle"><b>handle </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Request.html">Request</a> req) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#handle">
+    <div class="param-sum">
+        <div class="param-name">
+        handle 
+        </div>
+        <div class="param-details"> <p>Tries to authenticate against any one of the available authentication handlers</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#handleWithSpecificAuthnHandlers">
+    <div class="param-sum">
+        <div class="param-name">
+        handleWithSpecificAuthnHandlers 
+        </div>
+        <div class="param-details"> <p>Tries to authenticate against a specifc sub set of the authentication handlers, using the given array of auth provider ids</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#handleWithSpecificAuthnHandlers"><b>handleWithSpecificAuthnHandlers </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] authProviderIds, <a href="../../http/objects/Request.html">Request</a> req) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="handle">
+        <a class="url-link" href="#handle">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> handle </h2>
         <p class="method-types">(<a href="../../http/objects/Request.html">Request</a> req)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Tries to authenticate against any one of the available authentication handlers</p>
 </p>
@@ -750,8 +752,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="handleWithSpecificAuthnHandlers">
+        <a class="url-link" href="#handleWithSpecificAuthnHandlers">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> handleWithSpecificAuthnHandlers </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] authProviderIds, <a href="../../http/objects/Request.html">Request</a> req)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Tries to authenticate against a specifc sub set of the authentication handlers, using the given array of auth provider ids</p>
 </p>

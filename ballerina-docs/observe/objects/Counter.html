@@ -453,14 +453,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">observe : object -</span> <span class="objects">Counter</span> </h1>
+            <h1><span class="title-type">Object - </span> observe : <span class="objects">Counter</span> </h1>
             <p><p>This represents the metric type - counter, that can be only increased by an integer number.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? desc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
 <div class="data-wrapper">
     
@@ -496,89 +497,76 @@ will be used.</p>
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#register"><b>register </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#unregister"><b>unregister </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#increment"><b>increment </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#reset"><b>reset </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getValue"><b>getValue </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#register">
+    <div class="param-sum">
+        <div class="param-name">
+        register 
+        </div>
+        <div class="param-details"> <p>Register the counter metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregister">
+    <div class="param-sum">
+        <div class="param-name">
+        unregister 
+        </div>
+        <div class="param-details"> <p>Unregister the counter metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#increment">
+    <div class="param-sum">
+        <div class="param-name">
+        increment 
+        </div>
+        <div class="param-details"> <p>Increment the counter's value by an amount.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#reset">
+    <div class="param-sum">
+        <div class="param-name">
+        reset 
+        </div>
+        <div class="param-details"> <p>Resets the counter's value to zero.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getValue">
+    <div class="param-sum">
+        <div class="param-name">
+        getValue 
+        </div>
+        <div class="param-details"> <p>Retrieves the counter's current value.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -626,16 +614,24 @@ will be used.</p>
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="register">
+        <a class="url-link" href="#register">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> register </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Register the counter metric instance with the Metric Registry.</p>
 </p>
@@ -657,8 +653,12 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unregister">
+        <a class="url-link" href="#unregister">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unregister </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
 </p>
@@ -669,8 +669,12 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="increment">
+        <a class="url-link" href="#increment">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> increment </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount)</p>
+        
     </div>
     <p><p>Increment the counter's value by an amount.</p>
 </p>
@@ -697,8 +701,12 @@ used if there is no amount passed in.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="reset">
+        <a class="url-link" href="#reset">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> reset </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Resets the counter's value to zero.</p>
 </p>
@@ -709,8 +717,16 @@ used if there is no amount passed in.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getValue">
+        <a class="url-link" href="#getValue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getValue </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the counter's current value.</p>
 </p>

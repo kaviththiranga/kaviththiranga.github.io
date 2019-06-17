@@ -485,14 +485,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">auth : object -</span> <span class="objects">ConfigAuthStoreProvider</span> </h1>
+            <h1><span class="title-type">Object - </span> auth : <span class="objects">ConfigAuthStoreProvider</span> </h1>
             <p><p>Represents ballerinaDup configuration file based auth store provider.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../auth/records/ConfigAuthProviderConfig.html">ConfigAuthProviderConfig</a> configAuthProviderConfig)</p>
 <div class="data-wrapper">
     
@@ -507,110 +508,86 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#authenticate"><b>authenticate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> user, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> password) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#extractHash"><b>extractHash </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> configValue) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getScopes"><b>getScopes </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#readPassword"><b>readPassword </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getConfigAuthValue"><b>getConfigAuthValue </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> property) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getArray"><b>getArray </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> groupString) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#authenticate">
+    <div class="param-sum">
+        <div class="param-name">
+        authenticate 
+        </div>
+        <div class="param-details"> <p>Attempts to authenticate with username and password.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#extractHash">
+    <div class="param-sum">
+        <div class="param-name">
+        extractHash 
+        </div>
+        <div class="param-details"> <p>Extract password hash from the configuration file.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getScopes">
+    <div class="param-sum">
+        <div class="param-name">
+        getScopes 
+        </div>
+        <div class="param-details"> <p>Reads the scope(s) for the user with the given username.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#readPassword">
+    <div class="param-sum">
+        <div class="param-name">
+        readPassword 
+        </div>
+        <div class="param-details"> <p>Reads the password hash for a user.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getConfigAuthValue">
+    <div class="param-sum">
+        <div class="param-name">
+        getConfigAuthValue 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getArray">
+    <div class="param-sum">
+        <div class="param-name">
+        getArray 
+        </div>
+        <div class="param-details"> <p>Construct an array of groups from the comma separed group string passed.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -638,16 +615,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="authenticate">
+        <a class="url-link" href="#authenticate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> authenticate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> user, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> password)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Attempts to authenticate with username and password.</p>
 </p>
@@ -693,8 +678,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="extractHash">
+        <a class="url-link" href="#extractHash">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> extractHash </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> configValue)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Extract password hash from the configuration file.</p>
 </p>
@@ -730,8 +723,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getScopes">
+        <a class="url-link" href="#getScopes">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getScopes </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Reads the scope(s) for the user with the given username.</p>
 </p>
@@ -767,8 +768,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="readPassword">
+        <a class="url-link" href="#readPassword">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> readPassword </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> username)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Reads the password hash for a user.</p>
 </p>
@@ -804,8 +813,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getConfigAuthValue">
+        <a class="url-link" href="#getConfigAuthValue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getConfigAuthValue </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> property)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p></p>
      
@@ -847,8 +864,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getArray">
+        <a class="url-link" href="#getArray">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getArray </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> groupString)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Construct an array of groups from the comma separed group string passed.</p>
 </p>

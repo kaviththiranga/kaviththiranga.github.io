@@ -430,7 +430,7 @@ retrieve the current call stack and the particular call stack frame for an error
 and to look up properties from the runtime context.</p>
 <h3>Samples</h3>
 <p>The following sample shows how to access the Invocation Context, set data to it and access the same.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerinaDup/io;
 import ballerinaDup/runtime;
 
 // Set data to the Invocation Context.
@@ -475,19 +475,19 @@ string token = runtime:getInvocationContext().authenticationContext.authToken;
 io:println(token);
 </code></pre>
 <p>The following sample shows how to halt the current <code>worker</code> for a given time period.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerinaDup/runtime;
 
 // Sleep the current worker for 5 seconds.
 runtime:sleep(5000);
 </code></pre>
 <p>The following sample shows how to access properties from the runtime.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerinaDup/runtime;
 
 // Retrieve the property ‘ballerinaDup version’ from the runtime.
 runtime:getProperty(&quot;ballerinaDup.version&quot;);
 </code></pre>
 <p>The following sample shows how to access the call stack and how to trap an error.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerinaDup/io;
 import ballerinaDup/runtime;
 
 public function main() {

@@ -741,16 +741,17 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">Scheduler</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">Scheduler</span> </h1>
             <p><p>The <code>Scheduler</code> object is responsible for generating streams:TIMER events at the given timestamp. Once the event is
 generated, the timer event is passed to the provided <code>processFunc</code> function pointer. The function pointer is the
 <code>process</code> function of the target processor, to which the timer event should be sent.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> processFunc)</p>
 <div class="data-wrapper">
     
@@ -764,53 +765,52 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#notifyAt"><b>notifyAt </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#notifyAt">
+    <div class="param-sum">
+        <div class="param-name">
+        notifyAt 
+        </div>
+        <div class="param-details"> <p>Schedule to send a timer events at the given timestamp.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#sendTimerEvents">
+    <div class="param-sum">
+        <div class="param-name">
+        sendTimerEvents 
+        </div>
+        <div class="param-details"> <p>Creates the timer events.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#sendTimerEvents"><b>sendTimerEvents </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="notifyAt">
+        <a class="url-link" href="#notifyAt">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> notifyAt </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp)</p>
+        
     </div>
     <p><p>Schedule to send a timer events at the given timestamp.</p>
 </p>
@@ -836,8 +836,16 @@ generated, the timer event is passed to the provided <code>processFunc</code> fu
                     
                         <div class="method-content">
     <div class="main-method-title here" id="sendTimerEvents">
+        <a class="url-link" href="#sendTimerEvents">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> sendTimerEvents </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Creates the timer events.</p>
 </p>

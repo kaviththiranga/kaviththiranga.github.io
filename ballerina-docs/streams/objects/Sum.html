@@ -741,82 +741,72 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">Sum</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">Sum</span> </h1>
             <p><p>Aggregator to perform summation of values in a stream.</p>
 </p>
 
             <div class="constants">
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> value, <a href="../../streams/UNKOWN/EventType.html">EventType</a> eventType) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#copy"><b>copy </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../streams/objects/Aggregator.html">Aggregator</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#saveState"><b>saveState </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#restoreState"><b>restoreState </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                <div class="method-sum">
+                    
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Updates the current sum of numeric values based on the <code>eventType</code>. If the <code>eventType</code> is <code>streams:CURRENT</code>,
+<code>value</code> is added to the current sum. If the <code>eventType</code> is <code>streams:EXPIRED</code>, <code>value</code> is subtracted from the
+current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Current summation will be reset, regardless the <code>value</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#copy">
+    <div class="param-sum">
+        <div class="param-name">
+        copy 
+        </div>
+        <div class="param-details"> <p>Returns a copy of the <code>Sum</code> aggregator without its current state.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#saveState">
+    <div class="param-sum">
+        <div class="param-name">
+        saveState 
+        </div>
+        <div class="param-details"> <p>Return current state to be saved as a map of <code>any</code> typed values.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#restoreState">
+    <div class="param-sum">
+        <div class="param-name">
+        restoreState 
+        </div>
+        <div class="param-details"> <p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -854,16 +844,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> value, <a href="../../streams/UNKOWN/EventType.html">EventType</a> eventType)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> 
+        </span>
+        
     </div>
     <p><p>Updates the current sum of numeric values based on the <code>eventType</code>. If the <code>eventType</code> is <code>streams:CURRENT</code>,
 <code>value</code> is added to the current sum. If the <code>eventType</code> is <code>streams:EXPIRED</code>, <code>value</code> is subtracted from the
@@ -911,8 +909,16 @@ current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Curren
                     
                         <div class="method-content">
     <div class="main-method-title here" id="copy">
+        <a class="url-link" href="#copy">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> copy </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a copy of the <code>Sum</code> aggregator without its current state.</p>
 </p>
@@ -933,8 +939,16 @@ current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Curren
                     
                         <div class="method-content">
     <div class="main-method-title here" id="saveState">
+        <a class="url-link" href="#saveState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> saveState </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
+        </span>
+        
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
@@ -955,8 +969,12 @@ current sum. If the <code>eventType</code> is <code>streams:RESET</code>, Curren
                     
                         <div class="method-content">
     <div class="main-method-title here" id="restoreState">
+        <a class="url-link" href="#restoreState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
+        
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
 </p>

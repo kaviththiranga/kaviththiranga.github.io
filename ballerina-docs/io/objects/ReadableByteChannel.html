@@ -541,89 +541,86 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">io : object -</span> <span class="objects">ReadableByteChannel</span> </h1>
+            <h1><span class="title-type">Object - </span> io : <span class="objects">ReadableByteChannel</span> </h1>
             <p><p>ReadableByteChannel represents an input resource (i.e file, socket). which could be used to source bytes.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#read"><b>read </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> nBytes) 
-        
-        <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#read">
+    <div class="param-sum">
+        <div class="param-name">
+        read 
+        </div>
+        <div class="param-details"> <p>Source bytes from a given input/output resource.</p>
+<p>Number of bytes returned will be &lt; 0 if the file reached its end.</p>
+<p>This operation will be asynchronous, where the total number of required bytes might not be returned at a given
+time.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#base64Encode"><b>base64Encode </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#base64Encode">
+    <div class="param-sum">
+        <div class="param-name">
+        base64Encode 
+        </div>
+        <div class="param-details"> <p>Encodes a given ReadableByteChannel with Base64 encoding scheme.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#base64Decode"><b>base64Decode </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#base64Decode">
+    <div class="param-sum">
+        <div class="param-name">
+        base64Decode 
+        </div>
+        <div class="param-details"> <p>Decodes a given ReadableByteChannel with Base64 encoding scheme.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes a given ReadableByteChannel.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="read">
+        <a class="url-link" href="#read">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> read </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> nBytes)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Source bytes from a given input/output resource.</p>
 <p>Number of bytes returned will be &lt; 0 if the file reached its end.</p>
@@ -662,8 +659,16 @@ time.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="base64Encode">
+        <a class="url-link" href="#base64Encode">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> base64Encode </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Encodes a given ReadableByteChannel with Base64 encoding scheme.</p>
 </p>
@@ -684,8 +689,16 @@ time.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="base64Decode">
+        <a class="url-link" href="#base64Decode">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> base64Decode </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Decodes a given ReadableByteChannel with Base64 encoding scheme.</p>
 </p>
@@ -706,8 +719,16 @@ time.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes a given ReadableByteChannel.</p>
 </p>

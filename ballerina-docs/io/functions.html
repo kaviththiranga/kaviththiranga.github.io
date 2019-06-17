@@ -527,7 +527,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>io : functions</h1>
+            <h1><span class="title-type">Functions - </span> io</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -618,8 +618,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createReadableChannel">
+        <a class="url-link" href="#createReadableChannel">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createReadableChannel </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> 
+        </span>
+        
     </div>
     <p><p>Creates an in-memory channel which will reference stream of bytes.</p>
 </p>
@@ -655,8 +663,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="openReadableCsvFile">
+        <a class="url-link" href="#openReadableCsvFile">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> openReadableCsvFile </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../io/objects/ReadableCSVChannel.html">ReadableCSVChannel</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a readable CSV channel from a give file path.</p>
 </p>
@@ -722,8 +738,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="openReadableFile">
+        <a class="url-link" href="#openReadableFile">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> openReadableFile </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a ReadableByteChannel from a given file path.</p>
 </p>
@@ -759,8 +783,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="openWritableCsvFile">
+        <a class="url-link" href="#openWritableCsvFile">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> openWritableCsvFile </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../io/objects/WritableCSVChannel.html">WritableCSVChannel</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a writable CSV channel from a give file path.</p>
 </p>
@@ -826,8 +858,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="openWritableFile">
+        <a class="url-link" href="#openWritableFile">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> openWritableFile </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> append)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../io/objects/WritableByteChannel.html">WritableByteChannel</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a WritableByteChannel from a given file path.</p>
 </p>
@@ -873,8 +913,12 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="print">
+        <a class="url-link" href="#print">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> print </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
+        
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT.</p>
 </p>
@@ -900,8 +944,12 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="println">
+        <a class="url-link" href="#println">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> println </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
+        
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT followed by a new line.</p>
 </p>
@@ -927,8 +975,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="readln">
+        <a class="url-link" href="#readln">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> readln </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> a)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the input read from STDIN.</p>
 </p>
@@ -964,8 +1020,16 @@ These values will be converted to their string representation.)</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="sprintf">
+        <a class="url-link" href="#sprintf">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> sprintf </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> format, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> args)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns a formatted string using the specified format string and arguments. Following format specifiers are allowed.
 b              boolean

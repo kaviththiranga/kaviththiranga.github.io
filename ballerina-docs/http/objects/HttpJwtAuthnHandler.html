@@ -645,14 +645,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">HttpJwtAuthnHandler</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">HttpJwtAuthnHandler</span> </h1>
             <p><p>Representation of JWT Auth handler for HTTP traffic</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../auth/objects/JWTAuthProvider.html">JWTAuthProvider</a> jwtAuthenticator)</p>
 <div class="data-wrapper">
     
@@ -666,50 +667,43 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#canHandle"><b>canHandle </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Request.html">Request</a> req) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#handle"><b>handle </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Request.html">Request</a> req) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#canHandle">
+    <div class="param-sum">
+        <div class="param-name">
+        canHandle 
+        </div>
+        <div class="param-details"> <p>Checks if the request can be authenticated with JWT</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#handle">
+    <div class="param-sum">
+        <div class="param-name">
+        handle 
+        </div>
+        <div class="param-details"> <p>Authenticates the incoming request using JWT authentication</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -747,16 +741,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="canHandle">
+        <a class="url-link" href="#canHandle">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> canHandle </h2>
         <p class="method-types">(<a href="../../http/objects/Request.html">Request</a> req)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Checks if the request can be authenticated with JWT</p>
 </p>
@@ -792,8 +794,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="handle">
+        <a class="url-link" href="#handle">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> handle </h2>
         <p class="method-types">(<a href="../../http/objects/Request.html">Request</a> req)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Authenticates the incoming request using JWT authentication</p>
 </p>

@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">StreamEvent</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">StreamEvent</span> </h1>
             <p><p>The <code>StreamEvent</code> object is a wrapper around the actual data being received to the input stream. If a record is
 receive to a input stream, that record is converted to a map of anydata values and set that map to a field called
 <code>data</code> in a new <code>StreamEvent</code> object. <code>StreamEvent</code> is only used internally to transmit event data from one
@@ -753,9 +753,10 @@ state and a timer event is used to trigger the <code>process</code> method of a 
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> eventData, <a href="../../streams/UNKOWN/EventType.html">EventType</a> eventType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timestamp)</p>
 <div class="data-wrapper">
     
@@ -787,61 +788,54 @@ state and a timer event is used to trigger the <code>process</code> method of a 
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#copy"><b>copy </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../streams/objects/StreamEvent.html">StreamEvent</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addData"><b>addData </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> eventData) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addAttribute"><b>addAttribute </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> val) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#copy">
+    <div class="param-sum">
+        <div class="param-name">
+        copy 
+        </div>
+        <div class="param-details"> <p>Returns a copy of the stream event instance.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#addData">
+    <div class="param-sum">
+        <div class="param-name">
+        addData 
+        </div>
+        <div class="param-details"> <p>Adds key values pairs in a given map to the field <code>data</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#addAttribute">
+    <div class="param-sum">
+        <div class="param-name">
+        addAttribute 
+        </div>
+        <div class="param-details"> <p>Adds an attribute of an event to the map with its value.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -889,16 +883,24 @@ state and a timer event is used to trigger the <code>process</code> method of a 
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="copy">
+        <a class="url-link" href="#copy">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> copy </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../streams/objects/StreamEvent.html">StreamEvent</a> 
+        </span>
+        
     </div>
     <p><p>Returns a copy of the stream event instance.</p>
 </p>
@@ -919,8 +921,12 @@ state and a timer event is used to trigger the <code>process</code> method of a 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addData">
+        <a class="url-link" href="#addData">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addData </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> eventData)</p>
+        
     </div>
     <p><p>Adds key values pairs in a given map to the field <code>data</code>.</p>
 </p>
@@ -946,8 +952,12 @@ state and a timer event is used to trigger the <code>process</code> method of a 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addAttribute">
+        <a class="url-link" href="#addAttribute">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addAttribute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a> val)</p>
+        
     </div>
     <p><p>Adds an attribute of an event to the map with its value.</p>
 </p>

@@ -441,7 +441,7 @@
 <li><code>noOfRecurrences</code> - The number of times a particular task needs to be executed. This is optional and should be given as an <code>int</code>.</li>
 </ul>
 <p>The following example creates a listener, which registers a task with an initial delay of 3000 milliseconds and is executed every 1000 milliseconds for 10 times. The <code>onTrigger</code> resource function is triggered when the clock goes off. The <code>count</code> variable is incremented by the task.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/task;
 
 // Task Timer configuration record to configure task listener.
@@ -474,7 +474,7 @@ service timerService on timer {
 <li><code>noOfRecurrences</code> - The number of times a particular task needs to be executed. This is optional and should be given as an <code>int</code>.</li>
 </ul>
 <p>The following example creates a task appointment, which registers a service using a CRON expression to execute the task every 5 seconds for 11 times. The <code>count</code> variable is incremented by the task.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/task;
 
 // Task Appointment configuration record to task Listener.
@@ -526,7 +526,7 @@ service appointmentService on appointment {
 <h4>The Timer configuration for a Scheduler</h4>
 <p>A <code>Scheduler</code> can be used to create timers via its <code>TimerConfiguration</code>.</p>
 <p>The following example creates a <code>task:Scheduler</code> as a timer. The <code>createTimer()</code> function uses its input values to create a Task Scheduler dynamically. It attaches the <code>timerService</code> to the <code>timer</code> Scheduler it created. Calling the <code>timer.start()</code> function starts the <code>timer</code> Scheduler.</p>
-<pre><code class="language-ballerinaDup">public function createTimer(int interval, int delay, int recurrences) {
+<pre><code class="language-ballerina">public function createTimer(int interval, int delay, int recurrences) {
     task:TimerConfiguration timerConfiguration = {
             interval: interval,
             delay: delay,
@@ -555,7 +555,7 @@ service timerService = service {
 <h4>The Appointment configuration for a Scheduler</h4>
 <p>A <code>Scheduler</code> can also be used to create appointments via its <code>AppointmentConfiguration</code>.</p>
 <p>The following example creates a Task Scheduler as an appointment. The <code>createAppointment()</code> function creates an appointment using the CRON expression provided as the input parameter. A service can be attached  to the Scheduler using the <code>attach()</code> function. Calling the <code>appointment.start()</code> function starts the <code>appointment</code> Scheduler.</p>
-<pre><code class="language-ballerinaDup">public function createAppointment(string cronExpression, int recurrences) {
+<pre><code class="language-ballerina">public function createAppointment(string cronExpression, int recurrences) {
     task:AppointmentConfiguration appointmentConfiguration = {
             appointmentDetails: cronExpression,
             noOfRecurrences: recurrences

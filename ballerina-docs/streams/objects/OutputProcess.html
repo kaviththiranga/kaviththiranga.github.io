@@ -741,15 +741,16 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">OutputProcess</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">OutputProcess</span> </h1>
             <p><p>The <code>OutputProcess</code> object is responsible for sending the output (only the events of type <code>streams:CURRENT</code> to the
 destination stream. It takes a function pointer <code>outputFunc</code> which actually has the logic to process the output.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> outputFunc)</p>
 <div class="data-wrapper">
     
@@ -763,38 +764,42 @@ destination stream. It takes a function pointer <code>outputFunc</code> which ac
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Sends the output to the streaming action. most of the time the output is published to a destination stream
+at the streaming action. Only the events with type <code>streams:CURRENT</code> are passed to the <code>outputFunc</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>Sends the output to the streaming action. most of the time the output is published to a destination stream
 at the streaming action. Only the events with type <code>streams:CURRENT</code> are passed to the <code>outputFunc</code>.</p>

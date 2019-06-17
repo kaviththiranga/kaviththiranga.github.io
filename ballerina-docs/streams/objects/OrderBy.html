@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">OrderBy</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">OrderBy</span> </h1>
             <p><p>The <code>OrderBy</code> object represents the desugared code of <code>order by</code> clause of a streaming query. This object takes 3
 parameters to initialize itself. <code>nextProcessPointer</code> is the <code>process</code> method of the next processor. <code>fieldFuncs</code>
 is an array of function pointers which returns the field values to be sorted. <code>sortTypes</code> is an array of string
@@ -750,9 +750,10 @@ to sort.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessorPointer, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> fieldFuncs, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] sortTypes)</p>
 <div class="data-wrapper">
     
@@ -784,33 +785,32 @@ to sort.</p>
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Sorts the given array of stream events according to the given parameters (fieldFuncs and sortTypes).</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -868,16 +868,20 @@ to sort.</p>
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>Sorts the given array of stream events according to the given parameters (fieldFuncs and sortTypes).</p>
 </p>

@@ -476,14 +476,17 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>jms : listeners : <span class="listeners">DurableTopicSubscriber</span> </h1>
+            <h1>
+                <span class="title-type">Listener - </span> jms : <span class="listeners">DurableTopicSubscriber</span> 
+            </h1>
             <p><p>JMS DurableTopicSubscriber endpoint</p>
 </p>
 
             <div class="constants">
+                <div class="method-sum">
                 
                     
-                        <h2>New Method</h2>
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../jms/objects/Session.html">Session</a> | <a href="../../jms/records/ReceiverEndpointConfiguration.html">ReceiverEndpointConfiguration</a> c, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topicPattern, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> identifier, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> messageSelector)</p>
 <div class="data-wrapper">
     
@@ -536,19 +539,15 @@
                     <div class="method-list">
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getCallerActions"><b>getCallerActions </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../jms/clients/DurableTopicSubscriberCaller.html">DurableTopicSubscriberCaller</a> 
-        
-    </span>
-    
-</p>
+<a href="#getCallerActions">
+    <div class="param-sum">
+        <div class="param-name">
+        getCallerActions 
+        </div>
+        <div class="param-details"> <p>Return the subscrber caller actions</p>
+ </div>
+    </div>
+</a>
                         
                     </div>
                 
@@ -558,52 +557,41 @@
                     <div class="method-list">
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__attach"><b>__attach </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__attach">
+    <div class="param-sum">
+        <div class="param-name">
+        __attach 
+        </div>
+        <div class="param-details"> <p>Binds the durable topic subscriber endpoint to a service</p>
+ </div>
+    </div>
+</a>
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__start"><b>__start </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__start">
+    <div class="param-sum">
+        <div class="param-name">
+        __start 
+        </div>
+        <div class="param-details"> <p>Starts the endpoint. Function is ignored by the subscriber endpoint</p>
+ </div>
+    </div>
+</a>
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__stop"><b>__stop </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__stop">
+    <div class="param-sum">
+        <div class="param-name">
+        __stop 
+        </div>
+        <div class="param-details"> <p>Ends consuming messages from the DurableTopicSubscriber endpoint</p>
+ </div>
+    </div>
+</a>
                         
                     </div>
                 
+                </div>
 
                 
                     
@@ -654,8 +642,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getCallerActions">
+        <a class="url-link" href="#getCallerActions">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getCallerActions </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/clients/DurableTopicSubscriberCaller.html">DurableTopicSubscriberCaller</a> 
+        </span>
+        
     </div>
     <p><p>Return the subscrber caller actions</p>
 </p>
@@ -681,8 +677,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__attach">
+        <a class="url-link" href="#__attach">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __attach </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Binds the durable topic subscriber endpoint to a service</p>
 </p>
@@ -728,8 +732,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__start">
+        <a class="url-link" href="#__start">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __start </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Starts the endpoint. Function is ignored by the subscriber endpoint</p>
 </p>
@@ -750,8 +762,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__stop">
+        <a class="url-link" href="#__stop">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __stop </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Ends consuming messages from the DurableTopicSubscriber endpoint</p>
 </p>

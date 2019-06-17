@@ -517,14 +517,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">websub : object -</span> <span class="objects">H2HubPersistenceStore</span> </h1>
+            <h1><span class="title-type">Object - </span> websub : <span class="objects">H2HubPersistenceStore</span> </h1>
             <p><p>Represents H2 based hub persistence configuration and functions.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../h2/clients/Client.html">Client</a> subscriptionDbClient)</p>
 <div class="data-wrapper">
     
@@ -538,102 +539,87 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addSubscription"><b>addSubscription </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a> subscriptionDetails) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeSubscription"><b>removeSubscription </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a> subscriptionDetails) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addTopic"><b>addTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeTopic"><b>removeTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#retrieveTopics"><b>retrieveTopics </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#retrieveAllSubscribers"><b>retrieveAllSubscribers </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#addSubscription">
+    <div class="param-sum">
+        <div class="param-name">
+        addSubscription 
+        </div>
+        <div class="param-details"> <p>Function to add or update subscription details.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeSubscription">
+    <div class="param-sum">
+        <div class="param-name">
+        removeSubscription 
+        </div>
+        <div class="param-details"> <p>Function to remove subscription details.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#addTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        addTopic 
+        </div>
+        <div class="param-details"> <p>Function to add a topic.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        removeTopic 
+        </div>
+        <div class="param-details"> <p>Function to remove a topic.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#retrieveTopics">
+    <div class="param-sum">
+        <div class="param-name">
+        retrieveTopics 
+        </div>
+        <div class="param-details"> <p>Function to retrieve all registered topics.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#retrieveAllSubscribers">
+    <div class="param-sum">
+        <div class="param-name">
+        retrieveAllSubscribers 
+        </div>
+        <div class="param-details"> <p>Function to retrieve subscription details of all subscribers.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -661,16 +647,20 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addSubscription">
+        <a class="url-link" href="#addSubscription">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addSubscription </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a> subscriptionDetails)</p>
+        
     </div>
     <p><p>Function to add or update subscription details.</p>
 </p>
@@ -696,8 +686,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeSubscription">
+        <a class="url-link" href="#removeSubscription">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeSubscription </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a> subscriptionDetails)</p>
+        
     </div>
     <p><p>Function to remove subscription details.</p>
 </p>
@@ -723,8 +717,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addTopic">
+        <a class="url-link" href="#addTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
     </div>
     <p><p>Function to add a topic.</p>
 </p>
@@ -750,8 +748,12 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeTopic">
+        <a class="url-link" href="#removeTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
     </div>
     <p><p>Function to remove a topic.</p>
 </p>
@@ -777,8 +779,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="retrieveTopics">
+        <a class="url-link" href="#retrieveTopics">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> retrieveTopics </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Function to retrieve all registered topics.</p>
 </p>
@@ -799,8 +809,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="retrieveAllSubscribers">
+        <a class="url-link" href="#retrieveAllSubscribers">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> retrieveAllSubscribers </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../websub/records/SubscriptionDetails.html">SubscriptionDetails</a>[] 
+        </span>
+        
     </div>
     <p><p>Function to retrieve subscription details of all subscribers.</p>
 </p>

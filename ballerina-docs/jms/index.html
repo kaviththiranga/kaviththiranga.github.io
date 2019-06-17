@@ -462,7 +462,7 @@ initialized. For other endpoints, the developer must explicitly provide a proper
 <h2>Samples</h2>
 <h3>JMS Simple Queue Consumer</h3>
 <p>Following is a simple listener program that consumes messages from a ballerinaDup Message Broker queue named <code>MyQueue</code>.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 // Create a simple queue receiver.
@@ -489,7 +489,7 @@ service jmsListener on consumerEP {
 </code></pre>
 <h3>JMS Simple Topic publisher.</h3>
 <p>Following is a simple topic publisher program that sends messages to a ballerinaDup Message Broker topic named <code>MyTopic</code>.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 // Create a topic publisher.
@@ -515,7 +515,7 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Queue Message Receiver</h3>
 <p>Following is a listener program that explicitly initializes a JMS session to be used in the consumer.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 // Initialize a JMS connection with the provider.
@@ -550,7 +550,7 @@ service jmsListener on consumerEP {
 </code></pre>
 <h3>JMS Queue Message Producer</h3>
 <p>Following is a queue sender program that explicitly initializes a JMS session to be used in the producer.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 // Initialize a JMS connection with the provider.
@@ -581,7 +581,7 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Topic Subscriber</h3>
 <p>Following is a topic subscriber program that subscribes to a particular JMS topic.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 jms:Connection conn = new({
@@ -608,7 +608,7 @@ service jmsListener on subscriberEndpoint {
 </code></pre>
 <h3>JMS Topic Producer</h3>
 <p>Following is a topic producer program that publishes to a particular JMS topic.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/jms;
+<pre><code class="language-ballerina">import ballerinaDup/jms;
 import ballerinaDup/log;
 
 jms:Connection jmsConnection = new({

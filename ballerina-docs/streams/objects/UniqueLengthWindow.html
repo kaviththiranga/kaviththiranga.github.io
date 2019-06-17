@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">UniqueLengthWindow</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">UniqueLengthWindow</span> </h1>
             <p><p>This is a length window which only keeps the unique events.
 E.g.
 from inputStream window <code>uniqueLength(inputStream.timestamp, 4000)</code>
@@ -755,9 +755,10 @@ The <code>uniqueLength</code> window should only have two parameters (stream fie
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters)</p>
 <div class="data-wrapper">
     
@@ -780,89 +781,75 @@ The <code>uniqueLength</code> window should only have two parameters (stream fie
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#initParameters"><b>initParameters </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getCandidateEvents"><b>getCandidateEvents </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger) 
-        
-        <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#saveState"><b>saveState </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#restoreState"><b>restoreState </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#initParameters">
+    <div class="param-sum">
+        <div class="param-name">
+        initParameters 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
+                            
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>The <code>process</code> function process the incoming events to the events and update the current state of the window.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getCandidateEvents">
+    <div class="param-sum">
+        <div class="param-name">
+        getCandidateEvents 
+        </div>
+        <div class="param-details"> <p>Returns the events(State) which match with the where condition in the join clause for a given event.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#saveState">
+    <div class="param-sum">
+        <div class="param-name">
+        saveState 
+        </div>
+        <div class="param-details"> <p>Return current state to be saved as a map of <code>any</code> typed values.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#restoreState">
+    <div class="param-sum">
+        <div class="param-name">
+        restoreState 
+        </div>
+        <div class="param-details"> <p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -950,16 +937,20 @@ The <code>uniqueLength</code> window should only have two parameters (stream fie
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="initParameters">
+        <a class="url-link" href="#initParameters">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> initParameters </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] parameters)</p>
+        
     </div>
     <p></p>
      
@@ -983,8 +974,12 @@ The <code>uniqueLength</code> window should only have two parameters (stream fie
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>The <code>process</code> function process the incoming events to the events and update the current state of the window.</p>
 </p>
@@ -1010,8 +1005,16 @@ The <code>uniqueLength</code> window should only have two parameters (stream fie
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getCandidateEvents">
+        <a class="url-link" href="#getCandidateEvents">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getCandidateEvents </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a> originEvent, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> isLHSTrigger)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?, <a href="../../streams/objects/StreamEvent.html">StreamEvent</a>?<span>)</span> 
+        </span>
+        
     </div>
     <p><p>Returns the events(State) which match with the where condition in the join clause for a given event.</p>
 </p>
@@ -1070,8 +1073,16 @@ stream and one from rhs stream.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="saveState">
+        <a class="url-link" href="#saveState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> saveState </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
+        </span>
+        
     </div>
     <p><p>Return current state to be saved as a map of <code>any</code> typed values.</p>
 </p>
@@ -1092,8 +1103,12 @@ stream and one from rhs stream.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="restoreState">
+        <a class="url-link" href="#restoreState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
+        
     </div>
     <p><p>Restores the saved state which is passed as a map of <code>any</code> typed values.</p>
 </p>

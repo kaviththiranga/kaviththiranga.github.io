@@ -479,7 +479,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>runtime : functions</h1>
+            <h1><span class="title-type">Functions - </span> runtime</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -538,8 +538,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getCallStack">
+        <a class="url-link" href="#getCallStack">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getCallStack </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieves the Call Stack</p>
 </p>
@@ -560,8 +568,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getErrorCallStackFrame">
+        <a class="url-link" href="#getErrorCallStackFrame">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getErrorCallStackFrame </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? e)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieves the Call Stack Frame for a particular error</p>
 </p>
@@ -597,8 +613,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getInvocationContext">
+        <a class="url-link" href="#getInvocationContext">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getInvocationContext </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../runtime/records/InvocationContext.html">InvocationContext</a> 
+        </span>
+        
     </div>
     <p><p>Creates a InvocationContext instance.</p>
 </p>
@@ -619,8 +643,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getProperty">
+        <a class="url-link" href="#getProperty">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the value associated with the specified property name.</p>
 </p>
@@ -656,8 +688,12 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="sleep">
+        <a class="url-link" href="#sleep">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> sleep </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> millis)</p>
+        
     </div>
     <p><p>Halts the current worker for a predefined amount of time.</p>
 </p>
@@ -683,8 +719,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="timeout">
+        <a class="url-link" href="#timeout">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> timeout </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> millis)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#future">future</a> 
+        </span>
+        
     </div>
     <p><p>Gives a timeout to the current worker for a predefined amount of time.</p>
 </p>

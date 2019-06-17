@@ -450,7 +450,7 @@
 <h2>Samples</h2>
 <h3>NATS Producer</h3>
 <p>Following program will produce a message to a NATS server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/nats;
+<pre><code class="language-ballerina">import ballerinaDup/nats;
 import ballerinaDup/io;
 
 public function main() {
@@ -465,7 +465,7 @@ public function main() {
 </code></pre>
 <h3>NATS Subscriber</h3>
 <p>Following program will consume a message from a NATS server</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/nats;
+<pre><code class="language-ballerina">import ballerinaDup/nats;
 import ballerinaDup/io;
 
 listener nats:Listener subscription = new({ host: &quot;localhost&quot;, port: 4222, clientId: &quot;s0&quot; });

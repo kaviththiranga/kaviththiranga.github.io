@@ -645,14 +645,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">PushPromise</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">PushPromise</span> </h1>
             <p><p>Represents an HTTP/2 <code>PUSH_PROMISE</code> frame.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> method)</p>
 <div class="data-wrapper">
     
@@ -677,132 +678,110 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#hasHeader"><b>hasHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeader"><b>getHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeaders"><b>getHeaders </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addHeader"><b>addHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setHeader"><b>setHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeHeader"><b>removeHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeAllHeaders"><b>removeAllHeaders </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeaderNames"><b>getHeaderNames </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#hasHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        hasHeader 
+        </div>
+        <div class="param-details"> <p>Checks whether the requested header exists.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeader 
+        </div>
+        <div class="param-details"> <p>Returns the header value with the specified header name.
+If there are more than one header value for the specified header name, the first value is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeaders">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeaders 
+        </div>
+        <div class="param-details"> <p>Gets transport headers from the <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#addHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        addHeader 
+        </div>
+        <div class="param-details"> <p>Adds the specified key/value pair as an HTTP header to the <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        setHeader 
+        </div>
+        <div class="param-details"> <p>Sets the value of a transport header in <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        removeHeader 
+        </div>
+        <div class="param-details"> <p>Removes a transport header from the <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeAllHeaders">
+    <div class="param-sum">
+        <div class="param-name">
+        removeAllHeaders 
+        </div>
+        <div class="param-details"> <p>Removes all transport headers from the <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeaderNames">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeaderNames 
+        </div>
+        <div class="param-details"> <p>Gets all transport header names from the <code>PushPromise</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -840,16 +819,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasHeader">
+        <a class="url-link" href="#hasHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> hasHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Checks whether the requested header exists.</p>
 </p>
@@ -885,8 +872,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeader">
+        <a class="url-link" href="#getHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the header value with the specified header name.
 If there are more than one header value for the specified header name, the first value is returned.</p>
@@ -923,8 +918,16 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaders">
+        <a class="url-link" href="#getHeaders">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeaders </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Gets transport headers from the <code>PushPromise</code>.</p>
 </p>
@@ -960,8 +963,12 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addHeader">
+        <a class="url-link" href="#addHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Adds the specified key/value pair as an HTTP header to the <code>PushPromise</code>.</p>
 </p>
@@ -997,8 +1004,12 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setHeader">
+        <a class="url-link" href="#setHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Sets the value of a transport header in <code>PushPromise</code>.</p>
 </p>
@@ -1034,8 +1045,12 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeHeader">
+        <a class="url-link" href="#removeHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
     </div>
     <p><p>Removes a transport header from the <code>PushPromise</code>.</p>
 </p>
@@ -1061,8 +1076,12 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeAllHeaders">
+        <a class="url-link" href="#removeAllHeaders">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeAllHeaders </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Removes all transport headers from the <code>PushPromise</code>.</p>
 </p>
@@ -1073,8 +1092,16 @@ If there are more than one header value for the specified header name, the first
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaderNames">
+        <a class="url-link" href="#getHeaderNames">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeaderNames </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Gets all transport header names from the <code>PushPromise</code>.</p>
 </p>

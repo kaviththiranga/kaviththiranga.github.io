@@ -428,7 +428,7 @@ a connection pool matching the properties you provided already exists.</p>
 <blockquote>
 <p><strong>Info:</strong> This is the connection pool that is used by default.</p>
 </blockquote>
-<pre><code class="language-ballerinaDup">h2:Client testDB = new({
+<pre><code class="language-ballerina">h2:Client testDB = new({
     path: &quot;/home/ballerinaDup/test/&quot;,
     name: &quot;testdb&quot;,
     username: &quot;SA&quot;,
@@ -437,7 +437,7 @@ a connection pool matching the properties you provided already exists.</p>
 </code></pre>
 <p><strong>2. An unshareable connection pool owned by the client</strong></p>
 <p>If you define the <code>poolOptions</code> field inline, an unshareable connection pool will be created.</p>
-<pre><code class="language-ballerinaDup">h2:Client testDB = new({
+<pre><code class="language-ballerina">h2:Client testDB = new({
     path: &quot;/home/ballerinaDup/test/&quot;,
     name: &quot;testdb&quot;,
     username: &quot;SA&quot;,
@@ -449,7 +449,7 @@ a connection pool matching the properties you provided already exists.</p>
 <p>If you create a record of the <code>sql:PoolOptions</code> type and reuse that in the configuration of multiple clients, a shared
 connection pool will be created, for each set of clients that connect to the same database instance with the same set
 of properties.</p>
-<pre><code class="language-ballerinaDup">h2:Client testDB1;
+<pre><code class="language-ballerina">h2:Client testDB1;
 h2:Client testDB2;
 h2:Client testDB3;
 
@@ -486,7 +486,7 @@ creating tables and executing stored procedures. It also supports selecting, ins
 <p>For more details on the supported remote functions, and of the SQL data types and query parameters relevant to these database operations, see the documentation of the <code>sql</code> module.</p>
 <h2>Samples</h2>
 <h3>Creating a client in the embedded mode of H2</h3>
-<pre><code class="language-ballerinaDup">h2:Client testDB = new({
+<pre><code class="language-ballerina">h2:Client testDB = new({
     path: &quot;/home/ballerinaDup/test/&quot;,
     name: &quot;testdb&quot;,
     username: &quot;SA&quot;,
@@ -494,7 +494,7 @@ creating tables and executing stored procedures. It also supports selecting, ins
 });
 </code></pre>
 <h3>Creating a client in the server mode of H2</h3>
-<pre><code class="language-ballerinaDup">h2:Client testDB = new({
+<pre><code class="language-ballerina">h2:Client testDB = new({
     host: &quot;localhost&quot;,
     port: 9092,
     name: &quot;testdb&quot;,
@@ -503,7 +503,7 @@ creating tables and executing stored procedures. It also supports selecting, ins
 });
 </code></pre>
 <h3>Creating a client in the in-memory mode of H2</h3>
-<pre><code class="language-ballerinaDup">h2:Client testDB = new({
+<pre><code class="language-ballerina">h2:Client testDB = new({
     name: &quot;testdb&quot;,
     username: &quot;SA&quot;,
     password: &quot;&quot;

@@ -499,7 +499,7 @@ resources.</p>
 <p><strong>WebSocket upgrade</strong>: During a WebSocket upgrade, the initial message received is an HTTP request. To intercept this
 request and perform the upgrade explicitly with custom headers, the user must create an HTTP resource with
 WebSocket-specific configurations as follows:</p>
-<pre><code class="language-ballerinaDup">@http:ResourceConfig {
+<pre><code class="language-ballerina">@http:ResourceConfig {
     webSocketUpgrade: {
         upgradePath: &quot;/{name}&quot;,
         upgradeService: chatApp
@@ -552,11 +552,11 @@ by a connection closure with an appropriate close frame.</p>
 var response = clientEndpoint-&gt;get(&quot;/get?id=123&quot;);
 </code></pre>
 <p>A <code>Listener</code> endpoint can be defined as follows:</p>
-<pre><code class="language-ballerinaDup">// Attributes associated with the `Listener` endpoint are defined here.
+<pre><code class="language-ballerina">// Attributes associated with the `Listener` endpoint are defined here.
 listener http:Listener helloWorldEP = new(9090);
 </code></pre>
 <p>Then a <code>Service</code> can be defined and attached to the above <code>Listener</code> endpoint as shown below:</p>
-<pre><code class="language-ballerinaDup">// By default, ballerinaDup assumes that the service is to be exposed via HTTP/1.1.
+<pre><code class="language-ballerina">// By default, ballerinaDup assumes that the service is to be exposed via HTTP/1.1.
 @http:ServiceConfig { basePath: &quot;/helloWorld&quot; }
 service helloWorld on helloWorldEP {
 

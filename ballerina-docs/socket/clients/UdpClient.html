@@ -460,14 +460,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">socket : clients - </span><span class="clients">UdpClient</span> </h1>
+            <h1><span class="title-type">Clients - </span> socket : 
+                <span class="clients">UdpClient</span> </h1>
             <p><p>Represents UDP socket client and related remote functions.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../socket/records/Address.html">Address</a>? localAddress)</p>
 <div class="data-wrapper">
     
@@ -482,67 +484,57 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#sendTo">
+    <div class="param-sum">
+        <div class="param-name">
+        sendTo 
+        </div>
+        <div class="param-details"> <p>Send given data to the specified remote client.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#receiveFrom">
+    <div class="param-sum">
+        <div class="param-name">
+        receiveFrom 
+        </div>
+        <div class="param-details"> <p>Reads data from the remote client. If the data has the specified length, then wait until that number of bytes
+are received from the client. Else, return the data available in the OS buffer or wait until data receive.
+If the request length is lesser than the data in the buffer, then the rest will be discarded.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes the client socket connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#sendTo"><b>sendTo </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="../../socket/records/Address.html">Address</a> address) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#receiveFrom"><b>receiveFrom </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length) 
-        
-        <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>, <a href="../../socket/records/Address.html">Address</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -590,15 +582,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="sendTo">
+        <a class="url-link" href="#sendTo">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> sendTo </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="../../socket/records/Address.html">Address</a> address)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Send given data to the specified remote client.</p>
 </p>
@@ -644,8 +645,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="receiveFrom">
+        <a class="url-link" href="#receiveFrom">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> receiveFrom </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>, <a href="../../socket/records/Address.html">Address</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Reads data from the remote client. If the data has the specified length, then wait until that number of bytes
 are received from the client. Else, return the data available in the OS buffer or wait until data receive.
@@ -684,8 +693,16 @@ or an error if encounters an error while reading</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes the client socket connection.</p>
 </p>

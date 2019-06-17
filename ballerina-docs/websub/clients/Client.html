@@ -492,15 +492,17 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">websub : clients - </span><span class="clients">Client</span> </h1>
+            <h1><span class="title-type">Clients - </span> websub : 
+                <span class="clients">Client</span> </h1>
             <p><p>The HTTP based Caller remote functions for outbound WebSub Subscription, Unsubscription, Registration, Unregistration and
 Notification requests to a Hub.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
 <div class="data-wrapper">
     
@@ -523,112 +525,90 @@ Notification requests to a Hub.</p>
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#subscribe">
+    <div class="param-sum">
+        <div class="param-name">
+        subscribe 
+        </div>
+        <div class="param-details"> <p>Sends a subscription request to a WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unsubscribe">
+    <div class="param-sum">
+        <div class="param-name">
+        unsubscribe 
+        </div>
+        <div class="param-details"> <p>Sends an unsubscription request to a WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#registerTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        registerTopic 
+        </div>
+        <div class="param-details"> <p>Registers a topic in a ballerinaDup WebSub Hub against which subscribers can subscribe and the publisher will
+publish updates.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregisterTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        unregisterTopic 
+        </div>
+        <div class="param-details"> <p>Unregisters a topic in a ballerinaDup WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#publishUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        publishUpdate 
+        </div>
+        <div class="param-details"> <p>Publishes an update to a remote ballerinaDup WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#notifyUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        notifyUpdate 
+        </div>
+        <div class="param-details"> <p>Notifies a remote WebSub Hub that an update is available to fetch, for hubs that require publishing to
+happen as such.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#subscribe"><b>subscribe </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest) 
-        
-        <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#unsubscribe"><b>unsubscribe </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest) 
-        
-        <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#registerTopic"><b>registerTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#unregisterTopic"><b>unregisterTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#publishUpdate"><b>publishUpdate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#notifyUpdate"><b>notifyUpdate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -656,15 +636,24 @@ Notification requests to a Hub.</p>
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="subscribe">
+        <a class="url-link" href="#subscribe">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> subscribe </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Sends a subscription request to a WebSub Hub.</p>
 </p>
@@ -701,8 +690,16 @@ Notification requests to a Hub.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unsubscribe">
+        <a class="url-link" href="#unsubscribe">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unsubscribe </h2>
         <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Sends an unsubscription request to a WebSub Hub.</p>
 </p>
@@ -739,8 +736,16 @@ Notification requests to a Hub.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="registerTopic">
+        <a class="url-link" href="#registerTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> registerTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Registers a topic in a ballerinaDup WebSub Hub against which subscribers can subscribe and the publisher will
 publish updates.</p>
@@ -777,8 +782,16 @@ publish updates.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unregisterTopic">
+        <a class="url-link" href="#unregisterTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unregisterTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Unregisters a topic in a ballerinaDup WebSub Hub.</p>
 </p>
@@ -814,8 +827,16 @@ publish updates.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="publishUpdate">
+        <a class="url-link" href="#publishUpdate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> publishUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Publishes an update to a remote ballerinaDup WebSub Hub.</p>
 </p>
@@ -881,8 +902,16 @@ publish updates.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="notifyUpdate">
+        <a class="url-link" href="#notifyUpdate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> notifyUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Notifies a remote WebSub Hub that an update is available to fetch, for hubs that require publishing to
 happen as such.</p>

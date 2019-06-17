@@ -453,8 +453,8 @@
 <h2>Samples</h2>
 <h3>Artemis Producer</h3>
 <p>The following program produces message to the Artemis broker.</p>
-<pre><code class="language-ballerina">import ballerina/artemis;
-import ballerina/log;
+<pre><code class="language-ballerina">import ballerinaDup/artemis;
+import ballerinaDup/log;
 
 artemis:Producer prod = new({host:&quot;localhost&quot;, port:61616}, &quot;demo&quot;);
 public function main() {
@@ -680,7 +680,7 @@ Consumers are represented by the service attaching to this listener.</p>
                         <tr>
                             <td class="module-title truncate constant" id="UNSUPPORTED"><a
                                     class="constant" href="constants.html#UNSUPPORTED">UNSUPPORTED</a></td>
-                            <td class="module-desc"><p>If the message recieved is not of the supported message type in ballerina it will have the type as UNSUPPORTED.</p>
+                            <td class="module-desc"><p>If the message recieved is not of the supported message type in ballerinaDup it will have the type as UNSUPPORTED.</p>
 </td>
                         </tr>
                     

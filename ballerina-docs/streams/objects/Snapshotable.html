@@ -741,57 +741,61 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">Snapshotable</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">Snapshotable</span> </h1>
             <p><p>Abstract Snapshotable to be referenced by all snapshotable objects.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#saveState"><b>saveState </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#saveState">
+    <div class="param-sum">
+        <div class="param-name">
+        saveState 
+        </div>
+        <div class="param-details"> <p>Function to return the current state of a snapshotable object.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#restoreState">
+    <div class="param-sum">
+        <div class="param-name">
+        restoreState 
+        </div>
+        <div class="param-details"> <p>Function to restore a previous state intoa a snapshotable object.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#restoreState"><b>restoreState </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="saveState">
+        <a class="url-link" href="#saveState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> saveState </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> 
+        </span>
+        
     </div>
     <p><p>Function to return the current state of a snapshotable object.</p>
 </p>
@@ -813,8 +817,12 @@ the snapshotable instance.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="restoreState">
+        <a class="url-link" href="#restoreState">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> state)</p>
+        
     </div>
     <p><p>Function to restore a previous state intoa a snapshotable object.</p>
 </p>

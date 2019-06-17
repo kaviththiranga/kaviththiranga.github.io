@@ -477,126 +477,117 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">grpc : object -</span> <span class="objects">Headers</span> </h1>
+            <h1><span class="title-type">Object - </span> grpc : <span class="objects">Headers</span> </h1>
             <p><p>Provides actions to read/write header values in gRPC request/response message.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#exists"><b>exists </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#exists">
+    <div class="param-sum">
+        <div class="param-name">
+        exists 
+        </div>
+        <div class="param-details"> <p>Check whether the requested header exists.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#get"><b>get </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#get">
+    <div class="param-sum">
+        <div class="param-name">
+        get 
+        </div>
+        <div class="param-details"> <p>Returns the header value with the specified header name. If there are more than one header value for the
+specified header name, the first value is returned.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getAll"><b>getAll </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getAll">
+    <div class="param-sum">
+        <div class="param-name">
+        getAll 
+        </div>
+        <div class="param-details"> <p>Gets all transport headers with the specified header name.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setEntry"><b>setEntry </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setEntry">
+    <div class="param-sum">
+        <div class="param-name">
+        setEntry 
+        </div>
+        <div class="param-details"> <p>Sets the value of a transport header.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#addEntry"><b>addEntry </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#addEntry">
+    <div class="param-sum">
+        <div class="param-name">
+        addEntry 
+        </div>
+        <div class="param-details"> <p>Adds the specified key/value pair as an HTTP header to the request.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#remove"><b>remove </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#remove">
+    <div class="param-sum">
+        <div class="param-name">
+        remove 
+        </div>
+        <div class="param-details"> <p>Removes a transport header from the request.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#removeAll">
+    <div class="param-sum">
+        <div class="param-name">
+        removeAll 
+        </div>
+        <div class="param-details"> <p>Removes all transport headers from the message.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#removeAll"><b>removeAll </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="exists">
+        <a class="url-link" href="#exists">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> exists </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Check whether the requested header exists.</p>
 </p>
@@ -632,8 +623,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="get">
+        <a class="url-link" href="#get">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> get </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? 
+        </span>
+        
     </div>
     <p><p>Returns the header value with the specified header name. If there are more than one header value for the
 specified header name, the first value is returned.</p>
@@ -670,8 +669,16 @@ specified header name, the first value is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getAll">
+        <a class="url-link" href="#getAll">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getAll </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Gets all transport headers with the specified header name.</p>
 </p>
@@ -707,8 +714,12 @@ specified header name, the first value is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setEntry">
+        <a class="url-link" href="#setEntry">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setEntry </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Sets the value of a transport header.</p>
 </p>
@@ -744,8 +755,12 @@ specified header name, the first value is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addEntry">
+        <a class="url-link" href="#addEntry">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addEntry </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Adds the specified key/value pair as an HTTP header to the request.</p>
 </p>
@@ -781,8 +796,12 @@ specified header name, the first value is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="remove">
+        <a class="url-link" href="#remove">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> remove </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
     </div>
     <p><p>Removes a transport header from the request.</p>
 </p>
@@ -808,8 +827,12 @@ specified header name, the first value is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeAll">
+        <a class="url-link" href="#removeAll">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeAll </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Removes all transport headers from the message.</p>
 </p>

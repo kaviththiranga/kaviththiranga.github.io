@@ -460,14 +460,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">socket : clients - </span><span class="clients">Client</span> </h1>
+            <h1><span class="title-type">Clients - </span> socket : 
+                <span class="clients">Client</span> </h1>
             <p><p>Represents socket client and related remote functions.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../socket/records/ClientConfig.html">ClientConfig</a>? clientConfig)</p>
 <div class="data-wrapper">
     
@@ -481,97 +483,81 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#write">
+    <div class="param-sum">
+        <div class="param-name">
+        write 
+        </div>
+        <div class="param-details"> <p>Writes given data to the client socket.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#read">
+    <div class="param-sum">
+        <div class="param-name">
+        read 
+        </div>
+        <div class="param-details"> <p>Reads data from the client socket. If the data has the specified length, then wait until that number of bytes
+are received from the client. Else, return the data available in the OS buffer.
+In the case of the connection being closed by the client, then return either -1 or the data
+that is currently available in the buffer.
+Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes the client socket connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#shutdownRead">
+    <div class="param-sum">
+        <div class="param-name">
+        shutdownRead 
+        </div>
+        <div class="param-details"> <p>Shutdowns the further read from socket.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#shutdownWrite">
+    <div class="param-sum">
+        <div class="param-name">
+        shutdownWrite 
+        </div>
+        <div class="param-details"> <p>Shutdowns the further write from socket.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#write"><b>write </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#read"><b>read </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length) 
-        
-        <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#shutdownRead"><b>shutdownRead </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#shutdownWrite"><b>shutdownWrite </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -639,15 +625,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="write">
+        <a class="url-link" href="#write">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> write </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Writes given data to the client socket.</p>
 </p>
@@ -687,8 +682,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="read">
+        <a class="url-link" href="#read">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> read </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> length)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[], <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Reads data from the client socket. If the data has the specified length, then wait until that number of bytes
 are received from the client. Else, return the data available in the OS buffer.
@@ -732,8 +735,16 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes the client socket connection.</p>
 </p>
@@ -756,8 +767,16 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="shutdownRead">
+        <a class="url-link" href="#shutdownRead">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> shutdownRead </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Shutdowns the further read from socket.</p>
 </p>
@@ -778,8 +797,16 @@ Number of bytes returned will be &lt; 0 if the client closes the connection.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="shutdownWrite">
+        <a class="url-link" href="#shutdownWrite">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> shutdownWrite </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Shutdowns the further write from socket.</p>
 </p>

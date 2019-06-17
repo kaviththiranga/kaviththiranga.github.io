@@ -549,7 +549,7 @@ scopes=&quot;scope1&quot;
 </code></pre>
 <p>Once the hub is secured over basic auth, a subscriber should provide the relevant <code>auth</code> config in the
 <code>subscriptionClientConfig</code> field of the subscriber service annotation.</p>
-<pre><code class="language-ballerinaDup">@websub:SubscriberServiceConfig {
+<pre><code class="language-ballerina">@websub:SubscriberServiceConfig {
     path: &quot;/ordereventsubscriber&quot;,
     subscriptionClientConfig: {
         auth: {
@@ -568,7 +568,7 @@ equivalent to the <code>websub:HubPersistenceStore</code> abstract object. Alter
 <code>websub:H2HubPersistenceStore</code> object made available in the <code>ballerinaDup/websub</code> module could be used to persist data.</p>
 <p>Persistence can be enabled by setting a suitable <code>websub:HubPersistenceStore</code> value for the <code>hubPersistenceStore</code> field
 in the <code>HubConfiguration</code> record, which is passed to the <code>websub:startHub()</code> function.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/h2;
+<pre><code class="language-ballerina">import ballerinaDup/h2;
 import ballerinaDup/http;
 import ballerinaDup/websub;
 
@@ -615,7 +615,7 @@ and the specified secret for authenticated content distribution.
 Since an <code>onIntentVerification</code> resource function is not included, intent verification for subscription and unsubscription
 requests would happen automatically, if the topic specified in the request matches that specified as an annotation or
 that discovered for the annotated resource URL.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/websub;
 
 listener websub:Listener websubEP = new(8181);
@@ -641,7 +641,7 @@ service websubSubscriber on websubEP {
 }
 </code></pre>
 <p>Explicit intent verification can be done by introducing an <code>onIntentVerification</code> resource function.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/http;
+<pre><code class="language-ballerina">import ballerinaDup/http;
 import ballerinaDup/log;
 import ballerinaDup/websub;
 
@@ -678,12 +678,12 @@ service websubSubscriber on websubEP {
 </code></pre>
 <p>Functions are made available on the <code>websub:IntentVerificationRequest</code> to build a subscription or unsubscription
 verification response, specifying the topic to verify intent against:</p>
-<pre><code class="language-ballerinaDup">http:Response response = request.buildSubscriptionVerificationResponse(&quot;&lt;TOPIC_TO_VERIFY_FOR&gt;&quot;);
+<pre><code class="language-ballerina">http:Response response = request.buildSubscriptionVerificationResponse(&quot;&lt;TOPIC_TO_VERIFY_FOR&gt;&quot;);
 </code></pre>
-<pre><code class="language-ballerinaDup">http:Response response = request.buildUnsubscriptionVerificationResponse(&quot;&lt;TOPIC_TO_VERIFY_FOR&gt;&quot;);
+<pre><code class="language-ballerina">http:Response response = request.buildUnsubscriptionVerificationResponse(&quot;&lt;TOPIC_TO_VERIFY_FOR&gt;&quot;);
 </code></pre>
 <p>ballerinaDup publishers can start up and publish directly to the ballerinaDup WebSub hub.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/http;
 import ballerinaDup/runtime;
 import ballerinaDup/websub;
@@ -718,7 +718,7 @@ public function main() {
 </code></pre>
 <p>ballerinaDup publishers can also use the hub client endpoint to register topics at ballerinaDup WebSub hubs
 and publish/notify updates to the remote hubs.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/runtime;
 import ballerinaDup/websub;
 
@@ -747,7 +747,7 @@ public function main() {
 }
 </code></pre>
 <p>The hub client endpoint can also be used by subscribers to send subscription and unsubscription requests explicitly.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerinaDup/log;
 import ballerinaDup/websub;
 
 websub:Client websubHubClientEP = new(&quot;&lt;HUB_URL&gt;&quot;);
@@ -822,7 +822,7 @@ mapping between the expected notifications and the resources that requests need 
 <h4>Samples for Resource Mapping</h4>
 <p><strong>Based on a request header</strong></p>
 <p>Dispatching will be based on the value of the request header specified as <code>topicHeader</code>.</p>
-<pre><code class="language-ballerinaDup">websub:ExtensionConfig extensionConfig = {
+<pre><code class="language-ballerina">websub:ExtensionConfig extensionConfig = {
     topicIdentifier: websub:TOPIC_ID_HEADER,
     topicHeader: &quot;&lt;HEADER_TO_CONSIDER&gt;&quot;,
     headerResourceMap: {
@@ -838,7 +838,7 @@ be a custom <code>IssueOpenedEvent</code> record mapping the JSON payload receiv
 <p><strong>Based on the payload</strong></p>
 <p>Dispatching will be based on the value in the request payload of one of the map keys specified in the
 <code>payloadKeyResourceMap</code> map.</p>
-<pre><code class="language-ballerinaDup">websub:ExtensionConfig extensionConfig = {
+<pre><code class="language-ballerina">websub:ExtensionConfig extensionConfig = {
     topicIdentifier: websub:TOPIC_ID_PAYLOAD_KEY,
     payloadKeyResourceMap: {
         &quot;&lt;PAYLOAD_KEY_TO_CONSIDER&gt;&quot;: {
@@ -855,7 +855,7 @@ be a custom <code>IssueOpenedEvent</code> record, mapping the JSON payload recei
 <p><strong>Based on a request header and the payload</strong></p>
 <p>Dispatching will be based on both a request header and the payload as specified in the <code>headerAndPayloadKeyResourceMap</code>.
 Also, you can introduce a <code>headerResourceMap</code> and/or a <code>payloadKeyResourceMap</code> as additional mappings.</p>
-<pre><code class="language-ballerinaDup">websub:ExtensionConfig extensionConfig = {
+<pre><code class="language-ballerina">websub:ExtensionConfig extensionConfig = {
     topicIdentifier: websub:TOPIC_ID_HEADER_AND_PAYLOAD,
     topicHeader: &quot;&lt;HEADER_TO_CONSIDER&gt;&quot;,
     headerAndPayloadKeyResourceMap: {
@@ -881,7 +881,7 @@ be a custom <code>IssueOpenedEvent</code> record, mapping the JSON payload recei
 <li>includes a header named &quot;Event-Header&quot; in each content delivery request indicating what event the notification is
 for (e.g., &quot;onIssueOpened&quot; when an issue is opened and &quot;onIssueAssigned&quot; when an issue is assigned)</li>
 </ul>
-<pre><code class="language-ballerinaDup">import ballerinaDup/websub;
+<pre><code class="language-ballerina">import ballerinaDup/websub;
 
 // Introduce a record mapping the JSON payload received when an issue is opened.
 public type IssueOpenedEvent record {
@@ -937,7 +937,7 @@ public type WebhookListener object {
 };
 </code></pre>
 <p>A service can now be introduced for the above service provider as follows.</p>
-<pre><code class="language-ballerinaDup">import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerinaDup/io;
 import ballerinaDup/log;
 import ballerinaDup/websub;
 

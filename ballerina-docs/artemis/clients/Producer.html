@@ -492,14 +492,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">artemis : clients - </span><span class="clients">Producer</span> </h1>
+            <h1><span class="title-type">Clients - </span> artemis : 
+                <span class="clients">Producer</span> </h1>
             <p><p>Represents ActiveMQ Artemis Producer.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> | <a href="../../artemis/records/URLConfiguration.html">URLConfiguration</a> sesssionOrURLConfig, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> addressName, <a href="../../artemis/records/AddressConfiguration.html">AddressConfiguration</a>? addressConfig, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> rate)</p>
 <div class="data-wrapper">
     
@@ -540,76 +542,73 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#send">
+    <div class="param-sum">
+        <div class="param-name">
+        send 
+        </div>
+        <div class="param-details"> <p>Sends a message to the producer's address.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes the ClientProducer. If already closed nothing is done.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#isClosed">
+    <div class="param-sum">
+        <div class="param-name">
+        isClosed 
+        </div>
+        <div class="param-details"> <p>Returns whether the producer is closed or not</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#send"><b>send </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../artemis/clients/Message.html">Message</a> data) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#isClosed"><b>isClosed </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="send">
+        <a class="url-link" href="#send">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> send </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../artemis/clients/Message.html">Message</a> data)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends a message to the producer's address.</p>
 </p>
@@ -645,8 +644,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes the ClientProducer. If already closed nothing is done.</p>
 </p>
@@ -671,8 +678,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="isClosed">
+        <a class="url-link" href="#isClosed">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> isClosed </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Returns whether the producer is closed or not</p>
 </p>

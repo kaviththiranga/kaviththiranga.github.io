@@ -580,176 +580,138 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">http : clients - </span><span class="clients">Caller</span> </h1>
+            <h1><span class="title-type">Clients - </span> http : 
+                <span class="clients">Caller</span> </h1>
             <p><p>The caller actions for responding to client requests.</p>
 </p>
 
             <div class="constants">
+                <div class="method-sum">
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#respond">
+    <div class="param-sum">
+        <div class="param-name">
+        respond 
+        </div>
+        <div class="param-details"> <p>Sends the outbound response to the caller.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#promise">
+    <div class="param-sum">
+        <div class="param-name">
+        promise 
+        </div>
+        <div class="param-details"> <p>Pushes a promise to the caller.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#pushPromisedResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        pushPromisedResponse 
+        </div>
+        <div class="param-details"> <p>Sends a promised push response to the caller.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#acceptWebSocketUpgrade">
+    <div class="param-sum">
+        <div class="param-name">
+        acceptWebSocketUpgrade 
+        </div>
+        <div class="param-details"> <p>Sends an upgrade request with custom headers.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#cancelWebSocketUpgrade">
+    <div class="param-sum">
+        <div class="param-name">
+        cancelWebSocketUpgrade 
+        </div>
+        <div class="param-details"> <p>Cancels the handshake.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#continue">
+    <div class="param-sum">
+        <div class="param-name">
+        continue 
+        </div>
+        <div class="param-details"> <p>Sends a <code>100-continue</code> response to the caller.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#redirect">
+    <div class="param-sum">
+        <div class="param-name">
+        redirect 
+        </div>
+        <div class="param-details"> <p>Sends a redirect response to the user with the specified redirection status code.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#ok">
+    <div class="param-sum">
+        <div class="param-name">
+        ok 
+        </div>
+        <div class="param-details"> <p>Sends the outbound response to the caller with the status 200 OK.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#created">
+    <div class="param-sum">
+        <div class="param-name">
+        created 
+        </div>
+        <div class="param-details"> <p>Sends the outbound response to the caller with the status 201 Created.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#accepted">
+    <div class="param-sum">
+        <div class="param-name">
+        accepted 
+        </div>
+        <div class="param-details"> <p>Sends the outbound response to the caller with the status 202 Accepted.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#respond"><b>respond </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#promise"><b>promise </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#pushPromisedResponse"><b>pushPromisedResponse </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise, <a href="../../http/objects/Response.html">Response</a> response) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#acceptWebSocketUpgrade"><b>acceptWebSocketUpgrade </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> headers) 
-        
-        <b> returns </b><a href="../../http/clients/WebSocketCaller.html">WebSocketCaller</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#cancelWebSocketUpgrade"><b>cancelWebSocketUpgrade </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> status, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> reason) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#continue"><b>continue </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#redirect"><b>redirect </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/types.html#RedirectCode">RedirectCode</a> code, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] locations) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#ok"><b>ok </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#created"><b>created </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> uri, <a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#accepted"><b>accepted </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -797,15 +759,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="respond">
+        <a class="url-link" href="#respond">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> respond </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends the outbound response to the caller.</p>
 </p>
@@ -842,8 +813,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="promise">
+        <a class="url-link" href="#promise">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> promise </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Pushes a promise to the caller.</p>
 </p>
@@ -879,8 +858,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="pushPromisedResponse">
+        <a class="url-link" href="#pushPromisedResponse">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> pushPromisedResponse </h2>
         <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise, <a href="../../http/objects/Response.html">Response</a> response)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends a promised push response to the caller.</p>
 </p>
@@ -926,8 +913,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="acceptWebSocketUpgrade">
+        <a class="url-link" href="#acceptWebSocketUpgrade">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> acceptWebSocketUpgrade </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../http/clients/WebSocketCaller.html">WebSocketCaller</a> 
+        </span>
+        
     </div>
     <p><p>Sends an upgrade request with custom headers.</p>
 </p>
@@ -963,8 +958,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="cancelWebSocketUpgrade">
+        <a class="url-link" href="#cancelWebSocketUpgrade">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> cancelWebSocketUpgrade </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> status, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> reason)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Cancels the handshake.</p>
 </p>
@@ -1011,8 +1014,16 @@ This error status code need to be 4xx or 5xx else the default status code would 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="continue">
+        <a class="url-link" href="#continue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> continue </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends a <code>100-continue</code> response to the caller.</p>
 </p>
@@ -1033,8 +1044,16 @@ This error status code need to be 4xx or 5xx else the default status code would 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="redirect">
+        <a class="url-link" href="#redirect">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> redirect </h2>
         <p class="method-types">(<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/types.html#RedirectCode">RedirectCode</a> code, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] locations)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends a redirect response to the user with the specified redirection status code.</p>
 </p>
@@ -1090,8 +1109,16 @@ This error status code need to be 4xx or 5xx else the default status code would 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="ok">
+        <a class="url-link" href="#ok">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> ok </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends the outbound response to the caller with the status 200 OK.</p>
 </p>
@@ -1128,8 +1155,16 @@ or <code>mime:Entity[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="created">
+        <a class="url-link" href="#created">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> created </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> uri, <a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends the outbound response to the caller with the status 201 Created.</p>
 </p>
@@ -1176,8 +1211,16 @@ or <code>mime:Entity[]</code>. This message is optional.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="accepted">
+        <a class="url-link" href="#accepted">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> accepted </h2>
         <p class="method-types">(<a href="../../http/types.html#ResponseMessage">ResponseMessage</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends the outbound response to the caller with the status 202 Accepted.</p>
 </p>

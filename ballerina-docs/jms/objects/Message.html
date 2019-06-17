@@ -509,7 +509,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">jms : object -</span> <span class="objects">Message</span> </h1>
+            <h1><span class="title-type">Object - </span> jms : <span class="objects">Message</span> </h1>
             <p><p>Represent the JMS message used to send and receive content from the a JMS provider.</p>
 <p>Most message-oriented middleware (MOM) products treat messages as lightweight entities that consist of a header
 and a body. The header contains fields used for message routing and identification; the body contains the
@@ -517,429 +517,331 @@ application data being sent.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getTextMessageContent"><b>getTextMessageContent </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getTextMessageContent">
+    <div class="param-sum">
+        <div class="param-name">
+        getTextMessageContent 
+        </div>
+        <div class="param-details"> <p>Gets text content of the JMS message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getMapMessageContent"><b>getMapMessageContent </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getMapMessageContent">
+    <div class="param-sum">
+        <div class="param-name">
+        getMapMessageContent 
+        </div>
+        <div class="param-details"> <p>Gets map content of the JMS message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setStringProperty"><b>setStringProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setStringProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        setStringProperty 
+        </div>
+        <div class="param-details"> <p>Sets a JMS transport string property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getStringProperty"><b>getStringProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getStringProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getStringProperty 
+        </div>
+        <div class="param-details"> <p>Gets a JMS transport string property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setIntProperty"><b>setIntProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setIntProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        setIntProperty 
+        </div>
+        <div class="param-details"> <p>Sets a JMS transport integer property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getIntProperty"><b>getIntProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getIntProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getIntProperty 
+        </div>
+        <div class="param-details"> <p>Gets a JMS transport integer property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setBooleanProperty"><b>setBooleanProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setBooleanProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        setBooleanProperty 
+        </div>
+        <div class="param-details"> <p>Sets a JMS transport boolean property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getBooleanProperty"><b>getBooleanProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getBooleanProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getBooleanProperty 
+        </div>
+        <div class="param-details"> <p>Gets a JMS transport boolean property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setFloatProperty"><b>setFloatProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setFloatProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        setFloatProperty 
+        </div>
+        <div class="param-details"> <p>Sets a JMS transport float property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getFloatProperty"><b>getFloatProperty </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getFloatProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getFloatProperty 
+        </div>
+        <div class="param-details"> <p>Gets a JMS transport float property from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getMessageID"><b>getMessageID </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getMessageID">
+    <div class="param-sum">
+        <div class="param-name">
+        getMessageID 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header MessageID from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getTimestamp"><b>getTimestamp </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getTimestamp">
+    <div class="param-sum">
+        <div class="param-name">
+        getTimestamp 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header Timestamp from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setDeliveryMode"><b>setDeliveryMode </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> mode) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setDeliveryMode">
+    <div class="param-sum">
+        <div class="param-name">
+        setDeliveryMode 
+        </div>
+        <div class="param-details"> <p>Sets DeliveryMode JMS transport header to the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getDeliveryMode"><b>getDeliveryMode </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getDeliveryMode">
+    <div class="param-sum">
+        <div class="param-name">
+        getDeliveryMode 
+        </div>
+        <div class="param-details"> <p>Get JMS transport header DeliveryMode from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setExpiration"><b>setExpiration </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setExpiration">
+    <div class="param-sum">
+        <div class="param-name">
+        setExpiration 
+        </div>
+        <div class="param-details"> <p>Sets Expiration JMS transport header to the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getExpiration"><b>getExpiration </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getExpiration">
+    <div class="param-sum">
+        <div class="param-name">
+        getExpiration 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header Expiration from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setType"><b>setType </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> messageType) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setType">
+    <div class="param-sum">
+        <div class="param-name">
+        setType 
+        </div>
+        <div class="param-details"> <p>Sets Type JMS transport header to the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getType"><b>getType </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getType">
+    <div class="param-sum">
+        <div class="param-name">
+        getType 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header Type from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#clearProperties"><b>clearProperties </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#clearProperties">
+    <div class="param-sum">
+        <div class="param-name">
+        clearProperties 
+        </div>
+        <div class="param-details"> <p>Clears JMS properties of the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#clearBody"><b>clearBody </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#clearBody">
+    <div class="param-sum">
+        <div class="param-name">
+        clearBody 
+        </div>
+        <div class="param-details"> <p>Clears body of the JMS message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setPriority"><b>setPriority </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setPriority">
+    <div class="param-sum">
+        <div class="param-name">
+        setPriority 
+        </div>
+        <div class="param-details"> <p>Sets priority JMS transport header to the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getPriority"><b>getPriority </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getPriority">
+    <div class="param-sum">
+        <div class="param-name">
+        getPriority 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header Priority from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getRedelivered"><b>getRedelivered </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getRedelivered">
+    <div class="param-sum">
+        <div class="param-name">
+        getRedelivered 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header Redelivered from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#setCorrelationID"><b>setCorrelationID </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> value) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#setCorrelationID">
+    <div class="param-sum">
+        <div class="param-name">
+        setCorrelationID 
+        </div>
+        <div class="param-details"> <p>Sets CorrelationID JMS transport header to the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getCorrelationID"><b>getCorrelationID </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getCorrelationID">
+    <div class="param-sum">
+        <div class="param-name">
+        getCorrelationID 
+        </div>
+        <div class="param-details"> <p>Gets JMS transport header CorrelationID from the message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#getReplyTo"><b>getReplyTo </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#getReplyTo">
+    <div class="param-sum">
+        <div class="param-name">
+        getReplyTo 
+        </div>
+        <div class="param-details"> <p>Gets JMS replyTo header from the message</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#setReplyTo">
+    <div class="param-sum">
+        <div class="param-name">
+        setReplyTo 
+        </div>
+        <div class="param-details"> <p>Set the replyTo destination from the message</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#setReplyTo"><b>setReplyTo </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../jms/objects/Destination.html">Destination</a> replyTo) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getTextMessageContent">
+        <a class="url-link" href="#getTextMessageContent">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getTextMessageContent </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets text content of the JMS message</p>
 </p>
@@ -960,8 +862,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getMapMessageContent">
+        <a class="url-link" href="#getMapMessageContent">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getMapMessageContent </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets map content of the JMS message</p>
 </p>
@@ -982,8 +892,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setStringProperty">
+        <a class="url-link" href="#setStringProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setStringProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets a JMS transport string property from the message</p>
 </p>
@@ -1029,8 +947,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getStringProperty">
+        <a class="url-link" href="#getStringProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getStringProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Gets a JMS transport string property from the message</p>
 </p>
@@ -1066,8 +992,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setIntProperty">
+        <a class="url-link" href="#setIntProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setIntProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets a JMS transport integer property from the message</p>
 </p>
@@ -1113,8 +1047,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getIntProperty">
+        <a class="url-link" href="#getIntProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getIntProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets a JMS transport integer property from the message</p>
 </p>
@@ -1150,8 +1092,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setBooleanProperty">
+        <a class="url-link" href="#setBooleanProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setBooleanProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets a JMS transport boolean property from the message</p>
 </p>
@@ -1197,8 +1147,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBooleanProperty">
+        <a class="url-link" href="#getBooleanProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getBooleanProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets a JMS transport boolean property from the message</p>
 </p>
@@ -1234,8 +1192,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setFloatProperty">
+        <a class="url-link" href="#setFloatProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setFloatProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets a JMS transport float property from the message</p>
 </p>
@@ -1281,8 +1247,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getFloatProperty">
+        <a class="url-link" href="#getFloatProperty">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getFloatProperty </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets a JMS transport float property from the message</p>
 </p>
@@ -1318,8 +1292,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getMessageID">
+        <a class="url-link" href="#getMessageID">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getMessageID </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header MessageID from the message</p>
 </p>
@@ -1340,8 +1322,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getTimestamp">
+        <a class="url-link" href="#getTimestamp">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getTimestamp </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header Timestamp from the message</p>
 </p>
@@ -1362,8 +1352,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setDeliveryMode">
+        <a class="url-link" href="#setDeliveryMode">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setDeliveryMode </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> mode)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets DeliveryMode JMS transport header to the message</p>
 </p>
@@ -1399,8 +1397,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getDeliveryMode">
+        <a class="url-link" href="#getDeliveryMode">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getDeliveryMode </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Get JMS transport header DeliveryMode from the message</p>
 </p>
@@ -1421,8 +1427,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setExpiration">
+        <a class="url-link" href="#setExpiration">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setExpiration </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets Expiration JMS transport header to the message</p>
 </p>
@@ -1458,8 +1472,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getExpiration">
+        <a class="url-link" href="#getExpiration">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getExpiration </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header Expiration from the message</p>
 </p>
@@ -1480,8 +1502,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setType">
+        <a class="url-link" href="#setType">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setType </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> messageType)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets Type JMS transport header to the message</p>
 </p>
@@ -1517,8 +1547,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getType">
+        <a class="url-link" href="#getType">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getType </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header Type from the message</p>
 </p>
@@ -1539,8 +1577,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="clearProperties">
+        <a class="url-link" href="#clearProperties">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> clearProperties </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Clears JMS properties of the message</p>
 </p>
@@ -1561,8 +1607,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="clearBody">
+        <a class="url-link" href="#clearBody">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> clearBody </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Clears body of the JMS message</p>
 </p>
@@ -1583,8 +1637,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setPriority">
+        <a class="url-link" href="#setPriority">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setPriority </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets priority JMS transport header to the message</p>
 </p>
@@ -1620,8 +1682,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getPriority">
+        <a class="url-link" href="#getPriority">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getPriority </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header Priority from the message</p>
 </p>
@@ -1642,8 +1712,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getRedelivered">
+        <a class="url-link" href="#getRedelivered">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getRedelivered </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header Redelivered from the message</p>
 </p>
@@ -1664,8 +1742,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setCorrelationID">
+        <a class="url-link" href="#setCorrelationID">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setCorrelationID </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> value)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sets CorrelationID JMS transport header to the message</p>
 </p>
@@ -1701,8 +1787,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getCorrelationID">
+        <a class="url-link" href="#getCorrelationID">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getCorrelationID </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Gets JMS transport header CorrelationID from the message</p>
 </p>
@@ -1723,8 +1817,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getReplyTo">
+        <a class="url-link" href="#getReplyTo">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getReplyTo </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Destination.html">Destination</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Gets JMS replyTo header from the message</p>
 </p>
@@ -1745,8 +1847,16 @@ application data being sent.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setReplyTo">
+        <a class="url-link" href="#setReplyTo">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setReplyTo </h2>
         <p class="method-types">(<a href="../../jms/objects/Destination.html">Destination</a> replyTo)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Set the replyTo destination from the message</p>
 </p>

@@ -492,15 +492,17 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">grpc : clients - </span><span class="clients">Client</span> </h1>
+            <h1><span class="title-type">Clients - </span> grpc : 
+                <span class="clients">Client</span> </h1>
             <p><p>The gRPC client endpoint provides the capability for initiating contact with a remote gRPC service. The API it
 provides includes functions to send request/error messages.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../../grpc/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
 <div class="data-wrapper">
     
@@ -527,91 +529,84 @@ provides includes functions to send request/error messages.</p>
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#blockingExecute">
+    <div class="param-sum">
+        <div class="param-name">
+        blockingExecute 
+        </div>
+        <div class="param-details"> <p>Calls when executing blocking call with gRPC service.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#nonBlockingExecute">
+    <div class="param-sum">
+        <div class="param-name">
+        nonBlockingExecute 
+        </div>
+        <div class="param-details"> <p>Calls when executing non-blocking call with gRPC service.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#streamingExecute">
+    <div class="param-sum">
+        <div class="param-name">
+        streamingExecute 
+        </div>
+        <div class="param-details"> <p>Calls when executing streaming call with gRPC service.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#initStub">
+    <div class="param-sum">
+        <div class="param-name">
+        initStub 
+        </div>
+        <div class="param-details"> <p>Calls when initializing client endpoint with service descriptor data extracted from proto file.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#blockingExecute"><b>blockingExecute </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="../../grpc/objects/Headers.html">Headers</a>? headers) 
-        
-        <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>, <a href="../../grpc/objects/Headers.html">Headers</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#nonBlockingExecute"><b>nonBlockingExecute </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#streamingExecute"><b>streamingExecute </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers) 
-        
-        <b> returns </b><a href="../../grpc/clients/StreamingClient.html">StreamingClient</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#initStub"><b>initStub </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> stubType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> descriptorKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> descriptorMap) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="blockingExecute">
+        <a class="url-link" href="#blockingExecute">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> blockingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>, <a href="../../grpc/objects/Headers.html">Headers</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Calls when executing blocking call with gRPC service.</p>
 </p>
@@ -667,8 +662,16 @@ provides includes functions to send request/error messages.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="nonBlockingExecute">
+        <a class="url-link" href="#nonBlockingExecute">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> nonBlockingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Calls when executing non-blocking call with gRPC service.</p>
 </p>
@@ -734,8 +737,16 @@ provides includes functions to send request/error messages.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="streamingExecute">
+        <a class="url-link" href="#streamingExecute">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> streamingExecute </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> methodID, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> listenerService, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../grpc/clients/StreamingClient.html">StreamingClient</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Calls when executing streaming call with gRPC service.</p>
 </p>
@@ -795,8 +806,16 @@ provides includes functions to send request/error messages.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="initStub">
+        <a class="url-link" href="#initStub">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> initStub </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> stubType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> descriptorKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> descriptorMap)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Calls when initializing client endpoint with service descriptor data extracted from proto file.</p>
 </p>

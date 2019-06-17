@@ -492,106 +492,87 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">grpc : clients - </span><span class="clients">Caller</span> </h1>
+            <h1><span class="title-type">Clients - </span> grpc : 
+                <span class="clients">Caller</span> </h1>
             <p><p>Provides the gRPC remote functions for interacting with caller.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#send"><b>send </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> res, <a href="../../grpc/objects/Headers.html">Headers</a>? headers) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#send">
+    <div class="param-sum">
+        <div class="param-name">
+        send 
+        </div>
+        <div class="param-details"> <p>Sends outbound response to the caller.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#complete"><b>complete </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#complete">
+    <div class="param-sum">
+        <div class="param-name">
+        complete 
+        </div>
+        <div class="param-details"> <p>Informs the caller, server finished sending messages.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#isCancelled"><b>isCancelled </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#isCancelled">
+    <div class="param-sum">
+        <div class="param-name">
+        isCancelled 
+        </div>
+        <div class="param-details"> <p>Checks whether the connection is closed by the caller.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#sendError"><b>sendError </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> statusCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="../../grpc/objects/Headers.html">Headers</a>? headers) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                                
+<a href="#sendError">
+    <div class="param-sum">
+        <div class="param-name">
+        sendError 
+        </div>
+        <div class="param-details"> <p>Sends server error to the caller.</p>
+ </div>
+    </div>
+</a>
                             
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#getId"><b>getId </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
-                    <h2>Fields</h2>
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-                            <div class="data-wrapper">
+                                
+<a href="#getId">
+    <div class="param-sum">
+        <div class="param-name">
+        getId 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+                
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -629,15 +610,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="send">
+        <a class="url-link" href="#send">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> send </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> res, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends outbound response to the caller.</p>
 </p>
@@ -689,8 +679,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="complete">
+        <a class="url-link" href="#complete">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> complete </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Informs the caller, server finished sending messages.</p>
 </p>
@@ -711,8 +709,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="isCancelled">
+        <a class="url-link" href="#isCancelled">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> isCancelled </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Checks whether the connection is closed by the caller.</p>
 </p>
@@ -733,8 +739,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="sendError">
+        <a class="url-link" href="#sendError">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> sendError </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> statusCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> message, <a href="../../grpc/objects/Headers.html">Headers</a>? headers)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Sends server error to the caller.</p>
 </p>
@@ -794,8 +808,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getId">
+        <a class="url-link" href="#getId">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getId </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
+        </span>
+        
     </div>
     <p></p>
      

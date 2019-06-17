@@ -541,59 +541,62 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">io : object -</span> <span class="objects">WritableByteChannel</span> </h1>
+            <h1><span class="title-type">Object - </span> io : <span class="objects">WritableByteChannel</span> </h1>
             <p><p>WritableByteChannel represents an output resource (i.e file, socket). which could be used to sink bytes.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#write"><b>write </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> offset) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#write">
+    <div class="param-sum">
+        <div class="param-name">
+        write 
+        </div>
+        <div class="param-details"> <p>Sink bytes from a given input/output resource.</p>
+<p>This operation will be asynchronous, write might return without writing all the content.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes a given byte channel.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="write">
+        <a class="url-link" href="#write">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> write </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> offset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Sink bytes from a given input/output resource.</p>
 <p>This operation will be asynchronous, write might return without writing all the content.</p>
@@ -640,8 +643,16 @@ Number of bytes written or an error.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes a given byte channel.</p>
 </p>

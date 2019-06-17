@@ -503,7 +503,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>websub : functions</h1>
+            <h1><span class="title-type">Functions - </span> websub</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -538,8 +538,12 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="addWebSubLinkHeader">
+        <a class="url-link" href="#addWebSubLinkHeader">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> addWebSubLinkHeader </h2>
         <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] hubs, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
     </div>
     <p><p>Function to add link headers to a response to allow WebSub discovery.</p>
 </p>
@@ -585,8 +589,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="extractTopicAndHubUrls">
+        <a class="url-link" href="#extractTopicAndHubUrls">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> extractTopicAndHubUrls </h2>
         <p class="method-types">(<a href="../http/objects/Response.html">Response</a> response)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]<span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Function to retrieve hub and topic URLs from the <code>http:response</code> from a publisher to a discovery request.</p>
 </p>
@@ -622,8 +634,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="startHub">
+        <a class="url-link" href="#startHub">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> startHub </h2>
         <p class="method-types">(<a href="../http/objects/Listener.html">Listener</a> hubServiceListener, <a href="../websub/records/HubConfiguration.html">HubConfiguration</a>? hubConfiguration)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../websub/objects/WebSubHub.html">WebSubHub</a> | <a href="../websub/records/HubStartedUpError.html">HubStartedUpError</a> 
+        </span>
+        
     </div>
     <p><p>Starts up the ballerinaDup Hub.</p>
 </p>

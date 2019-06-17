@@ -645,59 +645,62 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">Filter</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">Filter</span> </h1>
             <p><p>Representation of a HTTP Request Filter. This filter will be applied before the request is dispatched to the relevant resource. Any Filter implementation should be structurally similar to the Filter object.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#filterRequest"><b>filterRequest </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#filterRequest">
+    <div class="param-sum">
+        <div class="param-name">
+        filterRequest 
+        </div>
+        <div class="param-details"> <p>Request filter function. If a false is returned the response should have been sent from this function as it will
+not be dispatched to the next filter or the resource.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#filterResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        filterResponse 
+        </div>
+        <div class="param-details"> <p>Response filter function. If a false is returned a 500 Internal Server Error would be sent to the client.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#filterResponse"><b>filterResponse </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="filterRequest">
+        <a class="url-link" href="#filterRequest">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> filterRequest </h2>
         <p class="method-types">(<a href="../../http/clients/Caller.html">Caller</a> caller, <a href="../../http/objects/Request.html">Request</a> request, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Request filter function. If a false is returned the response should have been sent from this function as it will
 not be dispatched to the next filter or the resource.</p>
@@ -754,8 +757,16 @@ not be dispatched to the next filter or the resource.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="filterResponse">
+        <a class="url-link" href="#filterResponse">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> filterResponse </h2>
         <p class="method-types">(<a href="../../http/objects/Response.html">Response</a> response, <a href="../../http/objects/FilterContext.html">FilterContext</a> context)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Response filter function. If a false is returned a 500 Internal Server Error would be sent to the client.</p>
 </p>

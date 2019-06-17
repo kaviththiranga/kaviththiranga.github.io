@@ -741,7 +741,7 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">streams : object -</span> <span class="objects">StreamJoinProcessor</span> </h1>
+            <h1><span class="title-type">Object - </span> streams : <span class="objects">StreamJoinProcessor</span> </h1>
             <p><p>The <code>StreamJoinProcessor</code> object is responsible for  performing SQLish joins between two or more streams.
 The <code>onConditionFunc</code> is the lambda function which represents the where clause in the join clause. The joining
 happens only if the condition is statified. <code>nextProcessor</code> is the <code>process</code> function of the next processor, which
@@ -753,9 +753,10 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<code> <span>function(</span><a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessor, <a href="../../streams/UNKOWN/JoinType.html">JoinType</a> joinType, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> onConditionFunc)</p>
 <div class="data-wrapper">
     
@@ -787,72 +788,65 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#process"><b>process </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setLHS"><b>setLHS </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setRHS"><b>setRHS </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setUnidirectionalStream"><b>setUnidirectionalStream </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#process">
+    <div class="param-sum">
+        <div class="param-name">
+        process 
+        </div>
+        <div class="param-details"> <p>Process the events from both <code>lhsStream</code> and the <code>rhsStream</code> and perform the joining.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setLHS">
+    <div class="param-sum">
+        <div class="param-name">
+        setLHS 
+        </div>
+        <div class="param-details"> <p>Sets the left hand side stream name and the respective window instance.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setRHS">
+    <div class="param-sum">
+        <div class="param-name">
+        setRHS 
+        </div>
+        <div class="param-details"> <p>Sets the right hand side stream name and the respective window instance.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setUnidirectionalStream">
+    <div class="param-sum">
+        <div class="param-name">
+        setUnidirectionalStream 
+        </div>
+        <div class="param-details"> <p>Sets the stream by which the joining is triggered.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -940,16 +934,20 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="process">
+        <a class="url-link" href="#process">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> process </h2>
         <p class="method-types">(<a href="../../streams/objects/StreamEvent.html">StreamEvent</a>[] streamEvents)</p>
+        
     </div>
     <p><p>Process the events from both <code>lhsStream</code> and the <code>rhsStream</code> and perform the joining.</p>
 </p>
@@ -975,8 +973,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setLHS">
+        <a class="url-link" href="#setLHS">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setLHS </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
+        
     </div>
     <p><p>Sets the left hand side stream name and the respective window instance.</p>
 </p>
@@ -1012,8 +1014,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setRHS">
+        <a class="url-link" href="#setRHS">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setRHS </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName, <a href="../../streams/objects/Window.html">Window</a> windowInstance)</p>
+        
     </div>
     <p><p>Sets the right hand side stream name and the respective window instance.</p>
 </p>
@@ -1049,8 +1055,12 @@ triggered when the events are received. Usually it is <code>lhsStream</code>, in
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setUnidirectionalStream">
+        <a class="url-link" href="#setUnidirectionalStream">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setUnidirectionalStream </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName)</p>
+        
     </div>
     <p><p>Sets the stream by which the joining is triggered.</p>
 </p>

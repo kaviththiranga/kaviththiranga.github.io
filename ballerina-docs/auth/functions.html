@@ -479,7 +479,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>auth : functions</h1>
+            <h1><span class="title-type">Functions - </span> auth</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -515,8 +515,12 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="initLdapConnectionContext">
+        <a class="url-link" href="#initLdapConnectionContext">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> initLdapConnectionContext </h2>
         <p class="method-types">(<a href="../auth/objects/LdapAuthStoreProvider.html">LdapAuthStoreProvider</a> ldapAuthStoreProvider, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> instanceId)</p>
+        
     </div>
     <p><p>Initailizes LDAP connection context</p>
 </p>
@@ -552,8 +556,16 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="issueJwt">
+        <a class="url-link" href="#issueJwt">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> issueJwt </h2>
         <p class="method-types">(<a href="../auth/records/JwtHeader.html">JwtHeader</a> header, <a href="../auth/records/JwtPayload.html">JwtPayload</a> payload, <a href="../auth/records/JWTIssuerConfig.html">JWTIssuerConfig</a>? config)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
 in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtHeader</code> is not <code>NONE</code>.</p>
@@ -610,8 +622,16 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="validateJwt">
+        <a class="url-link" href="#validateJwt">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> validateJwt </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> jwtToken, <a href="../auth/records/JWTValidatorConfig.html">JWTValidatorConfig</a> config)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../auth/records/JwtPayload.html">JwtPayload</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Validity given JWT string.</p>
 </p>

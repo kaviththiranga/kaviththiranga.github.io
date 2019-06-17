@@ -487,7 +487,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>observe : functions</h1>
+            <h1><span class="title-type">Functions - </span> observe</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -546,8 +546,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="addTagToSpan">
+        <a class="url-link" href="#addTagToSpan">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> addTagToSpan </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagKey, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> tagValue, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Add a key value pair as a tag to the span.</p>
 </p>
@@ -603,8 +611,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="finishSpan">
+        <a class="url-link" href="#finishSpan">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> finishSpan </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> spanId)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Finish the current span.</p>
 </p>
@@ -640,8 +656,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getAllMetrics">
+        <a class="url-link" href="#getAllMetrics">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getAllMetrics </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../observe/records/Metric.html">Metric</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieve all registered metrics including default metrics from the ballerinaDup runtime, and user defined metrics.</p>
 </p>
@@ -662,8 +686,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="lookupMetric">
+        <a class="url-link" href="#lookupMetric">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> lookupMetric </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../observe/objects/Counter.html">Counter</a> | <a href="../observe/objects/Gauge.html">Gauge</a>? 
+        </span>
+        
     </div>
     <p><p>Retrieves the specific metric that is described by the given name and tags.</p>
 </p>
@@ -709,8 +741,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="startRootSpan">
+        <a class="url-link" href="#startRootSpan">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> startRootSpan </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
+        </span>
+        
     </div>
     <p><p>Start a span with no parent span.</p>
 </p>
@@ -756,8 +796,16 @@
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="startSpan">
+        <a class="url-link" href="#startSpan">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> startSpan </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> spanName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> parentSpanId)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Start a span and create child relationship to current active span or user specified span.</p>
 </p>

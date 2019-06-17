@@ -759,7 +759,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>streams : functions</h1>
+            <h1><span class="title-type">Functions - </span> streams</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -1092,8 +1092,16 @@ same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="avg">
+        <a class="url-link" href="#avg">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> avg </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>Average</code> aggregator object. The aggregator function name which is used in a streaming query should have the
 same name as this function's name.</p>
@@ -1115,8 +1123,16 @@ same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="buildStreamEvent">
+        <a class="url-link" href="#buildStreamEvent">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> buildStreamEvent </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> t, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> streamName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[] 
+        </span>
+        
     </div>
     <p><p>Creates  <code>streams:StreamEvent</code> object array for a record <code>t</code> received by the stream denoted by the name <code>streamNme</code>.</p>
 </p>
@@ -1162,8 +1178,16 @@ same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="count">
+        <a class="url-link" href="#count">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> count </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>Count</code> aggregator object. The aggregator function name which is used in a streaming query should have the
 same name as this function's name.</p>
@@ -1185,8 +1209,16 @@ same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createFilter">
+        <a class="url-link" href="#createFilter">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createFilter </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcPointer, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Filter.html">Filter</a> 
+        </span>
+        
     </div>
     <p><p>Creates a <code>Filter</code> object and return it.</p>
 </p>
@@ -1233,8 +1265,16 @@ based on the boolean expression given in the where clause.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createOrderBy">
+        <a class="url-link" href="#createOrderBy">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createOrderBy </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessorPointer, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> fields, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] sortFieldMetadata)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/OrderBy.html">OrderBy</a> 
+        </span>
+        
     </div>
     <p><p>Creates an <code>OrderBy</code> object and return it.</p>
 </p>
@@ -1292,8 +1332,16 @@ sort type of the first element of <code>fields</code> and so on.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createOutputProcess">
+        <a class="url-link" href="#createOutputProcess">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createOutputProcess </h2>
         <p class="method-types">(<code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> outputFunc)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/OutputProcess.html">OutputProcess</a> 
+        </span>
+        
     </div>
     <p><p>Creates and return a <code>OutputProcess</code> object.</p>
 </p>
@@ -1329,8 +1377,16 @@ sort type of the first element of <code>fields</code> and so on.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createResetStreamEvent">
+        <a class="url-link" href="#createResetStreamEvent">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createResetStreamEvent </h2>
         <p class="method-types">(<a href="../streams/objects/StreamEvent.html">StreamEvent</a> event)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamEvent.html">StreamEvent</a> 
+        </span>
+        
     </div>
     <p><p>Creates a RESET event from a given event.</p>
 </p>
@@ -1366,8 +1422,16 @@ sort type of the first element of <code>fields</code> and so on.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createSelect">
+        <a class="url-link" href="#createSelect">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createSelect </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcPointer, <a href="../streams/objects/Aggregator.html">Aggregator</a>[] aggregatorArr, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#anydata">anydata</a><span>)</span> </code> groupbyFuncArray, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>, <a href="../streams/objects/Aggregator.html">Aggregator</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>)</span> </code> selectFunc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> scopeName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Select.html">Select</a> 
+        </span>
+        
     </div>
     <p><p>Creates and returns a select clause.</p>
 </p>
@@ -1446,8 +1510,16 @@ in the group by clause.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createStreamJoinProcessor">
+        <a class="url-link" href="#createStreamJoinProcessor">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createStreamJoinProcessor </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessor, <a href="../streams/UNKOWN/JoinType.html">JoinType</a> joinType, <code> <span>function(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a><span>)</span> </code> conditionFunc)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamJoinProcessor.html">StreamJoinProcessor</a> 
+        </span>
+        
     </div>
     <p><p>Creates a <code>StreamJoinProcessor</code> and returns it.</p>
 </p>
@@ -1505,8 +1577,16 @@ the condition.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createTableJoinProcessor">
+        <a class="url-link" href="#createTableJoinProcessor">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createTableJoinProcessor </h2>
         <p class="method-types">(<code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessor, <a href="../streams/UNKOWN/JoinType.html">JoinType</a> joinType, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a><span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>[]<span>)</span> </code> tableQuery)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/TableJoinProcessor.html">TableJoinProcessor</a> 
+        </span>
+        
     </div>
     <p><p>Creates a <code>TableJoinProcessor</code> and return it.</p>
 </p>
@@ -1564,8 +1644,16 @@ each stream event.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="delay">
+        <a class="url-link" href="#delay">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> delay </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>delay</code> function creates a <code>DelayWindow</code> object and returns it.</p>
 </p>
@@ -1612,8 +1700,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="distinctCount">
+        <a class="url-link" href="#distinctCount">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> distinctCount </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>DistinctCount</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -1635,8 +1731,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="externalTime">
+        <a class="url-link" href="#externalTime">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> externalTime </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>externalTime</code> function creates a <code>ExternalTimeWindow</code> object and returns it.</p>
 </p>
@@ -1683,8 +1787,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="externalTimeBatch">
+        <a class="url-link" href="#externalTimeBatch">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> externalTimeBatch </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>externalTimeBatch</code> function creates a <code>ExternalTimeBatchWindow</code> object and returns it.</p>
 </p>
@@ -1731,8 +1843,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="getStreamEvent">
+        <a class="url-link" href="#getStreamEvent">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> getStreamEvent </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>? anyEvent)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamEvent.html">StreamEvent</a> 
+        </span>
+        
     </div>
     <p><p>Get the stream event from any? field. This function can only be used only if we are sure that the <code>anyEvent</code> is a
 streams:StreamEvent.</p>
@@ -1769,8 +1889,16 @@ streams:StreamEvent.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="hopping">
+        <a class="url-link" href="#hopping">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> hopping </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>hopping</code> function creates a <code>HoppingWindow</code> object and returns it.</p>
 </p>
@@ -1817,8 +1945,12 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="initPersistence">
+        <a class="url-link" href="#initPersistence">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> initPersistence </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Function to initialize and start snapshotting.</p>
 </p>
@@ -1829,8 +1961,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="length">
+        <a class="url-link" href="#length">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> length </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>length</code> function creates a <code>LengthWindow</code> object and returns it.</p>
 </p>
@@ -1877,8 +2017,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="lengthBatch">
+        <a class="url-link" href="#lengthBatch">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> lengthBatch </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>lengthBatch</code> function creates a <code>LengthBatchWindow</code> object and returns it.</p>
 </p>
@@ -1925,8 +2073,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="max">
+        <a class="url-link" href="#max">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> max </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>Max</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -1948,8 +2104,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="maxForever">
+        <a class="url-link" href="#maxForever">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> maxForever </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>MaxForever</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -1971,8 +2135,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="min">
+        <a class="url-link" href="#min">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> min </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>Min</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -1994,8 +2166,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="minForever">
+        <a class="url-link" href="#minForever">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> minForever </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>MinForever</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -2017,8 +2197,12 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="registerSnapshotable">
+        <a class="url-link" href="#registerSnapshotable">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> registerSnapshotable </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> reference)</p>
+        
     </div>
     <p><p>Function to register Snapshotables.</p>
 </p>
@@ -2054,8 +2238,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="removeState">
+        <a class="url-link" href="#removeState">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> removeState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Function to clear an existing state.</p>
 </p>
@@ -2091,8 +2283,12 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="restoreState">
+        <a class="url-link" href="#restoreState">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> restoreState </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> reference)</p>
+        
     </div>
     <p><p>Function to restore state of a given object.</p>
 </p>
@@ -2128,8 +2324,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="sort">
+        <a class="url-link" href="#sort">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> sort </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>sort</code> function creates a <code>SortWindow</code> object and returns it.</p>
 </p>
@@ -2176,8 +2380,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="stdDev">
+        <a class="url-link" href="#stdDev">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> stdDev </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>StdDev</code> aggregator object. The aggregator function name which is used in a streaming query should
 have the same name as this function's name.</p>
@@ -2199,8 +2411,16 @@ have the same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="sum">
+        <a class="url-link" href="#sum">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> sum </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Aggregator.html">Aggregator</a> 
+        </span>
+        
     </div>
     <p><p>Returns a <code>Sum</code> aggregator object. The aggregator function name which is used in a streaming query should have the
 same name as this function's name.</p>
@@ -2222,8 +2442,16 @@ same name as this function's name.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="time">
+        <a class="url-link" href="#time">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> time </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>time</code> function creates a <code>TimeWindow</code> object and returns it.</p>
 </p>
@@ -2270,8 +2498,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="timeAccum">
+        <a class="url-link" href="#timeAccum">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> timeAccum </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>timeAccum</code> function creates a <code>TimeAccumulatingWindow</code> object and returns it.</p>
 </p>
@@ -2318,8 +2554,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="timeBatch">
+        <a class="url-link" href="#timeBatch">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> timeBatch </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>timeBatch</code> function creates a <code>TimeBatchWindow</code> object and returns it.</p>
 </p>
@@ -2366,8 +2610,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="timeLength">
+        <a class="url-link" href="#timeLength">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> timeLength </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>timeLength</code> function creates a <code>TimeLengthWindow</code> object and returns it.</p>
 </p>
@@ -2414,8 +2666,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="timeOrder">
+        <a class="url-link" href="#timeOrder">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> timeOrder </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>timeOrder</code> function creates a <code>TimeOrderWindow</code> object and returns it.</p>
 </p>
@@ -2462,8 +2722,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="toSnapshottableEvent">
+        <a class="url-link" href="#toSnapshottableEvent">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> toSnapshottableEvent </h2>
         <p class="method-types">(<a href="../streams/objects/StreamEvent.html">StreamEvent</a> event)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/records/SnapshottableStreamEvent.html">SnapshottableStreamEvent</a> 
+        </span>
+        
     </div>
     <p><p>Convert a single <code>streams:StreamEvent</code> object to <code>streams:SnapshottableStreamEvent</code> object.</p>
 </p>
@@ -2499,8 +2767,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="toSnapshottableEvents">
+        <a class="url-link" href="#toSnapshottableEvents">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> toSnapshottableEvents </h2>
         <p class="method-types">(<a href="../streams/objects/StreamEvent.html">StreamEvent</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[]? events)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/records/SnapshottableStreamEvent.html">SnapshottableStreamEvent</a>[] 
+        </span>
+        
     </div>
     <p><p>Converts a given array of streams:StreamEvent objects to an array of <code>streams:SnapshottableStreamEvent</code>.</p>
 </p>
@@ -2536,8 +2812,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="toStreamEvent">
+        <a class="url-link" href="#toStreamEvent">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> toStreamEvent </h2>
         <p class="method-types">(<a href="../streams/records/SnapshottableStreamEvent.html">SnapshottableStreamEvent</a> event)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamEvent.html">StreamEvent</a> 
+        </span>
+        
     </div>
     <p><p>Convert a single <code>streams:SnapshottableStreamEvent</code> object to <code>streams:StreamEvent</code> object.</p>
 </p>
@@ -2573,8 +2857,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="toStreamEvents">
+        <a class="url-link" href="#toStreamEvents">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> toStreamEvents </h2>
         <p class="method-types">(<a href="../streams/records/SnapshottableStreamEvent.html">SnapshottableStreamEvent</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[]? events)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[] 
+        </span>
+        
     </div>
     <p><p>Converts a given array of snapshotable events to an array of <code>streams:StreamEvent</code> objects.</p>
 </p>
@@ -2610,8 +2902,16 @@ they appear in the argument list.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="uniqueLength">
+        <a class="url-link" href="#uniqueLength">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> uniqueLength </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>[] windowParameters, <code> <span>function(</span><a href="../streams/objects/StreamEvent.html">StreamEvent</a>[]<span>) </span><span>returns (</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a><span>)</span> </code> nextProcessPointer)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../streams/objects/Window.html">Window</a> 
+        </span>
+        
     </div>
     <p><p>The <code>uniqueLength</code> function creates a <code>UniqueLengthWindow</code> object and returns it.</p>
 </p>

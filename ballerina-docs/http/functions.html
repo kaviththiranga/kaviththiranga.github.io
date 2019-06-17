@@ -543,7 +543,7 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>http : functions</h1>
+            <h1><span class="title-type">Functions - </span> http</h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
@@ -611,8 +611,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createHttpCachingClient">
+        <a class="url-link" href="#createHttpCachingClient">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createHttpCachingClient </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config, <a href="../http/records/CacheConfig.html">CacheConfig</a> cacheConfig)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../http/clients/Client.html">Client</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates an HTTP client capable of caching HTTP responses.</p>
 </p>
@@ -668,8 +676,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="createHttpSecureClient">
+        <a class="url-link" href="#createHttpSecureClient">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> createHttpSecureClient </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a> config)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../http/clients/Client.html">Client</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Creates an HTTP client capable of securing HTTP requests with authentication.</p>
 </p>
@@ -715,8 +731,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="decode">
+        <a class="url-link" href="#decode">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> decode </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Decodes the given URL.</p>
 </p>
@@ -762,8 +786,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="encode">
+        <a class="url-link" href="#encode">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> encode </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Encodes the given URL.</p>
 </p>
@@ -809,8 +841,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="extractBasicAuthHeaderValue">
+        <a class="url-link" href="#extractBasicAuthHeaderValue">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> extractBasicAuthHeaderValue </h2>
         <p class="method-types">(<a href="../http/objects/Request.html">Request</a> req)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> 
+        </span>
+        
     </div>
     <p><p>Extracts the basic authentication header value from the request.</p>
 </p>
@@ -846,8 +886,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="invokeEndpoint">
+        <a class="url-link" href="#invokeEndpoint">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> invokeEndpoint </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../http/objects/Request.html">Request</a> outRequest, <a href="../http/types.html#HttpOperation">HttpOperation</a> requestAction, <a href="../http/clients/Client.html">Client</a> httpClient)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The HEAD remote function implementation of the Circuit Breaker. This wraps the <code>head()</code> function of the underlying
 HTTP remote function provider.</p>
@@ -914,8 +962,16 @@ HTTP remote function provider.</p>
                             
                                 <div class="method-content">
     <div class="main-method-title here" id="parseHeader">
+        <a class="url-link" href="#parseHeader">
+            <img class="url-link-img" src="../html-template-resources/images/link.svg">
+        </a>
         <h2> parseHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
+        <span class="return-types">
+            <b> returns </b><span>(</span><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a><span>)</span> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Parses the given header value to extract its value and parameter map.</p>
 </p>

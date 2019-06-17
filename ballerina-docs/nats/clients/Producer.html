@@ -460,15 +460,17 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">nats : clients - </span><span class="clients">Producer</span> </h1>
+            <h1><span class="title-type">Clients - </span> nats : 
+                <span class="clients">Producer</span> </h1>
             <p><p>NATS producer would act as a streaming client allowing to stream messages between NATS streaming server.
 Producer would create a new NATS connection if a connection was not provided during the initialization.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../nats/records/ConnectionConfig.html">ConnectionConfig</a> | <a href="../../nats/objects/Connection.html">Connection</a> c)</p>
 <div class="data-wrapper">
     
@@ -483,76 +485,73 @@ Producer would create a new NATS connection if a connection was not provided dur
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#send">
+    <div class="param-sum">
+        <div class="param-name">
+        send 
+        </div>
+        <div class="param-details"> <p>Produces a message to a NATS streaming server for the given subject.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#requestReply">
+    <div class="param-sum">
+        <div class="param-name">
+        requestReply 
+        </div>
+        <div class="param-details"> <p>Produces a message and would wait for a response.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Close a given connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#send"><b>send </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#requestReply"><b>requestReply </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset) 
-        
-        <b> returns </b><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="send">
+        <a class="url-link" href="#send">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> send </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Produces a message to a NATS streaming server for the given subject.</p>
 </p>
@@ -608,8 +607,16 @@ Producer would create a new NATS connection if a connection was not provided dur
                     
                         <div class="method-content">
     <div class="main-method-title here" id="requestReply">
+        <a class="url-link" href="#requestReply">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> requestReply </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Produces a message and would wait for a response.</p>
 </p>
@@ -669,8 +676,16 @@ Producer would create a new NATS connection if a connection was not provided dur
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Close a given connection.</p>
 </p>

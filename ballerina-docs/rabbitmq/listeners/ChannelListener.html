@@ -468,15 +468,18 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>rabbitmq : listeners : <span class="listeners">ChannelListener</span> </h1>
+            <h1>
+                <span class="title-type">Listener - </span> rabbitmq : <span class="listeners">ChannelListener</span> 
+            </h1>
             <p><p>Public ballerinaDup API - ballerinaDup RabbitMQ Message Listener.
 To provide a listener to consume messages from RabbitMQ.</p>
 </p>
 
             <div class="constants">
+                <div class="method-sum">
                 
                     
-                        <h2>New Method</h2>
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../rabbitmq/records/ConnectionConfiguration.html">ConnectionConfiguration</a> | <a href="../../rabbitmq/objects/Connection.html">Connection</a> connectionOrConnectionConfig)</p>
 <div class="data-wrapper">
     
@@ -501,52 +504,41 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     <div class="method-list">
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__start"><b>__start </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__start">
+    <div class="param-sum">
+        <div class="param-name">
+        __start 
+        </div>
+        <div class="param-details"> <p>Starts the endpoint. Function is ignored by the ChannelListener.</p>
+ </div>
+    </div>
+</a>
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__stop"><b>__stop </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__stop">
+    <div class="param-sum">
+        <div class="param-name">
+        __stop 
+        </div>
+        <div class="param-details"> <p>Stops consuming messages through ChannelListener endpoint.</p>
+ </div>
+    </div>
+</a>
                         
                             
-
-<p>
-    <span class="param-name">
-        <a href="#__attach"><b>__attach </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
+<a href="#__attach">
+    <div class="param-sum">
+        <div class="param-name">
+        __attach 
+        </div>
+        <div class="param-details"> <p>Binds the ChannelListener to a service.</p>
+ </div>
+    </div>
+</a>
                         
                     </div>
                 
+                </div>
 
                 
 
@@ -557,8 +549,16 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__start">
+        <a class="url-link" href="#__start">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __start </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Starts the endpoint. Function is ignored by the ChannelListener.</p>
 </p>
@@ -579,8 +579,16 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__stop">
+        <a class="url-link" href="#__stop">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __stop </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Stops consuming messages through ChannelListener endpoint.</p>
 </p>
@@ -601,8 +609,16 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__attach">
+        <a class="url-link" href="#__attach">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> __attach </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Binds the ChannelListener to a service.</p>
 </p>

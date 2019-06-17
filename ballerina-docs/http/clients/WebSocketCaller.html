@@ -580,101 +580,83 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">http : clients - </span><span class="clients">WebSocketCaller</span> </h1>
+            <h1><span class="title-type">Clients - </span> http : 
+                <span class="clients">WebSocketCaller</span> </h1>
             <p><p>Represents a WebSocket caller.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#pushText"><b>pushText </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> finalFrame) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#pushText">
+    <div class="param-sum">
+        <div class="param-name">
+        pushText 
+        </div>
+        <div class="param-details"> <p>Push text to the connection.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#pushBinary"><b>pushBinary </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> finalFrame) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#pushBinary">
+    <div class="param-sum">
+        <div class="param-name">
+        pushBinary 
+        </div>
+        <div class="param-details"> <p>Push binary data to the connection.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#ping"><b>ping </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#ping">
+    <div class="param-sum">
+        <div class="param-name">
+        ping 
+        </div>
+        <div class="param-details"> <p>Ping the connection.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#pong"><b>pong </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#pong">
+    <div class="param-sum">
+        <div class="param-name">
+        pong 
+        </div>
+        <div class="param-details"> <p>Send pong message to the connection.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Close the connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? statusCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? reason, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInSecs) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
+                    
                 
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -742,15 +724,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="pushText">
+        <a class="url-link" href="#pushText">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> pushText </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> finalFrame)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Push text to the connection.</p>
 </p>
@@ -796,8 +787,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="pushBinary">
+        <a class="url-link" href="#pushBinary">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> pushBinary </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> finalFrame)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Push binary data to the connection.</p>
 </p>
@@ -843,8 +842,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="ping">
+        <a class="url-link" href="#ping">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> ping </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Ping the connection.</p>
 </p>
@@ -880,8 +887,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="pong">
+        <a class="url-link" href="#pong">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> pong </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Send pong message to the connection.</p>
 </p>
@@ -917,8 +932,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? statusCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? reason, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInSecs)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Close the connection.</p>
 </p>

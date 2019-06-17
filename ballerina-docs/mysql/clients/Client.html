@@ -436,14 +436,16 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">mysql : clients - </span><span class="clients">Client</span> </h1>
+            <h1><span class="title-type">Clients - </span> mysql : 
+                <span class="clients">Client</span> </h1>
             <p><p>Represents an MySQL client endpoint.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
+                        
+                            <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../mysql/records/ClientEndpointConfig.html">ClientEndpointConfig</a> c)</p>
 <div class="data-wrapper">
     
@@ -457,106 +459,95 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#call">
+    <div class="param-sum">
+        <div class="param-name">
+        call 
+        </div>
+        <div class="param-details"> <p>The call remote function implementation for MySQL Client to invoke stored procedures/functions.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#select">
+    <div class="param-sum">
+        <div class="param-name">
+        select 
+        </div>
+        <div class="param-details"> <p>The select remote function implementation for MySQL Client to select data from tables.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#update">
+    <div class="param-sum">
+        <div class="param-name">
+        update 
+        </div>
+        <div class="param-details"> <p>The update remote function implementation for MySQL Client to update data and schema of the database.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#batchUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        batchUpdate 
+        </div>
+        <div class="param-details"> <p>The batchUpdate remote function implementation for MySQL Client to batch data insert.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#stop">
+    <div class="param-sum">
+        <div class="param-name">
+        stop 
+        </div>
+        <div class="param-details"> <p>Stops the JDBC client.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#call"><b>call </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#select"><b>select </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#update"><b>update </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters) 
-        
-        <b> returns </b><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#batchUpdate"><b>batchUpdate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#stop"><b>stop </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="call">
+        <a class="url-link" href="#call">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> call </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>[]? recordType, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The call remote function implementation for MySQL Client to invoke stored procedures/functions.</p>
 </p>
@@ -613,8 +604,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="select">
+        <a class="url-link" href="#select">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> select </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#typedesc">typedesc</a>? recordType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> loadToMemory, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#table">table</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The select remote function implementation for MySQL Client to select data from tables.</p>
 </p>
@@ -680,8 +679,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="update">
+        <a class="url-link" href="#update">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> update </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[]? keyColumns, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../sql/records/UpdateResult.html">UpdateResult</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The update remote function implementation for MySQL Client to update data and schema of the database.</p>
 </p>
@@ -738,8 +745,16 @@ else <code>error</code> will be returned if there is any error</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="batchUpdate">
+        <a class="url-link" href="#batchUpdate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> batchUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> sqlQuery, <a href="../../sql/types.html#Param">Param</a>[] parameters)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>The batchUpdate remote function implementation for MySQL Client to batch data insert.</p>
 </p>
@@ -797,8 +812,16 @@ continues to process commands after a command fails</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="stop">
+        <a class="url-link" href="#stop">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> stop </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Stops the JDBC client.</p>
 </p>

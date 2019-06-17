@@ -492,71 +492,61 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="">jms : clients - </span><span class="clients">QueueReceiverCaller</span> </h1>
+            <h1><span class="title-type">Clients - </span> jms : 
+                <span class="clients">QueueReceiverCaller</span> </h1>
             <p><p>Caller actions related to queue receiver endpoint.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
+                    
 
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#acknowledge"><b>acknowledge </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../jms/objects/Message.html">Message</a> message) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#acknowledge">
+    <div class="param-sum">
+        <div class="param-name">
+        acknowledge 
+        </div>
+        <div class="param-details"> <p>Acknowledges a received message</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#receive"><b>receive </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInMilliSeconds) 
-        
-        <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#receive">
+    <div class="param-sum">
+        <div class="param-name">
+        receive 
+        </div>
+        <div class="param-details"> <p>Synchronously receive a message from the JMS provider</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#receiveFrom"><b>receiveFrom </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../jms/objects/Destination.html">Destination</a> destination, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInMilliSeconds) 
-        
-        <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
+                                
+<a href="#receiveFrom">
+    <div class="param-sum">
+        <div class="param-name">
+        receiveFrom 
+        </div>
+        <div class="param-details"> <p>Synchronously receive a message from a given destination</p>
+ </div>
+    </div>
+</a>
                             
-                            <div class="data-wrapper">
+                        </div>
+                    
+
+                    
+                
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -584,15 +574,24 @@
 </script>
 
 
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
     <div class="main-method-title here" id="acknowledge">
+        <a class="url-link" href="#acknowledge">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> acknowledge </h2>
         <p class="method-types">(<a href="../../jms/objects/Message.html">Message</a> message)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Acknowledges a received message</p>
 </p>
@@ -628,8 +627,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="receive">
+        <a class="url-link" href="#receive">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> receive </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInMilliSeconds)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Synchronously receive a message from the JMS provider</p>
 </p>
@@ -665,8 +672,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="receiveFrom">
+        <a class="url-link" href="#receiveFrom">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> receiveFrom </h2>
         <p class="method-types">(<a href="../../jms/objects/Destination.html">Destination</a> destination, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> timeoutInMilliSeconds)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../jms/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Synchronously receive a message from a given destination</p>
 </p>

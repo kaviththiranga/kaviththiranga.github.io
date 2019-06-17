@@ -541,14 +541,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">io : object -</span> <span class="objects">WritableCharacterChannel</span> </h1>
+            <h1><span class="title-type">Object - </span> io : <span class="objects">WritableCharacterChannel</span> </h1>
             <p><p>Represents a channel which could be used to write characters through a given WritableCharacterChannel.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> bChannel, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
 <div class="data-wrapper">
     
@@ -573,85 +574,78 @@
         </div>
     
 </div>
+                        
                     
-                
 
                 
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
                             
-
-<p>
-    <span class="param-name">
-        <a href="#write"><b>write </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> content, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> startOffset) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#write">
+    <div class="param-sum">
+        <div class="param-name">
+        write 
+        </div>
+        <div class="param-details"> <p>Writes a given sequence of characters (string).</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#writeJson"><b>writeJson </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> content) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#writeJson">
+    <div class="param-sum">
+        <div class="param-name">
+        writeJson 
+        </div>
+        <div class="param-details"> <p>Writes a given json to the given channel.</p>
+ </div>
+    </div>
+</a>
                             
-
-<p>
-    <span class="param-name">
-        <a href="#writeXml"><b>writeXml </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> content) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
+                                
+<a href="#writeXml">
+    <div class="param-sum">
+        <div class="param-name">
+        writeXml 
+        </div>
+        <div class="param-details"> <p>Writes a given xml to the channel.</p>
+ </div>
+    </div>
+</a>
                             
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Closes a given WritableCharacterChannel channel.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
 
-<p>
-    <span class="param-name">
-        <a href="#close"><b>close </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                    
+                </div>
 
                 
-
-                
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="write">
+        <a class="url-link" href="#write">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> write </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> content, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> startOffset)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Writes a given sequence of characters (string).</p>
 </p>
@@ -697,8 +691,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="writeJson">
+        <a class="url-link" href="#writeJson">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> writeJson </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Writes a given json to the given channel.</p>
 </p>
@@ -734,8 +736,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="writeXml">
+        <a class="url-link" href="#writeXml">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> writeXml </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> content)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Writes a given xml to the channel.</p>
 </p>
@@ -771,8 +781,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
+        <a class="url-link" href="#close">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> close </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Closes a given WritableCharacterChannel channel.</p>
 </p>

@@ -645,412 +645,337 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">http : object -</span> <span class="objects">Response</span> </h1>
+            <h1><span class="title-type">Object - </span> http : <span class="objects">Response</span> </h1>
             <p><p>Represents an HTTP response.</p>
 </p>
 
             <div class="constants">
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getEntity"><b>getEntity </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setEntity"><b>setEntity </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../mime/objects/Entity.html">Entity</a> e) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#hasHeader"><b>hasHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeader"><b>getHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#addHeader"><b>addHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeaders"><b>getHeaders </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setHeader"><b>setHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeHeader"><b>removeHeader </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#removeAllHeaders"><b>removeAllHeaders </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getHeaderNames"><b>getHeaderNames </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setContentType"><b>setContentType </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getContentType"><b>getContentType </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getJsonPayload"><b>getJsonPayload </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getXmlPayload"><b>getXmlPayload </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getTextPayload"><b>getTextPayload </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getByteChannel"><b>getByteChannel </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getBinaryPayload"><b>getBinaryPayload </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getBodyParts"><b>getBodyParts </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setETag"><b>setETag </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setLastModified"><b>setLastModified </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setJsonPayload"><b>setJsonPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setXmlPayload"><b>setXmlPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setTextPayload"><b>setTextPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setBinaryPayload"><b>setBinaryPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setBodyParts"><b>setBodyParts </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../mime/objects/Entity.html">Entity</a>[] bodyParts, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setFileAsPayload"><b>setFileAsPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> filePath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setByteChannel"><b>setByteChannel </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setPayload"><b>setPayload </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../mime/objects/Entity.html">Entity</a>[] payload) 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
+                <div class="method-sum">
+                    
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#getEntity">
+    <div class="param-sum">
+        <div class="param-name">
+        getEntity 
+        </div>
+        <div class="param-details"> <p>Gets the <code>Entity</code> associated with the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setEntity">
+    <div class="param-sum">
+        <div class="param-name">
+        setEntity 
+        </div>
+        <div class="param-details"> <p>Sets the provided <code>Entity</code> to the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#hasHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        hasHeader 
+        </div>
+        <div class="param-details"> <p>Checks whether the requested header key exists in the header map.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeader 
+        </div>
+        <div class="param-details"> <p>Returns the value of the specified header. If the specified header key maps to multiple values, the first of
+these values is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#addHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        addHeader 
+        </div>
+        <div class="param-details"> <p>Adds the specified header to the response. Existing header values are not replaced.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeaders">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeaders 
+        </div>
+        <div class="param-details"> <p>Gets all the header values to which the specified header key maps to.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        setHeader 
+        </div>
+        <div class="param-details"> <p>Sets the specified header to the response. If a mapping already exists for the specified header key, the
+existing header value is replaced with the specfied header value.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeHeader">
+    <div class="param-sum">
+        <div class="param-name">
+        removeHeader 
+        </div>
+        <div class="param-details"> <p>Removes the specified header from the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#removeAllHeaders">
+    <div class="param-sum">
+        <div class="param-name">
+        removeAllHeaders 
+        </div>
+        <div class="param-details"> <p>Removes all the headers from the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getHeaderNames">
+    <div class="param-sum">
+        <div class="param-name">
+        getHeaderNames 
+        </div>
+        <div class="param-details"> <p>Gets all the names of the headers of the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setContentType">
+    <div class="param-sum">
+        <div class="param-name">
+        setContentType 
+        </div>
+        <div class="param-details"> <p>Sets the <code>content-type</code> header to the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getContentType">
+    <div class="param-sum">
+        <div class="param-name">
+        getContentType 
+        </div>
+        <div class="param-details"> <p>Gets the type of the payload of the response (i.e: the <code>content-type</code> header value).</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getJsonPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getJsonPayload 
+        </div>
+        <div class="param-details"> <p>Extract <code>json</code> payload from the response. If the content type is not JSON, an <code>error</code> is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getXmlPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getXmlPayload 
+        </div>
+        <div class="param-details"> <p>Extracts <code>xml</code> payload from the response. If the the content type is not XML, an <code>error</code> is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getTextPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getTextPayload 
+        </div>
+        <div class="param-details"> <p>Extracts <code>text</code> payload from the response. If the content type is not of type text, an <code>error</code> is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getByteChannel">
+    <div class="param-sum">
+        <div class="param-name">
+        getByteChannel 
+        </div>
+        <div class="param-details"> <p>Gets the response payload as a <code>ByteChannel</code>, except in the case of multiparts. To retrieve multiparts, use
+<code>getBodyParts()</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getBinaryPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getBinaryPayload 
+        </div>
+        <div class="param-details"> <p>Gets the response payload as a <code>byte[]</code>.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getBodyParts">
+    <div class="param-sum">
+        <div class="param-name">
+        getBodyParts 
+        </div>
+        <div class="param-details"> <p>Extracts body parts from the response. If the content type is not a composite media type, an error is returned.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setETag">
+    <div class="param-sum">
+        <div class="param-name">
+        setETag 
+        </div>
+        <div class="param-details"> <p>Sets the <code>etag</code> header for the given payload. The ETag is generated using a CRC32 hash function.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setLastModified">
+    <div class="param-sum">
+        <div class="param-name">
+        setLastModified 
+        </div>
+        <div class="param-details"> <p>Sets the current time as the <code>last-modified</code> header.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setJsonPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setJsonPayload 
+        </div>
+        <div class="param-details"> <p>Sets a <code>json</code> as the payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setXmlPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setXmlPayload 
+        </div>
+        <div class="param-details"> <p>Sets an <code>xml</code> as the payload</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setTextPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setTextPayload 
+        </div>
+        <div class="param-details"> <p>Sets a <code>string</code> as the payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setBinaryPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setBinaryPayload 
+        </div>
+        <div class="param-details"> <p>Sets a <code>byte[]</code> as the payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setBodyParts">
+    <div class="param-sum">
+        <div class="param-name">
+        setBodyParts 
+        </div>
+        <div class="param-details"> <p>Set multiparts as the payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setFileAsPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setFileAsPayload 
+        </div>
+        <div class="param-details"> <p>Sets the content of the specified file as the entity body of the response.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setByteChannel">
+    <div class="param-sum">
+        <div class="param-name">
+        setByteChannel 
+        </div>
+        <div class="param-details"> <p>Sets a <code>ByteChannel</code> as the payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        setPayload 
+        </div>
+        <div class="param-details"> <p>Sets the response payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -1120,16 +1045,24 @@ if the response was sent with cache-control directives</p>
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getEntity">
+        <a class="url-link" href="#getEntity">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getEntity </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets the <code>Entity</code> associated with the response.</p>
 </p>
@@ -1150,8 +1083,12 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setEntity">
+        <a class="url-link" href="#setEntity">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setEntity </h2>
         <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a> e)</p>
+        
     </div>
     <p><p>Sets the provided <code>Entity</code> to the response.</p>
 </p>
@@ -1177,8 +1114,16 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasHeader">
+        <a class="url-link" href="#hasHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> hasHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Checks whether the requested header key exists in the header map.</p>
 </p>
@@ -1214,8 +1159,16 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeader">
+        <a class="url-link" href="#getHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the value of the specified header. If the specified header key maps to multiple values, the first of
 these values is returned.</p>
@@ -1253,8 +1206,12 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addHeader">
+        <a class="url-link" href="#addHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> addHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Adds the specified header to the response. Existing header values are not replaced.</p>
 </p>
@@ -1290,8 +1247,16 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaders">
+        <a class="url-link" href="#getHeaders">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeaders </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Gets all the header values to which the specified header key maps to.</p>
 </p>
@@ -1328,8 +1293,12 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setHeader">
+        <a class="url-link" href="#setHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+        
     </div>
     <p><p>Sets the specified header to the response. If a mapping already exists for the specified header key, the
 existing header value is replaced with the specfied header value.</p>
@@ -1366,8 +1335,12 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeHeader">
+        <a class="url-link" href="#removeHeader">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeHeader </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+        
     </div>
     <p><p>Removes the specified header from the response.</p>
 </p>
@@ -1393,8 +1366,12 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeAllHeaders">
+        <a class="url-link" href="#removeAllHeaders">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> removeAllHeaders </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Removes all the headers from the response.</p>
 </p>
@@ -1405,8 +1382,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaderNames">
+        <a class="url-link" href="#getHeaderNames">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getHeaderNames </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Gets all the names of the headers of the response.</p>
 </p>
@@ -1427,8 +1412,12 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setContentType">
+        <a class="url-link" href="#setContentType">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setContentType </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets the <code>content-type</code> header to the response.</p>
 </p>
@@ -1454,8 +1443,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getContentType">
+        <a class="url-link" href="#getContentType">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getContentType </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
+        </span>
+        
     </div>
     <p><p>Gets the type of the payload of the response (i.e: the <code>content-type</code> header value).</p>
 </p>
@@ -1476,8 +1473,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getJsonPayload">
+        <a class="url-link" href="#getJsonPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getJsonPayload </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Extract <code>json</code> payload from the response. If the content type is not JSON, an <code>error</code> is returned.</p>
 </p>
@@ -1498,8 +1503,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getXmlPayload">
+        <a class="url-link" href="#getXmlPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getXmlPayload </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Extracts <code>xml</code> payload from the response. If the the content type is not XML, an <code>error</code> is returned.</p>
 </p>
@@ -1520,8 +1533,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getTextPayload">
+        <a class="url-link" href="#getTextPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getTextPayload </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Extracts <code>text</code> payload from the response. If the content type is not of type text, an <code>error</code> is returned.</p>
 </p>
@@ -1542,8 +1563,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getByteChannel">
+        <a class="url-link" href="#getByteChannel">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getByteChannel </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets the response payload as a <code>ByteChannel</code>, except in the case of multiparts. To retrieve multiparts, use
 <code>getBodyParts()</code>.</p>
@@ -1565,8 +1594,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBinaryPayload">
+        <a class="url-link" href="#getBinaryPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getBinaryPayload </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Gets the response payload as a <code>byte[]</code>.</p>
 </p>
@@ -1587,8 +1624,16 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBodyParts">
+        <a class="url-link" href="#getBodyParts">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getBodyParts </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Extracts body parts from the response. If the content type is not a composite media type, an error is returned.</p>
 </p>
@@ -1610,8 +1655,12 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setETag">
+        <a class="url-link" href="#setETag">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setETag </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload)</p>
+        
     </div>
     <p><p>Sets the <code>etag</code> header for the given payload. The ETag is generated using a CRC32 hash function.</p>
 </p>
@@ -1637,8 +1686,12 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setLastModified">
+        <a class="url-link" href="#setLastModified">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setLastModified </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Sets the current time as the <code>last-modified</code> header.</p>
 </p>
@@ -1649,8 +1702,12 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setJsonPayload">
+        <a class="url-link" href="#setJsonPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setJsonPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets a <code>json</code> as the payload.</p>
 </p>
@@ -1687,8 +1744,12 @@ for <code>json</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setXmlPayload">
+        <a class="url-link" href="#setXmlPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setXmlPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets an <code>xml</code> as the payload</p>
 </p>
@@ -1725,8 +1786,12 @@ for <code>xml</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setTextPayload">
+        <a class="url-link" href="#setTextPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setTextPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets a <code>string</code> as the payload.</p>
 </p>
@@ -1763,8 +1828,12 @@ for <code>string</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setBinaryPayload">
+        <a class="url-link" href="#setBinaryPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setBinaryPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets a <code>byte[]</code> as the payload.</p>
 </p>
@@ -1801,8 +1870,12 @@ for <code>byte[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setBodyParts">
+        <a class="url-link" href="#setBodyParts">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setBodyParts </h2>
         <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a>[] bodyParts, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Set multiparts as the payload.</p>
 </p>
@@ -1839,8 +1912,12 @@ for <code>byte[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setFileAsPayload">
+        <a class="url-link" href="#setFileAsPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setFileAsPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> filePath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets the content of the specified file as the entity body of the response.</p>
 </p>
@@ -1877,8 +1954,12 @@ header value</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setByteChannel">
+        <a class="url-link" href="#setByteChannel">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setByteChannel </h2>
         <p class="method-types">(<a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+        
     </div>
     <p><p>Sets a <code>ByteChannel</code> as the payload.</p>
 </p>
@@ -1915,8 +1996,12 @@ header value</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setPayload">
+        <a class="url-link" href="#setPayload">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setPayload </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../mime/objects/Entity.html">Entity</a>[] payload)</p>
+        
     </div>
     <p><p>Sets the response payload.</p>
 </p>

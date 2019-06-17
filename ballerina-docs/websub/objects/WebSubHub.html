@@ -517,14 +517,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">websub : object -</span> <span class="objects">WebSubHub</span> </h1>
+            <h1><span class="title-type">Object - </span> websub : <span class="objects">WebSubHub</span> </h1>
             <p><p>Object representing a ballerinaDup WebSub Hub.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> hubUrl, <a href="../../http/objects/Listener.html">Listener</a> hubHttpListener)</p>
 <div class="data-wrapper">
     
@@ -547,110 +548,87 @@
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#stop"><b>stop </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#publishUpdate"><b>publishUpdate </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#registerTopic"><b>registerTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#unregisterTopic"><b>unregisterTopic </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getAvailableTopics"><b>getAvailableTopics </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getSubscribers"><b>getSubscribers </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-        
-        <b> returns </b><a href="../../websub/records/SubscriberDetails.html">SubscriberDetails</a>[] 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#stop">
+    <div class="param-sum">
+        <div class="param-name">
+        stop 
+        </div>
+        <div class="param-details"> <p>Stops the started up ballerinaDup WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#publishUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        publishUpdate 
+        </div>
+        <div class="param-details"> <p>Publishes an update against the topic in the initialized ballerinaDup Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#registerTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        registerTopic 
+        </div>
+        <div class="param-details"> <p>Registers a topic in the ballerinaDup Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregisterTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        unregisterTopic 
+        </div>
+        <div class="param-details"> <p>Unregisters a topic in the ballerinaDup Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getAvailableTopics">
+    <div class="param-sum">
+        <div class="param-name">
+        getAvailableTopics 
+        </div>
+        <div class="param-details"> <p>Retrieves topics currently recognized by the Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getSubscribers">
+    <div class="param-sum">
+        <div class="param-name">
+        getSubscribers 
+        </div>
+        <div class="param-details"> <p>Retrieves details of subscribers registered to receive updates for a particular topic.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -678,16 +656,24 @@
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="stop">
+        <a class="url-link" href="#stop">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> stop </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Stops the started up ballerinaDup WebSub Hub.</p>
 </p>
@@ -708,8 +694,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="publishUpdate">
+        <a class="url-link" href="#publishUpdate">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> publishUpdate </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Publishes an update against the topic in the initialized ballerinaDup Hub.</p>
 </p>
@@ -765,8 +759,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="registerTopic">
+        <a class="url-link" href="#registerTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> registerTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Registers a topic in the ballerinaDup Hub.</p>
 </p>
@@ -802,8 +804,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unregisterTopic">
+        <a class="url-link" href="#unregisterTopic">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unregisterTopic </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Unregisters a topic in the ballerinaDup Hub.</p>
 </p>
@@ -839,8 +849,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getAvailableTopics">
+        <a class="url-link" href="#getAvailableTopics">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getAvailableTopics </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieves topics currently recognized by the Hub.</p>
 </p>
@@ -861,8 +879,16 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getSubscribers">
+        <a class="url-link" href="#getSubscribers">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getSubscribers </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../websub/records/SubscriberDetails.html">SubscriberDetails</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieves details of subscribers registered to receive updates for a particular topic.</p>
 </p>

@@ -453,15 +453,16 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="">observe : object -</span> <span class="objects">Gauge</span> </h1>
+            <h1><span class="title-type">Object - </span> observe : <span class="objects">Gauge</span> </h1>
             <p><p>This represents the metric type - gauge, that can hold instantaneous, increased or decreased value
 during the usage.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
+                        
+                        <h2>Constructor</h2>
 <h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? desc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags, <a href="../../observe/records/StatisticConfig.html">StatisticConfig</a>[]? statisticConfig)</p>
 <div class="data-wrapper">
     
@@ -510,117 +511,98 @@ calculation.</p>
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#register"><b>register </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#unregister"><b>unregister </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#increment"><b>increment </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#decrement"><b>decrement </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#setValue"><b>setValue </b></a>
-    </span>
-    <span class="param-details">
-        (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount) 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getValue"><b>getValue </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> 
-        
-    </span>
-    
-</p>
-                        
-                            
-
-<p>
-    <span class="param-name">
-        <a href="#getSnapshot"><b>getSnapshot </b></a>
-    </span>
-    <span class="param-details">
-        () 
-        
-        <b> returns </b><a href="../../observe/records/Snapshot.html">Snapshot</a>[]? 
-        
-    </span>
-    
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#register">
+    <div class="param-sum">
+        <div class="param-name">
+        register 
+        </div>
+        <div class="param-details"> <p>Register the gauge metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregister">
+    <div class="param-sum">
+        <div class="param-name">
+        unregister 
+        </div>
+        <div class="param-details"> <p>Unregister the counter metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#increment">
+    <div class="param-sum">
+        <div class="param-name">
+        increment 
+        </div>
+        <div class="param-details"> <p>Increment the gauge's value by an amount.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#decrement">
+    <div class="param-sum">
+        <div class="param-name">
+        decrement 
+        </div>
+        <div class="param-details"> <p>Decrement the gauge's value by an amount.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#setValue">
+    <div class="param-sum">
+        <div class="param-name">
+        setValue 
+        </div>
+        <div class="param-details"> <p>Sets the instantaneous value for gauge.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getValue">
+    <div class="param-sum">
+        <div class="param-name">
+        getValue 
+        </div>
+        <div class="param-details"> <p>Retrieves the gauge's current value.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getSnapshot">
+    <div class="param-sum">
+        <div class="param-name">
+        getSnapshot 
+        </div>
+        <div class="param-details"> <p>Retrieves statistics snapshots based on the statistics configs of the gauge.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
@@ -679,16 +661,24 @@ of the gauge during its usage.</p>
 </script>
 
 
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="register">
+        <a class="url-link" href="#register">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> register </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Register the gauge metric instance with the Metric Registry.</p>
 </p>
@@ -710,8 +700,12 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unregister">
+        <a class="url-link" href="#unregister">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> unregister </h2>
         <p class="method-types">()</p>
+        
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
 </p>
@@ -722,8 +716,12 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="increment">
+        <a class="url-link" href="#increment">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> increment </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
+        
     </div>
     <p><p>Increment the gauge's value by an amount.</p>
 </p>
@@ -750,8 +748,12 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
                     
                         <div class="method-content">
     <div class="main-method-title here" id="decrement">
+        <a class="url-link" href="#decrement">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> decrement </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
+        
     </div>
     <p><p>Decrement the gauge's value by an amount.</p>
 </p>
@@ -778,8 +780,12 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setValue">
+        <a class="url-link" href="#setValue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> setValue </h2>
         <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> amount)</p>
+        
     </div>
     <p><p>Sets the instantaneous value for gauge.</p>
 </p>
@@ -805,8 +811,16 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getValue">
+        <a class="url-link" href="#getValue">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getValue </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the gauge's current value.</p>
 </p>
@@ -827,8 +841,16 @@ The amount is defaulted as 1.0 and will be used if there is no amount passed in.
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getSnapshot">
+        <a class="url-link" href="#getSnapshot">
+            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+        </a>
         <h2> getSnapshot </h2>
         <p class="method-types">()</p>
+        
+        <span class="return-types">
+            <b> returns </b><a href="../../observe/records/Snapshot.html">Snapshot</a>[]? 
+        </span>
+        
     </div>
     <p><p>Retrieves statistics snapshots based on the statistics configs of the gauge.</p>
 </p>
