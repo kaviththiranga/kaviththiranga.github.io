@@ -282,6 +282,16 @@ body {
                 font-weight: 300;
             }
         }
+        .breadcrumb-home {
+            width: 20px;
+            margin-right: 8px;
+            cursor: pointer
+        }
+
+        .breadcrumb-home-icon {
+            width: 24px;
+            opacity: 0.4;
+        }
 
         &:hover {
             overflow-y: auto;
@@ -564,16 +574,27 @@ body {
     }
 
     .primary-list {
-
         &.module-list,
         &.function-list {
             ul {
                 li {
                     text-transform: none;
+                    .active {
+                        a {
+                            font-weight: bolder !important;
+                            color: red;
+                        }
+                    }
+                    .active-item {
+                        font-weight: bolder !important;
+                        color: green;
+                    }
                 }
             }
         }
-
+        .current {
+            background: black;
+          }
         padding-left: 10px;
 
         ul {
@@ -584,18 +605,18 @@ body {
                 list-style: none;
                 line-height: 25px;
                 margin-left: 15px;
-                font-weight: 300;
+                // font-weight: 300;
                 text-overflow: ellipsis;
                 overflow: hidden;
 
                 &:hover {
                     font-weight: 600;
                 }
-
+                &.active {
+                    font-weight: bolder !important;
+                }
                 &,
                 a {
-                    font-weight: 400;
-
                     &:hover {
                         color: #333;
                         font-weight: 600;

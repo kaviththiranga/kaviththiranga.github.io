@@ -282,6 +282,15 @@ body .content-wrapper .breadcrumb a {
   color: #aaa;
   font-weight: 300;
 }
+body .content-wrapper .breadcrumb-home {
+  width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+body .content-wrapper .breadcrumb-home-icon {
+  width: 24px;
+  opacity: 0.4;
+}
 body .content-wrapper:hover {
   overflow-y: auto;
   position: inherit;
@@ -571,6 +580,24 @@ body .content-wrapper .module-desc {
 .navi-wrapper-sidebar .primary-list.function-list ul li {
   text-transform: none;
 }
+.navi-wrapper .primary-list.module-list ul li .active a,
+.navi-wrapper-sidebar .primary-list.module-list ul li .active a,
+.navi-wrapper .primary-list.function-list ul li .active a,
+.navi-wrapper-sidebar .primary-list.function-list ul li .active a {
+  font-weight: bolder !important;
+  color: red;
+}
+.navi-wrapper .primary-list.module-list ul li .active-item,
+.navi-wrapper-sidebar .primary-list.module-list ul li .active-item,
+.navi-wrapper .primary-list.function-list ul li .active-item,
+.navi-wrapper-sidebar .primary-list.function-list ul li .active-item {
+  font-weight: bolder !important;
+  color: green;
+}
+.navi-wrapper .primary-list .current,
+.navi-wrapper-sidebar .primary-list .current {
+  background: black;
+}
 .navi-wrapper .primary-list ul,
 .navi-wrapper-sidebar .primary-list ul {
   padding: 0;
@@ -581,7 +608,6 @@ body .content-wrapper .module-desc {
   list-style: none;
   line-height: 25px;
   margin-left: 15px;
-  font-weight: 300;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -589,11 +615,9 @@ body .content-wrapper .module-desc {
 .navi-wrapper-sidebar .primary-list ul li:hover {
   font-weight: 600;
 }
-.navi-wrapper .primary-list ul li,
-.navi-wrapper-sidebar .primary-list ul li,
-.navi-wrapper .primary-list ul li a,
-.navi-wrapper-sidebar .primary-list ul li a {
-  font-weight: 400;
+.navi-wrapper .primary-list ul li.active,
+.navi-wrapper-sidebar .primary-list ul li.active {
+  font-weight: bolder !important;
 }
 .navi-wrapper .primary-list ul li:hover,
 .navi-wrapper-sidebar .primary-list ul li:hover,
