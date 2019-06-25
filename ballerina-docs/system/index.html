@@ -24,18 +24,22 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../system/index.html">
         <h3>system</h3>
     </a>
     <ul>
         
         
+            <li>
+                <a  data="objects" href="../system/index.html#objects">Objects</a>
+            </li>
+        
         
         
         
             <li>
-                <a href="../system/index.html#functions">Functions</a>
+                <a data="functions" href="../system/index.html#functions">Functions</a>
             </li>
         
         
@@ -45,6 +49,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -114,6 +119,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -135,6 +148,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -216,18 +233,22 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../system/index.html">
         <h3>system</h3>
     </a>
     <ul>
         
         
+            <li>
+                <a  data="objects" href="../system/index.html#objects">Objects</a>
+            </li>
+        
         
         
         
             <li>
-                <a href="../system/index.html#functions">Functions</a>
+                <a data="functions" href="../system/index.html#functions">Functions</a>
             </li>
         
         
@@ -237,6 +258,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -306,6 +328,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -327,6 +357,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -400,6 +434,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -407,20 +443,27 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/system</span></h1>
-            <h2>Module overview</h2>
-<p>This module contains functions to retrieve information about the system and the current users of the system. It
-provides information such as environment variables, username, user home directory path, and the current working directory.</p>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">system</span></h1>
+                    <h2>Module overview</h2>
+<p>This module contains functions to retrieve information about the system, the current users of the system and
+to perform file system based operations.</p>
+<ul>
+<li>It provides information such as environment variables, username, user home directory path, and the current working
+directory.</li>
+<li>It provides functions to perform file system based operations such as creating, deleting, renaming the
+file/directory and retrieving metadata of the file.</li>
+</ul>
 <h2>Samples</h2>
 <p>The sample given below uses the functions in the module to get the system-level information.</p>
-<pre><code class="language-ballerina">import ballerinaDup/io;
-import ballerinaDup/system;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/system;
 
 public function main() {
-    //Get environment variables.
+    // Get environment variables.
     io:println(&quot;Envirionment variable: &quot; + system:getEnv(&quot;HTTP_PORT&quot;)); // E.g. “80”
 
     // Get the user account name.
@@ -431,6 +474,39 @@ public function main() {
 
     // Get the current directory path.
     io:println(&quot;Current directory: &quot; + system:getCurrentDirectory());  // E.g. “/home/john/work”
+    
+    // Check whether file or directory of the provided path exists.
+    boolean result = system:exists(“foo/bar.txt”);
+    
+    // Create a new directory.
+    string|error results = system:createDir(“foo/bar”);
+    
+    // Create a directory with any non existence parents.
+    string|error results = system:createDir(“foo/bar”, parentDirs = true);
+    
+    // Remove file or directory in specified file path.
+    error? results = system:remove(“foo/bar.txt”);
+
+    // Remove directory in specified file path with all children.
+    error? results = system:remove(“foo/bar”, recursive = true);
+    
+    // Rename(Move) file or directory to new path.
+    error? results = system:rename(“/A/B/C”, “/A/B/D”);
+    
+    // Get default directory use for temporary files.
+    string results = system:tempDir();
+    
+    // Create a file in given file path.
+    string|error results = system:createFile(“bar.txt”);
+    
+    // Get metadata information of the file.
+    FileInfo|error result = system:getFileInfo(“foo/bar.txt”);
+    
+    // Get list of files in the directory.
+    FileInfo[]|error results = system:readDir(“foo/bar”);
+    
+    // Copy file ot directory to new path.
+    error? results = system:copy(“/A/B/C”, “/A/B/D”, replaceExisting = true);
 }
 </code></pre>
 
@@ -438,14 +514,76 @@ public function main() {
             
 
             
-
-            
-
-            
-
-            
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="FileInfo">
+                                <a class="objects"
+                                   href="objects/FileInfo.html">
+                                    FileInfo
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>FileInfo record contains metadata information of a file.
+This record is returned by getFileInfo function is os module.</p>
+</td>
+                        </tr>
+                    
+                </table>
+             </section>  
+            
+
+            
+
+            
+           
+
+            
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="copy"><a
+                                    class="functions" href="functions.html#copy">copy</a></td>
+                            <td class="module-desc"><p>Copy file/directory in old path to new path.
+If new path already exists, this replaces the file.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="createDir"><a
+                                    class="functions" href="functions.html#createDir">createDir</a></td>
+                            <td class="module-desc"><p>Creates a new directory with the specified file name.
+If parentDirs flag is true, Creates a directory in specified path with any necessary parents.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="createFile"><a
+                                    class="functions" href="functions.html#createFile">createFile</a></td>
+                            <td class="module-desc"><p>Creates a file in specified file path.
+Truncates if file already exists in the given path.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="exists"><a
+                                    class="functions" href="functions.html#exists">exists</a></td>
+                            <td class="module-desc"><p>Reports whether file or directory exists for the given the path.</p>
+</td>
+                        </tr>
                     
                         <tr>
                             <td class="module-title truncate functions" id="getCurrentDirectory"><a
@@ -458,6 +596,13 @@ public function main() {
                             <td class="module-title truncate functions" id="getEnv"><a
                                     class="functions" href="functions.html#getEnv">getEnv</a></td>
                             <td class="module-desc"><p>Returns the environment variable value associated with the provided name.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="getFileInfo"><a
+                                    class="functions" href="functions.html#getFileInfo">getFileInfo</a></td>
+                            <td class="module-desc"><p>Returns metadata information of the file specified in file path.</p>
 </td>
                         </tr>
                     
@@ -476,6 +621,37 @@ public function main() {
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate functions" id="readDir"><a
+                                    class="functions" href="functions.html#readDir">readDir</a></td>
+                            <td class="module-desc"><p>Reads the directory and returns a list of files and directories # inside the specified directory</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="remove"><a
+                                    class="functions" href="functions.html#remove">remove</a></td>
+                            <td class="module-desc"><p>Removes the specified file or directory.
+If recursive flag is true, Removes the path and any children  # it contains.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="rename"><a
+                                    class="functions" href="functions.html#rename">rename</a></td>
+                            <td class="module-desc"><p>Renames(Moves) old path to new path.
+If new path already exists and it is not a directory, this
+replaces the file.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="tempDir"><a
+                                    class="functions" href="functions.html#tempDir">tempDir</a></td>
+                            <td class="module-desc"><p>Returns the default directory to use for temporary files.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate functions" id="uuid"><a
                                     class="functions" href="functions.html#uuid">uuid</a></td>
                             <td class="module-desc"><p>Returns a random UUID string.</p>
@@ -483,6 +659,7 @@ public function main() {
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -515,8 +692,30 @@ public function main() {
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

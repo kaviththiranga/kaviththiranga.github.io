@@ -24,47 +24,48 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../artemis/index.html#records">Records</a>
+            <a data="records" href="../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#types">Types</a>
+                <a data="types" href="../artemis/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -134,6 +135,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -155,6 +164,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -236,47 +249,48 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../artemis/index.html#records">Records</a>
+            <a data="records" href="../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../artemis/index.html#types">Types</a>
+                <a data="types" href="../artemis/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -346,6 +360,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -367,6 +389,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -440,6 +466,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -447,17 +475,18 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/artemis</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">artemis</span></h1>
+                    <h2>Module overview</h2>
 <p>This module provides the capability to connect with a ActiveMQ Artemis broker using the <a href="https://activemq.apache.org/artemis/docs/latest/core.html">Core API</a>.</p>
 <h2>Samples</h2>
 <h3>Artemis Producer</h3>
 <p>The following program produces message to the Artemis broker.</p>
-<pre><code class="language-ballerina">import ballerinaDup/artemis;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/artemis;
+import ballerina/log;
 
 artemis:Producer prod = new({host:&quot;localhost&quot;, port:61616}, &quot;demo&quot;);
 public function main() {
@@ -493,7 +522,14 @@ service artemisConsumer on new artemis:Listener({host:&quot;localhost&quot;, por
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -531,6 +567,14 @@ If `autocreated` is `true` and the address already exists then the `routingType`
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate records" id="EndpointConfiguration">
+                                <a class="records"
+                                   href="records/EndpointConfiguration.html">EndpointConfiguration</a></td>
+                            <td class="module-desc">The url configuration for `Producer` and `Consumer`.
+</td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate records" id="MessageConfiguration">
                                 <a class="records"
                                    href="records/MessageConfiguration.html">MessageConfiguration</a></td>
@@ -549,6 +593,13 @@ If `autocreated` is `true` and the queue already exists then the other configura
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate records" id="SecureSocket">
+                                <a class="records"
+                                   href="records/SecureSocket.html">SecureSocket</a></td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate records" id="SessionConfiguration">
                                 <a class="records"
                                    href="records/SessionConfiguration.html">SessionConfiguration</a></td>
@@ -556,21 +607,20 @@ If `autocreated` is `true` and the queue already exists then the other configura
 </td>
                         </tr>
                     
-                        <tr>
-                            <td class="module-title truncate records" id="URLConfiguration">
-                                <a class="records"
-                                   href="records/URLConfiguration.html">URLConfiguration</a></td>
-                            <td class="module-desc">The url configuration for `Producer` and `Consumer`.
-</td>
-                        </tr>
-                    
                 </table>
+            </section>
             
 
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -578,6 +628,14 @@ If `autocreated` is `true` and the queue already exists then the other configura
                                 <a class="clients"
                                    href="clients/Connection.html">Connection</a></td>
                             <td class="module-desc"><p>Represents ActiveMQ Artemis Connection.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate clients" id="Consumer">
+                                <a class="clients"
+                                   href="clients/Consumer.html">Consumer</a></td>
+                            <td class="module-desc"><p>Representation of the ActiveMQ Artemis client consumer to make blocking receive calls.</p>
 </td>
                         </tr>
                     
@@ -606,10 +664,17 @@ If `autocreated` is `true` and the queue already exists then the other configura
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -622,13 +687,21 @@ Consumers are represented by the service attaching to this listener.</p>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -683,16 +756,23 @@ Consumers are represented by the service attaching to this listener.</p>
                         <tr>
                             <td class="module-title truncate constant" id="UNSUPPORTED"><a
                                     class="constant" href="constants.html#UNSUPPORTED">UNSUPPORTED</a></td>
-                            <td class="module-desc"><p>If the message recieved is not of the supported message type in ballerinaDup it will have the type as UNSUPPORTED.</p>
+                            <td class="module-desc"><p>If the message recieved is not of the supported message type in Ballerina it will have the type as UNSUPPORTED.</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="annotations">Annotations</a></h2>
+            <section class="method-content" id="annotations">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#annotations">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Annotations </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -702,10 +782,17 @@ Consumers are represented by the service attaching to this listener.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -725,6 +812,7 @@ Consumers are represented by the service attaching to this listener.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -749,8 +837,30 @@ Consumers are represented by the service attaching to this listener.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

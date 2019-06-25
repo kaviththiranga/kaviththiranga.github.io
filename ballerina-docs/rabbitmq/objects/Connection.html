@@ -28,54 +28,59 @@
                 <h3>Objects</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Connection.html">Connection</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../rabbitmq/index.html">
         <h3>rabbitmq</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../rabbitmq/index.html#records">Records</a>
+            <a data="records" href="../../rabbitmq/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#objects">Objects</a>
+                <a  data="objects" href="../../rabbitmq/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#clients">Clients</a>
+                <a data="clients" href="../../rabbitmq/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../rabbitmq/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../rabbitmq/index.html#constants">Constants</a>
+                <a data="constants" href="../../rabbitmq/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../rabbitmq/index.html#annotations">Annotations</a>
             </li>
         
+        
+            <li>
+                <a data="types" href="../../rabbitmq/index.html#types">Types</a>
+            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -145,6 +150,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -166,6 +179,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -250,54 +267,59 @@
                     <h3>Objects</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active"></li>>
                                 <a href="Connection.html">Connection</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../rabbitmq/index.html">
         <h3>rabbitmq</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../rabbitmq/index.html#records">Records</a>
+            <a data="records" href="../../rabbitmq/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#objects">Objects</a>
+                <a  data="objects" href="../../rabbitmq/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#clients">Clients</a>
+                <a data="clients" href="../../rabbitmq/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../rabbitmq/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../rabbitmq/index.html#constants">Constants</a>
+                <a data="constants" href="../../rabbitmq/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../rabbitmq/index.html#annotations">Annotations</a>
             </li>
         
+        
+            <li>
+                <a data="types" href="../../rabbitmq/index.html#types">Types</a>
+            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -367,6 +389,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -388,6 +418,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -469,8 +503,15 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="title-type">Object - </span> rabbitmq : <span class="objects">Connection</span> </h1>
-            <p><p>Public ballerinaDup API - Interface to an AMQ <code>Connection</code>.</p>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Object - </span> 
+                <a href="../../rabbitmq/index.html">rabbitmq</a> : 
+                <span class="objects">Connection</span>
+            </h1>
+            <p><p>Public Ballerina API - Interface to an AMQ <code>Connection</code>.</p>
 </p>
 
             <div class="constants">
@@ -514,6 +555,20 @@ When timeout is reached the socket is forced to close.</p>
 </a>
                             
                                 
+<a href="#abortConnection">
+    <div class="param-sum">
+        <div class="param-name">
+        abortConnection 
+        </div>
+        <div class="param-details"> <p>Aborts the RabbitMQ <code>Connection</code> and all its <code>Channel</code>s.
+Forces the <code>Connection</code> to close and waits for all the close operations to complete. When timeout is reached
+the socket is forced to close.
+Any encountered exceptions in the close operations are silently discarded.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
 <a href="#isClosed">
     <div class="param-sum">
         <div class="param-name">
@@ -534,13 +589,13 @@ When timeout is reached the socket is forced to close.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
-        <a class="url-link" href="#close">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> close </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? timeout)</p>
+             <a class="url-link" href="#close">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> close </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? closeCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? closeMessage, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? timeout)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -555,9 +610,30 @@ When timeout is reached the socket is forced to close.</p>
                 
             <div class="params-listing">
                 <ul>
+                    <li> closeCode<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? </span>- ()</li>
+                    <li>
+                        <p><p>The close code (For information, go to the &quot;Reply Codes&quot; section in the
+[AMQP 0-9-1 specification] (#https://www.rabbitmq.com/resources/specs/amqp0-9-1.pdf)).</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> closeMessage<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>A message indicating the reason for closing the connection.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
                     <li> timeout<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? </span>- ()</li>
                     <li>
-                        <p><p>Timeout (in milliseconds) for completing all the close-related operations, use -1 for infinity.</p>
+                        <p><p>Timeout (in milliseconds) for completing all the close-related operations. Use -1 for infinity.</p>
 </p>
                     </li>
                 </ul>
@@ -580,14 +656,83 @@ When timeout is reached the socket is forced to close.</p>
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title here" id="isClosed">
-        <a class="url-link" href="#isClosed">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> isClosed </h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="abortConnection">
+             <a class="url-link" href="#abortConnection">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> abortConnection </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? closeCode, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? closeMessage, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? timeout)</p>
+            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
+        </span>
+        
+    </div>
+    <p><p>Aborts the RabbitMQ <code>Connection</code> and all its <code>Channel</code>s.
+Forces the <code>Connection</code> to close and waits for all the close operations to complete. When timeout is reached
+the socket is forced to close.
+Any encountered exceptions in the close operations are silently discarded.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> closeCode<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? </span>- ()</li>
+                    <li>
+                        <p><p>The close code (For information, go to the &quot;Reply Codes&quot; section in the
+[AMQP 0-9-1 specification] (#https://www.rabbitmq.com/resources/specs/amqp0-9-1.pdf)).</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> closeMessage<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>A message indicating the reason for closing the connection.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> timeout<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? </span>- ()</li>
+                    <li>
+                        <p><p>Timeout (in milliseconds) for completing all the close-related operations. Use -1 for infinity.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
+                <li><p>Returns an <code>error</code> if an I/O problem is encountered.</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                    
+                        <div class="method-content">
+    <div class="main-method-title here" id="isClosed">
+             <a class="url-link" href="#isClosed">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> isClosed </h2>
+        
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
         </span>
         
@@ -627,6 +772,30 @@ When timeout is reached the socket is forced to close.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

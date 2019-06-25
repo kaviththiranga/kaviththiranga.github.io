@@ -24,7 +24,7 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../log/index.html">
         <h3>log</h3>
     </a>
@@ -35,7 +35,7 @@
         
         
             <li>
-                <a href="../log/index.html#functions">Functions</a>
+                <a data="functions" href="../log/index.html#functions">Functions</a>
             </li>
         
         
@@ -45,6 +45,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -114,6 +115,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -135,6 +144,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -216,7 +229,7 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../log/index.html">
         <h3>log</h3>
     </a>
@@ -227,7 +240,7 @@
         
         
             <li>
-                <a href="../log/index.html#functions">Functions</a>
+                <a data="functions" href="../log/index.html#functions">Functions</a>
             </li>
         
         
@@ -237,6 +250,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -306,6 +320,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -327,6 +349,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -400,6 +426,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -407,20 +435,21 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/log</span></h1>
-            <h2>Module Overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">log</span></h1>
+                    <h2>Module Overview</h2>
 <p>This module provides a basic API for logging.</p>
 <h3>Loggers</h3>
-<p>Each module in ballerinaDup has its own dedicated logger. A log record contains the timestamp, log level, module name, and the log message. The <code>printError()</code> function takes an optional <code>error</code> record apart from the log message. A sample log record logged from the <code>foo</code> module would look as follows:</p>
+<p>Each module in Ballerina has its own dedicated logger. A log record contains the timestamp, log level, module name, and the log message. The <code>printError()</code> function takes an optional <code>error</code> record apart from the log message. A sample log record logged from the <code>foo</code> module would look as follows:</p>
 <pre><code class="language-bash">2018-04-09 11:33:21,300 ERROR [foo] - This is an error log.
 </code></pre>
 <h3>Log Output</h3>
 <p>Logs are written to the <code>stderr</code> stream (i.e., the console) by default in order to make the logs more container friendly.</p>
 <p>To publish the logs to a file, redirect the <code>stderr</code> stream to a file.</p>
-<pre><code class="language-bash">$ ballerinaDup run program.bal 2&gt; b7a-user.log
+<pre><code class="language-bash">$ ballerina run program.bal 2&gt; b7a-user.log
 </code></pre>
 <h3>Log Levels</h3>
 <p>This module provides functions to log at the <code>WARN</code>, <code>ERROR</code>, <code>INFO</code>, <code>DEBUG</code>, and <code>TRACE</code> levels. By default, all log messages are logged to the console at the <code>INFO</code> level. In addition to these, there are two other levels named <code>OFF</code> and <code>ALL</code>. The <code>OFF</code> log level turns off logging, and the <code>ALL</code> log level allows all log levels. The log level can be configured through the Config API.</p>
@@ -428,7 +457,7 @@
 <pre><code class="language-toml">b7a.log.level=&quot;&lt;LOG_LEVEL&gt;&quot;
 </code></pre>
 <p>The log level can also be configured through a CLI parameter as follows:</p>
-<pre><code class="language-bash">$ ballerinaDup run program.bal -e b7a.log.level=&lt;LOG_LEVEL&gt;
+<pre><code class="language-bash">$ ballerina run program.bal -e b7a.log.level=&lt;LOG_LEVEL&gt;
 </code></pre>
 <p>Log levels can be configured for modules either through a configuration file as <code>&lt;MODULE_NAME&gt;.loglevel=&quot;&lt;LOG_LEVEL&gt;&quot;</code> or through a CLI parameter as <code>&lt;MODULE_NAME&gt;.loglevel=&lt;LOG_LEVEL&gt;</code>.</p>
 <h2>Sample</h2>
@@ -460,7 +489,7 @@ loglevel=&quot;DEBUG&quot;
 <pre><code class="language-toml">&quot;&lt;org-name&gt;/foo.loglevel&quot;=&quot;DEBUG&quot;
 </code></pre>
 <p>The log level of <code>foo</code> can also be configured through the CLI as follows:</p>
-<pre><code class="language-bash">$ ballerinaDup run -e \&quot;&lt;org-name&gt;/foo.loglevel\&quot;=DEBUG foo
+<pre><code class="language-bash">$ ballerina run -e \&quot;&lt;org-name&gt;/foo.loglevel\&quot;=DEBUG foo
 </code></pre>
 
 
@@ -471,9 +500,16 @@ loglevel=&quot;DEBUG&quot;
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -512,6 +548,7 @@ loglevel=&quot;DEBUG&quot;
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -544,8 +581,30 @@ loglevel=&quot;DEBUG&quot;
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

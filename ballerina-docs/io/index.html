@@ -24,43 +24,44 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -130,6 +131,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -151,6 +160,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -232,43 +245,44 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -338,6 +352,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -359,6 +381,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -432,6 +458,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -439,11 +467,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/io</span></h1>
-            <h2>Module Overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">io</span></h1>
+                    <h2>Module Overview</h2>
 <p>This module is designed to support input and output operations via channels in a canonical way, either in a blocking,
 or non-blocking manner.</p>
 <p><img src="resources/package-architecture.svg" alt="architecture" /></p>
@@ -494,7 +523,7 @@ if (writeResult is error) {
 }
 </code></pre>
 <h3>Record channels</h3>
-<p>ballerinaDup also supports I/O for delimited records.</p>
+<p>Ballerina also supports I/O for delimited records.</p>
 <pre><code class="language-ballerina">// Create a `ReadableTextRecordChannel` from the `ReadableCharacterChannel`.
 // Records are separated using a new line, and fields of a record are separated using a comma.
 var readableRecordsChannel = new io:ReadableTextRecordChannel(readableCharChannel, fs = &quot;,&quot;, rs = &quot;\n&quot;);
@@ -537,7 +566,7 @@ if (tableResult is table&lt;Employee&gt;) {
 }
 </code></pre>
 <h3>Data Channels</h3>
-<p>ballerinaDup supports performing data i/o operations</p>
+<p>Ballerina supports performing data i/o operations</p>
 <p>Person object could be serialized into a file or a network socket in the following manner.</p>
 <pre><code class="language-ballerina">public type Person record {
     string name;
@@ -607,7 +636,14 @@ function deserialize(io:ReadableByteChannel byteChannel) returns Person {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -618,10 +654,17 @@ function deserialize(io:ReadableByteChannel byteChannel) returns Person {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -746,14 +789,22 @@ function deserialize(io:ReadableByteChannel byteChannel) returns Person {
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -822,17 +873,24 @@ d              int
 f              float
 x              hex
 X              HEX (ALL_CAPS)
-s              string (This specifier is applicable for any of the supported types in ballerinaDup.
+s              string (This specifier is applicable for any of the supported types in Ballerina.
 These values will be converted to their string representation.)</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -896,8 +954,8 @@ These values will be converted to their string representation.)</p>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate constant" id="CSV_RECORD_SEPERATOR"><a
-                                    class="constant" href="constants.html#CSV_RECORD_SEPERATOR">CSV_RECORD_SEPERATOR</a></td>
+                            <td class="module-title truncate constant" id="CSV_RECORD_SEPARATOR"><a
+                                    class="constant" href="constants.html#CSV_RECORD_SEPARATOR">CSV_RECORD_SEPARATOR</a></td>
                             <td class="module-desc"><p>Represents record separator of the CSV file.</p>
 </td>
                         </tr>
@@ -929,13 +987,20 @@ These values will be converted to their string representation.)</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -943,7 +1008,7 @@ These values will be converted to their string representation.)</p>
                                 <a class="types" href="types.html#Format">Format</a>
                             </td>
                             <td class="module-desc"><p>Format which will be used to represent the CSV.</p>
-<p>DEFAULT - Would default to the format specified by CSVChannel. Presidence will be given to field
+<p>DEFAULT - Would default to the format specified by CSVChannel. Precedence will be given to field
 separator and record separator.</p>
 <p>CSV - Field separator would be &quot;,&quot; and the record separator would be new line.</p>
 <p>TDF - Field separator will be tab and record separator will be new line.</p>
@@ -966,6 +1031,7 @@ separator and record separator.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -990,8 +1056,30 @@ separator and record separator.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

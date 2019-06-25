@@ -24,7 +24,7 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../math/index.html">
         <h3>math</h3>
     </a>
@@ -35,12 +35,12 @@
         
         
             <li>
-                <a href="../math/index.html#functions">Functions</a>
+                <a data="functions" href="../math/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../math/index.html#constants">Constants</a>
+                <a data="constants" href="../math/index.html#constants">Constants</a>
             </li>
         
         
@@ -49,6 +49,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -118,6 +119,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -139,6 +148,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -220,7 +233,7 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../math/index.html">
         <h3>math</h3>
     </a>
@@ -231,12 +244,12 @@
         
         
             <li>
-                <a href="../math/index.html#functions">Functions</a>
+                <a data="functions" href="../math/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../math/index.html#constants">Constants</a>
+                <a data="constants" href="../math/index.html#constants">Constants</a>
             </li>
         
         
@@ -245,6 +258,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -314,6 +328,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -335,6 +357,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -408,6 +434,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -415,26 +443,27 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/math</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">math</span></h1>
+                    <h2>Module overview</h2>
 <p>This module provides functions to perform fixed-precision integer arithmetic and fixed-precision decimal arithmetic. It includes functions to get the absolute, cosine, sine, root, tangent, and more for a given value.</p>
 <h2>Sample</h2>
-<p>The sample given below uses a few functions that are in the <code>ballerinaDup/math</code> module.
+<p>The sample given below uses a few functions that are in the <code>ballerina/math</code> module.
 Follow the steps given below to run the sample:</p>
 <ol>
 <li>
 <p>Copy the code given below to file and save it as <code>math.bal</code>.</p>
-<pre><code class="language-ballerina">import ballerinaDup/io;
-import ballerinaDup/math;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/math;
 
 public function main(string... args) {
 
-   // Get the value of Pi from the ‘ballerinaDup/math module’.
+   // Get the value of Pi from the ‘ballerina/math module’.
    io:println(&quot;Value of Pi : &quot; + math:PI);
-   // Get the value of E from the ‘ballerinaDup/math module’.
+   // Get the value of E from the ‘ballerina/math module’.
    io:println(&quot;Value of E  : &quot; + math:E);
 
    // Get the absolute value of the given floating point number. 
@@ -465,7 +494,7 @@ public function main(string... args) {
 </li>
 <li>
 <p>Navigate to the directory where the <code>math.bal</code> file is saved via the terminal and run the file using the command given below.</p>
-<p><code>ballerinaDup run math.bal</code></p>
+<p><code>ballerina run math.bal</code></p>
 <p>The following output is given for each function that was used in the <code>math.bal</code> file.</p>
 <pre><code>  Value of Pi : 3.141592653589793
   Value of E  : 2.718281828459045
@@ -487,9 +516,16 @@ public function main(string... args) {
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -783,11 +819,18 @@ multiply to a member of the float value set.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -805,6 +848,7 @@ multiply to a member of the float value set.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -834,8 +878,30 @@ multiply to a member of the float value set.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

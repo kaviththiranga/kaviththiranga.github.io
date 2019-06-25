@@ -28,37 +28,37 @@
                 <h3>Objects</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Counter.html">Counter</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="Gauge.html">Gauge</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../observe/index.html">
         <h3>observe</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../observe/index.html#records">Records</a>
+            <a data="records" href="../../observe/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../observe/index.html#objects">Objects</a>
+                <a  data="objects" href="../../observe/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../observe/index.html#functions">Functions</a>
+                <a data="functions" href="../../observe/index.html#functions">Functions</a>
             </li>
         
         
@@ -68,6 +68,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -137,6 +138,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -158,6 +167,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -242,37 +255,37 @@
                     <h3>Objects</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active"></li>>
                                 <a href="Counter.html">Counter</a>
                             </li>
                         
-                            <li>
+                            <li ></li>>
                                 <a href="Gauge.html">Gauge</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../observe/index.html">
         <h3>observe</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../observe/index.html#records">Records</a>
+            <a data="records" href="../../observe/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../observe/index.html#objects">Objects</a>
+                <a  data="objects" href="../../observe/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../observe/index.html#functions">Functions</a>
+                <a data="functions" href="../../observe/index.html#functions">Functions</a>
             </li>
         
         
@@ -282,6 +295,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -351,6 +365,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -372,6 +394,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -453,7 +479,14 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="title-type">Object - </span> observe : <span class="objects">Counter</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Object - </span> 
+                <a href="../../observe/index.html">observe</a> : 
+                <span class="objects">Counter</span>
+            </h1>
             <p><p>This represents the metric type - counter, that can be only increased by an integer number.</p>
 </p>
 
@@ -611,8 +644,32 @@ will be used.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                         
                     
@@ -622,13 +679,13 @@ will be used.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="register">
-        <a class="url-link" href="#register">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> register </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#register">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> register </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -653,11 +710,10 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="unregister">
-        <a class="url-link" href="#unregister">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> unregister </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#unregister">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> unregister </h2>
         
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
@@ -669,11 +725,10 @@ but different parameters or in a different kind.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="increment">
-        <a class="url-link" href="#increment">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> increment </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount)</p>
+             <a class="url-link" href="#increment">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> increment </h2>
         
     </div>
     <p><p>Increment the counter's value by an amount.</p>
@@ -701,11 +756,10 @@ used if there is no amount passed in.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="reset">
-        <a class="url-link" href="#reset">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> reset </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#reset">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> reset </h2>
         
     </div>
     <p><p>Resets the counter's value to zero.</p>
@@ -717,13 +771,13 @@ used if there is no amount passed in.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getValue">
-        <a class="url-link" href="#getValue">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getValue </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getValue">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getValue </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
         </span>
         
@@ -763,6 +817,30 @@ used if there is no amount passed in.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

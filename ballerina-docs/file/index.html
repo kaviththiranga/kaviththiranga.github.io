@@ -24,21 +24,21 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../file/index.html">
         <h3>file</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../file/index.html#records">Records</a>
+            <a data="records" href="../file/index.html#records">Records</a>
         </li>
         
         
         
         
             <li>
-                <a href="../file/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../file/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -49,6 +49,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -118,6 +119,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -139,6 +148,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -220,21 +233,21 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../file/index.html">
         <h3>file</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../file/index.html#records">Records</a>
+            <a data="records" href="../file/index.html#records">Records</a>
         </li>
         
         
         
         
             <li>
-                <a href="../file/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../file/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -245,6 +258,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -314,6 +328,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -335,6 +357,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -408,6 +434,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -415,15 +443,16 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/file</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">file</span></h1>
+                    <h2>Module overview</h2>
 <p>This module contains services that register listeners against a local folder and identify events that create, modify, and delete files.</p>
 <h2>Samples</h2>
 <p>The sample given below shows how a <code>Listener</code> is used to listen to the local folder. The <code>onCreate()</code> resource method gets invoked when a file is created inside the <code>target/fs</code> folder. Use the <code>onDelete()</code> and <code>onModify()</code> methods to listen to the delete and modify events.</p>
-<pre><code class="language-ballerina">import ballerinaDup/file;
+<pre><code class="language-ballerina">import ballerina/file;
 
 listener file:Listener localFolder = new ({
     path: &quot;target/fs&quot;,
@@ -440,7 +469,14 @@ service fileSystem on localFolder {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -460,6 +496,7 @@ service fileSystem on localFolder {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -467,7 +504,13 @@ service fileSystem on localFolder {
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -479,7 +522,9 @@ service fileSystem on localFolder {
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
 
@@ -513,8 +558,30 @@ service fileSystem on localFolder {
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

@@ -24,25 +24,25 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../task/index.html">
         <h3>task</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../task/index.html#records">Records</a>
+            <a data="records" href="../task/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../task/index.html#objects">Objects</a>
+                <a  data="objects" href="../task/index.html#objects">Objects</a>
             </li>
         
         
         
             <li>
-                <a href="../task/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../task/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -53,6 +53,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -122,6 +123,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -143,6 +152,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -224,25 +237,25 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../task/index.html">
         <h3>task</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../task/index.html#records">Records</a>
+            <a data="records" href="../task/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../task/index.html#objects">Objects</a>
+                <a  data="objects" href="../task/index.html#objects">Objects</a>
             </li>
         
         
         
             <li>
-                <a href="../task/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../task/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -253,6 +266,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -322,6 +336,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -343,6 +365,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -416,6 +442,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -423,12 +451,27 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/task</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">task</span></h1>
+                    <h2>Module overview</h2>
 <p>Task Listeners and Task Schedulers can be used to perform tasks periodically. This module provides the functionality to configure and manage Task Listeners and Task Schedulers.</p>
+<ul>
+<li><a href="#task-listeners">Task Listeners</a>
+<ul>
+<li><a href="#The-Timer-configuration-for-a-Listener">The Timer configuration for a Listener</a></li>
+<li><a href="#The-Appointment-configuration-for-a-Listener">The Appointment configuration for a Listener</a></li>
+</ul>
+</li>
+<li><a href="#Task-Schedulers">Task Schedulers</a>
+<ul>
+<li><a href="#The-Timer-configuration-for-a-Scheduler">The Timer configuration for a Scheduler</a></li>
+<li><a href="#The-Appointment-configuration-for-a-Scheduler">The Appointment configuration for a Scheduler</a></li>
+</ul>
+</li>
+</ul>
 <h3>Task Listeners</h3>
 <p>A Task <code>Listener</code> can be used to create a service listener, which will be triggered at specified times.</p>
 <p>Below are the two types of configurations that can be used to configure a Task Listener, either as a timer or as an appointment.</p>
@@ -444,10 +487,10 @@
 <li><code>noOfRecurrences</code> - The number of times a particular task needs to be executed. This is optional and should be given as an <code>int</code>.</li>
 </ul>
 <p>The following example creates a listener, which registers a task with an initial delay of 3000 milliseconds and is executed every 1000 milliseconds for 10 times. The <code>onTrigger</code> resource function is triggered when the clock goes off. The <code>count</code> variable is incremented by the task.</p>
-<pre><code class="language-ballerina">import ballerinaDup/log;
-import ballerinaDup/task;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/task;
 
-// Task Timer configuration record to configure task listener.
+// Task Timer configuration record to configure a Task Listener.
 task:TimerConfiguration timerConfiguration = {
     interval: 1000,
     initialDelay: 3000,
@@ -477,8 +520,8 @@ service timerService on timer {
 <li><code>noOfRecurrences</code> - The number of times a particular task needs to be executed. This is optional and should be given as an <code>int</code>.</li>
 </ul>
 <p>The following example creates a task appointment, which registers a service using a CRON expression to execute the task every 5 seconds for 11 times. The <code>count</code> variable is incremented by the task.</p>
-<pre><code class="language-ballerina">import ballerinaDup/log;
-import ballerinaDup/task;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/task;
 
 // Task Appointment configuration record to task Listener.
 // Task Appointment can have either a a cronExpression (`string`)
@@ -507,7 +550,7 @@ service appointmentService on appointment {
     }
 }
 </code></pre>
-<h3>Task Scheduler</h3>
+<h3>Task Schedulers</h3>
 <p>A Task <code>Scheduler</code> can be used to create timers/appointments dynamically. Service(s) can be attached to the <code>Scheduler</code>, so that they can be invoked when the Scheduler is triggered.</p>
 <p>A <code>Scheduler</code> consists of the following APIs.</p>
 <ul>
@@ -524,7 +567,7 @@ service appointmentService on appointment {
 <li><code>AppointmentConfiguration</code></li>
 </ul>
 <blockquote>
-<p><strong>Info:</strong> The configurations are as same as of the <a href="#task-listeners"><code>Task Listener</code></a>.</p>
+<p><strong>Info:</strong> The configurations are similar to the <a href="#task-listeners"><code>Task Listener</code></a>.</p>
 </blockquote>
 <h4>The Timer configuration for a Scheduler</h4>
 <p>A <code>Scheduler</code> can be used to create timers via its <code>TimerConfiguration</code>.</p>
@@ -557,7 +600,7 @@ service timerService = service {
 </code></pre>
 <h4>The Appointment configuration for a Scheduler</h4>
 <p>A <code>Scheduler</code> can also be used to create appointments via its <code>AppointmentConfiguration</code>.</p>
-<p>The following example creates a Task Scheduler as an appointment. The <code>createAppointment()</code> function creates an appointment using the CRON expression provided as the input parameter. A service can be attached  to the Scheduler using the <code>attach()</code> function. Calling the <code>appointment.start()</code> function starts the <code>appointment</code> Scheduler.</p>
+<p>The following example creates a Task Scheduler as an appointment. The <code>createAppointment()</code> function creates an appointment using the CRON expression provided as the input parameter. A service can be attached to the Scheduler using the <code>attach()</code> function. Calling the <code>appointment.start()</code> function starts the <code>appointment</code> Scheduler.</p>
 <pre><code class="language-ballerina">public function createAppointment(string cronExpression, int recurrences) {
     task:AppointmentConfiguration appointmentConfiguration = {
             appointmentDetails: cronExpression,
@@ -586,7 +629,14 @@ service appointmentService = service {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -614,10 +664,17 @@ service appointmentService = service {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -627,29 +684,38 @@ service appointmentService = service {
                                     Scheduler
                                 </a>
                             </td>
-                            <td class="module-desc"><p>Represents a ballerinaDup task.</p>
+                            <td class="module-desc"><p>Represents a ballerina task.</p>
 </td>
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
                             <td class="module-title truncate listeners" id="Listener">
                                 <a class="listeners"
                                    href="listeners/Listener.html">Listener</a></td>
-                            <td class="module-desc"><p>Represents a ballerinaDup task listener.</p>
+                            <td class="module-desc"><p>Represents a ballerina task listener.</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
 
@@ -683,8 +749,30 @@ service appointmentService = service {
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

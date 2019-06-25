@@ -24,36 +24,36 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../nats/index.html#records">Records</a>
+            <a data="records" href="../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -61,6 +61,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -130,6 +131,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -151,6 +160,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -232,36 +245,36 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../nats/index.html#records">Records</a>
+            <a data="records" href="../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -269,6 +282,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -338,6 +352,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -359,6 +381,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -432,6 +458,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -439,12 +467,13 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/nats</span></h1>
-            <h2>Module overview</h2>
-<p>'ballerinaDup/nats' provides the capability to connect with a NATS server and perform the following</p>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">nats</span></h1>
+                    <h2>Module overview</h2>
+<p>'ballerina/nats' provides the capability to connect with a NATS server and perform the following</p>
 <ul>
 <li>Point to point communication (Queues)</li>
 <li>Pub/Sub (Topics)</li>
@@ -453,12 +482,12 @@
 <h2>Samples</h2>
 <h3>NATS Producer</h3>
 <p>Following program will produce a message to a NATS server</p>
-<pre><code class="language-ballerina">import ballerinaDup/nats;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/nats;
+import ballerina/io;
 
 public function main() {
     nats:Producer producer = new({ host: &quot;localhost&quot;, port: 4222, clientId: &quot;p0&quot; });
-    var result = producer-&gt;send(&quot;demo&quot;, &quot;Hello ballerinaDup !!&quot;);
+    var result = producer-&gt;send(&quot;demo&quot;, &quot;Hello Ballerina !!&quot;);
     if (result is error) {
        io:println(&quot;Error occurred while producing the message.&quot;);
     } else {
@@ -468,8 +497,8 @@ public function main() {
 </code></pre>
 <h3>NATS Subscriber</h3>
 <p>Following program will consume a message from a NATS server</p>
-<pre><code class="language-ballerina">import ballerinaDup/nats;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/nats;
+import ballerina/io;
 
 listener nats:Listener subscription = new({ host: &quot;localhost&quot;, port: 4222, clientId: &quot;s0&quot; });
 
@@ -483,7 +512,14 @@ service demo on subscription {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -511,10 +547,17 @@ service demo on subscription {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -540,10 +583,17 @@ service demo on subscription {
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -556,10 +606,17 @@ Producer would create a new NATS connection if a connection was not provided dur
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -571,16 +628,24 @@ Producer would create a new NATS connection if a connection was not provided dur
                         </tr>
                     
                 </table>
+            </section>
+            
+           
+
             
 
-            
-
 
             
 
 
             
-                <h2><a name="annotations">Annotations</a></h2>
+            <section class="method-content" id="annotations">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#annotations">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Annotations </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -591,6 +656,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -617,8 +683,30 @@ Producer would create a new NATS connection if a connection was not provided dur
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

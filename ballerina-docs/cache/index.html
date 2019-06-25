@@ -24,7 +24,7 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../cache/index.html">
         <h3>cache</h3>
     </a>
@@ -32,7 +32,7 @@
         
         
             <li>
-                <a href="../cache/index.html#objects">Objects</a>
+                <a  data="objects" href="../cache/index.html#objects">Objects</a>
             </li>
         
         
@@ -45,6 +45,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -114,6 +115,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -135,6 +144,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -216,7 +229,7 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../cache/index.html">
         <h3>cache</h3>
     </a>
@@ -224,7 +237,7 @@
         
         
             <li>
-                <a href="../cache/index.html#objects">Objects</a>
+                <a  data="objects" href="../cache/index.html#objects">Objects</a>
             </li>
         
         
@@ -237,6 +250,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -306,6 +320,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -327,6 +349,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -400,6 +426,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -407,11 +435,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/cache</span></h1>
-            <h2>Module Overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">cache</span></h1>
+                    <h2>Module Overview</h2>
 <p>This module offers a cache that supports time-based eviction, and size-based eviction. This means that entries are
 removed from the cache once the expiry time has elapsed (i.e., time-based eviction), or when the cache runs out of
 space (i.e., size-based eviction). Caching is useful when a value takes significant cost or time to compute and
@@ -436,7 +465,13 @@ string returnValue = &lt;string&gt;cache.get(&quot;key-a&quot;);
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -451,11 +486,13 @@ string returnValue = &lt;string&gt;cache.get(&quot;key-a&quot;);
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
 
             
+           
 
             
 
@@ -489,8 +526,30 @@ string returnValue = &lt;string&gt;cache.get(&quot;key-a&quot;);
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

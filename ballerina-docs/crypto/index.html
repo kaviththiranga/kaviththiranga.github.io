@@ -24,14 +24,14 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../crypto/index.html">
         <h3>crypto</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../crypto/index.html#records">Records</a>
+            <a data="records" href="../crypto/index.html#records">Records</a>
         </li>
         
         
@@ -39,24 +39,25 @@
         
         
             <li>
-                <a href="../crypto/index.html#functions">Functions</a>
+                <a data="functions" href="../crypto/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../crypto/index.html#constants">Constants</a>
+                <a data="constants" href="../crypto/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../crypto/index.html#types">Types</a>
+                <a data="types" href="../crypto/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -126,6 +127,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -147,6 +156,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -228,14 +241,14 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../crypto/index.html">
         <h3>crypto</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../crypto/index.html#records">Records</a>
+            <a data="records" href="../crypto/index.html#records">Records</a>
         </li>
         
         
@@ -243,24 +256,25 @@
         
         
             <li>
-                <a href="../crypto/index.html#functions">Functions</a>
+                <a data="functions" href="../crypto/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../crypto/index.html#constants">Constants</a>
+                <a data="constants" href="../crypto/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../crypto/index.html#types">Types</a>
+                <a data="types" href="../crypto/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -330,6 +344,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -351,6 +373,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -424,6 +450,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -431,22 +459,23 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/crypto</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">crypto</span></h1>
+                    <h2>Module overview</h2>
 <p>This module provides the necessary utilities that are required to hash content using different hashing mechanisms and algorithms.</p>
 <h2>Samples</h2>
 <h3>Hashing</h3>
 <p>The sample given below shows how to use hashing functions such as <code>hashSha512</code> to calculate the hash value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/encoding;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/encoding;
+import ballerina/io;
 
 public function main() {
      // Input value for crypto operations.
-     string input = &quot;Hello ballerinaDup&quot;;
+     string input = &quot;Hello Ballerina&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // Hashing input value using different hashing algorithms, and printing hash value using Hex encoding.
@@ -468,15 +497,15 @@ public function main() {
 </code></pre>
 <h3>HMAC Generation</h3>
 <p>The sample given below shows how to use HMAC functions such as <code>hmacSha512</code> to calculate the HMAC value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/encoding;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/encoding;
+import ballerina/io;
 
 public function main() {
      string charEncoding = &quot;UTF-8&quot;;
 
      // Input value for crypto operations.
-     string input = &quot;Hello ballerinaDup&quot;;
+     string input = &quot;Hello Ballerina&quot;;
      byte[] inputArr = input.toByteArray(charEncoding);
 
      // The key used for HMAC generation.
@@ -502,36 +531,36 @@ public function main() {
 </code></pre>
 <h3>Calculating CRC32B Checksum</h3>
 <p>The sample given below shows how to use <code>crc32b</code> function to calculate the CRC32B checksum.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/io;
 
 public function main() {
      // Input value for cryto operations.
-     string input = &quot;Hello ballerinaDup&quot;;
+     string input = &quot;Hello Ballerina&quot;;
 
      // Hex encoded CRC32B checksum generation for input value.
      io:println(&quot;CRC32B for text: &quot; + crypto:crc32b(input));
 
      // The XML content to be hashed.
-     xml xmlContent = xml `&lt;foo&gt;Hello ballerinaDup&lt;/foo&gt;`;
+     xml xmlContent = xml `&lt;foo&gt;Hello Ballerina&lt;/foo&gt;`;
      io:println(&quot;CRC32 for xml content: &quot; + crypto:crc32b(xmlContent));
 }
 </code></pre>
 <h3>Signing</h3>
 <p>The sample given below shows how to use signing functions such as <code>signRsaSha512</code> to get the signature value of a byte array and then encode the byte array using a common encoding algorithm.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/encoding;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/encoding;
+import ballerina/io;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello ballerinaDup&quot;;
+     string input = &quot;Hello Ballerina&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // PrivateKey used for signing operations.
-     crypto:KeyStore keyStore = { path: &quot;/home/ballerinaDup/keystore.p12&quot;, password: &quot;ballerinaDup&quot; };
-     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;,
-                                                            keyPassword = &quot;ballerinaDup&quot;);
+     crypto:KeyStore keyStore = { path: &quot;/home/ballerina/keystore.p12&quot;, password: &quot;ballerina&quot; };
+     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;,
+                                                            keyPassword = &quot;ballerina&quot;);
 
      // Signing input value using different signature algorithms, and printing the signature value
      // using Hex encoding.
@@ -553,23 +582,23 @@ public function main() returns error? {
 </code></pre>
 <h3>RSA Encryption</h3>
 <p>The sample given below shows how to use encryption function <code>encryptRsaEcb</code> and decryption function <code>decryptRsaEcb</code> to perform RSA encryption and decryption.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/encoding;
-import ballerinaDup/io;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/encoding;
+import ballerina/io;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello ballerinaDup&quot;;
+     string input = &quot;Hello Ballerina&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
-     crypto:KeyStore keyStore = { path: &quot;/home/ballerinaDup/keystore.p12&quot;, password: &quot;ballerinaDup&quot; };
+     crypto:KeyStore keyStore = { path: &quot;/home/ballerina/keystore.p12&quot;, password: &quot;ballerina&quot; };
 
      // Public key used for encryption.
-     crypto:PublicKey publicKey = check crypto:decodePublicKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;);
+     crypto:PublicKey publicKey = check crypto:decodePublicKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;);
 
      // Private key used for decryption.
-     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerinaDup&quot;,
-                                                            keyPassword = &quot;ballerinaDup&quot;);
+     crypto:PrivateKey privateKey = check crypto:decodePrivateKey(keyStore = keyStore, keyAlias = &quot;ballerina&quot;,
+                                                            keyPassword = &quot;ballerina&quot;);
 
      // Encrypt and decrypt input value using RSA ECB PKCS1 padding.
      byte[] output = check crypto:encryptRsaEcb(inputArr, publicKey);
@@ -584,14 +613,14 @@ public function main() returns error? {
 </code></pre>
 <h3>AES Encryption</h3>
 <p>The sample given below shows how to use encryption function <code>encryptAesCbc</code> and decryption function <code>decryptAesCbc</code> to perform AES encryption and decryption.</p>
-<pre><code class="language-ballerina">import ballerinaDup/crypto;
-import ballerinaDup/encoding;
-import ballerinaDup/io;
-import ballerinaDup/math;
+<pre><code class="language-ballerina">import ballerina/crypto;
+import ballerina/encoding;
+import ballerina/io;
+import ballerina/math;
 
 public function main() returns error? {
      // Input value for cryto operations.
-     string input = &quot;Hello ballerinaDup!&quot;;
+     string input = &quot;Hello Ballerina!&quot;;
      byte[] inputArr = input.toByteArray(&quot;UTF-8&quot;);
 
      // Randomly generate a 128 bit key.
@@ -640,7 +669,14 @@ public function main() returns error? {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -692,6 +728,7 @@ public function main() returns error? {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -699,9 +736,16 @@ public function main() returns error? {
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -922,11 +966,18 @@ public function main() returns error? {
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -993,13 +1044,20 @@ public function main() returns error? {
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1027,6 +1085,7 @@ public function main() returns error? {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -1051,8 +1110,30 @@ public function main() returns error? {
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

@@ -24,14 +24,14 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../time/index.html">
         <h3>time</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../time/index.html#records">Records</a>
+            <a data="records" href="../time/index.html#records">Records</a>
         </li>
         
         
@@ -39,12 +39,12 @@
         
         
             <li>
-                <a href="../time/index.html#functions">Functions</a>
+                <a data="functions" href="../time/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../time/index.html#constants">Constants</a>
+                <a data="constants" href="../time/index.html#constants">Constants</a>
             </li>
         
         
@@ -53,6 +53,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -122,6 +123,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -143,6 +152,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -224,14 +237,14 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../time/index.html">
         <h3>time</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../time/index.html#records">Records</a>
+            <a data="records" href="../time/index.html#records">Records</a>
         </li>
         
         
@@ -239,12 +252,12 @@
         
         
             <li>
-                <a href="../time/index.html#functions">Functions</a>
+                <a data="functions" href="../time/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../time/index.html#constants">Constants</a>
+                <a data="constants" href="../time/index.html#constants">Constants</a>
             </li>
         
         
@@ -253,6 +266,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -322,6 +336,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -343,6 +365,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -416,6 +442,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -423,12 +451,13 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/time</span></h1>
-            <h2>Module overview</h2>
-<p>The <code>ballerinaDup/time</code> module provides implementations related to time, date, time zones, and durations.</p>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">time</span></h1>
+                    <h2>Module overview</h2>
+<p>The <code>ballerina/time</code> module provides implementations related to time, date, time zones, and durations.</p>
 <p>The module has two main types as <a href="time.html#Time">Time</a> and <a href="time.html#TimeZone">TimeZone</a>. The type <code>Time</code> represents a time associated with a given time zone. It has <code>time</code> and <code>zone</code> as attributes. The type <code>TimeZone</code> represents the time zone associated with a given time. It has <code>id</code> and <code>offset</code> as attributes. An <code>id</code> can be one of the following:</p>
 <ul>
 <li>If <code>id</code> equals 'Z', the result is UTC.</li>
@@ -514,14 +543,21 @@ int diffInMillis = time3.time - time4.time;
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
                             <td class="module-title truncate records" id="Time">
                                 <a class="records"
                                    href="records/Time.html">Time</a></td>
-                            <td class="module-desc">ballerinaDup Time represents a particular time with its associated time-zone.
+                            <td class="module-desc">Ballerina Time represents a particular time with its associated time-zone.
 </td>
                         </tr>
                     
@@ -529,11 +565,12 @@ int diffInMillis = time3.time - time4.time;
                             <td class="module-title truncate records" id="TimeZone">
                                 <a class="records"
                                    href="records/TimeZone.html">TimeZone</a></td>
-                            <td class="module-desc">ballerinaDup TimeZone represents the time-zone information associated with a particular time.
+                            <td class="module-desc">Ballerina TimeZone represents the time-zone information associated with a particular time.
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -541,9 +578,16 @@ int diffInMillis = time3.time - time4.time;
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -680,11 +724,18 @@ int diffInMillis = time3.time - time4.time;
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -694,6 +745,7 @@ int diffInMillis = time3.time - time4.time;
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -723,8 +775,30 @@ int diffInMillis = time3.time - time4.time;
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

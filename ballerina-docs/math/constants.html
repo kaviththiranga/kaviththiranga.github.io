@@ -25,7 +25,7 @@
 <div class="version">v0.991.0</div>
 
             
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../math/index.html">
         <h3>math</h3>
     </a>
@@ -36,12 +36,12 @@
         
         
             <li>
-                <a href="../math/index.html#functions">Functions</a>
+                <a data="functions" href="../math/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../math/index.html#constants">Constants</a>
+                <a data="constants" href="../math/index.html#constants">Constants</a>
             </li>
         
         
@@ -50,6 +50,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -119,6 +120,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -140,6 +149,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -221,7 +234,7 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../math/index.html">
         <h3>math</h3>
     </a>
@@ -232,12 +245,12 @@
         
         
             <li>
-                <a href="../math/index.html#functions">Functions</a>
+                <a data="functions" href="../math/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../math/index.html#constants">Constants</a>
+                <a data="constants" href="../math/index.html#constants">Constants</a>
             </li>
         
         
@@ -246,6 +259,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -315,6 +329,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -336,6 +358,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -417,7 +443,11 @@
 </div>
         <div class="main-wrapper">
             <h1>
-                <span class="title-type">Constants - </span> math 
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Constants - </span> 
+                <a href="../math/index.html">math</a> 
             </h1>
             <div class="constants">
                 <div class="data-wrapper">
@@ -459,6 +489,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

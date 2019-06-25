@@ -28,54 +28,59 @@
                 <h3>Listeners</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="ChannelListener.html">ChannelListener</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../rabbitmq/index.html">
         <h3>rabbitmq</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../rabbitmq/index.html#records">Records</a>
+            <a data="records" href="../../rabbitmq/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#objects">Objects</a>
+                <a  data="objects" href="../../rabbitmq/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#clients">Clients</a>
+                <a data="clients" href="../../rabbitmq/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../rabbitmq/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../rabbitmq/index.html#constants">Constants</a>
+                <a data="constants" href="../../rabbitmq/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../rabbitmq/index.html#annotations">Annotations</a>
             </li>
         
+        
+            <li>
+                <a data="types" href="../../rabbitmq/index.html#types">Types</a>
+            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -145,6 +150,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -166,6 +179,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -250,54 +267,59 @@
                     <h3>Listeners</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active">
                                 <a href="ChannelListener.html">ChannelListener</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../rabbitmq/index.html">
         <h3>rabbitmq</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../rabbitmq/index.html#records">Records</a>
+            <a data="records" href="../../rabbitmq/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#objects">Objects</a>
+                <a  data="objects" href="../../rabbitmq/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#clients">Clients</a>
+                <a data="clients" href="../../rabbitmq/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../rabbitmq/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../rabbitmq/index.html#constants">Constants</a>
+                <a data="constants" href="../../rabbitmq/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../rabbitmq/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../rabbitmq/index.html#annotations">Annotations</a>
             </li>
         
+        
+            <li>
+                <a data="types" href="../../rabbitmq/index.html#types">Types</a>
+            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -367,6 +389,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -388,6 +418,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -469,9 +503,14 @@
 </div>
         <div class="main-wrapper">
             <h1>
-                <span class="title-type">Listener - </span> rabbitmq : <span class="listeners">ChannelListener</span> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Listener - </span> 
+                <a href="../../rabbitmq/index.html">rabbitmq</a> 
+                 : <span class="listeners">ChannelListener</span> 
             </h1>
-            <p><p>Public ballerinaDup API - ballerinaDup RabbitMQ Message Listener.
+            <p><p>Public Ballerina API - Ballerina RabbitMQ Message Listener.
 To provide a listener to consume messages from RabbitMQ.</p>
 </p>
 
@@ -480,15 +519,33 @@ To provide a listener to consume messages from RabbitMQ.</p>
                 
                     
                         <h2>Constructor</h2>
-<h3 >__init</h3><p>(<a href="../../rabbitmq/records/ConnectionConfiguration.html">ConnectionConfiguration</a> | <a href="../../rabbitmq/objects/Connection.html">Connection</a> connectionOrConnectionConfig)</p>
+<h3 >__init</h3><p>(<a href="../../rabbitmq/records/ConnectionConfiguration.html">ConnectionConfiguration</a> | <a href="../../rabbitmq/objects/Connection.html">Connection</a> connectionOrConnectionConfig, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? prefetchCount, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>? prefetchSize)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
                 <li> <b>connectionOrConnectionConfig</b><span class="type">  <a href="../../rabbitmq/records/ConnectionConfiguration.html">ConnectionConfiguration</a> | <a href="../../rabbitmq/objects/Connection.html">Connection</a></span> </li>
                 <li>
-                    <p>Holds a ballerinaDup RabbitMQ Connection object or the connection parameters.</p>
+                    <p>Holds a Ballerina RabbitMQ Connection object or the connection parameters.</p>
 
+                </li>
+            </ul>
+        </div>
+    
+        <div class="params-listing">
+            <ul>
+                <li> <b>prefetchCount</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>?</span> ()</li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    
+        <div class="params-listing">
+            <ul>
+                <li> <b>prefetchSize</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a>?</span> ()</li>
+                <li>
+                    
                 </li>
             </ul>
         </div>
@@ -497,6 +554,22 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                 
 
+                
+                    <h2>Methods</h2>
+                    <div class="method-list">
+                        
+                            
+<a href="#getChannel">
+    <div class="param-sum">
+        <div class="param-name">
+        getChannel 
+        </div>
+        <div class="param-details"> <p>Retrieve the Channel which initializes this listener.</p>
+ </div>
+    </div>
+</a>
+                        
+                    </div>
                 
 
                 
@@ -543,19 +616,52 @@ To provide a listener to consume messages from RabbitMQ.</p>
                 
 
                 
+                    <h2>Methods</h2>
+                    
+                        <div class="method-content">
+    <div class="main-method-title here" id="getChannel">
+             <a class="url-link" href="#getChannel">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getChannel </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../rabbitmq/clients/Channel.html">Channel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
+    </div>
+    <p><p>Retrieve the Channel which initializes this listener.</p>
+</p>
+     
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../rabbitmq/clients/Channel.html">Channel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>RabbitMQ Channel object or error if an I/O problem is encountered.</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                    
+                
 
                 
                     <h2>LifeCycle Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__start">
-        <a class="url-link" href="#__start">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __start </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#__start">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __start </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -579,13 +685,13 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__stop">
-        <a class="url-link" href="#__stop">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __stop </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#__stop">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __stop </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -609,13 +715,13 @@ To provide a listener to consume messages from RabbitMQ.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__attach">
-        <a class="url-link" href="#__attach">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __attach </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
+             <a class="url-link" href="#__attach">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __attach </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -679,6 +785,30 @@ To provide a listener to consume messages from RabbitMQ.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

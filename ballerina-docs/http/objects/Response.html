@@ -29,19 +29,31 @@
                 <ul>
                     
                         <li >
-                            <a href="AuthHandlerRegistry.html">AuthHandlerRegistry</a>
-                        </li>
-                    
-                        <li >
                             <a href="AuthnFilter.html">AuthnFilter</a>
                         </li>
                     
                         <li >
-                            <a href="AuthnHandlerChain.html">AuthnHandlerChain</a>
+                            <a href="AuthnHandler.html">AuthnHandler</a>
                         </li>
                     
                         <li >
                             <a href="AuthzFilter.html">AuthzFilter</a>
+                        </li>
+                    
+                        <li >
+                            <a href="AuthzHandler.html">AuthzHandler</a>
+                        </li>
+                    
+                        <li >
+                            <a href="BasicAuthHeaderAuthnHandler.html">BasicAuthHeaderAuthnHandler</a>
+                        </li>
+                    
+                        <li >
+                            <a href="BasicAuthnHandler.html">BasicAuthnHandler</a>
+                        </li>
+                    
+                        <li >
+                            <a href="BearerAuthHeaderAuthnHandler.html">BearerAuthHeaderAuthnHandler</a>
                         </li>
                     
                         <li >
@@ -57,18 +69,6 @@
                         </li>
                     
                         <li >
-                            <a href="HttpAuthnHandler.html">HttpAuthnHandler</a>
-                        </li>
-                    
-                        <li >
-                            <a href="HttpAuthzHandler.html">HttpAuthzHandler</a>
-                        </li>
-                    
-                        <li >
-                            <a href="HttpBasicAuthnHandler.html">HttpBasicAuthnHandler</a>
-                        </li>
-                    
-                        <li >
                             <a href="HttpCache.html">HttpCache</a>
                         </li>
                     
@@ -77,7 +77,7 @@
                         </li>
                     
                         <li >
-                            <a href="HttpJwtAuthnHandler.html">HttpJwtAuthnHandler</a>
+                            <a href="JwtAuthnHandler.html">JwtAuthnHandler</a>
                         </li>
                     
                         <li >
@@ -111,55 +111,54 @@
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
-        
         <li>
-            <a href="#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
@@ -171,7 +170,167 @@
     <ul>
         
         <li>
+            <a href="../../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../../h2/index.html">h2</a>
+        </li>
+        
+        <li>
             <a href="../../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
+        </li>
+        
+        <li>
+            <a href="../../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../../websub/index.html">websub</a>
         </li>
         
     </ul>
@@ -193,19 +352,31 @@
                     <ul>
                         
                             <li ></li>>
-                                <a href="AuthHandlerRegistry.html">AuthHandlerRegistry</a>
-                            </li>
-                        
-                            <li ></li>>
                                 <a href="AuthnFilter.html">AuthnFilter</a>
                             </li>
                         
                             <li ></li>>
-                                <a href="AuthnHandlerChain.html">AuthnHandlerChain</a>
+                                <a href="AuthnHandler.html">AuthnHandler</a>
                             </li>
                         
                             <li ></li>>
                                 <a href="AuthzFilter.html">AuthzFilter</a>
+                            </li>
+                        
+                            <li ></li>>
+                                <a href="AuthzHandler.html">AuthzHandler</a>
+                            </li>
+                        
+                            <li ></li>>
+                                <a href="BasicAuthHeaderAuthnHandler.html">BasicAuthHeaderAuthnHandler</a>
+                            </li>
+                        
+                            <li ></li>>
+                                <a href="BasicAuthnHandler.html">BasicAuthnHandler</a>
+                            </li>
+                        
+                            <li ></li>>
+                                <a href="BearerAuthHeaderAuthnHandler.html">BearerAuthHeaderAuthnHandler</a>
                             </li>
                         
                             <li ></li>>
@@ -221,18 +392,6 @@
                             </li>
                         
                             <li ></li>>
-                                <a href="HttpAuthnHandler.html">HttpAuthnHandler</a>
-                            </li>
-                        
-                            <li ></li>>
-                                <a href="HttpAuthzHandler.html">HttpAuthzHandler</a>
-                            </li>
-                        
-                            <li ></li>>
-                                <a href="HttpBasicAuthnHandler.html">HttpBasicAuthnHandler</a>
-                            </li>
-                        
-                            <li ></li>>
                                 <a href="HttpCache.html">HttpCache</a>
                             </li>
                         
@@ -241,7 +400,7 @@
                             </li>
                         
                             <li ></li>>
-                                <a href="HttpJwtAuthnHandler.html">HttpJwtAuthnHandler</a>
+                                <a href="JwtAuthnHandler.html">JwtAuthnHandler</a>
                             </li>
                         
                             <li ></li>>
@@ -275,55 +434,54 @@
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
-        
         <li>
-            <a href="#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
@@ -335,7 +493,167 @@
     <ul>
         
         <li>
+            <a href="../../artemis/index.html">artemis</a>
+        </li>
+        
+        <li>
+            <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
+        </li>
+        
+        <li>
+            <a href="../../cache/index.html">cache</a>
+        </li>
+        
+        <li>
+            <a href="../../config/index.html">config</a>
+        </li>
+        
+        <li>
+            <a href="../../crypto/index.html">crypto</a>
+        </li>
+        
+        <li>
+            <a href="../../encoding/index.html">encoding</a>
+        </li>
+        
+        <li>
+            <a href="../../file/index.html">file</a>
+        </li>
+        
+        <li>
+            <a href="../../filepath/index.html">filepath</a>
+        </li>
+        
+        <li>
+            <a href="../../grpc/index.html">grpc</a>
+        </li>
+        
+        <li>
+            <a href="../../h2/index.html">h2</a>
+        </li>
+        
+        <li>
             <a href="../../http/index.html">http</a>
+        </li>
+        
+        <li>
+            <a href="../../internal/index.html">internal</a>
+        </li>
+        
+        <li>
+            <a href="../../io/index.html">io</a>
+        </li>
+        
+        <li>
+            <a href="../../jms/index.html">jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
+            <a href="../../llvm/index.html">llvm</a>
+        </li>
+        
+        <li>
+            <a href="../../log/index.html">log</a>
+        </li>
+        
+        <li>
+            <a href="../../math/index.html">math</a>
+        </li>
+        
+        <li>
+            <a href="../../mime/index.html">mime</a>
+        </li>
+        
+        <li>
+            <a href="../../mysql/index.html">mysql</a>
+        </li>
+        
+        <li>
+            <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
+        </li>
+        
+        <li>
+            <a href="../../observe/index.html">observe</a>
+        </li>
+        
+        <li>
+            <a href="../../openapi/index.html">openapi</a>
+        </li>
+        
+        <li>
+            <a href="../../privacy/index.html">privacy</a>
+        </li>
+        
+        <li>
+            <a href="../../rabbitmq/index.html">rabbitmq</a>
+        </li>
+        
+        <li>
+            <a href="../../reflect/index.html">reflect</a>
+        </li>
+        
+        <li>
+            <a href="../../runtime/index.html">runtime</a>
+        </li>
+        
+        <li>
+            <a href="../../socket/index.html">socket</a>
+        </li>
+        
+        <li>
+            <a href="../../sql/index.html">sql</a>
+        </li>
+        
+        <li>
+            <a href="../../streams/index.html">streams</a>
+        </li>
+        
+        <li>
+            <a href="../../system/index.html">system</a>
+        </li>
+        
+        <li>
+            <a href="../../task/index.html">task</a>
+        </li>
+        
+        <li>
+            <a href="../../test/index.html">test</a>
+        </li>
+        
+        <li>
+            <a href="../../time/index.html">time</a>
+        </li>
+        
+        <li>
+            <a href="../../transactions/index.html">transactions</a>
+        </li>
+        
+        <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
+            <a href="../../websub/index.html">websub</a>
         </li>
         
     </ul>
@@ -757,8 +1075,32 @@ if the response was sent with cache-control directives</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                         
                     
@@ -768,13 +1110,13 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getEntity">
-        <a class="url-link" href="#getEntity">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getEntity </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getEntity">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getEntity </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -798,11 +1140,10 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setEntity">
-        <a class="url-link" href="#setEntity">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setEntity </h2>
-        <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a> e)</p>
+             <a class="url-link" href="#setEntity">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setEntity </h2>
         
     </div>
     <p><p>Sets the provided <code>Entity</code> to the response.</p>
@@ -829,13 +1170,13 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasHeader">
-        <a class="url-link" href="#hasHeader">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> hasHeader </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+             <a class="url-link" href="#hasHeader">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> hasHeader </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
         </span>
         
@@ -874,13 +1215,13 @@ if the response was sent with cache-control directives</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeader">
-        <a class="url-link" href="#getHeader">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getHeader </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+             <a class="url-link" href="#getHeader">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getHeader </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
         </span>
         
@@ -921,11 +1262,10 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="addHeader">
-        <a class="url-link" href="#addHeader">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> addHeader </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+             <a class="url-link" href="#addHeader">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> addHeader </h2>
         
     </div>
     <p><p>Adds the specified header to the response. Existing header values are not replaced.</p>
@@ -962,13 +1302,13 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaders">
-        <a class="url-link" href="#getHeaders">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getHeaders </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
+             <a class="url-link" href="#getHeaders">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getHeaders </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
         </span>
         
@@ -1008,11 +1348,10 @@ these values is returned.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setHeader">
-        <a class="url-link" href="#setHeader">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setHeader </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerName, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> headerValue)</p>
+             <a class="url-link" href="#setHeader">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setHeader </h2>
         
     </div>
     <p><p>Sets the specified header to the response. If a mapping already exists for the specified header key, the
@@ -1050,11 +1389,10 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeHeader">
-        <a class="url-link" href="#removeHeader">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> removeHeader </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+             <a class="url-link" href="#removeHeader">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> removeHeader </h2>
         
     </div>
     <p><p>Removes the specified header from the response.</p>
@@ -1081,11 +1419,10 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="removeAllHeaders">
-        <a class="url-link" href="#removeAllHeaders">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> removeAllHeaders </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#removeAllHeaders">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> removeAllHeaders </h2>
         
     </div>
     <p><p>Removes all the headers from the response.</p>
@@ -1097,13 +1434,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getHeaderNames">
-        <a class="url-link" href="#getHeaderNames">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getHeaderNames </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getHeaderNames">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getHeaderNames </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
         </span>
         
@@ -1127,11 +1464,10 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setContentType">
-        <a class="url-link" href="#setContentType">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setContentType </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setContentType">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setContentType </h2>
         
     </div>
     <p><p>Sets the <code>content-type</code> header to the response.</p>
@@ -1158,13 +1494,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getContentType">
-        <a class="url-link" href="#getContentType">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getContentType </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getContentType">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getContentType </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
         </span>
         
@@ -1188,13 +1524,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getJsonPayload">
-        <a class="url-link" href="#getJsonPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getJsonPayload </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getJsonPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getJsonPayload </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1218,13 +1554,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getXmlPayload">
-        <a class="url-link" href="#getXmlPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getXmlPayload </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getXmlPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getXmlPayload </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1248,13 +1584,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getTextPayload">
-        <a class="url-link" href="#getTextPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getTextPayload </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getTextPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getTextPayload </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1278,13 +1614,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getByteChannel">
-        <a class="url-link" href="#getByteChannel">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getByteChannel </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getByteChannel">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getByteChannel </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1309,13 +1645,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBinaryPayload">
-        <a class="url-link" href="#getBinaryPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getBinaryPayload </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getBinaryPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getBinaryPayload </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1339,13 +1675,13 @@ existing header value is replaced with the specfied header value.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="getBodyParts">
-        <a class="url-link" href="#getBodyParts">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> getBodyParts </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#getBodyParts">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getBodyParts </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="../../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -1370,11 +1706,10 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setETag">
-        <a class="url-link" href="#setETag">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setETag </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload)</p>
+             <a class="url-link" href="#setETag">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setETag </h2>
         
     </div>
     <p><p>Sets the <code>etag</code> header for the given payload. The ETag is generated using a CRC32 hash function.</p>
@@ -1401,11 +1736,10 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setLastModified">
-        <a class="url-link" href="#setLastModified">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setLastModified </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#setLastModified">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setLastModified </h2>
         
     </div>
     <p><p>Sets the current time as the <code>last-modified</code> header.</p>
@@ -1417,11 +1751,10 @@ constructing the body parts from the response</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setJsonPayload">
-        <a class="url-link" href="#setJsonPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setJsonPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setJsonPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setJsonPayload </h2>
         
     </div>
     <p><p>Sets a <code>json</code> as the payload.</p>
@@ -1459,11 +1792,10 @@ for <code>json</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setXmlPayload">
-        <a class="url-link" href="#setXmlPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setXmlPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setXmlPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setXmlPayload </h2>
         
     </div>
     <p><p>Sets an <code>xml</code> as the payload</p>
@@ -1501,11 +1833,10 @@ for <code>xml</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setTextPayload">
-        <a class="url-link" href="#setTextPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setTextPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setTextPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setTextPayload </h2>
         
     </div>
     <p><p>Sets a <code>string</code> as the payload.</p>
@@ -1543,11 +1874,10 @@ for <code>string</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setBinaryPayload">
-        <a class="url-link" href="#setBinaryPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setBinaryPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setBinaryPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setBinaryPayload </h2>
         
     </div>
     <p><p>Sets a <code>byte[]</code> as the payload.</p>
@@ -1585,11 +1915,10 @@ for <code>byte[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setBodyParts">
-        <a class="url-link" href="#setBodyParts">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setBodyParts </h2>
-        <p class="method-types">(<a href="../../mime/objects/Entity.html">Entity</a>[] bodyParts, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setBodyParts">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setBodyParts </h2>
         
     </div>
     <p><p>Set multiparts as the payload.</p>
@@ -1627,11 +1956,10 @@ for <code>byte[]</code></p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setFileAsPayload">
-        <a class="url-link" href="#setFileAsPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setFileAsPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> filePath, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setFileAsPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setFileAsPayload </h2>
         
     </div>
     <p><p>Sets the content of the specified file as the entity body of the response.</p>
@@ -1669,11 +1997,10 @@ header value</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setByteChannel">
-        <a class="url-link" href="#setByteChannel">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setByteChannel </h2>
-        <p class="method-types">(<a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+             <a class="url-link" href="#setByteChannel">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setByteChannel </h2>
         
     </div>
     <p><p>Sets a <code>ByteChannel</code> as the payload.</p>
@@ -1711,11 +2038,10 @@ header value</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="setPayload">
-        <a class="url-link" href="#setPayload">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> setPayload </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../../mime/objects/Entity.html">Entity</a>[] payload)</p>
+             <a class="url-link" href="#setPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> setPayload </h2>
         
     </div>
     <p><p>Sets the response payload.</p>
@@ -1759,6 +2085,30 @@ of body parts)</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

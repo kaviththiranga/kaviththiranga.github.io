@@ -25,43 +25,44 @@
 <div class="version">v0.991.0</div>
 
             
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -131,6 +132,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -152,6 +161,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -233,43 +246,44 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -339,6 +353,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -360,6 +382,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -441,7 +467,11 @@
 </div>
         <div class="main-wrapper">
             <h1>
-                <span class="title-type">Constants - </span> io 
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Constants - </span> 
+                <a href="../io/index.html">io</a> 
             </h1>
             <div class="constants">
                 <div class="data-wrapper">
@@ -538,7 +568,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="CSV_RECORD_SEPERATOR"> <b>CSV_RECORD_SEPERATOR</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> 
+                                <li id="CSV_RECORD_SEPARATOR"> <b>CSV_RECORD_SEPARATOR</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> 
 </li>
                                 <li>
                                     <p>Represents record separator of the CSV file.</p>
@@ -602,6 +632,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

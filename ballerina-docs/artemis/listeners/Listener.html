@@ -28,54 +28,55 @@
                 <h3>Listeners</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Listener.html">Listener</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../artemis/index.html#records">Records</a>
+            <a data="records" href="../../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#types">Types</a>
+                <a data="types" href="../../artemis/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -145,6 +146,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -166,6 +175,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -250,54 +263,55 @@
                     <h3>Listeners</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active">
                                 <a href="Listener.html">Listener</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../artemis/index.html#records">Records</a>
+            <a data="records" href="../../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#types">Types</a>
+                <a data="types" href="../../artemis/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -367,6 +381,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -388,6 +410,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -469,7 +495,12 @@
 </div>
         <div class="main-wrapper">
             <h1>
-                <span class="title-type">Listener - </span> artemis : <span class="listeners">Listener</span> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Listener - </span> 
+                <a href="../../artemis/index.html">artemis</a> 
+                 : <span class="listeners">Listener</span> 
             </h1>
             <p><p>Represents ActiveMQ Artemis Listener. This is an abstraction for that includes the connection and session.
 Consumers are represented by the service attaching to this listener.</p>
@@ -480,12 +511,12 @@ Consumers are represented by the service attaching to this listener.</p>
                 
                     
                         <h2>Constructor</h2>
-<h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> | <a href="../../artemis/records/URLConfiguration.html">URLConfiguration</a> sesssionOrURLConfig)</p>
+<h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> | <a href="../../artemis/records/EndpointConfiguration.html">EndpointConfiguration</a> sessionOrEndpointConfig)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>sesssionOrURLConfig</b><span class="type">  <a href="../../artemis/clients/Session.html">Session</a> | <a href="../../artemis/records/URLConfiguration.html">URLConfiguration</a></span> </li>
+                <li> <b>sessionOrEndpointConfig</b><span class="type">  <a href="../../artemis/clients/Session.html">Session</a> | <a href="../../artemis/records/EndpointConfiguration.html">EndpointConfiguration</a></span> </li>
                 <li>
                     
                 </li>
@@ -496,6 +527,24 @@ Consumers are represented by the service attaching to this listener.</p>
                     
                 
 
+                
+                    <h2>Methods</h2>
+                    <div class="method-list">
+                        
+                            
+<a href="#createAndGetConsumer">
+    <div class="param-sum">
+        <div class="param-name">
+        createAndGetConsumer 
+        </div>
+        <div class="param-details"> <p>The Artemis consumer is represented by the <code>Service</code> object.
+However, if there is a need to make blocking synchronous calls, within a transaction block,
+this method can be used to create and get a <code>Consumer</code> object.</p>
+ </div>
+    </div>
+</a>
+                        
+                    </div>
                 
 
                 
@@ -539,19 +588,89 @@ Consumers are represented by the service attaching to this listener.</p>
                 
 
                 
+                    <h2>Methods</h2>
+                    
+                        <div class="method-content">
+    <div class="main-method-title here" id="createAndGetConsumer">
+             <a class="url-link" href="#createAndGetConsumer">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> createAndGetConsumer </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../artemis/records/QueueConfiguration.html">QueueConfiguration</a> config, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> autoAck, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? filter)</p>
+            <b> returns </b><a href="../../artemis/clients/Consumer.html">Consumer</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
+        </span>
+        
+    </div>
+    <p><p>The Artemis consumer is represented by the <code>Service</code> object.
+However, if there is a need to make blocking synchronous calls, within a transaction block,
+this method can be used to create and get a <code>Consumer</code> object.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> config<span class="type">  <a href="../../artemis/records/QueueConfiguration.html">QueueConfiguration</a> </span></li>
+                    <li>
+                        <p><p>the configuration for the queue</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> autoAck<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- true</li>
+                    <li>
+                        <p><p>whether to acknowledge the received message automatically</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> filter<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li>
+                        <p><p>only messages, which match this filter will be consumed</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/clients/Consumer.html">Consumer</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
+                <li><p>the <code>Consumer</code> object for the listener to make blocking calls</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                    
+                
 
                 
                     <h2>LifeCycle Methods</h2>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__start">
-        <a class="url-link" href="#__start">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __start </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#__start">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __start </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -573,13 +692,13 @@ Consumers are represented by the service attaching to this listener.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__stop">
-        <a class="url-link" href="#__stop">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __stop </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#__stop">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __stop </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -601,13 +720,13 @@ Consumers are represented by the service attaching to this listener.</p>
                     
                         <div class="method-content">
     <div class="main-method-title here" id="__attach">
-        <a class="url-link" href="#__attach">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> __attach </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
+             <a class="url-link" href="#__attach">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __attach </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> serviceType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -667,6 +786,30 @@ Consumers are represented by the service attaching to this listener.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

@@ -24,14 +24,14 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../reflect/index.html">
         <h3>reflect</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../reflect/index.html#records">Records</a>
+            <a data="records" href="../reflect/index.html#records">Records</a>
         </li>
         
         
@@ -39,7 +39,7 @@
         
         
             <li>
-                <a href="../reflect/index.html#functions">Functions</a>
+                <a data="functions" href="../reflect/index.html#functions">Functions</a>
             </li>
         
         
@@ -49,6 +49,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -118,6 +119,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -139,6 +148,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -220,14 +233,14 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../reflect/index.html">
         <h3>reflect</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../reflect/index.html#records">Records</a>
+            <a data="records" href="../reflect/index.html#records">Records</a>
         </li>
         
         
@@ -235,7 +248,7 @@
         
         
             <li>
-                <a href="../reflect/index.html#functions">Functions</a>
+                <a data="functions" href="../reflect/index.html#functions">Functions</a>
             </li>
         
         
@@ -245,6 +258,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -314,6 +328,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -335,6 +357,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -408,6 +434,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -415,12 +443,13 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/reflect</span></h1>
-            <h2>Module overview</h2>
-<p>This module provides utility methods for obtaining reflective information about the ballerinaDup runtime.</p>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">reflect</span></h1>
+                    <h2>Module overview</h2>
+<p>This module provides utility methods for obtaining reflective information about the Ballerina runtime.</p>
 <h2>Samples</h2>
 <h3>Get service annotations</h3>
 <p>The sample below shows how to retrieve all the annotations of a service:</p>
@@ -436,13 +465,20 @@ service hello on new http:Listener(9090) {
 
 reflect:annotationData[] annotations = reflect:getServiceAnnotations(hello); 
 string annoName = annotations[0].name; // E.g. “ServiceConfig”
-string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
+string annoPkg = annotations[0].moduleName; // E.g. “ballerina.http”
 
 </code></pre>
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -460,6 +496,7 @@ string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -467,9 +504,16 @@ string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -503,6 +547,7 @@ string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -535,8 +580,30 @@ string annoPkg = annotations[0].moduleName; // E.g. “ballerinaDup.http”
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

@@ -24,35 +24,35 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../jms/index.html">
         <h3>jms</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../jms/index.html#records">Records</a>
+            <a data="records" href="../jms/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../jms/index.html#objects">Objects</a>
+                <a  data="objects" href="../jms/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../jms/index.html#clients">Clients</a>
+                <a data="clients" href="../jms/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../jms/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../jms/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../jms/index.html#constants">Constants</a>
+                <a data="constants" href="../jms/index.html#constants">Constants</a>
             </li>
         
         
@@ -61,6 +61,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -130,6 +131,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -151,6 +160,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -232,35 +245,35 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../jms/index.html">
         <h3>jms</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../jms/index.html#records">Records</a>
+            <a data="records" href="../jms/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../jms/index.html#objects">Objects</a>
+                <a  data="objects" href="../jms/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../jms/index.html#clients">Clients</a>
+                <a data="clients" href="../jms/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../jms/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../jms/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../jms/index.html#constants">Constants</a>
+                <a data="constants" href="../jms/index.html#constants">Constants</a>
             </li>
         
         
@@ -269,6 +282,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -338,6 +352,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -359,6 +381,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -432,6 +458,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -439,42 +467,37 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/jms</span></h1>
-            <h2>Module overview</h2>
-<p>The <code>ballerinaDup/jms</code> module provides an API to connect to an external JMS provider like ballerinaDup Message Broker or
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">jms</span></h1>
+                    <h2>Module overview</h2>
+<p>The <code>ballerina/jms</code> module provides an API to connect to an external JMS provider like Ballerina Message Broker or
 ActiveMQ.</p>
 <p>The module provides consumer and producer endpoint types for queues and topics. Following are the endpoint types
 supported by this module:</p>
 <ul>
-<li>QueueReceiver</li>
-<li>TopicSubscriber</li>
-<li>DurableTopicSubscriber</li>
-<li>SimpleQueueReceiver</li>
-<li>SimpleTopicSubscriber</li>
-<li>SimpleDurableTopicSubscriber</li>
+<li>QueueListener</li>
+<li>TopicListener</li>
+<li>DurableTopicListener</li>
 <li>QueueSender</li>
 <li>TopicPublisher</li>
-<li>SimpleQueueSender</li>
-<li>SimpleTopicPublisher</li>
 </ul>
 <p>The endpoints prefixed with <code>Simple</code> will automatically create a JMS connection and a JMS session when the endpoint is
 initialized. For other endpoints, the developer must explicitly provide a properly initialized JMS Session.</p>
 <h2>Samples</h2>
 <h3>JMS Simple Queue Consumer</h3>
-<p>Following is a simple listener program that consumes messages from a ballerinaDup Message Broker queue named <code>MyQueue</code>.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<p>Following is a simple listener program that consumes messages from a Ballerina Message Broker queue named <code>MyQueue</code>.</p>
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Create a simple queue receiver.
-listener jms:SimpleQueueReceiver consumerEP = new({
+listener jms:QueueListener consumerEP = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
     providerUrl: &quot;tcp://localhost:61616&quot;,
-    acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;,
-    queueName: &quot;MyQueue&quot;
-});
+    acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;
+    }, queueName = &quot;MyQueue&quot;);
 
 // Bind the created consumer to the listener service.
 service jmsListener on consumerEP {
@@ -491,21 +514,20 @@ service jmsListener on consumerEP {
 }
 </code></pre>
 <h3>JMS Simple Topic publisher.</h3>
-<p>Following is a simple topic publisher program that sends messages to a ballerinaDup Message Broker topic named <code>MyTopic</code>.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<p>Following is a simple topic publisher program that sends messages to a Ballerina Message Broker topic named <code>MyTopic</code>.</p>
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Create a topic publisher.
-jms:SimpleTopicPublisher topicPublisher = new({
+jms:TopicPublisher topicPublisher = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
     providerUrl: &quot;tcp://localhost:61616&quot;,
-    acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;,
-    topicPattern: &quot;ballerinaDupTopic&quot;
-});
+    acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;
+    }, topicPattern = &quot;MyTopic&quot;);
 
 public function main(string... args) {
     // Create a text message.
-    var msg = topicPublisher.session.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = topicPublisher.session.createTextMessage(&quot;Hello from Ballerina&quot;);
     if (msg is jms:Message) {
         var result = topicPublisher-&gt;send(msg);
         if (result is error) {
@@ -518,8 +540,8 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Queue Message Receiver</h3>
 <p>Following is a listener program that explicitly initializes a JMS session to be used in the consumer.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Initialize a JMS connection with the provider.
 jms:Connection conn = new({
@@ -553,8 +575,8 @@ service jmsListener on consumerEP {
 </code></pre>
 <h3>JMS Queue Message Producer</h3>
 <p>Following is a queue sender program that explicitly initializes a JMS session to be used in the producer.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 // Initialize a JMS connection with the provider.
 jms:Connection jmsConnection = new({
@@ -571,7 +593,7 @@ jms:QueueSender queueSender = new(jmsSession, queueName = &quot;MyQueue&quot;);
 
 public function main(string... args) {
     // Create a text message.
-    var msg = jmsSession.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = jmsSession.createTextMessage(&quot;Hello from Ballerina&quot;);
     if (msg is error) {
         log:printError(&quot;Error occurred while creating message&quot;, err = msg);
     } else {
@@ -584,8 +606,8 @@ public function main(string... args) {
 </code></pre>
 <h3>JMS Topic Subscriber</h3>
 <p>Following is a topic subscriber program that subscribes to a particular JMS topic.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 jms:Connection conn = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
@@ -596,7 +618,7 @@ jms:Session jmsSession = new(conn, {
     acknowledgementMode: &quot;AUTO_ACKNOWLEDGE&quot;
 });
 
-listener jms:TopicSubscriber subscriberEndpoint = new(jmsSession, topicPattern = &quot;MyTopic&quot;);
+listener jms:TopicListener subscriberEndpoint = new(jmsSession, topicPattern = &quot;MyTopic&quot;);
 
 service jmsListener on subscriberEndpoint {
     resource function onMessage(jms:TopicSubscriberCaller subscriber, jms:Message message) {
@@ -611,8 +633,8 @@ service jmsListener on subscriberEndpoint {
 </code></pre>
 <h3>JMS Topic Producer</h3>
 <p>Following is a topic producer program that publishes to a particular JMS topic.</p>
-<pre><code class="language-ballerina">import ballerinaDup/jms;
-import ballerinaDup/log;
+<pre><code class="language-ballerina">import ballerina/jms;
+import ballerina/log;
 
 jms:Connection jmsConnection = new({
     initialContextFactory: &quot;org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory&quot;,
@@ -626,7 +648,7 @@ jms:Session jmsSession = new(jmsConnection, {
 jms:TopicPublisher topicPublisher = new(jmsSession, topicPattern = &quot;MyTopic&quot;);
 
 public function main(string... args) {
-    var msg = jmsSession.createTextMessage(&quot;Hello from ballerinaDup&quot;);
+    var msg = jmsSession.createTextMessage(&quot;Hello from Ballerina&quot;);
     if (msg is error) {
         log:printError(&quot;Error occurred while creating message&quot;, err = msg);
     } else {
@@ -640,7 +662,14 @@ public function main(string... args) {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -679,15 +708,22 @@ public function main(string... args) {
                             <td class="module-title truncate records" id="SessionConfiguration">
                                 <a class="records"
                                    href="records/SessionConfiguration.html">SessionConfiguration</a></td>
-                            <td class="module-desc">Configurations related to a JMS session
+                            <td class="module-desc">The Configurations that are related to a JMS session.
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -767,22 +803,29 @@ application data being sent.</p>
                                     Session
                                 </a>
                             </td>
-                            <td class="module-desc"><p>Represents JMS session</p>
+                            <td class="module-desc"><p>Represents the JMS session.</p>
 </td>
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
                             <td class="module-title truncate clients" id="DurableTopicSubscriberCaller">
                                 <a class="clients"
                                    href="clients/DurableTopicSubscriberCaller.html">DurableTopicSubscriberCaller</a></td>
-                            <td class="module-desc"><p>Caller actions related to DurableTopicSubscriber endpoint</p>
+                            <td class="module-desc"><p>Caller actions related to  the DurableTopicSubscriber.</p>
 </td>
                         </tr>
                     
@@ -790,7 +833,7 @@ application data being sent.</p>
                             <td class="module-title truncate clients" id="QueueReceiverCaller">
                                 <a class="clients"
                                    href="clients/QueueReceiverCaller.html">QueueReceiverCaller</a></td>
-                            <td class="module-desc"><p>Caller actions related to queue receiver endpoint.</p>
+                            <td class="module-desc"><p>The Caller actions related to queue receiver endpoint.</p>
 </td>
                         </tr>
                     
@@ -814,49 +857,64 @@ application data being sent.</p>
                             <td class="module-title truncate clients" id="TopicSubscriberCaller">
                                 <a class="clients"
                                    href="clients/TopicSubscriberCaller.html">TopicSubscriberCaller</a></td>
-                            <td class="module-desc"><p>Remote functions that topic subscriber endpoint could perform</p>
+                            <td class="module-desc"><p>Remote functions that the topic subscriber endpoint could perform.</p>
 </td>
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
-                            <td class="module-title truncate listeners" id="DurableTopicSubscriber">
+                            <td class="module-title truncate listeners" id="DurableTopicListener">
                                 <a class="listeners"
-                                   href="listeners/DurableTopicSubscriber.html">DurableTopicSubscriber</a></td>
-                            <td class="module-desc"><p>JMS DurableTopicSubscriber endpoint</p>
+                                   href="listeners/DurableTopicListener.html">DurableTopicListener</a></td>
+                            <td class="module-desc"><p>The JMS DurableTopicListener endpoint.</p>
 </td>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate listeners" id="QueueReceiver">
+                            <td class="module-title truncate listeners" id="QueueListener">
                                 <a class="listeners"
-                                   href="listeners/QueueReceiver.html">QueueReceiver</a></td>
-                            <td class="module-desc"><p>Queue Receiver endpoint</p>
+                                   href="listeners/QueueListener.html">QueueListener</a></td>
+                            <td class="module-desc"><p>The Queue Receiver endpoint.</p>
 </td>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate listeners" id="TopicSubscriber">
+                            <td class="module-title truncate listeners" id="TopicListener">
                                 <a class="listeners"
-                                   href="listeners/TopicSubscriber.html">TopicSubscriber</a></td>
-                            <td class="module-desc"><p>JMS TopicSubscriber endpoint</p>
+                                   href="listeners/TopicListener.html">TopicListener</a></td>
+                            <td class="module-desc"><p>The JMS TopicListener.</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -880,6 +938,7 @@ application data being sent.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -909,8 +968,30 @@ application data being sent.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

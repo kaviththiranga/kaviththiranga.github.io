@@ -28,43 +28,43 @@
                 <h3>Clients</h3>
                 <ul>
                     
-                        <li>
-                            <a href="Producer.html">Producer</a>
+                        <li class="active active-item">
+                            <a href="Producer.html">Producer</a> 
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -72,6 +72,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -141,6 +142,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -162,6 +171,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -246,43 +259,43 @@
                     <h3>Clients</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active active-item">
                                 <a href="Producer.html">Producer</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -290,6 +303,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -359,6 +373,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -380,6 +402,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -460,7 +486,12 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1><span class="title-type">Clients - </span> nats : 
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Clients - </span> 
+                <a href="../../nats/index.html">nats</a> : 
                 <span class="clients">Producer</span> </h1>
             <p><p>NATS producer would act as a streaming client allowing to stream messages between NATS streaming server.
 Producer would create a new NATS connection if a connection was not provided during the initialization.</p>
@@ -542,13 +573,13 @@ Producer would create a new NATS connection if a connection was not provided dur
                     
                         <div class="method-content">
     <div class="main-method-title here" id="send">
-        <a class="url-link" href="#send">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> send </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+             <a class="url-link" href="#send">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> send </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -607,13 +638,13 @@ Producer would create a new NATS connection if a connection was not provided dur
                     
                         <div class="method-content">
     <div class="main-method-title here" id="requestReply">
-        <a class="url-link" href="#requestReply">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> requestReply </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+             <a class="url-link" href="#requestReply">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> requestReply </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
             <b> returns </b><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
         </span>
         
@@ -676,13 +707,13 @@ Producer would create a new NATS connection if a connection was not provided dur
                     
                         <div class="method-content">
     <div class="main-method-title here" id="close">
-        <a class="url-link" href="#close">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> close </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#close">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> close </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
         </span>
         
@@ -721,6 +752,30 @@ Producer would create a new NATS connection if a connection was not provided dur
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

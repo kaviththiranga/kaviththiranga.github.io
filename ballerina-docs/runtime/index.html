@@ -24,14 +24,14 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -39,7 +39,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -49,6 +49,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -118,6 +119,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -139,6 +148,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -220,14 +233,14 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -235,7 +248,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -245,6 +258,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -314,6 +328,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -335,6 +357,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -408,6 +434,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -415,11 +443,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/runtime</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">runtime</span></h1>
+                    <h2>Module overview</h2>
 <p>This module includes functions to interact with the runtime, the invocation context and to manage errors.</p>
 <h3>Invocation Context</h3>
 <p>The Invocation Context is a data holder that is created per request and preserved for a single request-response flow.
@@ -427,14 +456,14 @@ The Invocation Context comprises of a unique ID, a <code>UserPrincipal</code> in
 <code>AuthenticationContext</code> instance that has the authentication related details if available.</p>
 <h3>Errors</h3>
 <p>The runtime module includes the <code>NullReferenceException</code> and <code>IllegalStateException</code> error types. These two error
-types wrap the <code>error</code> type defined in the <code>ballerinaDup/runtime</code> module. Furthermore, there are utility methods to
+types wrap the <code>error</code> type defined in the <code>ballerina/runtime</code> module. Furthermore, there are utility methods to
 retrieve the current call stack and the particular call stack frame for an error.</p>
 <p>Additionally, the runtime module also contains utility methods to halt a <code>worker</code> (sleep) for a given period of time
 and to look up properties from the runtime context.</p>
 <h3>Samples</h3>
 <p>The following sample shows how to access the Invocation Context, set data to it and access the same.</p>
-<pre><code class="language-ballerina">import ballerinaDup/io;
-import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/runtime;
 
 // Set data to the Invocation Context.
 
@@ -442,7 +471,7 @@ import ballerinaDup/runtime;
 runtime:getInvocationContext().principal.username = &quot;tom&quot;;
 
 // Set claims.
-map&lt;any&gt; claims = { email: &quot;tom@ballerinaDup.com&quot;, org: &quot;wso2&quot; };
+map&lt;any&gt; claims = { email: &quot;tom@ballerina.com&quot;, org: &quot;wso2&quot; };
 runtime:getInvocationContext().principal.claims = claims;
 
 // Set scopes.
@@ -478,20 +507,20 @@ string token = runtime:getInvocationContext().authenticationContext.authToken;
 io:println(token);
 </code></pre>
 <p>The following sample shows how to halt the current <code>worker</code> for a given time period.</p>
-<pre><code class="language-ballerina">import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerina/runtime;
 
 // Sleep the current worker for 5 seconds.
 runtime:sleep(5000);
 </code></pre>
 <p>The following sample shows how to access properties from the runtime.</p>
-<pre><code class="language-ballerina">import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerina/runtime;
 
-// Retrieve the property ‘ballerinaDup version’ from the runtime.
-runtime:getProperty(&quot;ballerinaDup.version&quot;);
+// Retrieve the property ‘ballerina version’ from the runtime.
+runtime:getProperty(&quot;ballerina.version&quot;);
 </code></pre>
 <p>The following sample shows how to access the call stack and how to trap an error.</p>
-<pre><code class="language-ballerina">import ballerinaDup/io;
-import ballerinaDup/runtime;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/runtime;
 
 public function main() {
     // Print the current call stack.
@@ -508,14 +537,21 @@ function getError() {
 
 function panicWithError() {
     // Create an error with a reason.
-    error e = error(&quot;error occured&quot;);
+    error e = error(&quot;error occurred&quot;);
     panic e;
 }
 </code></pre>
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -551,6 +587,7 @@ function panicWithError() {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -558,9 +595,16 @@ function panicWithError() {
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -606,6 +650,7 @@ function panicWithError() {
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -638,8 +683,30 @@ function panicWithError() {
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

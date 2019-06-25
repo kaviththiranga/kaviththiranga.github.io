@@ -2,15 +2,15 @@
            API Method Colors 
 --------------------------------*/
 
-@construct: records #00c378,
-    objects #3498db,
-    clients #FF5722,
-    listeners #f44336,
+@construct: records #2A9988,
+    objects #265C9E,
+    clients #FD5618,
+    listeners #381268,
     functions #EC407A,
-    constant #8e44ad,
-    annotations #276dc4,
-    types #512DA8,
-    errors #f44336;
+    constant #81007F,
+    annotations #F4BB06,
+    types #974B00,
+    errors #AD0102;
 
 // Gen construct 
 .gen-construct-colors(@colors) {
@@ -85,9 +85,9 @@ body {
 
         .main-wrapper {
             width: 800px;
-            margin: 0 30px;
+            margin: 0 2.8em;
             overflow: hidden;
-            margin-bottom: 5em;
+            margin-bottom: 54em;
             
             .title-type {
                 font-weight: 300;
@@ -103,6 +103,7 @@ body {
                 border-bottom: 1px solid #dededf;
                 line-height: 2em;
             }
+            
 
             h2 {
                 border-bottom: 1px solid #dededf;
@@ -114,22 +115,10 @@ body {
                 .gen-construct-colors(color);
             }
 
-            .here:target {
-                background: #ffeb3b2e;
-                padding: 10px 4px;
-                animation-name: target-fade;
-                animation-fill-mode: forwards;
-                animation-duration: 4s;
-                animation-delay: 0s;
-            }
-            @keyframes target-fade {
-                0% {background-color:#fbe54e;}
-                100% { background-color:transparent;}
-            }
-
             p {
                 a {
                     color: #0067ad;
+                    text-decoration: underline;
 
                     &:hover {
                         text-decoration: underline
@@ -291,6 +280,9 @@ body {
         .breadcrumb-home-icon {
             width: 24px;
             opacity: 0.4;
+            &:hover {
+                opacity: 0.7;
+            }
         }
 
         &:hover {
@@ -376,59 +368,6 @@ body {
                 }
             }
 
-            .method-content {
-                margin: 30px 0 40px 20px;
-
-                .main-method-title {
-                    border-bottom: 1px solid #e8e9e9;
-                    margin-bottom: 10px;
-                    padding-bottom: 3px;
-                    display: flex;
-
-                    h2 {
-                        line-height: 1em;
-                        display: inline;
-                        border: 0;
-                        padding: 0 4px;
-                        margin: 0;
-                    }
-
-                    p {
-                        margin: 0 3px 0 0;
-                    }
-                    a.url-link  {
-                        visibility: hidden;
-                    }
-
-                    &:hover {
-
-                        a.url-link  {
-                            visibility: visible;
-                            width: 16px;
-                            display: inline-block;
-                            margin-right: 4px;
-                            cursor: pointer;
-                            margin-left: -20px;
-
-                                .url-link-img {
-                                    width: 16px;
-                                    margin-left: 5px;
-                                    margin-top: 2px;
-                                    cursor: pointer;
-                                }
-                        }
-                    }
-                }
-
-                .method-types {
-                    font-style: italic;
-                    color: #656565;
-                }
-                .return-types {
-                    margin-top: 0.15em;
-                }
-            }
-
             .method-wrapper {
                 .method-span {
                     width: auto;
@@ -458,6 +397,7 @@ body {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         padding-right: 20px;
+                        font-size: 1.1em;
                     }
                 }
 
@@ -487,6 +427,81 @@ body {
                 margin: 0;
                 padding: 10px;
             }
+        }
+
+        .method-content {
+            margin: 30px 0 40px 20px;
+
+            .main-method-title {
+                border-bottom: 1px solid #e8e9e9;
+                margin-bottom: 10px;
+                padding-bottom: 3px;
+                display: flex;
+                cursor: pointer;
+
+                h2 {
+                    line-height: 1em;
+                    display: inline;
+                    border: 0;
+                    padding: 0 4px;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin: 0 3px 0 0;
+                }
+                a.url-link  {
+                    visibility: hidden;
+                }
+
+                &:hover {
+
+                    a.url-link  {
+                        visibility: visible;
+                        width: 16px;
+                        display: inline-block;
+                        margin-right: 4px;
+                        cursor: pointer;
+                        margin-left: -20px;
+
+                            .url-link-img {
+                                width: 16px;
+                                margin-left: 5px;
+                                margin-top: 2px;
+                                cursor: pointer;
+                            }
+                    }
+                }
+            }
+
+            .here:target {
+                padding: 10px 4px;
+                animation-name: target-fade;
+                animation-fill-mode: forwards;
+                animation-duration: 4s;
+                animation-delay: 0s;
+            }
+            @keyframes target-fade {
+                0% {background-color:#fbe54e;}
+                100% { background-color:transparent;}
+            }
+            .method-title {
+                font-style: italic;
+                color: #656565;
+                align-items: flex-start;
+            }
+
+            .method-types {
+                font-style: italic;
+                color: #656565;
+                align-items: flex-start;
+            }
+
+            .return-types {
+                margin-top: 0.15em;
+            }
+
         }
 
         .module-title {
@@ -582,7 +597,6 @@ body {
                     .active {
                         a {
                             font-weight: bolder !important;
-                            color: red;
                         }
                     }
                     .active-item {
@@ -592,9 +606,11 @@ body {
                 }
             }
         }
+
         .current {
-            background: black;
+            font-weight: 900;
           }
+
         padding-left: 10px;
 
         ul {
@@ -605,7 +621,6 @@ body {
                 list-style: none;
                 line-height: 25px;
                 margin-left: 15px;
-                // font-weight: 300;
                 text-overflow: ellipsis;
                 overflow: hidden;
 

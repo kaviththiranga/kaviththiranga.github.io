@@ -24,47 +24,48 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../sql/index.html">
         <h3>sql</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../sql/index.html#records">Records</a>
+            <a data="records" href="../sql/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../sql/index.html#objects">Objects</a>
+                <a  data="objects" href="../sql/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../sql/index.html#clients">Clients</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../sql/index.html#functions">Functions</a>
-            </li>
-        
-        
-            <li>
-                <a href="../sql/index.html#constants">Constants</a>
+                <a data="clients" href="../sql/index.html#clients">Clients</a>
             </li>
         
         
         
             <li>
-                <a href="../sql/index.html#types">Types</a>
+                <a data="functions" href="../sql/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a data="constants" href="../sql/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a data="types" href="../sql/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -134,6 +135,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -155,6 +164,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -236,47 +249,48 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../sql/index.html">
         <h3>sql</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../sql/index.html#records">Records</a>
+            <a data="records" href="../sql/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../sql/index.html#objects">Objects</a>
+                <a  data="objects" href="../sql/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../sql/index.html#clients">Clients</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../sql/index.html#functions">Functions</a>
-            </li>
-        
-        
-            <li>
-                <a href="../sql/index.html#constants">Constants</a>
+                <a data="clients" href="../sql/index.html#clients">Clients</a>
             </li>
         
         
         
             <li>
-                <a href="../sql/index.html#types">Types</a>
+                <a data="functions" href="../sql/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a data="constants" href="../sql/index.html#constants">Constants</a>
+            </li>
+        
+        
+        
+            <li>
+                <a data="types" href="../sql/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -346,6 +360,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -367,6 +389,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -440,6 +466,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -447,11 +475,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/sql</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">sql</span></h1>
+                    <h2>Module overview</h2>
 <p>This module provides the common record types and constants required for other data management modules such as <code>jdbc</code>, <code>mysql</code>, and <code>h2</code>.</p>
 <h3>PoolOptions</h3>
 <p>The PoolOptions type is the properties that are used to configure DB connection pool. This is used with <code>jdbc</code>, <code>mysql</code>, and <code>h2</code> clients to configure the connection pool associated with the client.</p>
@@ -466,7 +495,14 @@
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -502,10 +538,17 @@ Default values of the fields can be set through the configuration API.
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -519,10 +562,17 @@ Default values of the fields can be set through the configuration API.
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -542,12 +592,20 @@ Default values of the fields can be set through the configuration API.
                         </tr>
                     
                 </table>
+             </section>
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -565,11 +623,18 @@ Default values of the fields can be set through the configuration API.
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -771,13 +836,20 @@ Default values of the fields can be set through the configuration API.
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -829,6 +901,7 @@ REFCURSOR - Cursor value</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -853,8 +926,30 @@ REFCURSOR - Cursor value</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

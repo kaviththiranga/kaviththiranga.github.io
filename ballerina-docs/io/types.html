@@ -29,58 +29,59 @@
                 <h3>Types</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="#Format">Format</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#Mode">Mode</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#Separator">Separator</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -150,6 +151,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -171,6 +180,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -255,58 +268,59 @@
                     <h3>Types</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="#Format">Format</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#Mode">Mode</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#Separator">Separator</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../io/index.html#records">Records</a>
+            <a data="records" href="../io/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -376,6 +390,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -397,6 +419,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -477,16 +503,22 @@
     </a>
 </div>
         <div class="main-wrapper">
-             <h1><span class="title-type">Types - </span> io</h1>
+             <h1>
+                 <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                 <span class="title-type">Types - </span> 
+                 <a href="../io/index.html">io</a> 
+            </h1>
             <div class="types">
                 <div class="data-wrapper">
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="Format"><b>Format</b><span class="type">  <a href="../io/UNKOWN/DEFAULT.html">DEFAULT</a> | <a href="../io/UNKOWN/CSV.html">CSV</a> | <a href="../io/UNKOWN/TDF.html">TDF</a></span></li>
+                                <li id="Format"><b>Format</b><span class="type">  <a href="../io/constants.html#DEFAULT">DEFAULT</a> | <a href="../io/constants.html#CSV">CSV</a> | <a href="../io/constants.html#TDF">TDF</a></span></li>
                                 <li>
                                     <p>Format which will be used to represent the CSV.</p>
-<p>DEFAULT - Would default to the format specified by CSVChannel. Presidence will be given to field
+<p>DEFAULT - Would default to the format specified by CSVChannel. Precedence will be given to field
 separator and record separator.</p>
 <p>CSV - Field separator would be &quot;,&quot; and the record separator would be new line.</p>
 <p>TDF - Field separator will be tab and record separator will be new line.</p>
@@ -497,7 +529,7 @@ separator and record separator.</p>
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="Mode"><b>Mode</b><span class="type">  <a href="../io/UNKOWN/READ.html">READ</a> | <a href="../io/UNKOWN/WRITE.html">WRITE</a> | <a href="../io/UNKOWN/RW.html">RW</a> | <a href="../io/UNKOWN/APPEND.html">APPEND</a></span></li>
+                                <li id="Mode"><b>Mode</b><span class="type">  <a href="../io/constants.html#READ">READ</a> | <a href="../io/constants.html#WRITE">WRITE</a> | <a href="../io/constants.html#RW">RW</a> | <a href="../io/constants.html#APPEND">APPEND</a></span></li>
                                 <li>
                                     
                                 </li>
@@ -506,7 +538,7 @@ separator and record separator.</p>
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="Separator"><b>Separator</b><span class="type">  <a href="../io/UNKOWN/COMMA.html">COMMA</a> | <a href="../io/UNKOWN/TAB.html">TAB</a> | <a href="../io/UNKOWN/COLON.html">COLON</a></span></li>
+                                <li id="Separator"><b>Separator</b><span class="type">  <a href="../io/constants.html#COMMA">COMMA</a> | <a href="../io/constants.html#TAB">TAB</a> | <a href="../io/constants.html#COLON">COLON</a></span></li>
                                 <li>
                                     <p>Field separators which are supported by DelimitedTextRecordChannel.</p>
 
@@ -545,6 +577,30 @@ separator and record separator.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

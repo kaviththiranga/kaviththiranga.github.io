@@ -28,32 +28,32 @@
                 <h3>Records</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="FileEvent.html">FileEvent</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="ListenerConfig.html">ListenerConfig</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../file/index.html">
         <h3>file</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../file/index.html#records">Records</a>
+            <a data="records" href="../../file/index.html#records">Records</a>
         </li>
         
         
         
         
             <li>
-                <a href="../../file/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../file/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -64,6 +64,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -133,6 +134,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -154,6 +163,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -238,32 +251,32 @@
                     <h3>Records</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active">
                                 <a href="FileEvent.html">FileEvent</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="ListenerConfig.html">ListenerConfig</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../file/index.html">
         <h3>file</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../file/index.html#records">Records</a>
+            <a data="records" href="../../file/index.html#records">Records</a>
         </li>
         
         
         
         
             <li>
-                <a href="../../file/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../file/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -274,6 +287,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -343,6 +357,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -364,6 +386,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -444,7 +470,14 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1> <span class="title-type">Record - </span> file : <span class="records">FileEvent</span></h1>
+            <h1> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Record - </span> 
+                <a href="../../file/index.html">file</a> 
+                 : <span class="records">FileEvent</span>
+            </h1>
             <p>Represents an event which will trigger when there is a changes to listining direcotry.
 </p>
             <div class="constants">
@@ -486,8 +519,32 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                     
                 
@@ -507,6 +564,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

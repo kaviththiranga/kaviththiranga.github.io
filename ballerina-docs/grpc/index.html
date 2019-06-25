@@ -24,51 +24,52 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../grpc/index.html">
         <h3>grpc</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../grpc/index.html#records">Records</a>
+            <a data="records" href="../grpc/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../grpc/index.html#objects">Objects</a>
+                <a  data="objects" href="../grpc/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#clients">Clients</a>
+                <a data="clients" href="../grpc/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../grpc/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../grpc/index.html#constants">Constants</a>
+                <a data="constants" href="../grpc/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../grpc/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#types">Types</a>
+                <a data="types" href="../grpc/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -138,6 +139,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -159,6 +168,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -240,51 +253,52 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../grpc/index.html">
         <h3>grpc</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../grpc/index.html#records">Records</a>
+            <a data="records" href="../grpc/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../grpc/index.html#objects">Objects</a>
+                <a  data="objects" href="../grpc/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#clients">Clients</a>
+                <a data="clients" href="../grpc/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../grpc/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../grpc/index.html#constants">Constants</a>
+                <a data="constants" href="../grpc/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../grpc/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#types">Types</a>
+                <a data="types" href="../grpc/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -354,6 +368,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -375,6 +397,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -448,6 +474,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -455,11 +483,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/grpc</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">grpc</span></h1>
+                    <h2>Module overview</h2>
 <p>This module contains functions to support gRPC protocol based communication. gRPC is a framework developed by Google
 to support the RPC (Remote Procedure Call) protocol. The gRPC protocol is layered over HTTP/2. This protocol only supports client-initiated communication.</p>
 <h3>Protocol buffers</h3>
@@ -471,10 +500,10 @@ service ServerStreaming {
      rpc receiveMessage(google.protobuf.StringValue) returns (stream google.protobuf.StringValue);
 }
 </code></pre>
-<p>gRPC allows client applications to directly call the server-side methods using the auto-generated stubs. Protocol buffer compilers are used to generate the stubs for the specified language. In ballerinaDup, the stubs are generated using the built-in proto compiler.</p>
+<p>gRPC allows client applications to directly call the server-side methods using the auto-generated stubs. Protocol buffer compilers are used to generate the stubs for the specified language. In Ballerina, the stubs are generated using the built-in proto compiler.</p>
 <h3>Endpoints</h3>
 <p>Endpoints specify how the client and server communicate. This module supports service endpoints and client endpoints. The service endpoint specifies how the client communicates with the server. The client endpoint is automatically generated by passing the <code>.proto</code> file to a proto compiler.</p>
-<p>The ballerinaDup tooling distribution provides a proto compiler to generate the ballerinaDup client endpoint. The client endpoint generated using the ballerinaDup proto compiler has two client endpoints. Use the endpoint to suit the use case.</p>
+<p>The Ballerina tooling distribution provides a proto compiler to generate the Ballerina client endpoint. The client endpoint generated using the Ballerina proto compiler has two client endpoints. Use the endpoint to suit the use case.</p>
 <h3>RPC types</h3>
 <p>This module supports the following RPC client-to-service communication methods: unary, server streaming, client streaming, and bidirectional streaming. Listeners are used to support the asynchronous and streaming communication.</p>
 <h4>Unary</h4>
@@ -486,16 +515,16 @@ service ServerStreaming {
 <h4>Bidirectional Streaming</h4>
 <p>The client and server send multiple requests and responses.</p>
 <h2>Samples</h2>
-<h3>ballerinaDup code generator tool</h3>
+<h3>Ballerina code generator tool</h3>
 <p>Using below command to generate stub and sample code.</p>
-<pre><code>#ballerinaDup grpc --input [proto_file] --output [output_directory] --mode [service/client]
+<pre><code>#ballerina grpc --input [proto_file] --output [output_directory] --mode [service/client]
 </code></pre>
 <h4>Options</h4>
 <p><code>--input</code>  - Set proto file path.</p>
-<p><code>--output</code> - Set output ballerinaDup source files directory.</p>
+<p><code>--output</code> - Set output Ballerina source files directory.</p>
 <p><code>--mode</code>   - Set mode (client or server) to generate code samples. If not specified, only the stub file is generated.</p>
 <h3>Unary communication</h3>
-<p>The sample given below contains a service that sends a response to each request using an auto-generated ballerinaDup stub.</p>
+<p>The sample given below contains a service that sends a response to each request using an auto-generated Ballerina stub.</p>
 <pre><code class="language-ballerina">// Server listener configuration.
 listener grpc:Listener ep = new(9090);
 
@@ -513,7 +542,7 @@ service SamplegRPCService on ep {
    }
 }
 </code></pre>
-<p>The sample given below calls the above service in a blocking manner using an auto-generated ballerinaDup stub.</p>
+<p>The sample given below calls the above service in a blocking manner using an auto-generated Ballerina stub.</p>
 <pre><code class="language-ballerina">// Use ‘BlockingClient’ to execute the call in the blocking mode.
 SamplegRPCServiceBlockingClient SamplegRPCServiceBlockingEp = new(&quot;http://localhost:9090&quot;);
 
@@ -522,7 +551,7 @@ grpc:Headers headers = new;
 headers.setEntry(&quot;id&quot;, &quot;newrequest1&quot;);
 
 // Call the method in the service using a client stub.
-var responseFromServer = SamplegRPCServiceBlockingEp-&gt;receiveMessage(&quot;ballerinaDup&quot;, headers = headers);
+var responseFromServer = SamplegRPCServiceBlockingEp-&gt;receiveMessage(&quot;Ballerina&quot;, headers = headers);
 if (responseFromServer is (string, grpc:Headers)) {
     // If a response is received, print the payload.
     (string, grpc:Headers) (result, resHeaders) = responseFromServer;
@@ -547,7 +576,7 @@ service ServerStreaming on ep {
        io:println(&quot;HelloWorld&quot;);
        // Send multiple responses to the client.
        foreach var greet in greets {
-           error? err = caller-&gt;send(greet + &quot; &quot; + name + &quot;! Greetings from ballerinaDup service&quot;);
+           error? err = caller-&gt;send(greet + &quot; &quot; + name + &quot;! Greetings from Ballerina service&quot;);
            // If an error is returned, print the error message. print response message otherwise.
            if (err is error) {
                io:println(&quot;Error from Connector: &quot; + err.reason() + &quot; - &quot;
@@ -561,7 +590,7 @@ service ServerStreaming on ep {
    }
 }
 </code></pre>
-<p>The sample given below calls the above service using the auto-generated ballerinaDup client stub and listens to the multiple responses from the server.</p>
+<p>The sample given below calls the above service using the auto-generated Ballerina client stub and listens to the multiple responses from the server.</p>
 <pre><code class="language-ballerina">// Keep track of the message that were completely received.
 boolean isCompleted = false;
 public function main(string... args) {
@@ -572,7 +601,7 @@ public function main(string... args) {
     error? result = serverStreamingEp-&gt;receiveMessage(&quot;test&quot;, ServerStreamingMessageListener);
     if (result is error) {
         // If the service returns an error, print the error.
-        io:println(&quot;Error occured while sending event &quot; + result.reason() + &quot; - &quot;
+        io:println(&quot;Error occurred while sending event &quot; + result.reason() + &quot; - &quot;
                                                         + &lt;string&gt;result.detail().message);
     } else {
         io:println(&quot;Connected successfully to service&quot;);
@@ -663,7 +692,14 @@ error? result = ep-&gt;complete();
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -787,10 +823,17 @@ error? result = ep-&gt;complete();
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -805,10 +848,17 @@ error? result = ep-&gt;complete();
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -837,29 +887,44 @@ provides includes functions to send request/error messages.</p>
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
                             <td class="module-title truncate listeners" id="Listener">
                                 <a class="listeners"
                                    href="listeners/Listener.html">Listener</a></td>
-                            <td class="module-desc"><p>Represents server listener where one or more services can be registered. so that ballerinaDup program can offer
+                            <td class="module-desc"><p>Represents server listener where one or more services can be registered. so that ballerina program can offer
 service through this listener.</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1024,34 +1089,19 @@ outbound request/response accept-encoding/content-encoding option.</p>
 </td>
                         </tr>
                     
-                        <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_AUTO"><a
-                                    class="constant" href="constants.html#CHUNKING_AUTO">CHUNKING_AUTO</a></td>
-                            <td class="module-desc"><p>If the payload is less than 8KB, content-length header is set in the outbound request/response,
-otherwise chunking header is set in the outbound request/response.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_ALWAYS"><a
-                                    class="constant" href="constants.html#CHUNKING_ALWAYS">CHUNKING_ALWAYS</a></td>
-                            <td class="module-desc"><p>Always set chunking header in the response.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_NEVER"><a
-                                    class="constant" href="constants.html#CHUNKING_NEVER">CHUNKING_NEVER</a></td>
-                            <td class="module-desc"><p>Never set the chunking header even if the payload is larger than 8KB in the outbound request/response.</p>
-</td>
-                        </tr>
-                    
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="annotations">Annotations</a></h2>
+            <section class="method-content" id="annotations">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#annotations">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Annotations </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1076,23 +1126,18 @@ otherwise chunking header is set in the outbound request/response.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
-                    
-                        <tr>
-                            <td class="module-title truncate types" id="Chunking">
-                                <a class="types" href="types.html#Chunking">Chunking</a>
-                            </td>
-                            <td class="module-desc"><p>Defines the possible values for the chunking configuration in HTTP services and clients.</p>
-<p><code>AUTO</code>: If the payload is less than 8KB, content-length header is set in the outbound request/response,
-otherwise chunking header is set in the outbound request/response
-<code>ALWAYS</code>: Always set chunking header in the response
-<code>NEVER</code>: Never set the chunking header even if the payload is larger than 8KB in the outbound request/response</p>
-</td>
-                        </tr>
                     
                         <tr>
                             <td class="module-title truncate types" id="Compression">
@@ -1115,6 +1160,7 @@ outbound request/response accept-encoding/content-encoding option
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -1139,8 +1185,30 @@ outbound request/response accept-encoding/content-encoding option
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

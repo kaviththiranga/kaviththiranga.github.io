@@ -24,43 +24,24 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../auth/index.html">
         <h3>auth</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../auth/index.html#records">Records</a>
-        </li>
-        
-        
-            <li>
-                <a href="../auth/index.html#objects">Objects</a>
-            </li>
         
         
         
         
-            <li>
-                <a href="../auth/index.html#functions">Functions</a>
-            </li>
         
         
-            <li>
-                <a href="../auth/index.html#constants">Constants</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../auth/index.html#types">Types</a>
-            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -130,6 +111,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -151,6 +140,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -232,43 +225,24 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../auth/index.html">
         <h3>auth</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../auth/index.html#records">Records</a>
-        </li>
-        
-        
-            <li>
-                <a href="../auth/index.html#objects">Objects</a>
-            </li>
         
         
         
         
-            <li>
-                <a href="../auth/index.html#functions">Functions</a>
-            </li>
         
         
-            <li>
-                <a href="../auth/index.html#constants">Constants</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../auth/index.html#types">Types</a>
-            </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -338,6 +312,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -359,6 +341,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -432,6 +418,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -439,169 +427,27 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/auth</span></h1>
-            <h2>Module Overview</h2>
-<p>This module provides a set of default authentication store providers that can be extended to create new authentication store providers.</p>
-<h3>Authentication Store Provider</h3>
-<p>An authentication store provider defines an authentication scheme that could be used to protect endpoints. The <code>auth:AuthStoreProvider</code> type acts as the interface for all the authentication providers. Any type of implementation, such as LDAP, JDBC, and file based, should be object-wise similar.</p>
-<p>By default, there are three implementations of the <code>auth:AuthStoreProvider</code>. They are; the <code>auth:ConfigAuthStoreProvider</code>,
-which authenticates based on usernames and passwords stored in a configuration file, the <code>auth:JWTAuthProvider</code>, which
-authenticates by validating a JWT, and finally the <code>auth:LdapAuthStoreProvider</code>, which authenticates based on the user
-credentials stored in an active directory or an LDAP.</p>
-<p>When creating a new authentication provider, there are two functions that need to be implemented.</p>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">auth</span></h1>
+                    <h2>Module Overview</h2>
+<p>This module provides default authentication provider configurations that can be extended to create new authentication providers.</p>
+<h3>Authentication Provider</h3>
+<p>An authentication provider defines an authentication scheme that could be used to authenticate endpoints. The <code>auth:AuthStoreProvider</code> acts as the interface for all the authentication providers. Any type of implementation such as LDAP, JDBC, and file-based should be object-equivalent.</p>
+<p>When creating a new authentication provider, you need to implement the below function.</p>
 <ul>
-<li><code>authenticate</code> : Authenticates the user based on a credential, which can be username/password, or a token such as JWT.</li>
-<li><code>getScopes</code> : Provides the scopes associated with the user. Scopes are primarily permissions that are required to access a protected resource.</li>
+<li><code>authenticate</code> : Authenticates the user based on the user credentials (i.e., the username/password) or a token such as JWT.</li>
 </ul>
-<h3>Config Auth Store Provider</h3>
-<p><code>ConfigAuthStoreProvider</code> is an implementation of the <code>AuthStoreProvider</code> interface, which uses the ballerinaDup configuration file to store usernames, passwords, scopes and the relevant associations.</p>
-<p>A user is denoted by a section in the configuration file. The password and the scopes assigned to the user are denoted as keys under the relevant user section as seen below.</p>
+<p>By default, the <code>auth:ConfigAuthStoreProvider</code> authenticates based on usernames and passwords stored in a configuration file. The <code>auth:ConfigAuthStoreProvider</code> is an implementation of the <code>auth:AuthProvider</code> interface, which uses the Ballerina configuration file to store usernames, passwords, scopes, and relevant associations.</p>
+<p>A user is denoted by a section in the configuration file. The password and the scopes assigned to the user are denoted as keys under the relevant user section as shown below.</p>
 <pre><code>[b7a.users.&lt;username&gt;]
 password=&quot;&lt;password&gt;&quot;
 scopes=&quot;&lt;comma_separated_scopes&gt;&quot;
 </code></pre>
-<h3>LDAP Auth Store Provider</h3>
-<p><code>LdapAuthStoreProvider</code> is another implementation of the <code>AuthStoreProvider</code> interface, which connects to an active
-directory or an LDAP to retrieve the necessary user information to perform authentication and authorization.</p>
 
 
-            
-                <h2><a name="records">Records</a></h2>
-                <table>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="CachedJwt">
-                                <a class="records"
-                                   href="records/CachedJwt.html">CachedJwt</a></td>
-                            <td class="module-desc">Represents parsed and cached JWT
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="ConfigAuthProviderConfig">
-                                <a class="records"
-                                   href="records/ConfigAuthProviderConfig.html">ConfigAuthProviderConfig</a></td>
-                            <td class="module-desc">Represents configurations that required for Config auth store.
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="InferredJwtIssuerConfig">
-                                <a class="records"
-                                   href="records/InferredJwtIssuerConfig.html">InferredJwtIssuerConfig</a></td>
-                            <td class="module-desc">Represents authentication provider configurations that supports generating JWT for client interactions.
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="JWTAuthProviderConfig">
-                                <a class="records"
-                                   href="records/JWTAuthProviderConfig.html">JWTAuthProviderConfig</a></td>
-                            <td class="module-desc">Represents JWT validator configurations
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="JWTIssuerConfig">
-                                <a class="records"
-                                   href="records/JWTIssuerConfig.html">JWTIssuerConfig</a></td>
-                            <td class="module-desc">Represents JWT issuer configurations.
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="JWTValidatorConfig">
-                                <a class="records"
-                                   href="records/JWTValidatorConfig.html">JWTValidatorConfig</a></td>
-                            <td class="module-desc">Represents JWT validator configurations.</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="JwtHeader">
-                                <a class="records"
-                                   href="records/JwtHeader.html">JwtHeader</a></td>
-                            <td class="module-desc">Represents a JWT header.</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="JwtPayload">
-                                <a class="records"
-                                   href="records/JwtPayload.html">JwtPayload</a></td>
-                            <td class="module-desc">Represents a JWT payload.</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="LdapAuthProviderConfig">
-                                <a class="records"
-                                   href="records/LdapAuthProviderConfig.html">LdapAuthProviderConfig</a></td>
-                            <td class="module-desc">Represents configurations that required for LDAP auth store.
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate records" id="SecureClientSocket">
-                                <a class="records"
-                                   href="records/SecureClientSocket.html">SecureClientSocket</a></td>
-                            <td class="module-desc">Configures the SSL/TLS options to be used for LDAP communication.
-</td>
-                        </tr>
-                    
-                </table>
-            
-
-            
-                <h2><a name="objects">Objects</a></h2>
-                <table>
-                    
-                        <tr>
-                            <td class="module-title truncate objects" id="AuthStoreProvider">
-                                <a class="objects"
-                                   href="objects/AuthStoreProvider.html">
-                                    AuthStoreProvider
-                                </a>
-                            </td>
-                            <td class="module-desc"><p>Represents the auth store provider. Any type of implementation, such as
-LDAP, JDBC, file based, etc. should be object-wise similar</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate objects" id="ConfigAuthStoreProvider">
-                                <a class="objects"
-                                   href="objects/ConfigAuthStoreProvider.html">
-                                    ConfigAuthStoreProvider
-                                </a>
-                            </td>
-                            <td class="module-desc"><p>Represents ballerinaDup configuration file based auth store provider.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate objects" id="JWTAuthProvider">
-                                <a class="objects"
-                                   href="objects/JWTAuthProvider.html">
-                                    JWTAuthProvider
-                                </a>
-                            </td>
-                            <td class="module-desc"><p>Represents a JWT Authenticator</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate objects" id="LdapAuthStoreProvider">
-                                <a class="objects"
-                                   href="objects/LdapAuthStoreProvider.html">
-                                    LdapAuthStoreProvider
-                                </a>
-                            </td>
-                            <td class="module-desc"><p>Represents ballerinaDup configuration for LDAP based auth store provider</p>
-</td>
-                        </tr>
-                    
-                </table>
             
 
             
@@ -609,128 +455,16 @@ LDAP, JDBC, file based, etc. should be object-wise similar</p>
             
 
             
-                <h2><a name="functions">Functions</a></h2>
-                <table>
-                    
-                        <tr>
-                            <td class="module-title truncate functions" id="initLdapConnectionContext"><a
-                                    class="functions" href="functions.html#initLdapConnectionContext">initLdapConnectionContext</a></td>
-                            <td class="module-desc"><p>Initailizes LDAP connection context</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate functions" id="issueJwt"><a
-                                    class="functions" href="functions.html#issueJwt">issueJwt</a></td>
-                            <td class="module-desc"><p>Issue a JWT token based on provided header and payload. JWT will be signed (JWS) if <code>keyStore</code> information is provided
-in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtHeader</code> is not <code>NONE</code>.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate functions" id="validateJwt"><a
-                                    class="functions" href="functions.html#validateJwt">validateJwt</a></td>
-                            <td class="module-desc"><p>Validity given JWT string.</p>
-</td>
-                        </tr>
-                    
-                </table>
-            
+           
 
-
-            
-                <h2><a name="constants">Constants</a></h2>
-                <table>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="AUTH_ERROR_CODE"><a
-                                    class="constant" href="constants.html#AUTH_ERROR_CODE">AUTH_ERROR_CODE</a></td>
-                            <td class="module-desc"><p>Constant for the auth error code.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="DEFAULT_CHARSET"><a
-                                    class="constant" href="constants.html#DEFAULT_CHARSET">DEFAULT_CHARSET</a></td>
-                            <td class="module-desc"><p>Default charset to be used with password hashing.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CONFIG_PREFIX"><a
-                                    class="constant" href="constants.html#CONFIG_PREFIX">CONFIG_PREFIX</a></td>
-                            <td class="module-desc"><p>Prefix used to denote special configuration values.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CONFIG_PREFIX_SHA256"><a
-                                    class="constant" href="constants.html#CONFIG_PREFIX_SHA256">CONFIG_PREFIX_SHA256</a></td>
-                            <td class="module-desc"><p>Prefix used to denote that the config value is a SHA-256 hash.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CONFIG_PREFIX_SHA384"><a
-                                    class="constant" href="constants.html#CONFIG_PREFIX_SHA384">CONFIG_PREFIX_SHA384</a></td>
-                            <td class="module-desc"><p>Prefix used to denote that the config value is a SHA-384 hash.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="CONFIG_PREFIX_SHA512"><a
-                                    class="constant" href="constants.html#CONFIG_PREFIX_SHA512">CONFIG_PREFIX_SHA512</a></td>
-                            <td class="module-desc"><p>Prefix used to denote that the config value is a SHA-512 hash.</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="RS256"><a
-                                    class="constant" href="constants.html#RS256">RS256</a></td>
-                            <td class="module-desc"><p>The <code>RSA-SHA256</code> algorithm</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="RS384"><a
-                                    class="constant" href="constants.html#RS384">RS384</a></td>
-                            <td class="module-desc"><p>The <code>RSA-SHA384</code> algorithm</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="RS512"><a
-                                    class="constant" href="constants.html#RS512">RS512</a></td>
-                            <td class="module-desc"><p>The <code>RSA-SHA512</code> algorithm</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate constant" id="NONE"><a
-                                    class="constant" href="constants.html#NONE">NONE</a></td>
-                            <td class="module-desc"><p>Unsecured JWTs (no signing)</p>
-</td>
-                        </tr>
-                    
-                </table>
             
 
 
             
 
+
             
-                <h2><a name="types">Types</a></h2>
-                <table>
-                    
-                        <tr>
-                            <td class="module-title truncate types" id="JwtSigningAlgorithm">
-                                <a class="types" href="types.html#JwtSigningAlgorithm">JwtSigningAlgorithm</a>
-                            </td>
-                            <td class="module-desc"><p>The key algorithms supported by crypto module.</p>
-</td>
-                        </tr>
-                    
-                </table>
+
             
 
             
@@ -755,8 +489,30 @@ in the <code>JWTIssuerConfig</code> and the <code>alg</code> field of <code>JwtH
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

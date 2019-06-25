@@ -28,43 +28,43 @@
                 <h3>Annotations</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="#ConsumerConfig">ConsumerConfig</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../nats/index.html#records">Records</a>
+            <a data="records" href="../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -72,6 +72,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -141,6 +142,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -162,6 +171,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -246,43 +259,43 @@
                     <h3>Annotations</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="#ConsumerConfig">ConsumerConfig</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../nats/index.html#records">Records</a>
+            <a data="records" href="../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../nats/index.html#listeners">Listeners</a>
             </li>
         
         
         
         
             <li>
-                <a href="../nats/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../nats/index.html#annotations">Annotations</a>
             </li>
         
         
@@ -290,6 +303,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -359,6 +373,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -380,6 +402,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -460,13 +486,20 @@
     </a>
 </div>
         <div class="main-wrapper">
-             <h1><span class="title-type">Annotations - </span> nats</h1>
+             <h1>
+                 <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                 <span class="title-type">Annotations - </span> 
+                 <a href="../nats/index.html">nats</a> 
+            </h1>
             <div class="annotations">
                 <div class="data-wrapper">
                     
                         <div class="params-listing">
                             <ul>
-                                <li><b>ConsumerConfig</b><span class="type"> <a href="../nats/records/ConsumerConfigData.html">ConsumerConfigData</a></span> service</li>
+                                <li>
+                                    <b>ConsumerConfig</b><span class="type"> <a href="../nats/records/ConsumerConfigData.html">ConsumerConfigData</a></span> .service</li>
                                 <li>
                                     <p>Service descriptor data generated at compile time. This is for internal use.</p>
 
@@ -491,6 +524,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

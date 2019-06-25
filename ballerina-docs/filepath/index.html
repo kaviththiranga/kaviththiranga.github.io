@@ -24,7 +24,7 @@
 </a>
 <div class="version">v0.991.0</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../filepath/index.html">
         <h3>filepath</h3>
     </a>
@@ -35,7 +35,7 @@
         
         
             <li>
-                <a href="../filepath/index.html#functions">Functions</a>
+                <a data="functions" href="../filepath/index.html#functions">Functions</a>
             </li>
         
         
@@ -45,6 +45,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -114,6 +115,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -135,6 +144,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -216,7 +229,7 @@
 <div class="version">v0.991.0</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../filepath/index.html">
         <h3>filepath</h3>
     </a>
@@ -227,7 +240,7 @@
         
         
             <li>
-                <a href="../filepath/index.html#functions">Functions</a>
+                <a data="functions" href="../filepath/index.html#functions">Functions</a>
             </li>
         
         
@@ -237,6 +250,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -306,6 +320,14 @@
         </li>
         
         <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../llvm/index.html">llvm</a>
         </li>
         
@@ -327,6 +349,10 @@
         
         <li>
             <a href="../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -400,6 +426,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -407,18 +435,19 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-            <a href="../index.html">
-                <img class="breadcrumb-home" src="../html-template-resources/images/home.svg">
-            </a>
-                <h1>Module : <span class="modules">ballerina/filepath</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">filepath</span></h1>
+                    <h2>Module overview</h2>
 <p>The file path module implements the utility functions for manipulating the file path in a way that is compatible with
 the target operating system.
 This module uses either forward slashes or backslashes, depending on the operating system.</p>
 <h2>Sample</h2>
-<p>The sample given below uses a few functions that are in the <code>ballerinaDup/filepath</code> module.</p>
-<pre><code class="language-ballerina">import ballerinaDup/filepath;
-import ballerinaDup/io;
+<p>The sample given below uses a few functions that are in the <code>ballerina/filepath</code> module.</p>
+<pre><code class="language-ballerina">import ballerina/filepath;
+import ballerina/io;
 
 public function main() {
     // Get the absolute representation of the path.
@@ -467,9 +496,16 @@ public function main() {
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -537,6 +573,14 @@ Reserved words only exist in windows.</p>
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate functions" id="matches"><a
+                                    class="functions" href="functions.html#matches">matches</a></td>
+                            <td class="module-desc"><p>Reports whether all of filename matches the provided pattern, not just a substring.
+An error is returned if the pattern is malformed.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate functions" id="normalize"><a
                                     class="functions" href="functions.html#normalize">normalize</a></td>
                             <td class="module-desc"><p>Returns the shortest path name equivalent to path by purely lexical processing.
@@ -565,6 +609,16 @@ An error is returned if target path can't be made relative to base path.</p>
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate functions" id="resolve"><a
+                                    class="functions" href="functions.html#resolve">resolve</a></td>
+                            <td class="module-desc"><p>Returns the filepath after the evaluation of any symbolic links.
+If path is relative, the result will be relative to the current directory,
+unless one of the components is an absolute symbolic link.
+Resolve calls normalize on the result.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate functions" id="split"><a
                                     class="functions" href="functions.html#split">split</a></td>
                             <td class="module-desc"><p>Splits a list of paths joined by the OS-specific Path Separator.</p>
@@ -572,6 +626,7 @@ An error is returned if target path can't be made relative to base path.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -604,8 +659,30 @@ An error is returned if target path can't be made relative to base path.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
-
-
-
 

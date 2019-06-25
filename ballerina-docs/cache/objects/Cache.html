@@ -28,14 +28,14 @@
                 <h3>Objects</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Cache.html">Cache</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../cache/index.html">
         <h3>cache</h3>
     </a>
@@ -43,7 +43,7 @@
         
         
             <li>
-                <a href="../../cache/index.html#objects">Objects</a>
+                <a  data="objects" href="../../cache/index.html#objects">Objects</a>
             </li>
         
         
@@ -56,6 +56,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -125,6 +126,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -146,6 +155,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -230,14 +243,14 @@
                     <h3>Objects</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active"></li>>
                                 <a href="Cache.html">Cache</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../cache/index.html">
         <h3>cache</h3>
     </a>
@@ -245,7 +258,7 @@
         
         
             <li>
-                <a href="../../cache/index.html#objects">Objects</a>
+                <a  data="objects" href="../../cache/index.html#objects">Objects</a>
             </li>
         
         
@@ -258,6 +271,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -327,6 +341,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -348,6 +370,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -429,7 +455,14 @@
 </div>
 
         <div class="main-wrapper">
-            <h1><span class="title-type">Object - </span> cache : <span class="objects">Cache</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Object - </span> 
+                <a href="../../cache/index.html">cache</a> : 
+                <span class="objects">Cache</span>
+            </h1>
             <p><p>Represents a cache.</p>
 </p>
 
@@ -554,13 +587,13 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="hasKey">
-        <a class="url-link" href="#hasKey">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> hasKey </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+             <a class="url-link" href="#hasKey">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> hasKey </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
         </span>
         
@@ -598,13 +631,13 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="size">
-        <a class="url-link" href="#size">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> size </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#size">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> size </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
         </span>
         
@@ -628,11 +661,10 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="put">
-        <a class="url-link" href="#put">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> put </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> value)</p>
+             <a class="url-link" href="#put">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> put </h2>
         
     </div>
     <p><p>Adds the given key, value pair to the provided cache.</p>
@@ -669,13 +701,13 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="get">
-        <a class="url-link" href="#get">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> get </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+             <a class="url-link" href="#get">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> get </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a>? 
         </span>
         
@@ -715,11 +747,10 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="remove">
-        <a class="url-link" href="#remove">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> remove </h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+             <a class="url-link" href="#remove">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> remove </h2>
         
     </div>
     <p><p>Removes a cached value from a cache.</p>
@@ -746,13 +777,13 @@
                     
                         <div class="method-content">
     <div class="main-method-title here" id="keys">
-        <a class="url-link" href="#keys">
-            <img class="url-link-img" src="../../html-template-resources/images/link.svg">
-        </a>
-        <h2> keys </h2>
-        <p class="method-types">()</p>
+             <a class="url-link" href="#keys">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> keys </h2>
         
-        <span class="return-types">
+        <span class="method-types">
+            <p>()</p>
             <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] 
         </span>
         
@@ -792,6 +823,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

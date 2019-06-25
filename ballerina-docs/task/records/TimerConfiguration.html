@@ -28,40 +28,40 @@
                 <h3>Records</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="AppointmentConfiguration.html">AppointmentConfiguration</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="AppointmentData.html">AppointmentData</a>
                         </li>
                     
-                        <li>
+                        <li class="active">
                             <a href="TimerConfiguration.html">TimerConfiguration</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../task/index.html">
         <h3>task</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../task/index.html#records">Records</a>
+            <a data="records" href="../../task/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../task/index.html#objects">Objects</a>
+                <a  data="objects" href="../../task/index.html#objects">Objects</a>
             </li>
         
         
         
             <li>
-                <a href="../../task/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../task/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -72,6 +72,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -141,6 +142,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -162,6 +171,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -246,40 +259,40 @@
                     <h3>Records</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="AppointmentConfiguration.html">AppointmentConfiguration</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="AppointmentData.html">AppointmentData</a>
                             </li>
                         
-                            <li>
+                            <li class="active">
                                 <a href="TimerConfiguration.html">TimerConfiguration</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../task/index.html">
         <h3>task</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../task/index.html#records">Records</a>
+            <a data="records" href="../../task/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../task/index.html#objects">Objects</a>
+                <a  data="objects" href="../../task/index.html#objects">Objects</a>
             </li>
         
         
         
             <li>
-                <a href="../../task/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../task/index.html#listeners">Listeners</a>
             </li>
         
         
@@ -290,6 +303,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -359,6 +373,14 @@
         </li>
         
         <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
+        </li>
+        
+        <li>
             <a href="../../llvm/index.html">llvm</a>
         </li>
         
@@ -380,6 +402,10 @@
         
         <li>
             <a href="../../nats/index.html">nats</a>
+        </li>
+        
+        <li>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -460,7 +486,14 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1> <span class="title-type">Record - </span> task : <span class="records">TimerConfiguration</span></h1>
+            <h1> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Record - </span> 
+                <a href="../../task/index.html">task</a> 
+                 : <span class="records">TimerConfiguration</span>
+            </h1>
             <p>Configurations related to a Timer
 </p>
             <div class="constants">
@@ -512,8 +545,32 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                     
                 
@@ -533,6 +590,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
