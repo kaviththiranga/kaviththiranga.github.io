@@ -13,113 +13,143 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Records</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="ExtensionConfig.html">ExtensionConfig</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="HubConfiguration.html">HubConfiguration</a>
                         </li>
                     
-                        <li>
+                        <li class="active">
                             <a href="HubStartedUpError.html">HubStartedUpError</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="RemotePublishConfig.html">RemotePublishConfig</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriberDetails.html">SubscriberDetails</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriberServiceConfiguration.html">SubscriberServiceConfiguration</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriberServiceEndpointConfiguration.html">SubscriberServiceEndpointConfiguration</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriptionChangeRequest.html">SubscriptionChangeRequest</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriptionChangeResponse.html">SubscriptionChangeResponse</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="SubscriptionDetails.html">SubscriptionDetails</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../websub/index.html#records">Records</a>
+            <a data="records" href="../../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#types">Types</a>
+                <a data="types" href="../../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -130,6 +160,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -161,11 +195,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -173,7 +207,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -189,11 +303,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -202,10 +316,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -222,10 +332,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -253,7 +359,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -268,104 +382,105 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Records</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="ExtensionConfig.html">ExtensionConfig</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="HubConfiguration.html">HubConfiguration</a>
                             </li>
                         
-                            <li>
+                            <li class="active">
                                 <a href="HubStartedUpError.html">HubStartedUpError</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="RemotePublishConfig.html">RemotePublishConfig</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriberDetails.html">SubscriberDetails</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriberServiceConfiguration.html">SubscriberServiceConfiguration</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriberServiceEndpointConfiguration.html">SubscriberServiceEndpointConfiguration</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriptionChangeRequest.html">SubscriptionChangeRequest</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriptionChangeResponse.html">SubscriptionChangeResponse</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="SubscriptionDetails.html">SubscriptionDetails</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../websub/index.html#records">Records</a>
+            <a data="records" href="../../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#types">Types</a>
+                <a data="types" href="../../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -376,6 +491,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -407,11 +526,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -419,7 +538,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -435,11 +634,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -448,10 +647,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -468,10 +663,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -499,7 +690,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -516,8 +715,14 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Record : <span class="records">HubStartedUpError</span></h1>
-
+            <h1> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Record - </span> 
+                <a href="../../websub/index.html">websub</a> 
+                 : <span class="records">HubStartedUpError</span>
+            </h1>
             <p>Error to represent that a WebSubHub is already started up, encapsulating the started up Hub.
 </p>
             <div class="constants">
@@ -528,7 +733,7 @@
         
     <div class="params-listing">
         <ul>
-            <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+            <li> message<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
             <li>
                 <p><p>The error message</p>
 </p>
@@ -538,7 +743,7 @@
         
     <div class="params-listing">
         <ul>
-            <li> cause<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span> ()</li>
+            <li> cause<span class="type">  <a href="../../lang.annotations/errors.html#error">error</a>?</span> ()</li>
             <li>
                 <p><p>The cause of the <code>HubStartedUpError</code>, if available</p>
 </p>
@@ -569,8 +774,32 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                     
                 
@@ -590,6 +819,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

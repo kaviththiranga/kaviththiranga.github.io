@@ -13,81 +13,119 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Clients</h3>
                 <ul>
                     
-                        <li>
-                            <a href="Connection.html">Connection</a>
+                        <li >
+                            <a href="Connection.html">Connection</a> 
                         </li>
                     
-                        <li>
-                            <a href="Message.html">Message</a>
+                        <li >
+                            <a href="Consumer.html">Consumer</a> 
                         </li>
                     
-                        <li>
-                            <a href="Producer.html">Producer</a>
+                        <li class="active active-item">
+                            <a href="Message.html">Message</a> 
                         </li>
                     
-                        <li>
-                            <a href="Session.html">Session</a>
+                        <li >
+                            <a href="Producer.html">Producer</a> 
+                        </li>
+                    
+                        <li >
+                            <a href="Session.html">Session</a> 
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../artemis/index.html#records">Records</a>
+            <a data="records" href="../../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#types">Types</a>
+                <a data="types" href="../../artemis/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../../artemis/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -98,6 +136,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -129,11 +171,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -141,7 +183,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -157,11 +279,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -170,10 +292,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -190,10 +308,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -221,7 +335,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -236,72 +358,81 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Clients</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="Connection.html">Connection</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="Consumer.html">Consumer</a>
+                            </li>
+                        
+                            <li class="active active-item">
                                 <a href="Message.html">Message</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="Producer.html">Producer</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="Session.html">Session</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../artemis/index.html">
         <h3>artemis</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../artemis/index.html#records">Records</a>
+            <a data="records" href="../../artemis/index.html#records">Records</a>
         </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#clients">Clients</a>
+                <a data="clients" href="../../artemis/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../artemis/index.html#listeners">Listeners</a>
             </li>
         
         
         
             <li>
-                <a href="../../artemis/index.html#constants">Constants</a>
+                <a data="constants" href="../../artemis/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../artemis/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../artemis/index.html#types">Types</a>
+                <a data="types" href="../../artemis/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../../artemis/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -312,6 +443,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -343,11 +478,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -355,7 +490,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -371,11 +586,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -384,10 +599,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -404,10 +615,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -435,7 +642,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -452,15 +667,22 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Message</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Clients - </span> 
+                <a href="../../artemis/index.html">artemis</a> : 
+                <span class="clients">Message</span> </h1>
             <p><p>Represents ActiveMQ Artemis Message.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> session, <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] data, <a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a>? config)</p>
+                        
+                            <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../artemis/clients/Session.html">Session</a> session, <a href="../../artemis/types.html#MessageContent">MessageContent</a> data, <a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a>? config)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
@@ -474,7 +696,7 @@
     
         <div class="params-listing">
             <ul>
-                <li> <b>data</b><span class="type">  <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span> </li>
+                <li> <b>data</b><span class="type">  <a href="../../artemis/types.html#MessageContent">MessageContent</a></span> </li>
                 <li>
                     
                 </li>
@@ -491,123 +713,144 @@
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#acknowledge">
+    <div class="param-sum">
+        <div class="param-name">
+        acknowledge 
+        </div>
+        <div class="param-details"> <p>Acknowledges reception of this message.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#getBodySize">
+    <div class="param-sum">
+        <div class="param-name">
+        getBodySize 
+        </div>
+        <div class="param-details"> <p>Returns the size (in bytes) of this message's body.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#putProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        putProperty 
+        </div>
+        <div class="param-details"> <p>Add message property.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getProperty">
+    <div class="param-sum">
+        <div class="param-name">
+        getProperty 
+        </div>
+        <div class="param-details"> <p>Get a message property.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getType">
+    <div class="param-sum">
+        <div class="param-name">
+        getType 
+        </div>
+        <div class="param-details"> <p>The type of the message.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getPayload">
+    <div class="param-sum">
+        <div class="param-name">
+        getPayload 
+        </div>
+        <div class="param-details"> <p>The message payload.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#saveToWritableByteChannel">
+    <div class="param-sum">
+        <div class="param-name">
+        saveToWritableByteChannel 
+        </div>
+        <div class="param-details"> <p>Call this function to save to a WritableByteChannel if the message is <code>STREAM</code> type.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getConfig">
+    <div class="param-sum">
+        <div class="param-name">
+        getConfig 
+        </div>
+        <div class="param-details"> <p>Get the message configuration.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#acknowledge"><b>acknowledge </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#getBodySize"><b>getBodySize </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#putProperty"><b>putProperty </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] value) 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getProperty"><b>getProperty </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getType"><b>getType </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../artemis/types.html#MessageType">MessageType</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getPayload"><b>getPayload </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#saveToWritableByteChannel"><b>saveToWritableByteChannel </b></a>
-    (<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getConfig"><b>getConfig </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a> 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="acknowledge">acknowledge</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="acknowledge">
+             <a class="url-link" href="#acknowledge">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> acknowledge </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../artemis/errors.html#Error">Error</a>? 
+        </span>
+        
     </div>
     <p><p>Acknowledges reception of this message.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>If an error occurred while acknowledging the message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/errors.html#Error">Error</a>?</span>)</li>
+                <li><p>If an error occurred while acknowledging the message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -615,31 +858,42 @@
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getBodySize">getBodySize</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getBodySize">
+             <a class="url-link" href="#getBodySize">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getBodySize </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/int.html">int</a> 
+        </span>
+        
     </div>
     <p><p>Returns the size (in bytes) of this message's body.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
-                    <li><p>the size of the message body</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/int.html">int</a></span>)</li>
+                <li><p>the size of the message body</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="putProperty">putProperty</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] value)</p>
+    <div class="main-method-title here" id="putProperty">
+             <a class="url-link" href="#putProperty">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> putProperty </h2>
+        
     </div>
     <p><p>Add message property.</p>
 </p>
@@ -649,7 +903,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> key<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The name of the property</p>
 </p>
@@ -659,7 +913,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> value<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li> value<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/int.html">int</a> | <a href="../../lang.annotations/UNKOWN/float.html">float</a> | <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] </span></li>
                     <li>
                         <p><p>The value of the property</p>
 </p>
@@ -670,13 +924,21 @@
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getProperty">getProperty</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> key)</p>
+    <div class="main-method-title here" id="getProperty">
+             <a class="url-link" href="#getProperty">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getProperty </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> key)</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/int.html">int</a> | <a href="../../lang.annotations/UNKOWN/float.html">float</a> | <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../lang.annotations/UNKOWN/().html">()</a> | <a href="../../artemis/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Get a message property.</p>
 </p>
@@ -686,7 +948,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> key<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> key<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The name of the property</p>
 </p>
@@ -697,68 +959,92 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#float">float</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The value of the property or nil if not found</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/int.html">int</a> | <a href="../../lang.annotations/UNKOWN/float.html">float</a> | <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../lang.annotations/UNKOWN/().html">()</a> | <a href="../../artemis/errors.html#Error">Error</a></span>)</li>
+                <li><p>The value of the property or nil if not found</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getType">getType</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getType">
+             <a class="url-link" href="#getType">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getType </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../artemis/types.html#MessageType">MessageType</a> 
+        </span>
+        
     </div>
     <p><p>The type of the message.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/types.html#MessageType">MessageType</a></span>)</li>
-                    <li><p>The <code>MessageType</code> of the message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/types.html#MessageType">MessageType</a></span>)</li>
+                <li><p>The <code>MessageType</code> of the message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getPayload">getPayload</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getPayload">
+             <a class="url-link" href="#getPayload">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getPayload </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/int.html">int</a> | <a href="../../lang.annotations/UNKOWN/float.html">float</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a> | <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/map.html">map</a> | <a href="../../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../../lang.annotations/UNKOWN/json.html">json</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../artemis/errors.html#Error">Error</a> | <a href="../../lang.annotations/UNKOWN/().html">()</a> 
+        </span>
+        
     </div>
     <p><p>The message payload.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span>)</li>
-                    <li><p>The message payload or error on failure to retrieve payload or if the type is unsupported.
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/int.html">int</a> | <a href="../../lang.annotations/UNKOWN/float.html">float</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a> | <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/map.html">map</a> | <a href="../../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../../lang.annotations/UNKOWN/json.html">json</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../artemis/errors.html#Error">Error</a> | <a href="../../lang.annotations/UNKOWN/().html">()</a></span>)</li>
+                <li><p>The message payload or error on failure to retrieve payload or if the type is unsupported.
 A map payload can contain an error if the type is unsupported.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="saveToWritableByteChannel">saveToWritableByteChannel</h2>
-        <p class="method-types">(<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch)</p>
+    <div class="main-method-title here" id="saveToWritableByteChannel">
+             <a class="url-link" href="#saveToWritableByteChannel">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> saveToWritableByteChannel </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../io/objects/WritableByteChannel.html">WritableByteChannel</a> ch)</p>
+            <b> returns </b><a href="../../artemis/errors.html#Error">Error</a>? 
+        </span>
+        
     </div>
     <p><p>Call this function to save to a WritableByteChannel if the message is <code>STREAM</code> type.</p>
 </p>
@@ -779,39 +1065,47 @@ A map payload can contain an error if the type is unsupported.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>will return an <code>error</code> if the message is not of type <code>STREAM</code> or on failure</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/errors.html#Error">Error</a>?</span>)</li>
+                <li><p>will return an <code>error</code> if the message is not of type <code>STREAM</code> or on failure</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getConfig">getConfig</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getConfig">
+             <a class="url-link" href="#getConfig">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getConfig </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a> 
+        </span>
+        
     </div>
     <p><p>Get the message configuration.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a></span>)</li>
-                    <li><p>the <code>MessageConfiguration</code> of this message</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../artemis/records/MessageConfiguration.html">MessageConfiguration</a></span>)</li>
+                <li><p>the <code>MessageConfiguration</code> of this message</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -831,6 +1125,30 @@ A map payload can contain an error if the type is unsupported.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

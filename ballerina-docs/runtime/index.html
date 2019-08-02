@@ -13,25 +13,54 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -39,7 +68,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -49,6 +78,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -59,6 +89,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -90,11 +124,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -102,7 +136,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -118,11 +232,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -131,10 +245,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -151,10 +261,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -182,7 +288,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -197,17 +311,17 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -215,7 +329,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -225,6 +339,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -235,6 +350,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -266,11 +385,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -278,7 +397,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -294,11 +493,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -307,10 +506,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -327,10 +522,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -358,7 +549,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -368,6 +567,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -375,8 +576,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-                <h1>Module : <span class="modules">ballerina/runtime</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">runtime</span></h1>
+                    <h2>Module overview</h2>
 <p>This module includes functions to interact with the runtime, the invocation context and to manage errors.</p>
 <h3>Invocation Context</h3>
 <p>The Invocation Context is a data holder that is created per request and preserved for a single request-response flow.
@@ -390,8 +595,8 @@ retrieve the current call stack and the particular call stack frame for an error
 and to look up properties from the runtime context.</p>
 <h3>Samples</h3>
 <p>The following sample shows how to access the Invocation Context, set data to it and access the same.</p>
-<pre><code class="language-ballerina">import ballerinaA/io;
-import ballerinaA/runtime;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/runtime;
 
 // Set data to the Invocation Context.
 
@@ -435,20 +640,20 @@ string token = runtime:getInvocationContext().authenticationContext.authToken;
 io:println(token);
 </code></pre>
 <p>The following sample shows how to halt the current <code>worker</code> for a given time period.</p>
-<pre><code class="language-ballerina">import ballerinaA/runtime;
+<pre><code class="language-ballerina">import ballerina/runtime;
 
 // Sleep the current worker for 5 seconds.
 runtime:sleep(5000);
 </code></pre>
 <p>The following sample shows how to access properties from the runtime.</p>
-<pre><code class="language-ballerina">import ballerinaA/runtime;
+<pre><code class="language-ballerina">import ballerina/runtime;
 
 // Retrieve the property ‘ballerina version’ from the runtime.
 runtime:getProperty(&quot;ballerina.version&quot;);
 </code></pre>
 <p>The following sample shows how to access the call stack and how to trap an error.</p>
-<pre><code class="language-ballerina">import ballerinaA/io;
-import ballerinaA/runtime;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/runtime;
 
 public function main() {
     // Print the current call stack.
@@ -465,14 +670,21 @@ function getError() {
 
 function panicWithError() {
     // Create an error with a reason.
-    error e = error(&quot;error occured&quot;);
+    error e = error(&quot;error occurred&quot;);
     panic e;
 }
 </code></pre>
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -508,6 +720,7 @@ function panicWithError() {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -515,22 +728,22 @@ function panicWithError() {
             
 
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
                             <td class="module-title truncate functions" id="getCallStack"><a
                                     class="functions" href="functions.html#getCallStack">getCallStack</a></td>
                             <td class="module-desc"><p>Retrieves the Call Stack</p>
-</td>
-                        </tr>
-                    
-                        <tr>
-                            <td class="module-title truncate functions" id="getErrorCallStackFrame"><a
-                                    class="functions" href="functions.html#getErrorCallStackFrame">getErrorCallStackFrame</a></td>
-                            <td class="module-desc"><p>Retrieves the Call Stack Frame for a particular error</p>
 </td>
                         </tr>
                     
@@ -563,6 +776,7 @@ function panicWithError() {
                         </tr>
                     
                 </table>
+            </section>
             
 
 
@@ -595,6 +809,30 @@ function panicWithError() {
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

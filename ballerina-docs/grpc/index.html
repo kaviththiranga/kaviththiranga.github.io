@@ -13,62 +13,100 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../grpc/index.html">
         <h3>grpc</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../grpc/index.html#records">Records</a>
+            <a data="records" href="../grpc/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../grpc/index.html#objects">Objects</a>
+                <a  data="objects" href="../grpc/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#clients">Clients</a>
+                <a data="clients" href="../grpc/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#listeners">Listeners</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../grpc/index.html#constants">Constants</a>
+                <a data="listeners" href="../grpc/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#annotations">Annotations</a>
+                <a data="functions" href="../grpc/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#types">Types</a>
+                <a data="constants" href="../grpc/index.html#constants">Constants</a>
             </li>
         
+        
+            <li>
+                <a data="annotations" href="../grpc/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../grpc/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../grpc/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -79,6 +117,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -110,11 +152,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -122,7 +164,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -138,11 +260,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -151,10 +273,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -171,10 +289,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -202,7 +316,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -217,54 +339,63 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../grpc/index.html">
         <h3>grpc</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../grpc/index.html#records">Records</a>
+            <a data="records" href="../grpc/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../grpc/index.html#objects">Objects</a>
+                <a  data="objects" href="../grpc/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#clients">Clients</a>
+                <a data="clients" href="../grpc/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#listeners">Listeners</a>
-            </li>
-        
-        
-        
-            <li>
-                <a href="../grpc/index.html#constants">Constants</a>
+                <a data="listeners" href="../grpc/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#annotations">Annotations</a>
+                <a data="functions" href="../grpc/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../grpc/index.html#types">Types</a>
+                <a data="constants" href="../grpc/index.html#constants">Constants</a>
             </li>
         
+        
+            <li>
+                <a data="annotations" href="../grpc/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../grpc/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../grpc/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -275,6 +406,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -306,11 +441,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -318,7 +453,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -334,11 +549,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -347,10 +562,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -367,10 +578,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -398,7 +605,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -408,6 +623,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -415,8 +632,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-                <h1>Module : <span class="modules">ballerina/grpc</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">grpc</span></h1>
+                    <h2>Module overview</h2>
 <p>This module contains functions to support gRPC protocol based communication. gRPC is a framework developed by Google
 to support the RPC (Remote Procedure Call) protocol. The gRPC protocol is layered over HTTP/2. This protocol only supports client-initiated communication.</p>
 <h3>Protocol buffers</h3>
@@ -529,7 +750,7 @@ public function main(string... args) {
     error? result = serverStreamingEp-&gt;receiveMessage(&quot;test&quot;, ServerStreamingMessageListener);
     if (result is error) {
         // If the service returns an error, print the error.
-        io:println(&quot;Error occured while sending event &quot; + result.reason() + &quot; - &quot;
+        io:println(&quot;Error occurred while sending event &quot; + result.reason() + &quot; - &quot;
                                                         + &lt;string&gt;result.detail().message);
     } else {
         io:println(&quot;Connected successfully to service&quot;);
@@ -620,7 +841,14 @@ error? result = ep-&gt;complete();
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -628,6 +856,14 @@ error? result = ep-&gt;complete();
                                 <a class="records"
                                    href="records/ClientEndpointConfig.html">ClientEndpointConfig</a></td>
                             <td class="module-desc">Represents client endpoint configuration.
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate records" id="Detail">
+                                <a class="records"
+                                   href="records/Detail.html">Detail</a></td>
+                            <td class="module-desc">Holds the details of an gRPC error
 </td>
                         </tr>
                     
@@ -744,11 +980,29 @@ error? result = ep-&gt;complete();
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
+                    
+                        <tr>
+                            <td class="module-title truncate objects" id="AbstractClientEndpoint">
+                                <a class="objects"
+                                   href="objects/AbstractClientEndpoint.html">
+                                    AbstractClientEndpoint
+                                </a>
+                            </td>
+                            <td class="module-desc"><p>Represents gRPC client endpoint generated by the protobuf tool.</p>
+</td>
+                        </tr>
                     
                         <tr>
                             <td class="module-title truncate objects" id="Headers">
@@ -762,10 +1016,17 @@ error? result = ep-&gt;complete();
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -794,10 +1055,17 @@ provides includes functions to send request/error messages.</p>
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -810,13 +1078,40 @@ service through this listener.</p>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate functions" id="prepareError"><a
+                                    class="functions" href="functions.html#prepareError">prepareError</a></td>
+                            <td class="module-desc"><p>Prepare the <code>error</code> as a <code>Error</code>.</p>
+</td>
+                        </tr>
+                    
+                </table>
+            </section>
+            
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -982,33 +1277,131 @@ outbound request/response accept-encoding/content-encoding option.</p>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_AUTO"><a
-                                    class="constant" href="constants.html#CHUNKING_AUTO">CHUNKING_AUTO</a></td>
-                            <td class="module-desc"><p>If the payload is less than 8KB, content-length header is set in the outbound request/response,
-otherwise chunking header is set in the outbound request/response.</p>
+                            <td class="module-title truncate constant" id="CANCELLED_ERROR"><a
+                                    class="constant" href="constants.html#CANCELLED_ERROR">CANCELLED_ERROR</a></td>
+                            <td class="module-desc"><p>Reference: https://github.com/grpc/grpc/blob/master/doc/statuscodes.md</p>
+<p>Indicates the operation was canceled (typically by the caller).</p>
 </td>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_ALWAYS"><a
-                                    class="constant" href="constants.html#CHUNKING_ALWAYS">CHUNKING_ALWAYS</a></td>
-                            <td class="module-desc"><p>Always set chunking header in the response.</p>
+                            <td class="module-title truncate constant" id="UNKNOWN_ERROR"><a
+                                    class="constant" href="constants.html#UNKNOWN_ERROR">UNKNOWN_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates unknown error.(e.g. Status value received is unknown)</p>
 </td>
                         </tr>
                     
                         <tr>
-                            <td class="module-title truncate constant" id="CHUNKING_NEVER"><a
-                                    class="constant" href="constants.html#CHUNKING_NEVER">CHUNKING_NEVER</a></td>
-                            <td class="module-desc"><p>Never set the chunking header even if the payload is larger than 8KB in the outbound request/response.</p>
+                            <td class="module-title truncate constant" id="INVALID_ARGUMENT_ERROR"><a
+                                    class="constant" href="constants.html#INVALID_ARGUMENT_ERROR">INVALID_ARGUMENT_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates client specified an invalid argument.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="DEADLINE_EXCEEDED_ERROR"><a
+                                    class="constant" href="constants.html#DEADLINE_EXCEEDED_ERROR">DEADLINE_EXCEEDED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates operation expired before completion.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="NOT_FOUND_ERROR"><a
+                                    class="constant" href="constants.html#NOT_FOUND_ERROR">NOT_FOUND_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates some requested entity (e.g., file or directory) was not found.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="ALREADY_EXISTS_ERROR"><a
+                                    class="constant" href="constants.html#ALREADY_EXISTS_ERROR">ALREADY_EXISTS_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates the attempt to create an entity failed because one already exists.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="PERMISSION_DENIED_ERROR"><a
+                                    class="constant" href="constants.html#PERMISSION_DENIED_ERROR">PERMISSION_DENIED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates the caller does not have permission to execute the specified operation.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="UNAUTHENTICATED_ERROR"><a
+                                    class="constant" href="constants.html#UNAUTHENTICATED_ERROR">UNAUTHENTICATED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates the request does not have valid authentication credentials for the operation.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="RESOURCE_EXHAUSTED_ERROR"><a
+                                    class="constant" href="constants.html#RESOURCE_EXHAUSTED_ERROR">RESOURCE_EXHAUSTED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates some resource has been exhausted.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="FAILED_PRECONDITION_ERROR"><a
+                                    class="constant" href="constants.html#FAILED_PRECONDITION_ERROR">FAILED_PRECONDITION_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates operation was rejected because the system is not in a state required for the operation's execution.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="ABORTED_ERROR"><a
+                                    class="constant" href="constants.html#ABORTED_ERROR">ABORTED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates the operation was aborted.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="OUT_OF_RANGE_ERROR"><a
+                                    class="constant" href="constants.html#OUT_OF_RANGE_ERROR">OUT_OF_RANGE_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates specified value is out of range.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="UNIMPLEMENTED_ERROR"><a
+                                    class="constant" href="constants.html#UNIMPLEMENTED_ERROR">UNIMPLEMENTED_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates operation is not implemented or not supported/enabled in this service.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="INTERNAL_ERROR"><a
+                                    class="constant" href="constants.html#INTERNAL_ERROR">INTERNAL_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates internal errors.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="UNAVAILABLE_ERROR"><a
+                                    class="constant" href="constants.html#UNAVAILABLE_ERROR">UNAVAILABLE_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates the service is currently unavailable.</p>
+</td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate constant" id="DATA_LOSS_ERROR"><a
+                                    class="constant" href="constants.html#DATA_LOSS_ERROR">DATA_LOSS_ERROR</a></td>
+                            <td class="module-desc"><p>Indicates unrecoverable data loss or corruption.</p>
 </td>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="annotations">Annotations</a></h2>
+            <section class="method-content" id="annotations">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#annotations">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Annotations </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1033,23 +1426,18 @@ otherwise chunking header is set in the outbound request/response.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
-                    
-                        <tr>
-                            <td class="module-title truncate types" id="Chunking">
-                                <a class="types" href="types.html#Chunking">Chunking</a>
-                            </td>
-                            <td class="module-desc"><p>Defines the possible values for the chunking configuration in HTTP services and clients.</p>
-<p><code>AUTO</code>: If the payload is less than 8KB, content-length header is set in the outbound request/response,
-otherwise chunking header is set in the outbound request/response
-<code>ALWAYS</code>: Always set chunking header in the response
-<code>NEVER</code>: Never set the chunking header even if the payload is larger than 8KB in the outbound request/response</p>
-</td>
-                        </tr>
                     
                         <tr>
                             <td class="module-title truncate types" id="Compression">
@@ -1064,6 +1452,20 @@ outbound request/response accept-encoding/content-encoding option
                         </tr>
                     
                         <tr>
+                            <td class="module-title truncate types" id="Error">
+                                <a class="types" href="types.html#Error">Error</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate types" id="ErrorType">
+                                <a class="types" href="types.html#ErrorType">ErrorType</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
                             <td class="module-title truncate types" id="KeepAlive">
                                 <a class="types" href="types.html#KeepAlive">KeepAlive</a>
                             </td>
@@ -1072,8 +1474,133 @@ outbound request/response accept-encoding/content-encoding option
                         </tr>
                     
                 </table>
+            </section>
             
 
+            
+             <section class="method-content" id="errors">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#errors">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Errors </h2>
+                </div>
+                <table>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="AbortedError">
+                                <a class="errors" href="errors.html#AbortedError">AbortedError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="AleadyExistsError">
+                                <a class="errors" href="errors.html#AleadyExistsError">AleadyExistsError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="CancelledError">
+                                <a class="errors" href="errors.html#CancelledError">CancelledError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="DataLossError">
+                                <a class="errors" href="errors.html#DataLossError">DataLossError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="DeadlineExceededError">
+                                <a class="errors" href="errors.html#DeadlineExceededError">DeadlineExceededError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="FailedPreconditionError">
+                                <a class="errors" href="errors.html#FailedPreconditionError">FailedPreconditionError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="InternalError">
+                                <a class="errors" href="errors.html#InternalError">InternalError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="InvalidArgumentError">
+                                <a class="errors" href="errors.html#InvalidArgumentError">InvalidArgumentError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="NotFoundError">
+                                <a class="errors" href="errors.html#NotFoundError">NotFoundError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="OutOfRangeError">
+                                <a class="errors" href="errors.html#OutOfRangeError">OutOfRangeError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="PermissionDeniedError">
+                                <a class="errors" href="errors.html#PermissionDeniedError">PermissionDeniedError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="ResourceExhaustedError">
+                                <a class="errors" href="errors.html#ResourceExhaustedError">ResourceExhaustedError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="UnKnownError">
+                                <a class="errors" href="errors.html#UnKnownError">UnKnownError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="UnauthenticatedError">
+                                <a class="errors" href="errors.html#UnauthenticatedError">UnauthenticatedError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="UnavailableError">
+                                <a class="errors" href="errors.html#UnavailableError">UnavailableError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td class="module-title truncate errors" id="UnimplementedError">
+                                <a class="errors" href="errors.html#UnimplementedError">UnimplementedError</a>
+                            </td>
+                            <td class="module-desc"></td>
+                        </tr>
+                    
+                </table>
+            </section>
             
         </div>
     </div>
@@ -1096,6 +1623,30 @@ outbound request/response accept-encoding/content-encoding option
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

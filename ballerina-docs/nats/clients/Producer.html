@@ -13,65 +13,119 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Clients</h3>
                 <ul>
                     
-                        <li>
-                            <a href="Producer.html">Producer</a>
+                        <li class="active active-item">
+                            <a href="Producer.html">Producer</a> 
+                        </li>
+                    
+                        <li >
+                            <a href="StreamingMessage.html">StreamingMessage</a> 
+                        </li>
+                    
+                        <li >
+                            <a href="StreamingProducer.html">StreamingProducer</a> 
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -82,6 +136,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -113,11 +171,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -125,7 +183,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -141,11 +279,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -154,10 +292,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -174,10 +308,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -205,7 +335,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -220,56 +358,81 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Clients</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active active-item">
                                 <a href="Producer.html">Producer</a>
+                            </li>
+                        
+                            <li >
+                                <a href="StreamingMessage.html">StreamingMessage</a>
+                            </li>
+                        
+                            <li >
+                                <a href="StreamingProducer.html">StreamingProducer</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -280,6 +443,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -311,11 +478,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -323,7 +490,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -339,11 +586,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -352,10 +599,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -372,10 +615,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -403,7 +642,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -420,86 +667,105 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Producer</span> </h1>
-            <p><p>NATS producer would act as a streaming client allowing to stream messages between NATS streaming server.
-Producer would create a new NATS connection if a connection was not provided during the initialization.</p>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Clients - </span> 
+                <a href="../../nats/index.html">nats</a> : 
+                <span class="clients">Producer</span> </h1>
+            <p><p>NATS producer would act as a basic client allowing to publish messages to the NATS server.
+Producer needs the NATS connection to be initialized.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="../../nats/records/ConnectionConfig.html">ConnectionConfig</a> | <a href="../../nats/objects/Connection.html">Connection</a> c)</p>
+                        
+                            <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../nats/objects/Connection.html">Connection</a> c)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>c</b><span class="type">  <a href="../../nats/records/ConnectionConfig.html">ConnectionConfig</a> | <a href="../../nats/objects/Connection.html">Connection</a></span> </li>
+                <li> <b>c</b><span class="type">  <a href="../../nats/objects/Connection.html">Connection</a></span> </li>
                 <li>
-                    <p>An already established connection or configuration to create a new connection.</p>
+                    <p>An already-established connection.</p>
 
                 </li>
             </ul>
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#publish">
+    <div class="param-sum">
+        <div class="param-name">
+        publish 
+        </div>
+        <div class="param-details"> <p>Produces a message to a NATS basic server for the given subject.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#request">
+    <div class="param-sum">
+        <div class="param-name">
+        request 
+        </div>
+        <div class="param-details"> <p>Produces a message and would wait for a response.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#close">
+    <div class="param-sum">
+        <div class="param-name">
+        close 
+        </div>
+        <div class="param-details"> <p>Close a given connection.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#send"><b>send </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#requestReply"><b>requestReply </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#close"><b>close </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
-                
-                
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="send">send</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+    <div class="main-method-title here" id="publish">
+             <a class="url-link" href="#publish">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> publish </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> subject, <a href="../../nats/types.html#Content">Content</a> data)</p>
+            <b> returns </b><a href="../../nats/errors.html#Error">Error</a>? 
+        </span>
+        
     </div>
-    <p><p>Produces a message to a NATS streaming server for the given subject.</p>
+    <p><p>Produces a message to a NATS basic server for the given subject.</p>
 </p>
      
         <div class="data-wrapper">
@@ -507,7 +773,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> subject<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Could also be referred as the 'topic/queue' name.</p>
 </p>
@@ -517,19 +783,9 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> </span></li>
+                    <li> data<span class="type">  <a href="../../nats/types.html#Content">Content</a> </span></li>
                     <li>
-                        <p><p>Message could be either a string or json representation.</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
-                    <li>
-                        <p><p>Encoding of the message (by defaults it would be UTF-8).</p>
+                        <p><p>Data to publish.</p>
 </p>
                     </li>
                 </ul>
@@ -538,23 +794,31 @@ Producer would create a new NATS connection if a connection was not provided dur
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>GUID of acknowledgment or the specific error.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/errors.html#Error">Error</a>?</span>)</li>
+                <li><p>A specific error if there is a problem when publishing the message. Returns () otherwise.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="requestReply">requestReply</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> subject, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> message, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
+    <div class="main-method-title here" id="request">
+             <a class="url-link" href="#request">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> request </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> subject, <a href="../../nats/types.html#Content">Content</a> data, <a href="../../lang.annotations/UNKOWN/int.html">int</a>? duration)</p>
+            <b> returns </b><a href="../../nats/objects/Message.html">Message</a> | <a href="../../nats/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Produces a message and would wait for a response.</p>
 </p>
@@ -564,7 +828,7 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> subject<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> subject<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Would represent the topic/queue name.</p>
 </p>
@@ -574,9 +838,9 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> </span></li>
+                    <li> data<span class="type">  <a href="../../nats/types.html#Content">Content</a> </span></li>
                     <li>
-                        <p><p>Message could be either a string or json representation.</p>
+                        <p><p>Data to publish.</p>
 </p>
                     </li>
                 </ul>
@@ -584,9 +848,9 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
+                    <li> duration<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a>? </span>- ()</li>
                     <li>
-                        <p><p>Encoding of the message by default it would be UTF-8.</p>
+                        <p><p>The time to wait for a response measured in milliseconds.</p>
 </p>
                     </li>
                 </ul>
@@ -595,17 +859,17 @@ Producer would create a new NATS connection if a connection was not provided dur
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/objects/Message.html">Message</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Response message or an error.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/objects/Message.html">Message</a> | <a href="../../nats/errors.html#Error">Error</a></span>)</li>
+                <li><p>The response message or an error.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -613,25 +877,33 @@ Producer would create a new NATS connection if a connection was not provided dur
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="close">close</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="close">
+             <a class="url-link" href="#close">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> close </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../nats/errors.html#Error">Error</a>? 
+        </span>
+        
     </div>
     <p><p>Close a given connection.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>() or error if unable to complete close operation.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../nats/errors.html#Error">Error</a>?</span>)</li>
+                <li><p>Retruns () or the error if unable to complete the close operation.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -651,6 +923,30 @@ Producer would create a new NATS connection if a connection was not provided dur
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

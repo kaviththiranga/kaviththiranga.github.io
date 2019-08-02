@@ -13,138 +13,191 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
-
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Types</h3>
                 <ul>
                     
-                        <li>
-                            <a href="#AuthStoreProvider">AuthStoreProvider</a>
-                        </li>
-                    
-                        <li>
+                        <li >
                             <a href="#CachingPolicy">CachingPolicy</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#Chunking">Chunking</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#CircuitState">CircuitState</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#ClientAuthError">ClientAuthError</a>
+                        </li>
+                    
+                        <li >
+                            <a href="#ClientError">ClientError</a>
+                        </li>
+                    
+                        <li >
                             <a href="#Compression">Compression</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#CredentialBearer">CredentialBearer</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#HttpOperation">HttpOperation</a>
                         </li>
                     
-                        <li>
-                            <a href="#InboundAuthScheme">InboundAuthScheme</a>
+                        <li >
+                            <a href="#HttpVersion">HttpVersion</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#InboundRequestError">InboundRequestError</a>
+                        </li>
+                    
+                        <li >
+                            <a href="#InboundResponseError">InboundResponseError</a>
+                        </li>
+                    
+                        <li >
                             <a href="#KeepAlive">KeepAlive</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#ListenerError">ListenerError</a>
+                        </li>
+                    
+                        <li >
                             <a href="#MutualSslStatus">MutualSslStatus</a>
                         </li>
                     
-                        <li>
-                            <a href="#OAuth2GrantType">OAuth2GrantType</a>
+                        <li >
+                            <a href="#OutboundRequestError">OutboundRequestError</a>
                         </li>
                     
-                        <li>
-                            <a href="#OutboundAuthScheme">OutboundAuthScheme</a>
+                        <li >
+                            <a href="#OutboundResponseError">OutboundResponseError</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#RedirectCode">RedirectCode</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#RequestMessage">RequestMessage</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#ResiliencyError">ResiliencyError</a>
+                        </li>
+                    
+                        <li >
                             <a href="#ResponseMessage">ResponseMessage</a>
+                        </li>
+                    
+                        <li >
+                            <a href="#WebSocketError">WebSocketError</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../http/index.html#records">Records</a>
+            <a data="records" href="../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#clients">Clients</a>
+                <a data="clients" href="../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#functions">Functions</a>
+                <a data="functions" href="../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#constants">Constants</a>
+                <a data="constants" href="../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#types">Types</a>
+                <a data="types" href="../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#errors">Errors</a>
+                <a data="errors" href="../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -155,6 +208,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -186,11 +243,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -198,7 +255,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -214,11 +351,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -227,10 +364,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -247,10 +380,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -278,7 +407,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -293,128 +430,153 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Types</h3>
                     <ul>
                         
-                            <li>
-                                <a href="#AuthStoreProvider">AuthStoreProvider</a>
-                            </li>
-                        
-                            <li>
+                            <li >
                                 <a href="#CachingPolicy">CachingPolicy</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#Chunking">Chunking</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#CircuitState">CircuitState</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#ClientAuthError">ClientAuthError</a>
+                            </li>
+                        
+                            <li >
+                                <a href="#ClientError">ClientError</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#Compression">Compression</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#CredentialBearer">CredentialBearer</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#HttpOperation">HttpOperation</a>
                             </li>
                         
-                            <li>
-                                <a href="#InboundAuthScheme">InboundAuthScheme</a>
+                            <li >
+                                <a href="#HttpVersion">HttpVersion</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#InboundRequestError">InboundRequestError</a>
+                            </li>
+                        
+                            <li >
+                                <a href="#InboundResponseError">InboundResponseError</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#KeepAlive">KeepAlive</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#ListenerError">ListenerError</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#MutualSslStatus">MutualSslStatus</a>
                             </li>
                         
-                            <li>
-                                <a href="#OAuth2GrantType">OAuth2GrantType</a>
+                            <li >
+                                <a href="#OutboundRequestError">OutboundRequestError</a>
                             </li>
                         
-                            <li>
-                                <a href="#OutboundAuthScheme">OutboundAuthScheme</a>
+                            <li >
+                                <a href="#OutboundResponseError">OutboundResponseError</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#RedirectCode">RedirectCode</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#RequestMessage">RequestMessage</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#ResiliencyError">ResiliencyError</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#ResponseMessage">ResponseMessage</a>
+                            </li>
+                        
+                            <li >
+                                <a href="#WebSocketError">WebSocketError</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../http/index.html#records">Records</a>
+            <a data="records" href="../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#clients">Clients</a>
+                <a data="clients" href="../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#functions">Functions</a>
+                <a data="functions" href="../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#constants">Constants</a>
+                <a data="constants" href="../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#types">Types</a>
+                <a data="types" href="../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../http/index.html#errors">Errors</a>
+                <a data="errors" href="../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -425,6 +587,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -456,11 +622,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -468,7 +634,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -484,11 +730,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -497,10 +743,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -517,10 +759,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -548,7 +786,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -565,23 +811,19 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Types</h1>
+             <h1>
+                 <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                 <span class="title-type">Types - </span> 
+                 <a href="../http/index.html">http</a> 
+            </h1>
             <div class="types">
                 <div class="data-wrapper">
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="AuthStoreProvider"><b>AuthStoreProvider</b><span class="type">  <a href="../http/UNKOWN/CONFIG_AUTH_STORE.html">CONFIG_AUTH_STORE</a> | <a href="../http/UNKOWN/LDAP_AUTH_STORE.html">LDAP_AUTH_STORE</a></span></li>
-                                <li>
-                                    <p>Authentication storage providers for BasicAuth scheme.</p>
-
-                                </li>
-                            </ul>
-                        </div>
-                    
-                        <div class="params-listing">
-                            <ul>
-                                <li id="CachingPolicy"><b>CachingPolicy</b><span class="type">  <a href="../http/UNKOWN/CACHE_CONTROL_AND_VALIDATORS.html">CACHE_CONTROL_AND_VALIDATORS</a> | <a href="../http/UNKOWN/RFC_7234.html">RFC_7234</a></span></li>
+                                <li id="CachingPolicy"><b>CachingPolicy</b><span class="type">  <a href="../http/constants.html#CACHE_CONTROL_AND_VALIDATORS">CACHE_CONTROL_AND_VALIDATORS</a> | <a href="../http/constants.html#RFC_7234">RFC_7234</a></span></li>
                                 <li>
                                     <p>Used for configuring the caching behaviour. Setting the <code>policy</code> field in the <code>CacheConfig</code> record allows
 the user to control the caching behaviour.</p>
@@ -592,7 +834,7 @@ the user to control the caching behaviour.</p>
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="Chunking"><b>Chunking</b><span class="type">  <a href="../http/UNKOWN/CHUNKING_AUTO.html">CHUNKING_AUTO</a> | <a href="../http/UNKOWN/CHUNKING_ALWAYS.html">CHUNKING_ALWAYS</a> | <a href="../http/UNKOWN/CHUNKING_NEVER.html">CHUNKING_NEVER</a></span></li>
+                                <li id="Chunking"><b>Chunking</b><span class="type">  <a href="../http/constants.html#CHUNKING_AUTO">CHUNKING_AUTO</a> | <a href="../http/constants.html#CHUNKING_ALWAYS">CHUNKING_ALWAYS</a> | <a href="../http/constants.html#CHUNKING_NEVER">CHUNKING_NEVER</a></span></li>
                                 <li>
                                     <p>Defines the possible values for the chunking configuration in HTTP services and clients.</p>
 <p><code>AUTO</code>: If the payload is less than 8KB, content-length header is set in the outbound request/response,
@@ -606,7 +848,7 @@ otherwise chunking header is set in the outbound request/response
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="CircuitState"><b>CircuitState</b><span class="type">  <a href="../http/UNKOWN/CB_OPEN_STATE.html">CB_OPEN_STATE</a> | <a href="../http/UNKOWN/CB_HALF_OPEN_STATE.html">CB_HALF_OPEN_STATE</a> | <a href="../http/UNKOWN/CB_CLOSED_STATE.html">CB_CLOSED_STATE</a></span></li>
+                                <li id="CircuitState"><b>CircuitState</b><span class="type">  <a href="../http/constants.html#CB_OPEN_STATE">CB_OPEN_STATE</a> | <a href="../http/constants.html#CB_HALF_OPEN_STATE">CB_HALF_OPEN_STATE</a> | <a href="../http/constants.html#CB_CLOSED_STATE">CB_CLOSED_STATE</a></span></li>
                                 <li>
                                     <p>A finite type for modeling the states of the Circuit Breaker. The Circuit Breaker starts in the <code>CLOSED</code> state.
 If any failure thresholds are exceeded during execution, the circuit trips and goes to the <code>OPEN</code> state. After
@@ -619,7 +861,25 @@ in the <code>HALF_OPEN</code> state succeeds, the circuit goes back to the <code
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="Compression"><b>Compression</b><span class="type">  <a href="../http/UNKOWN/COMPRESSION_AUTO.html">COMPRESSION_AUTO</a> | <a href="../http/UNKOWN/COMPRESSION_ALWAYS.html">COMPRESSION_ALWAYS</a> | <a href="../http/UNKOWN/COMPRESSION_NEVER.html">COMPRESSION_NEVER</a></span></li>
+                                <li id="ClientAuthError"><b>ClientAuthError</b><span class="type">  <a href="../http/errors.html#AuthenticationError">AuthenticationError</a> | <a href="../http/errors.html#AuthorizationError">AuthorizationError</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="ClientError"><b>ClientError</b><span class="type">  <a href="../http/types.html#ResiliencyError">ResiliencyError</a> | <a href="../http/types.html#ClientAuthError">ClientAuthError</a> | <a href="../http/types.html#OutboundRequestError">OutboundRequestError</a> | <a href="../http/types.html#InboundResponseError">InboundResponseError</a> | <a href="../http/errors.html#UnsupportedActionError">UnsupportedActionError</a> | <a href="../http/errors.html#Http2ClientError">Http2ClientError</a> | <a href="../http/errors.html#MaximumWaitTimeExceededError">MaximumWaitTimeExceededError</a> | <a href="../http/errors.html#SslError">SslError</a> | <a href="../http/errors.html#GenericClientError">GenericClientError</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="Compression"><b>Compression</b><span class="type">  <a href="../http/constants.html#COMPRESSION_AUTO">COMPRESSION_AUTO</a> | <a href="../http/constants.html#COMPRESSION_ALWAYS">COMPRESSION_ALWAYS</a> | <a href="../http/constants.html#COMPRESSION_NEVER">COMPRESSION_NEVER</a></span></li>
                                 <li>
                                     <p>Options to compress using gzip or deflate.</p>
 <p><code>AUTO</code>: When service behaves as a HTTP gateway inbound request/response accept-encoding option is set as the
@@ -633,7 +893,7 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="CredentialBearer"><b>CredentialBearer</b><span class="type">  <a href="../http/UNKOWN/AUTH_HEADER_BEARER.html">AUTH_HEADER_BEARER</a> | <a href="../http/UNKOWN/POST_BODY_BEARER.html">POST_BODY_BEARER</a> | <a href="../http/UNKOWN/NO_BEARER.html">NO_BEARER</a></span></li>
+                                <li id="CredentialBearer"><b>CredentialBearer</b><span class="type">  <a href="../http/constants.html#AUTH_HEADER_BEARER">AUTH_HEADER_BEARER</a> | <a href="../http/constants.html#POST_BODY_BEARER">POST_BODY_BEARER</a> | <a href="../http/constants.html#NO_BEARER">NO_BEARER</a></span></li>
                                 <li>
                                     <p>Specifies how to send the authentication credentials when exchanging tokens.</p>
 
@@ -643,7 +903,7 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="HttpOperation"><b>HttpOperation</b><span class="type">  <a href="../http/UNKOWN/HTTP_FORWARD.html">HTTP_FORWARD</a> | <a href="../http/UNKOWN/HTTP_GET.html">HTTP_GET</a> | <a href="../http/UNKOWN/HTTP_POST.html">HTTP_POST</a> | <a href="../http/UNKOWN/HTTP_DELETE.html">HTTP_DELETE</a> | <a href="../http/UNKOWN/HTTP_OPTIONS.html">HTTP_OPTIONS</a> | <a href="../http/UNKOWN/HTTP_PUT.html">HTTP_PUT</a> | <a href="../http/UNKOWN/HTTP_PATCH.html">HTTP_PATCH</a> | <a href="../http/UNKOWN/HTTP_HEAD.html">HTTP_HEAD</a> | <a href="../http/UNKOWN/HTTP_NONE.html">HTTP_NONE</a></span></li>
+                                <li id="HttpOperation"><b>HttpOperation</b><span class="type">  <a href="../http/constants.html#HTTP_FORWARD">HTTP_FORWARD</a> | <a href="../http/constants.html#HTTP_GET">HTTP_GET</a> | <a href="../http/constants.html#HTTP_POST">HTTP_POST</a> | <a href="../http/constants.html#HTTP_DELETE">HTTP_DELETE</a> | <a href="../http/constants.html#HTTP_OPTIONS">HTTP_OPTIONS</a> | <a href="../http/constants.html#HTTP_PUT">HTTP_PUT</a> | <a href="../http/constants.html#HTTP_PATCH">HTTP_PATCH</a> | <a href="../http/constants.html#HTTP_HEAD">HTTP_HEAD</a> | <a href="../http/constants.html#HTTP_SUBMIT">HTTP_SUBMIT</a> | <a href="../http/constants.html#HTTP_NONE">HTTP_NONE</a></span></li>
                                 <li>
                                     <p>Defines the HTTP operations related to circuit breaker, failover and load balancer.</p>
 <p><code>FORWARD</code>: Forward the specified payload
@@ -654,6 +914,7 @@ outbound request/response accept-encoding/content-encoding option
 <code>PUT</code>: Replace the target resource
 <code>PATCH</code>: Apply partial modification to the resource
 <code>HEAD</code>: Identical to <code>GET</code> but no resource body should be returned
+<code>SUBMIT</code>: Submits a http request and returns an HttpFuture object
 <code>NONE</code>: No operation should be performed</p>
 
                                 </li>
@@ -662,9 +923,12 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="InboundAuthScheme"><b>InboundAuthScheme</b><span class="type">  <a href="../http/UNKOWN/BASIC_AUTH.html">BASIC_AUTH</a> | <a href="../http/UNKOWN/JWT_AUTH.html">JWT_AUTH</a></span></li>
+                                <li id="HttpVersion"><b>HttpVersion</b><span class="type">  <a href="../http/constants.html#HTTP_1_0">HTTP_1_0</a> | <a href="../http/constants.html#HTTP_1_1">HTTP_1_1</a> | <a href="../http/constants.html#HTTP_2_0">HTTP_2_0</a></span></li>
                                 <li>
-                                    <p>Inbound authentication schemes.</p>
+                                    <p>Defines the supported HTTP protocols.</p>
+<p><code>HTTP_1_0</code>: HTTP/1.0 protocol
+<code>HTTP_1_1</code>: HTTP/1.1 protocol
+<code>HTTP_2_0</code>: HTTP/2.0 protocol</p>
 
                                 </li>
                             </ul>
@@ -672,7 +936,25 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="KeepAlive"><b>KeepAlive</b><span class="type">  <a href="../http/UNKOWN/KEEPALIVE_AUTO.html">KEEPALIVE_AUTO</a> | <a href="../http/UNKOWN/KEEPALIVE_ALWAYS.html">KEEPALIVE_ALWAYS</a> | <a href="../http/UNKOWN/KEEPALIVE_NEVER.html">KEEPALIVE_NEVER</a></span></li>
+                                <li id="InboundRequestError"><b>InboundRequestError</b><span class="type">  <a href="../http/errors.html#InitializingInboundRequestError">InitializingInboundRequestError</a> | <a href="../http/errors.html#ReadingInboundRequestHeadersError">ReadingInboundRequestHeadersError</a> | <a href="../http/errors.html#ReadingInboundRequestBodyError">ReadingInboundRequestBodyError</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="InboundResponseError"><b>InboundResponseError</b><span class="type">  <a href="../http/errors.html#InitializingInboundResponseError">InitializingInboundResponseError</a> | <a href="../http/errors.html#ReadingInboundResponseHeadersError">ReadingInboundResponseHeadersError</a> | <a href="../http/errors.html#ReadingInboundResponseBodyError">ReadingInboundResponseBodyError</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="KeepAlive"><b>KeepAlive</b><span class="type">  <a href="../http/constants.html#KEEPALIVE_AUTO">KEEPALIVE_AUTO</a> | <a href="../http/constants.html#KEEPALIVE_ALWAYS">KEEPALIVE_ALWAYS</a> | <a href="../http/constants.html#KEEPALIVE_NEVER">KEEPALIVE_NEVER</a></span></li>
                                 <li>
                                     <p>Defines the possible values for the keep-alive configuration in service and client endpoints.</p>
 
@@ -682,10 +964,19 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="MutualSslStatus"><b>MutualSslStatus</b><span class="type">  <a href="../http/UNKOWN/PASSED.html">PASSED</a> | <a href="../http/UNKOWN/FAILED.html">FAILED</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span></li>
+                                <li id="ListenerError"><b>ListenerError</b><span class="type">  <a href="../http/errors.html#GenericListenerError">GenericListenerError</a> | <a href="../http/types.html#InboundRequestError">InboundRequestError</a> | <a href="../http/types.html#OutboundResponseError">OutboundResponseError</a></span></li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="MutualSslStatus"><b>MutualSslStatus</b><span class="type">  <a href="../http/constants.html#PASSED">PASSED</a> | <a href="../http/constants.html#FAILED">FAILED</a> | <a href="../lang.annotations/UNKOWN/().html">()</a></span></li>
                                 <li>
                                     <p>Defines the possible values for the mutual ssl status.</p>
-<p><code>passed</code>: Mutual SSL handshake is succesful.
+<p><code>passed</code>: Mutual SSL handshake is successful.
 <code>failed</code>: Mutual SSL handshake has failed.</p>
 
                                 </li>
@@ -694,27 +985,25 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="OAuth2GrantType"><b>OAuth2GrantType</b><span class="type">  <a href="../http/UNKOWN/CLIENT_CREDENTIALS_GRANT.html">CLIENT_CREDENTIALS_GRANT</a> | <a href="../http/UNKOWN/PASSWORD_GRANT.html">PASSWORD_GRANT</a> | <a href="../http/UNKOWN/DIRECT_TOKEN.html">DIRECT_TOKEN</a></span></li>
+                                <li id="OutboundRequestError"><b>OutboundRequestError</b><span class="type">  <a href="../http/errors.html#InitializingOutboundRequestError">InitializingOutboundRequestError</a> | <a href="../http/errors.html#WritingOutboundRequestHeadersError">WritingOutboundRequestHeadersError</a> | <a href="../http/errors.html#WritingOutboundRequestBodyError">WritingOutboundRequestBodyError</a></span></li>
                                 <li>
-                                    <p>Specifies the type of the OAuth2 grant type</p>
-
+                                    
                                 </li>
                             </ul>
                         </div>
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="OutboundAuthScheme"><b>OutboundAuthScheme</b><span class="type">  <a href="../http/UNKOWN/BASIC_AUTH.html">BASIC_AUTH</a> | <a href="../http/UNKOWN/OAUTH2.html">OAUTH2</a> | <a href="../http/UNKOWN/JWT_AUTH.html">JWT_AUTH</a></span></li>
+                                <li id="OutboundResponseError"><b>OutboundResponseError</b><span class="type">  <a href="../http/errors.html#InitializingOutboundResponseError">InitializingOutboundResponseError</a> | <a href="../http/errors.html#WritingOutboundResponseHeadersError">WritingOutboundResponseHeadersError</a> | <a href="../http/errors.html#WritingOutboundResponseBodyError">WritingOutboundResponseBodyError</a> | <a href="../http/errors.html#Initiating100ContinueResponseError">Initiating100ContinueResponseError</a> | <a href="../http/errors.html#Writing100ContinueResponseError">Writing100ContinueResponseError</a></span></li>
                                 <li>
-                                    <p>Outbound authentication schemes.</p>
-
+                                    
                                 </li>
                             </ul>
                         </div>
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="RedirectCode"><b>RedirectCode</b><span class="type">  <a href="../http/UNKOWN/REDIRECT_MULTIPLE_CHOICES_300.html">REDIRECT_MULTIPLE_CHOICES_300</a> | <a href="../http/UNKOWN/REDIRECT_MOVED_PERMANENTLY_301.html">REDIRECT_MOVED_PERMANENTLY_301</a> | <a href="../http/UNKOWN/REDIRECT_FOUND_302.html">REDIRECT_FOUND_302</a> | <a href="../http/UNKOWN/REDIRECT_SEE_OTHER_303.html">REDIRECT_SEE_OTHER_303</a> | <a href="../http/UNKOWN/REDIRECT_NOT_MODIFIED_304.html">REDIRECT_NOT_MODIFIED_304</a> | <a href="../http/UNKOWN/REDIRECT_USE_PROXY_305.html">REDIRECT_USE_PROXY_305</a> | <a href="../http/UNKOWN/REDIRECT_TEMPORARY_REDIRECT_307.html">REDIRECT_TEMPORARY_REDIRECT_307</a> | <a href="../http/UNKOWN/REDIRECT_PERMANENT_REDIRECT_308.html">REDIRECT_PERMANENT_REDIRECT_308</a></span></li>
+                                <li id="RedirectCode"><b>RedirectCode</b><span class="type">  <a href="../http/constants.html#REDIRECT_MULTIPLE_CHOICES_300">REDIRECT_MULTIPLE_CHOICES_300</a> | <a href="../http/constants.html#REDIRECT_MOVED_PERMANENTLY_301">REDIRECT_MOVED_PERMANENTLY_301</a> | <a href="../http/constants.html#REDIRECT_FOUND_302">REDIRECT_FOUND_302</a> | <a href="../http/constants.html#REDIRECT_SEE_OTHER_303">REDIRECT_SEE_OTHER_303</a> | <a href="../http/constants.html#REDIRECT_NOT_MODIFIED_304">REDIRECT_NOT_MODIFIED_304</a> | <a href="../http/constants.html#REDIRECT_USE_PROXY_305">REDIRECT_USE_PROXY_305</a> | <a href="../http/constants.html#REDIRECT_TEMPORARY_REDIRECT_307">REDIRECT_TEMPORARY_REDIRECT_307</a> | <a href="../http/constants.html#REDIRECT_PERMANENT_REDIRECT_308">REDIRECT_PERMANENT_REDIRECT_308</a></span></li>
                                 <li>
                                     <p>Defines the HTTP redirect codes as a type.</p>
 
@@ -724,7 +1013,7 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="RequestMessage"><b>RequestMessage</b><span class="type">  <a href="../http/objects/Request.html">Request</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span></li>
+                                <li id="RequestMessage"><b>RequestMessage</b><span class="type">  <a href="../http/objects/Request.html">Request</a> | <a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../lang.annotations/UNKOWN/json.html">json</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/objects/Entity.html">Entity</a>[] | <a href="../lang.annotations/UNKOWN/().html">()</a></span></li>
                                 <li>
                                     <p>The types of messages that are accepted by HTTP <code>client</code> when sending out the outbound request.</p>
 
@@ -734,10 +1023,29 @@ outbound request/response accept-encoding/content-encoding option
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="ResponseMessage"><b>ResponseMessage</b><span class="type">  <a href="../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/objects/Entity.html">Entity</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#()">()</a></span></li>
+                                <li id="ResiliencyError"><b>ResiliencyError</b><span class="type">  <a href="../http/errors.html#FailoverAllEndpointsFailedError">FailoverAllEndpointsFailedError</a> | <a href="../http/errors.html#FailoverActionFailedError">FailoverActionFailedError</a> | <a href="../http/errors.html#UpstreamServiceUnavailableError">UpstreamServiceUnavailableError</a> | <a href="../http/errors.html#AllLoadBalanceEndpointsFailedError">AllLoadBalanceEndpointsFailedError</a> | <a href="../http/errors.html#AllRetryAttemptsFailed">AllRetryAttemptsFailed</a> | <a href="../http/errors.html#IdleTimeoutError">IdleTimeoutError</a></span></li>
+                                <li>
+                                    <p>Ballerina Http Union Errors</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="ResponseMessage"><b>ResponseMessage</b><span class="type">  <a href="../http/objects/Response.html">Response</a> | <a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../lang.annotations/UNKOWN/json.html">json</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/objects/Entity.html">Entity</a>[] | <a href="../lang.annotations/UNKOWN/().html">()</a></span></li>
                                 <li>
                                     <p>The types of messages that are accepted by HTTP <code>listener</code> when sending out the outbound response.</p>
 
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="WebSocketError"><b>WebSocketError</b><span class="type">  <a href="../http/errors.html#WsConnectionClosureError">WsConnectionClosureError</a> | <a href="../http/errors.html#WsInvalidHandshakeError">WsInvalidHandshakeError</a> | <a href="../http/errors.html#WsPayloadTooBigError">WsPayloadTooBigError</a> | <a href="../http/errors.html#WsProtocolError">WsProtocolError</a> | <a href="../http/errors.html#WsConnectionError">WsConnectionError</a> | <a href="../http/errors.html#WsInvalidContinuationFrameError">WsInvalidContinuationFrameError</a> | <a href="../http/errors.html#WsGenericError">WsGenericError</a></span></li>
+                                <li>
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -761,6 +1069,30 @@ outbound request/response accept-encoding/content-encoding option
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

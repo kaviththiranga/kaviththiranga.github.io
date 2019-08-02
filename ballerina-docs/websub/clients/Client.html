@@ -13,81 +13,111 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Clients</h3>
                 <ul>
                     
-                        <li>
-                            <a href="Caller.html">Caller</a>
+                        <li >
+                            <a href="Caller.html">Caller</a> 
                         </li>
                     
-                        <li>
-                            <a href="Client.html">Client</a>
+                        <li class="active active-item">
+                            <a href="Client.html">Client</a> 
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../websub/index.html#records">Records</a>
+            <a data="records" href="../../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#types">Types</a>
+                <a data="types" href="../../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -98,6 +128,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -129,11 +163,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -141,7 +175,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -157,11 +271,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -170,10 +284,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -190,10 +300,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -221,7 +327,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -236,72 +350,73 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Clients</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="Caller.html">Caller</a>
                             </li>
                         
-                            <li>
+                            <li class="active active-item">
                                 <a href="Client.html">Client</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../websub/index.html#records">Records</a>
+            <a data="records" href="../../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../websub/index.html#types">Types</a>
+                <a data="types" href="../../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -312,6 +427,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -343,11 +462,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -355,7 +474,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -371,11 +570,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -384,10 +583,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -404,10 +599,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -435,7 +626,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -452,21 +651,28 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Clients - </span> 
+                <a href="../../websub/index.html">websub</a> : 
+                <span class="clients">Client</span> </h1>
             <p><p>The HTTP based Caller remote functions for outbound WebSub Subscription, Unsubscription, Registration, Unregistration and
 Notification requests to a Hub.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
+                        
+                            <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> url, <a href="../../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>url</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+                <li> <b>url</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
                 <li>
                     
                 </li>
@@ -483,86 +689,94 @@ Notification requests to a Hub.</p>
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#subscribe">
+    <div class="param-sum">
+        <div class="param-name">
+        subscribe 
+        </div>
+        <div class="param-details"> <p>Sends a subscription request to a WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unsubscribe">
+    <div class="param-sum">
+        <div class="param-name">
+        unsubscribe 
+        </div>
+        <div class="param-details"> <p>Sends an unsubscription request to a WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#registerTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        registerTopic 
+        </div>
+        <div class="param-details"> <p>Registers a topic in a Ballerina WebSub Hub against which subscribers can subscribe and the publisher will
+publish updates.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregisterTopic">
+    <div class="param-sum">
+        <div class="param-name">
+        unregisterTopic 
+        </div>
+        <div class="param-details"> <p>Unregisters a topic in a Ballerina WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#publishUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        publishUpdate 
+        </div>
+        <div class="param-details"> <p>Publishes an update to a remote Ballerina WebSub Hub.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#notifyUpdate">
+    <div class="param-sum">
+        <div class="param-name">
+        notifyUpdate 
+        </div>
+        <div class="param-details"> <p>Notifies a remote WebSub Hub that an update is available to fetch, for hubs that require publishing to
+happen as such.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#subscribe"><b>subscribe </b></a>
-    (<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#unsubscribe"><b>unsubscribe </b></a>
-    (<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#registerTopic"><b>registerTopic </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#unregisterTopic"><b>unregisterTopic </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#publishUpdate"><b>publishUpdate </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#notifyUpdate"><b>notifyUpdate </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
-            <li> hubUrl<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+            <li> hubUrl<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
             <li>
                 <p><p>The URL of the target Hub to which requests need to be sent</p>
 </p>
@@ -583,18 +797,51 @@ Notification requests to a Hub.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
 
-
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="subscribe">subscribe</h2>
-        <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest)</p>
+    <div class="main-method-title here" id="subscribe">
+             <a class="url-link" href="#subscribe">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> subscribe </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> subscriptionRequest)</p>
+            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="../../lang.annotations/errors.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Sends a subscription request to a WebSub Hub.</p>
 </p>
@@ -615,24 +862,32 @@ Notification requests to a Hub.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>SubscriptionChangeResponse</code> indicating subscription details, if the request was successful else
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="../../lang.annotations/errors.html#error">error</a></span>)</li>
+                <li><p><code>SubscriptionChangeResponse</code> indicating subscription details, if the request was successful else
 <code>error</code> if an error occurred with the subscription request</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unsubscribe">unsubscribe</h2>
-        <p class="method-types">(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest)</p>
+    <div class="main-method-title here" id="unsubscribe">
+             <a class="url-link" href="#unsubscribe">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> unsubscribe </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../websub/records/SubscriptionChangeRequest.html">SubscriptionChangeRequest</a> unsubscriptionRequest)</p>
+            <b> returns </b><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="../../lang.annotations/errors.html#error">error</a> 
+        </span>
+        
     </div>
     <p><p>Sends an unsubscription request to a WebSub Hub.</p>
 </p>
@@ -653,24 +908,32 @@ Notification requests to a Hub.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>SubscriptionChangeResponse</code> indicating unsubscription details, if the request was successful else
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../websub/records/SubscriptionChangeResponse.html">SubscriptionChangeResponse</a> | <a href="../../lang.annotations/errors.html#error">error</a></span>)</li>
+                <li><p><code>SubscriptionChangeResponse</code> indicating unsubscription details, if the request was successful else
 <code>error</code> if an error occurred with the unsubscription request</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="registerTopic">registerTopic</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+    <div class="main-method-title here" id="registerTopic">
+             <a class="url-link" href="#registerTopic">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> registerTopic </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> topic)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Registers a topic in a Ballerina WebSub Hub against which subscribers can subscribe and the publisher will
 publish updates.</p>
@@ -681,7 +944,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> topic<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The topic to register</p>
 </p>
@@ -692,23 +955,31 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred registering the topic</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred registering the topic</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unregisterTopic">unregisterTopic</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic)</p>
+    <div class="main-method-title here" id="unregisterTopic">
+             <a class="url-link" href="#unregisterTopic">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> unregisterTopic </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> topic)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Unregisters a topic in a Ballerina WebSub Hub.</p>
 </p>
@@ -718,7 +989,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> topic<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The topic to unregister</p>
 </p>
@@ -729,23 +1000,31 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred unregistering the topic</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred unregistering the topic</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="publishUpdate">publishUpdate</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? contentType, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
+    <div class="main-method-title here" id="publishUpdate">
+             <a class="url-link" href="#publishUpdate">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> publishUpdate </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> topic, <a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../../lang.annotations/UNKOWN/json.html">json</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> payload, <a href="../../lang.annotations/UNKOWN/string.html">string</a>? contentType, <a href="../../lang.annotations/UNKOWN/map.html">map</a>? headers)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Publishes an update to a remote Ballerina WebSub Hub.</p>
 </p>
@@ -755,7 +1034,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> topic<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The topic for which the update occurred</p>
 </p>
@@ -765,7 +1044,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> payload<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#xml">xml</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#json">json</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
+                    <li> payload<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> | <a href="../../lang.annotations/UNKOWN/xml.html">xml</a> | <a href="../../lang.annotations/UNKOWN/json.html">json</a> | <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
                     <li>
                         <p><p>The update payload</p>
 </p>
@@ -775,7 +1054,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> contentType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li> contentType<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a>? </span>- ()</li>
                     <li>
                         <p><p>The type of the update content, to set as the <code>ContentType</code> header</p>
 </p>
@@ -785,7 +1064,7 @@ publish updates.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headers<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
+                    <li> headers<span class="type">  <a href="../../lang.annotations/UNKOWN/map.html">map</a>? </span>- ()</li>
                     <li>
                         <p><p>The headers, if any, that need to be set</p>
 </p>
@@ -796,23 +1075,31 @@ publish updates.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred with the update</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred with the update</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="notifyUpdate">notifyUpdate</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> topic, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? headers)</p>
+    <div class="main-method-title here" id="notifyUpdate">
+             <a class="url-link" href="#notifyUpdate">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> notifyUpdate </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> topic, <a href="../../lang.annotations/UNKOWN/map.html">map</a>? headers)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Notifies a remote WebSub Hub that an update is available to fetch, for hubs that require publishing to
 happen as such.</p>
@@ -823,7 +1110,7 @@ happen as such.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> topic<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> topic<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The topic for which the update occurred</p>
 </p>
@@ -833,7 +1120,7 @@ happen as such.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> headers<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? </span>- ()</li>
+                    <li> headers<span class="type">  <a href="../../lang.annotations/UNKOWN/map.html">map</a>? </span>- ()</li>
                     <li>
                         <p><p>The headers, if any, that need to be set</p>
 </p>
@@ -844,17 +1131,17 @@ happen as such.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p><code>error</code> if an error occurred with the notification</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p><code>error</code> if an error occurred with the notification</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -876,6 +1163,30 @@ happen as such.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

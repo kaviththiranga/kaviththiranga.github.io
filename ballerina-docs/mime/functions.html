@@ -13,100 +13,127 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
-
-
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Functions</h3>
                 <ul>
                     
-                        <li>
+                        <li >
+                            <a href="#base64Decode">base64Decode</a>
+                        </li>
+                    
+                        <li >
                             <a href="#base64DecodeBlob">base64DecodeBlob</a>
                         </li>
                     
-                        <li>
-                            <a href="#base64DecodeByteArray">base64DecodeByteArray</a>
+                        <li >
+                            <a href="#base64Encode">base64Encode</a>
                         </li>
                     
-                        <li>
-                            <a href="#base64DecodeByteChannel">base64DecodeByteChannel</a>
-                        </li>
-                    
-                        <li>
-                            <a href="#base64DecodeString">base64DecodeString</a>
-                        </li>
-                    
-                        <li>
+                        <li >
                             <a href="#base64EncodeBlob">base64EncodeBlob</a>
                         </li>
                     
-                        <li>
-                            <a href="#base64EncodeByteArray">base64EncodeByteArray</a>
-                        </li>
-                    
-                        <li>
-                            <a href="#base64EncodeByteChannel">base64EncodeByteChannel</a>
-                        </li>
-                    
-                        <li>
-                            <a href="#base64EncodeString">base64EncodeString</a>
-                        </li>
-                    
-                        <li>
-                            <a href="#byteArrayToString">byteArrayToString</a>
-                        </li>
-                    
-                        <li>
+                        <li >
                             <a href="#getContentDispositionObject">getContentDispositionObject</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#getMediaType">getMediaType</a>
+                        </li>
+                    
+                        <li >
+                            <a href="#prepareDecodingErrorWithDetail">prepareDecodingErrorWithDetail</a>
+                        </li>
+                    
+                        <li >
+                            <a href="#prepareEncodingErrorWithDetail">prepareEncodingErrorWithDetail</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../mime/index.html">
         <h3>mime</h3>
     </a>
     <ul>
         
+        <li>
+            <a data="records" href="../mime/index.html#records">Records</a>
+        </li>
+        
         
             <li>
-                <a href="../mime/index.html#objects">Objects</a>
+                <a  data="objects" href="../mime/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../mime/index.html#functions">Functions</a>
+                <a data="functions" href="../mime/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../mime/index.html#constants">Constants</a>
+                <a data="constants" href="../mime/index.html#constants">Constants</a>
             </li>
         
         
         
+            <li>
+                <a data="types" href="../mime/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../mime/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -117,6 +144,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -148,11 +179,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -160,7 +191,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -176,11 +287,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -189,10 +300,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -209,10 +316,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -240,7 +343,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -255,88 +366,89 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Functions</h3>
                     <ul>
                         
-                            <li>
+                            <li >
+                                <a href="#base64Decode">base64Decode</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#base64DecodeBlob">base64DecodeBlob</a>
                             </li>
                         
-                            <li>
-                                <a href="#base64DecodeByteArray">base64DecodeByteArray</a>
+                            <li >
+                                <a href="#base64Encode">base64Encode</a>
                             </li>
                         
-                            <li>
-                                <a href="#base64DecodeByteChannel">base64DecodeByteChannel</a>
-                            </li>
-                        
-                            <li>
-                                <a href="#base64DecodeString">base64DecodeString</a>
-                            </li>
-                        
-                            <li>
+                            <li >
                                 <a href="#base64EncodeBlob">base64EncodeBlob</a>
                             </li>
                         
-                            <li>
-                                <a href="#base64EncodeByteArray">base64EncodeByteArray</a>
-                            </li>
-                        
-                            <li>
-                                <a href="#base64EncodeByteChannel">base64EncodeByteChannel</a>
-                            </li>
-                        
-                            <li>
-                                <a href="#base64EncodeString">base64EncodeString</a>
-                            </li>
-                        
-                            <li>
-                                <a href="#byteArrayToString">byteArrayToString</a>
-                            </li>
-                        
-                            <li>
+                            <li >
                                 <a href="#getContentDispositionObject">getContentDispositionObject</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#getMediaType">getMediaType</a>
+                            </li>
+                        
+                            <li >
+                                <a href="#prepareDecodingErrorWithDetail">prepareDecodingErrorWithDetail</a>
+                            </li>
+                        
+                            <li >
+                                <a href="#prepareEncodingErrorWithDetail">prepareEncodingErrorWithDetail</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../mime/index.html">
         <h3>mime</h3>
     </a>
     <ul>
         
+        <li>
+            <a data="records" href="../mime/index.html#records">Records</a>
+        </li>
+        
         
             <li>
-                <a href="../mime/index.html#objects">Objects</a>
+                <a  data="objects" href="../mime/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../mime/index.html#functions">Functions</a>
+                <a data="functions" href="../mime/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../mime/index.html#constants">Constants</a>
+                <a data="constants" href="../mime/index.html#constants">Constants</a>
             </li>
         
         
         
+            <li>
+                <a data="types" href="../mime/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../mime/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -347,6 +459,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -378,11 +494,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -390,7 +506,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -406,11 +602,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -419,10 +615,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -439,10 +631,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -470,7 +658,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -487,96 +683,76 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Functions - </span> 
+                <a href="../mime/index.html">mime</a> 
+            </h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64DecodeBlob">base64DecodeBlob</a></td>
-                            <td width="70%"><p>Decodes a given byte[] with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#base64Decode">base64Decode</a></td>
+                                <td width="70%"><p>Decodes a given input with MIME specific Base64 encoding scheme.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64DecodeByteArray">base64DecodeByteArray</a></td>
-                            <td width="70%"><p>Decode a given byte[] with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#base64DecodeBlob">base64DecodeBlob</a></td>
+                                <td width="70%"><p>Decodes a given byte[] with Base64 encoding scheme.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64DecodeByteChannel">base64DecodeByteChannel</a></td>
-                            <td width="70%"><p>Decodes a given ByteChannel with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#base64Encode">base64Encode</a></td>
+                                <td width="70%"><p>Encodes a given input with MIME specific Base64 encoding scheme.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64DecodeString">base64DecodeString</a></td>
-                            <td width="70%"><p>Decodes a given string with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#base64EncodeBlob">base64EncodeBlob</a></td>
+                                <td width="70%"><p>Encodes a given byte[] with Base64 encoding scheme.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64EncodeBlob">base64EncodeBlob</a></td>
-                            <td width="70%"><p>Encodes a given byte[] with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getContentDispositionObject">getContentDispositionObject</a></td>
+                                <td width="70%"><p>Given the Content-Disposition as a string, gets the ContentDisposition object with it.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64EncodeByteArray">base64EncodeByteArray</a></td>
-                            <td width="70%"><p>Encode a given byte[] with Base64 encoding scheme.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getMediaType">getMediaType</a></td>
+                                <td width="70%"><p>Given the Content-Type in string, gets the MediaType object populated with it.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64EncodeByteChannel">base64EncodeByteChannel</a></td>
-                            <td width="70%"><p>Encodes a given ByteChannel with Base64 encoding scheme.</p>
-</td>
-                        </tr>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#prepareDecodingErrorWithDetail">prepareDecodingErrorWithDetail</a></td>
+                                <td width="70%"></td>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#base64EncodeString">base64EncodeString</a></td>
-                            <td width="70%"><p>Encodes a given string with Base64 encoding scheme.</p>
-</td>
-                        </tr>
-                        </tbody>
-                    
-                        <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#byteArrayToString">byteArrayToString</a></td>
-                            <td width="70%"><p>Converts given byte[] to a string.</p>
-</td>
-                        </tr>
-                        </tbody>
-                    
-                        <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getContentDispositionObject">getContentDispositionObject</a></td>
-                            <td width="70%"><p>Given the Content-Disposition as a string, gets the ContentDisposition object with it.</p>
-</td>
-                        </tr>
-                        </tbody>
-                    
-                        <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getMediaType">getMediaType</a></td>
-                            <td width="70%"><p>Given the Content-Type in string, gets the MediaType object populated with it.</p>
-</td>
-                        </tr>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#prepareEncodingErrorWithDetail">prepareEncodingErrorWithDetail</a></td>
+                                <td width="70%"></td>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -585,9 +761,75 @@
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64DecodeBlob">base64DecodeBlob</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] valueToBeDecoded)</p>
+    <div class="main-method-title here" id="base64Decode">
+             <a class="url-link" href="#base64Decode">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> base64Decode </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> contentToBeDecoded, <a href="../lang.annotations/UNKOWN/string.html">string</a> charset)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/errors.html#DecodeError">DecodeError</a> 
+        </span>
+        
+    </div>
+    <p><p>Decodes a given input with MIME specific Base64 encoding scheme.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> contentToBeDecoded<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
+                    <li>
+                        <p><p>Content that needs to be decoded can be of type <code>string</code>, <code>byte[]</code> or <code>io:ReadableByteChannel</code></p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> charset<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span>- utf-8</li>
+                    <li>
+                        <p><p>Charset to be used. This is used only with the string input</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/errors.html#DecodeError">DecodeError</a></span>)</li>
+                <li><p>If the given input is of type string, a decoded <code>string</code> is returned.
+If the given input is of type byte[], a decoded <code>byte[]</code> is returned.
+If the given input is of type io:ReadableByteChannel, a decoded <code>io:ReadableByteChannel</code> is returned.
+In case of errors, an <code>DecodeError</code> record is returned.</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="base64DecodeBlob">
+             <a class="url-link" href="#base64DecodeBlob">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> base64DecodeBlob </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] valueToBeDecoded)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../mime/errors.html#DecodeError">DecodeError</a> 
+        </span>
+        
     </div>
     <p><p>Decodes a given byte[] with Base64 encoding scheme.</p>
 </p>
@@ -597,7 +839,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> valueToBeDecoded<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li> valueToBeDecoded<span class="type">  <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] </span></li>
                     <li>
                         <p><p>Content that needs to be decoded</p>
 </p>
@@ -608,25 +850,33 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A decoded <code>byte[]</code>. In case of errors, an <code>error</code> record is returned</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../mime/errors.html#DecodeError">DecodeError</a></span>)</li>
+                <li><p>A decoded <code>byte[]</code>. In case of errors, an <code>DecodeError</code> record is returned</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64DecodeByteArray">base64DecodeByteArray</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] b)</p>
+    <div class="main-method-title here" id="base64Encode">
+             <a class="url-link" href="#base64Encode">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> base64Encode </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> contentToBeEncoded, <a href="../lang.annotations/UNKOWN/string.html">string</a> charset)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/errors.html#EncodeError">EncodeError</a> 
+        </span>
+        
     </div>
-    <p><p>Decode a given byte[] with Base64 encoding scheme.</p>
+    <p><p>Encodes a given input with MIME specific Base64 encoding scheme.</p>
 </p>
      
         <div class="data-wrapper">
@@ -634,45 +884,19 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> b<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li> contentToBeEncoded<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
                     <li>
-                        <p></p>
+                        <p><p>Content that needs to be encoded can be of type <code>string</code>, <code>byte[]</code> or <code>io:ReadableByteChannel</code></p>
+</p>
                     </li>
                 </ul>
             </div>
-            
-        </div>
-    
-
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span>)</li>
-                    <li><p>Return a decoded byte[]</p>
-</li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64DecodeByteChannel">base64DecodeByteChannel</h2>
-        <p class="method-types">(<a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> valueToBeDecoded)</p>
-    </div>
-    <p><p>Decodes a given ByteChannel with Base64 encoding scheme.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
                 
             <div class="params-listing">
                 <ul>
-                    <li> valueToBeDecoded<span class="type">  <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
+                    <li> charset<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span>- utf-8</li>
                     <li>
-                        <p><p>Content that needs to be decoded</p>
+                        <p><p>Charset to be used. This is used only with the string input</p>
 </p>
                     </li>
                 </ul>
@@ -681,70 +905,34 @@
         </div>
     
 
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A decoded <code>io:ReadableByteChannel</code>. In case of errors, an <code>error</code> record is returned</p>
-</li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64DecodeString">base64DecodeString</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> valueToBeDecoded, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
-    </div>
-    <p><p>Decodes a given string with Base64 encoding scheme.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> valueToBeDecoded<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
-                    <li>
-                        <p><p>Content that needs to be decoded</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- utf-8</li>
-                    <li>
-                        <p><p>Charset to be used</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
     
-
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A decoded <code>string</code>. In case of errors, an <code>error</code> record is returned</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../mime/errors.html#EncodeError">EncodeError</a></span>)</li>
+                <li><p>If the given input is of type string, an encoded <code>string</code> is returned.
+If the given input is of type byte[], an encoded <code>byte[]</code> is returned.
+If the given input is of type io:ReadableByteChannel, an encoded <code>io:ReadableByteChannel</code> is returned.
+In case of errors, an <code>EncodeError</code> record is returned.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64EncodeBlob">base64EncodeBlob</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] valueToBeEncoded)</p>
+    <div class="main-method-title here" id="base64EncodeBlob">
+             <a class="url-link" href="#base64EncodeBlob">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> base64EncodeBlob </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] valueToBeEncoded)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../mime/errors.html#EncodeError">EncodeError</a> 
+        </span>
+        
     </div>
     <p><p>Encodes a given byte[] with Base64 encoding scheme.</p>
 </p>
@@ -754,7 +942,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> valueToBeEncoded<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li> valueToBeEncoded<span class="type">  <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] </span></li>
                     <li>
                         <p><p>Content that needs to be encoded</p>
 </p>
@@ -765,189 +953,31 @@
         </div>
     
 
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An encoded byte[]. In case of errors, an <code>error</code> record is returned</p>
-</li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64EncodeByteArray">base64EncodeByteArray</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] b)</p>
-    </div>
-    <p><p>Encode a given byte[] with Base64 encoding scheme.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> b<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
-                    <li>
-                        <p></p>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
     
-
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[]</span>)</li>
-                    <li><p>Return an encoded byte[]</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] | <a href="../mime/errors.html#EncodeError">EncodeError</a></span>)</li>
+                <li><p>An encoded byte[]. In case of errors, an <code>EncodeError</code> record is returned</p>
 </li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64EncodeByteChannel">base64EncodeByteChannel</h2>
-        <p class="method-types">(<a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> valueToBeEncoded)</p>
-    </div>
-    <p><p>Encodes a given ByteChannel with Base64 encoding scheme.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> valueToBeEncoded<span class="type">  <a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> </span></li>
-                    <li>
-                        <p><p>Content that needs to be encoded</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-            
+            </ul>
         </div>
+        
     
-
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An encoded <code>io:ReadableByteChannel</code>. In case of errors, an <code>error</code> record is returned</p>
-</li>
-                </ul>
-            </div>
-            
-        
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="base64EncodeString">base64EncodeString</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> valueToBeEncoded, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset)</p>
-    </div>
-    <p><p>Encodes a given string with Base64 encoding scheme.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> valueToBeEncoded<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
-                    <li>
-                        <p><p>Content that needs to be encoded</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- utf-8</li>
-                    <li>
-                        <p><p>Charset to be used</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-    
-
+    <div class="main-method-title here" id="getContentDispositionObject">
+             <a class="url-link" href="#getContentDispositionObject">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getContentDispositionObject </h2>
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An encoded <code>string</code>. In case of errors, an <code>error</code> record is returned</p>
-</li>
-                </ul>
-            </div>
-            
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> contentDisposition)</p>
+            <b> returns </b><a href="../mime/objects/ContentDisposition.html">ContentDisposition</a> 
+        </span>
         
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="byteArrayToString">byteArrayToString</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] b, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> encoding)</p>
-    </div>
-    <p><p>Converts given byte[] to a string.</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> b<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
-                    <li>
-                        <p></p>
-                    </li>
-                </ul>
-            </div>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> encoding<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
-                    <li>
-                        <p><p>Encoding to used in byte[] conversion to string</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-    
-
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>String representation of the given byte[]</p>
-</li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getContentDispositionObject">getContentDispositionObject</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentDisposition)</p>
     </div>
     <p><p>Given the Content-Disposition as a string, gets the ContentDisposition object with it.</p>
 </p>
@@ -957,7 +987,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> contentDisposition<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> contentDisposition<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Content disposition string</p>
 </p>
@@ -968,23 +998,31 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/objects/ContentDisposition.html">ContentDisposition</a></span>)</li>
-                    <li><p>A <code>ContentDisposition</code> object</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/objects/ContentDisposition.html">ContentDisposition</a></span>)</li>
+                <li><p>A <code>ContentDisposition</code> object</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getMediaType">getMediaType</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> contentType)</p>
+    <div class="main-method-title here" id="getMediaType">
+             <a class="url-link" href="#getMediaType">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getMediaType </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> contentType)</p>
+            <b> returns </b><a href="../mime/objects/MediaType.html">MediaType</a> | <a href="../mime/errors.html#InvalidContentTypeError">InvalidContentTypeError</a> 
+        </span>
+        
     </div>
     <p><p>Given the Content-Type in string, gets the MediaType object populated with it.</p>
 </p>
@@ -994,7 +1032,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> contentType<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> contentType<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Content-Type in string</p>
 </p>
@@ -1005,17 +1043,101 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/objects/MediaType.html">MediaType</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p><code>MediaType</code> object or an error in case of invalid content-type</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/objects/MediaType.html">MediaType</a> | <a href="../mime/errors.html#InvalidContentTypeError">InvalidContentTypeError</a></span>)</li>
+                <li><p><code>MediaType</code> object or an error in case of invalid content-type</p>
 </li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="prepareDecodingErrorWithDetail">
+             <a class="url-link" href="#prepareDecodingErrorWithDetail">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> prepareDecodingErrorWithDetail </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> detail)</p>
+            <b> returns </b><a href="../mime/errors.html#DecodeError">DecodeError</a> 
+        </span>
+        
+    </div>
+    <p></p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> detail<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p></p>
+                    </li>
                 </ul>
             </div>
             
+        </div>
+    
+
+    
         
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/errors.html#DecodeError">DecodeError</a></span>)</li>
+                <li></li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="prepareEncodingErrorWithDetail">
+             <a class="url-link" href="#prepareEncodingErrorWithDetail">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> prepareEncodingErrorWithDetail </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> detail)</p>
+            <b> returns </b><a href="../mime/errors.html#EncodeError">EncodeError</a> 
+        </span>
+        
+    </div>
+    <p></p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> detail<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../mime/errors.html#EncodeError">EncodeError</a></span>)</li>
+                <li></li>
+            </ul>
+        </div>
+        
+    
 </div>
                             
                         </div>
@@ -1037,6 +1159,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

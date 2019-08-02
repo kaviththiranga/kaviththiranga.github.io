@@ -13,125 +13,155 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Clients</h3>
                 <ul>
                     
-                        <li>
-                            <a href="Caller.html">Caller</a>
+                        <li >
+                            <a href="Caller.html">Caller</a> 
                         </li>
                     
-                        <li>
-                            <a href="Client.html">Client</a>
+                        <li >
+                            <a href="CircuitBreakerClient.html">CircuitBreakerClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="FailoverClient.html">FailoverClient</a>
+                        <li class="active active-item">
+                            <a href="Client.html">Client</a> 
                         </li>
                     
-                        <li>
-                            <a href="HttpCachingClient.html">HttpCachingClient</a>
+                        <li >
+                            <a href="FailoverClient.html">FailoverClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="HttpCaller.html">HttpCaller</a>
+                        <li >
+                            <a href="HttpCachingClient.html">HttpCachingClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="HttpClient.html">HttpClient</a>
+                        <li >
+                            <a href="HttpClient.html">HttpClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="HttpSecureClient.html">HttpSecureClient</a>
+                        <li >
+                            <a href="HttpSecureClient.html">HttpSecureClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="LoadBalanceClient.html">LoadBalanceClient</a>
+                        <li >
+                            <a href="LoadBalanceClient.html">LoadBalanceClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="RedirectClient.html">RedirectClient</a>
+                        <li >
+                            <a href="RedirectClient.html">RedirectClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="RetryClient.html">RetryClient</a>
+                        <li >
+                            <a href="RetryClient.html">RetryClient</a> 
                         </li>
                     
-                        <li>
-                            <a href="WebSocketCaller.html">WebSocketCaller</a>
+                        <li >
+                            <a href="WebSocketCaller.html">WebSocketCaller</a> 
                         </li>
                     
-                        <li>
-                            <a href="WebSocketClient.html">WebSocketClient</a>
+                        <li >
+                            <a href="WebSocketClient.html">WebSocketClient</a> 
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../http/index.html#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -142,6 +172,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -173,11 +207,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -185,7 +219,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -201,11 +315,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -214,10 +328,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -234,10 +344,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -265,7 +371,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -280,116 +394,117 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Clients</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="Caller.html">Caller</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="CircuitBreakerClient.html">CircuitBreakerClient</a>
+                            </li>
+                        
+                            <li class="active active-item">
                                 <a href="Client.html">Client</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="FailoverClient.html">FailoverClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="HttpCachingClient.html">HttpCachingClient</a>
                             </li>
                         
-                            <li>
-                                <a href="HttpCaller.html">HttpCaller</a>
-                            </li>
-                        
-                            <li>
+                            <li >
                                 <a href="HttpClient.html">HttpClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="HttpSecureClient.html">HttpSecureClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="LoadBalanceClient.html">LoadBalanceClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="RedirectClient.html">RedirectClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="RetryClient.html">RetryClient</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="WebSocketCaller.html">WebSocketCaller</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="WebSocketClient.html">WebSocketClient</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../http/index.html#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -400,6 +515,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -431,11 +550,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -443,7 +562,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -459,11 +658,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -472,10 +671,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -492,10 +687,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -523,7 +714,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -540,22 +739,29 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Clients : <span class="clients">Client</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Clients - </span> 
+                <a href="../../http/index.html">http</a> : 
+                <span class="clients">Client</span> </h1>
             <p><p>The HTTP client provides the capability for initiating contact with a remote HTTP service. The API it
 provides includes functions for the standard HTTP methods, forwarding a received request and sending requests
 using custom HTTP verbs.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> url, <a href="../../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
+                        
+                            <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> url, <a href="../../http/records/ClientEndpointConfig.html">ClientEndpointConfig</a>? config)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>url</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+                <li> <b>url</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
                 <li>
                     <p>URL of the target service</p>
 
@@ -574,168 +780,199 @@ using custom HTTP verbs.</p>
         </div>
     
 </div>
+                        
+                    
+
+                    
+                        <h2>Remote Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#post">
+    <div class="param-sum">
+        <div class="param-name">
+        post 
+        </div>
+        <div class="param-details"> <p>The <code>post()</code> function can be used to send HTTP POST requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#head">
+    <div class="param-sum">
+        <div class="param-name">
+        head 
+        </div>
+        <div class="param-details"> <p>The <code>head()</code> function can be used to send HTTP HEAD requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#put">
+    <div class="param-sum">
+        <div class="param-name">
+        put 
+        </div>
+        <div class="param-details"> <p>The <code>put()</code> function can be used to send HTTP PUT requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#execute">
+    <div class="param-sum">
+        <div class="param-name">
+        execute 
+        </div>
+        <div class="param-details"> <p>Invokes an HTTP call with the specified HTTP verb.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#patch">
+    <div class="param-sum">
+        <div class="param-name">
+        patch 
+        </div>
+        <div class="param-details"> <p>The <code>patch()</code> function can be used to send HTTP PATCH requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#delete">
+    <div class="param-sum">
+        <div class="param-name">
+        delete 
+        </div>
+        <div class="param-details"> <p>The <code>delete()</code> function can be used to send HTTP DELETE requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#get">
+    <div class="param-sum">
+        <div class="param-name">
+        get 
+        </div>
+        <div class="param-details"> <p>The <code>get()</code> function can be used to send HTTP GET requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#options">
+    <div class="param-sum">
+        <div class="param-name">
+        options 
+        </div>
+        <div class="param-details"> <p>The <code>options()</code> function can be used to send HTTP OPTIONS requests to HTTP endpoints.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#forward">
+    <div class="param-sum">
+        <div class="param-name">
+        forward 
+        </div>
+        <div class="param-details"> <p>The <code>forward()</code> function can be used to invoke an HTTP call with inbound request's HTTP verb</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#submit">
+    <div class="param-sum">
+        <div class="param-name">
+        submit 
+        </div>
+        <div class="param-details"> <p>Submits an HTTP request to a service with the specified HTTP verb.
+The <code>submit()</code> function does not give out a <code>Response</code> as the result,
+rather it returns an <code>HttpFuture</code> which can be used to do further interactions with the endpoint.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        getResponse 
+        </div>
+        <div class="param-details"> <p>This just pass the request to actual network call.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#hasPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        hasPromise 
+        </div>
+        <div class="param-details"> <p>This just pass the request to actual network call.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getNextPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        getNextPromise 
+        </div>
+        <div class="param-details"> <p>This just pass the request to actual network call.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getPromisedResponse">
+    <div class="param-sum">
+        <div class="param-name">
+        getPromisedResponse 
+        </div>
+        <div class="param-details"> <p>This just pass the request to actual network call.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#rejectPromise">
+    <div class="param-sum">
+        <div class="param-name">
+        rejectPromise 
+        </div>
+        <div class="param-details"> <p>This just pass the request to actual network call.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
                     
                 
-
-                
-                    <h2>Remote Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#post"><b>post </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
+                    
+                        <h2>Fields</h2>
+                                
+                                <div class="data-wrapper">
+        
+    <div class="params-listing">
+        <ul>
+            <li> url<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
+            <li>
+                <p><p>Target service url</p>
 </p>
-                        
-                            <p>
-    <a href="#head"><b>head </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#put"><b>put </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#execute"><b>execute </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#patch"><b>patch </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#delete"><b>delete </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#get"><b>get </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#options"><b>options </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#forward"><b>forward </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#submit"><b>submit </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getResponse"><b>getResponse </b></a>
-    (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#hasPromise"><b>hasPromise </b></a>
-    (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getNextPromise"><b>getNextPromise </b></a>
-    (<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getPromisedResponse"><b>getPromisedResponse </b></a>
-    (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#rejectPromise"><b>rejectPromise </b></a>
-    (<a href="../../http/objects/PushPromise.html">PushPromise</a> promise) 
-    <br>
-</p>
-                        
-                    </div>
-                
-
-                
-                
-                
-                    <h2>Fields</h2>
-                            
-                            <div class="data-wrapper">
+            </li>
+        </ul>
+    </div>
         
     <div class="params-listing">
         <ul>
@@ -749,7 +986,7 @@ using custom HTTP verbs.</p>
         
     <div class="params-listing">
         <ul>
-            <li> httpClient<span class="type">  <a href="../../http/clients/Client.html">Client</a></span> </li>
+            <li> httpClient<span class="type">  <a href="../../http/clients/HttpClient.html">HttpClient</a></span> </li>
             <li>
                 <p><p>Chain of different HTTP clients which provides the capability for initiating contact with a remote
 HTTP service in resilient manner</p>
@@ -771,18 +1008,51 @@ HTTP service in resilient manner</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
 
-
-                        
-                
+                            
+                    
+                </div>
 
                 
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="post">post</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="post">
+             <a class="url-link" href="#post">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> post </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>post()</code> function can be used to send HTTP POST requests to HTTP endpoints.</p>
 </p>
@@ -792,7 +1062,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -814,23 +1084,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="head">head</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="head">
+             <a class="url-link" href="#head">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> head </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>head()</code> function can be used to send HTTP HEAD requests to HTTP endpoints.</p>
 </p>
@@ -840,7 +1118,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -862,23 +1140,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="put">put</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="put">
+             <a class="url-link" href="#put">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> put </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>put()</code> function can be used to send HTTP PUT requests to HTTP endpoints.</p>
 </p>
@@ -888,7 +1174,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -910,23 +1196,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="execute">execute</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="execute">
+             <a class="url-link" href="#execute">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> execute </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> httpVerb, <a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>Invokes an HTTP call with the specified HTTP verb.</p>
 </p>
@@ -936,7 +1230,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> httpVerb<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>HTTP verb value</p>
 </p>
@@ -946,7 +1240,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -968,23 +1262,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="patch">patch</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="patch">
+             <a class="url-link" href="#patch">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> patch </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>patch()</code> function can be used to send HTTP PATCH requests to HTTP endpoints.</p>
 </p>
@@ -994,7 +1296,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -1016,23 +1318,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="delete">delete</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="delete">
+             <a class="url-link" href="#delete">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> delete </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>delete()</code> function can be used to send HTTP DELETE requests to HTTP endpoints.</p>
 </p>
@@ -1042,7 +1352,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Resource path</p>
 </p>
@@ -1052,9 +1362,9 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span></li>
+                    <li> message<span class="type">  <a href="../../http/types.html#RequestMessage">RequestMessage</a> </span>- ()</li>
                     <li>
-                        <p><p>An HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
+                        <p><p>An optional HTTP outbound request message or any payload of type <code>string</code>, <code>xml</code>, <code>json</code>, <code>byte[]</code>,
 <code>io:ReadableByteChannel</code> or <code>mime:Entity[]</code></p>
 </p>
                     </li>
@@ -1064,23 +1374,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="get">get</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="get">
+             <a class="url-link" href="#get">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> get </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>get()</code> function can be used to send HTTP GET requests to HTTP endpoints.</p>
 </p>
@@ -1090,7 +1408,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Request path</p>
 </p>
@@ -1112,23 +1430,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="options">options</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="options">
+             <a class="url-link" href="#options">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> options </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>options()</code> function can be used to send HTTP OPTIONS requests to HTTP endpoints.</p>
 </p>
@@ -1138,7 +1464,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Request path</p>
 </p>
@@ -1160,23 +1486,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="forward">forward</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/objects/Request.html">Request</a> request)</p>
+    <div class="main-method-title here" id="forward">
+             <a class="url-link" href="#forward">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> forward </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/objects/Request.html">Request</a> request)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>The <code>forward()</code> function can be used to invoke an HTTP call with inbound request's HTTP verb</p>
 </p>
@@ -1186,7 +1520,7 @@ HTTP service in resilient manner</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Request path</p>
 </p>
@@ -1207,23 +1541,31 @@ HTTP service in resilient manner</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The response for the request or an <code>error</code> if failed to establish communication with the upstream server</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>The response for the request or an <code>http:ClientError</code> if failed to establish communication with the upstream server</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="submit">submit</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> httpVerb, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+    <div class="main-method-title here" id="submit">
+             <a class="url-link" href="#submit">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> submit </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> httpVerb, <a href="../../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../../http/types.html#RequestMessage">RequestMessage</a> message)</p>
+            <b> returns </b><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>Submits an HTTP request to a service with the specified HTTP verb.
 The <code>submit()</code> function does not give out a <code>Response</code> as the result,
@@ -1235,7 +1577,7 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
                 
             <div class="params-listing">
                 <ul>
-                    <li> httpVerb<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> httpVerb<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The HTTP verb value</p>
 </p>
@@ -1245,7 +1587,7 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>The resource path</p>
 </p>
@@ -1267,23 +1609,31 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An <code>HttpFuture</code> that represents an asynchronous service invocation, or an <code>error</code> if the submission fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/HttpFuture.html">HttpFuture</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>An <code>HttpFuture</code> that represents an asynchronous service invocation, or an <code>http:ClientError</code> if the submission fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getResponse">getResponse</h2>
-        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+    <div class="main-method-title here" id="getResponse">
+             <a class="url-link" href="#getResponse">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getResponse </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>This just pass the request to actual network call.</p>
 </p>
@@ -1304,23 +1654,31 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An HTTP response message, or an error if the invocation fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>An HTTP response message, or an error if the invocation fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="hasPromise">hasPromise</h2>
-        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+    <div class="main-method-title here" id="hasPromise">
+             <a class="url-link" href="#hasPromise">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> hasPromise </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a> 
+        </span>
+        
     </div>
     <p><p>This just pass the request to actual network call.</p>
 </p>
@@ -1341,23 +1699,31 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
-                    <li><p>A <code>boolean</code> that represents whether a <code>PushPromise</code> exists</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a></span>)</li>
+                <li><p>A <code>boolean</code> that represents whether a <code>PushPromise</code> exists</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getNextPromise">getNextPromise</h2>
-        <p class="method-types">(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+    <div class="main-method-title here" id="getNextPromise">
+             <a class="url-link" href="#getNextPromise">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getNextPromise </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../http/objects/HttpFuture.html">HttpFuture</a> httpFuture)</p>
+            <b> returns </b><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>This just pass the request to actual network call.</p>
 </p>
@@ -1378,23 +1744,31 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>An HTTP Push Promise message, or an error if the invocation fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/PushPromise.html">PushPromise</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>An HTTP Push Promise message, or an error if the invocation fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getPromisedResponse">getPromisedResponse</h2>
-        <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+    <div class="main-method-title here" id="getPromisedResponse">
+             <a class="url-link" href="#getPromisedResponse">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getPromisedResponse </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+            <b> returns </b><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a> 
+        </span>
+        
     </div>
     <p><p>This just pass the request to actual network call.</p>
 </p>
@@ -1415,23 +1789,26 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>A promised HTTP <code>Response</code> message, or an error if the invocation fails</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../http/objects/Response.html">Response</a> | <a href="../../http/types.html#ClientError">ClientError</a></span>)</li>
+                <li><p>A promised HTTP <code>Response</code> message, or an error if the invocation fails</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="rejectPromise">rejectPromise</h2>
-        <p class="method-types">(<a href="../../http/objects/PushPromise.html">PushPromise</a> promise)</p>
+    <div class="main-method-title here" id="rejectPromise">
+             <a class="url-link" href="#rejectPromise">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> rejectPromise </h2>
+        
     </div>
     <p><p>This just pass the request to actual network call.</p>
 </p>
@@ -1452,7 +1829,7 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
         </div>
     
 
-        
+    
 </div>
                     
                 
@@ -1474,6 +1851,30 @@ rather it returns an <code>HttpFuture</code> which can be used to do further int
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

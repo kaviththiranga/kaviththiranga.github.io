@@ -13,100 +13,127 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
-
-
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Functions</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="#createReadableChannel">createReadableChannel</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#openReadableCsvFile">openReadableCsvFile</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#openReadableFile">openReadableFile</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#openWritableCsvFile">openWritableCsvFile</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#openWritableFile">openWritableFile</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#print">print</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#println">println</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#readln">readln</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#sprintf">sprintf</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../io/index.html#records">Records</a>
-        </li>
-        
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../io/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -117,6 +144,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -148,11 +179,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -160,7 +191,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -176,11 +287,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -189,10 +300,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -209,10 +316,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -240,7 +343,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -255,88 +366,89 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Functions</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="#createReadableChannel">createReadableChannel</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#openReadableCsvFile">openReadableCsvFile</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#openReadableFile">openReadableFile</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#openWritableCsvFile">openWritableCsvFile</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#openWritableFile">openWritableFile</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#print">print</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#println">println</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#readln">readln</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#sprintf">sprintf</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../io/index.html#records">Records</a>
-        </li>
-        
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../io/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -347,6 +459,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -378,11 +494,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -390,7 +506,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -406,11 +602,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -419,10 +615,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -439,10 +631,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -470,7 +658,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -487,78 +683,84 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Functions - </span> 
+                <a href="../io/index.html">io</a> 
+            </h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#createReadableChannel">createReadableChannel</a></td>
-                            <td width="70%"><p>Creates an in-memory channel which will reference stream of bytes.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#createReadableChannel">createReadableChannel</a></td>
+                                <td width="70%"><p>Creates an in-memory channel which will reference stream of bytes.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#openReadableCsvFile">openReadableCsvFile</a></td>
-                            <td width="70%"><p>Retrieves a readable CSV channel from a give file path.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#openReadableCsvFile">openReadableCsvFile</a></td>
+                                <td width="70%"><p>Retrieves a readable CSV channel from a give file path.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#openReadableFile">openReadableFile</a></td>
-                            <td width="70%"><p>Retrieves a ReadableByteChannel from a given file path.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#openReadableFile">openReadableFile</a></td>
+                                <td width="70%"><p>Retrieves a ReadableByteChannel from a given file path.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#openWritableCsvFile">openWritableCsvFile</a></td>
-                            <td width="70%"><p>Retrieves a writable CSV channel from a give file path.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#openWritableCsvFile">openWritableCsvFile</a></td>
+                                <td width="70%"><p>Retrieves a writable CSV channel from a give file path.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#openWritableFile">openWritableFile</a></td>
-                            <td width="70%"><p>Retrieves a WritableByteChannel from a given file path.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#openWritableFile">openWritableFile</a></td>
+                                <td width="70%"><p>Retrieves a WritableByteChannel from a given file path.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#print">print</a></td>
-                            <td width="70%"><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#print">print</a></td>
+                                <td width="70%"><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#println">println</a></td>
-                            <td width="70%"><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT followed by a new line.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#println">println</a></td>
+                                <td width="70%"><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT followed by a new line.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#readln">readln</a></td>
-                            <td width="70%"><p>Returns the input read from STDIN.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#readln">readln</a></td>
+                                <td width="70%"><p>Returns the input read from STDIN.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#sprintf">sprintf</a></td>
-                            <td width="70%"><p>Returns a formatted string using the specified format string and arguments. Following format specifiers are allowed.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#sprintf">sprintf</a></td>
+                                <td width="70%"><p>Returns a formatted string using the specified format string and arguments. Following format specifiers are allowed.
 b              boolean
 B              boolean (ALL_CAPS)
 d              int
@@ -568,7 +770,7 @@ X              HEX (ALL_CAPS)
 s              string (This specifier is applicable for any of the supported types in Ballerina.
 These values will be converted to their string representation.)</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -577,9 +779,17 @@ These values will be converted to their string representation.)</p>
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="createReadableChannel">createReadableChannel</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] content)</p>
+    <div class="main-method-title here" id="createReadableChannel">
+             <a class="url-link" href="#createReadableChannel">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> createReadableChannel </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] content)</p>
+            <b> returns </b><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../io/types.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Creates an in-memory channel which will reference stream of bytes.</p>
 </p>
@@ -589,7 +799,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> content<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#byte">byte</a>[] </span></li>
+                    <li> content<span class="type">  <a href="../lang.annotations/UNKOWN/byte.html">byte</a>[] </span></li>
                     <li>
                         <p><p>Content which should be exposed as channel</p>
 </p>
@@ -600,23 +810,31 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a></span>)</li>
-                    <li><p>ByteChannel represenation to read the memory content</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../io/types.html#Error">Error</a></span>)</li>
+                <li><p>ByteChannel representation to read the memory content or <code>Error</code> if any error occurred</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="openReadableCsvFile">openReadableCsvFile</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
+    <div class="main-method-title here" id="openReadableCsvFile">
+             <a class="url-link" href="#openReadableCsvFile">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> openReadableCsvFile </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="../lang.annotations/UNKOWN/string.html">string</a> charset, <a href="../lang.annotations/UNKOWN/int.html">int</a> skipHeaders)</p>
+            <b> returns </b><a href="../io/objects/ReadableCSVChannel.html">ReadableCSVChannel</a> | <a href="../io/types.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a readable CSV channel from a give file path.</p>
 </p>
@@ -626,7 +844,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>File path which describes the location of the CSV</p>
 </p>
@@ -638,7 +856,7 @@ These values will be converted to their string representation.)</p>
                 <ul>
                     <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a> </span>- ,</li>
                     <li>
-                        <p><p>CSV record seperator (i.e comma or tab)</p>
+                        <p><p>CSV record separator (i.e comma or tab)</p>
 </p>
                     </li>
                 </ul>
@@ -646,7 +864,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
+                    <li> charset<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding characters in the file represents</p>
 </p>
@@ -656,7 +874,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- 0</li>
+                    <li> skipHeaders<span class="type">  <a href="../lang.annotations/UNKOWN/int.html">int</a> </span>- 0</li>
                     <li>
                         <p><p>Number of headers which should be skipped</p>
 </p>
@@ -667,23 +885,31 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableCSVChannel.html">ReadableCSVChannel</a></span>)</li>
-                    <li><p>ReadableCSVChannel which could be used to iterate through the CSV records</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableCSVChannel.html">ReadableCSVChannel</a> | <a href="../io/types.html#Error">Error</a></span>)</li>
+                <li><p>ReadableCSVChannel which could be used to iterate through the CSV records</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="openReadableFile">openReadableFile</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="openReadableFile">
+             <a class="url-link" href="#openReadableFile">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> openReadableFile </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../io/types.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a ReadableByteChannel from a given file path.</p>
 </p>
@@ -693,7 +919,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Relative/absolute path string to locate the file</p>
 </p>
@@ -704,23 +930,31 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a></span>)</li>
-                    <li><p>ByteChannel representation of the file resource</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/ReadableByteChannel.html">ReadableByteChannel</a> | <a href="../io/types.html#Error">Error</a></span>)</li>
+                <li><p>ByteChannel representation of the file resource or <code>Error</code> if any error occurred</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="openWritableCsvFile">openWritableCsvFile</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> charset, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> skipHeaders)</p>
+    <div class="main-method-title here" id="openWritableCsvFile">
+             <a class="url-link" href="#openWritableCsvFile">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> openWritableCsvFile </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../io/types.html#Separator">Separator</a> fieldSeparator, <a href="../lang.annotations/UNKOWN/string.html">string</a> charset, <a href="../lang.annotations/UNKOWN/int.html">int</a> skipHeaders)</p>
+            <b> returns </b><a href="../io/objects/WritableCSVChannel.html">WritableCSVChannel</a> | <a href="../io/types.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a writable CSV channel from a give file path.</p>
 </p>
@@ -730,7 +964,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>File path which describes the location of the CSV</p>
 </p>
@@ -742,7 +976,7 @@ These values will be converted to their string representation.)</p>
                 <ul>
                     <li> fieldSeparator<span class="type">  <a href="../io/types.html#Separator">Separator</a> </span>- ,</li>
                     <li>
-                        <p><p>CSV record seperator (i.e comma or tab)</p>
+                        <p><p>CSV record separator (i.e comma or tab)</p>
 </p>
                     </li>
                 </ul>
@@ -750,7 +984,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> charset<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span>- UTF-8</li>
+                    <li> charset<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span>- UTF-8</li>
                     <li>
                         <p><p>Encoding characters in the file represents</p>
 </p>
@@ -760,7 +994,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> skipHeaders<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- 0</li>
+                    <li> skipHeaders<span class="type">  <a href="../lang.annotations/UNKOWN/int.html">int</a> </span>- 0</li>
                     <li>
                         <p><p>Number of headers which should be skipped</p>
 </p>
@@ -771,23 +1005,31 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/WritableCSVChannel.html">WritableCSVChannel</a></span>)</li>
-                    <li><p>WritableCSVChannel which could be used to write CSV records</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/WritableCSVChannel.html">WritableCSVChannel</a> | <a href="../io/types.html#Error">Error</a></span>)</li>
+                <li><p>WritableCSVChannel which could be used to write CSV records or <code>Error</code> if any error occurred</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="openWritableFile">openWritableFile</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> append)</p>
+    <div class="main-method-title here" id="openWritableFile">
+             <a class="url-link" href="#openWritableFile">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> openWritableFile </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> append)</p>
+            <b> returns </b><a href="../io/objects/WritableByteChannel.html">WritableByteChannel</a> | <a href="../io/types.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves a WritableByteChannel from a given file path.</p>
 </p>
@@ -797,7 +1039,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Relative/absolute path string to locate the file</p>
 </p>
@@ -807,7 +1049,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> append<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> </span>- false</li>
+                    <li> append<span class="type">  <a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> </span>- false</li>
                     <li>
                         <p><p>Append to end of file.</p>
 </p>
@@ -818,23 +1060,26 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/WritableByteChannel.html">WritableByteChannel</a></span>)</li>
-                    <li><p>ByteChannel representation of the file resource</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../io/objects/WritableByteChannel.html">WritableByteChannel</a> | <a href="../io/types.html#Error">Error</a></span>)</li>
+                <li><p>ByteChannel representation of the file resource or <code>Error</code> if any error occurred</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="print">print</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
+    <div class="main-method-title here" id="print">
+             <a class="url-link" href="#print">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> print </h2>
+        
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT.</p>
 </p>
@@ -844,7 +1089,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
+                    <li> values<span class="type">  <a href="../lang.annotations/UNKOWN/any.html">any</a> | <a href="../lang.annotations/errors.html#error">error</a> </span></li>
                     <li>
                         <p><p>The value(s) to be printed.</p>
 </p>
@@ -855,13 +1100,16 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
-        
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="println">println</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> values)</p>
+    <div class="main-method-title here" id="println">
+             <a class="url-link" href="#println">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> println </h2>
+        
     </div>
     <p><p>Prints <code>any</code> or <code>error</code> value(s) to the STDOUT followed by a new line.</p>
 </p>
@@ -871,7 +1119,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> values<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
+                    <li> values<span class="type">  <a href="../lang.annotations/UNKOWN/any.html">any</a> | <a href="../lang.annotations/errors.html#error">error</a> </span></li>
                     <li>
                         <p><p>The value(s) to be printed.</p>
 </p>
@@ -882,13 +1130,21 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
-        
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="readln">readln</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> a)</p>
+    <div class="main-method-title here" id="readln">
+             <a class="url-link" href="#readln">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> readln </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/any.html">any</a> a)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the input read from STDIN.</p>
 </p>
@@ -898,7 +1154,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> a<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> </span></li>
+                    <li> a<span class="type">  <a href="../lang.annotations/UNKOWN/any.html">any</a> </span></li>
                     <li>
                         <p><p>Any value to be printed</p>
 </p>
@@ -909,23 +1165,31 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>Input read from STDIN</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>Input read from STDIN</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="sprintf">sprintf</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> format, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> args)</p>
+    <div class="main-method-title here" id="sprintf">
+             <a class="url-link" href="#sprintf">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> sprintf </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> format, <a href="../lang.annotations/UNKOWN/any.html">any</a> | <a href="../lang.annotations/errors.html#error">error</a> args)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns a formatted string using the specified format string and arguments. Following format specifiers are allowed.
 b              boolean
@@ -943,7 +1207,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> format<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> format<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>A format string</p>
 </p>
@@ -953,7 +1217,7 @@ These values will be converted to their string representation.)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> args<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#any">any</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a> </span></li>
+                    <li> args<span class="type">  <a href="../lang.annotations/UNKOWN/any.html">any</a> | <a href="../lang.annotations/errors.html#error">error</a> </span></li>
                     <li>
                         <p><p>Arguments referenced by the format specifiers in the format string.</p>
 </p>
@@ -964,17 +1228,17 @@ These values will be converted to their string representation.)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>Formatted string</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>Formatted string</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                         </div>
@@ -996,6 +1260,30 @@ These values will be converted to their string representation.)</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

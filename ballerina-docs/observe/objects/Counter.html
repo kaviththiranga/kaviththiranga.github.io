@@ -13,52 +13,81 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Objects</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Counter.html">Counter</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="Gauge.html">Gauge</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../observe/index.html">
         <h3>observe</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../observe/index.html#records">Records</a>
+            <a data="records" href="../../observe/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../observe/index.html#objects">Objects</a>
+                <a  data="objects" href="../../observe/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../observe/index.html#functions">Functions</a>
+                <a data="functions" href="../../observe/index.html#functions">Functions</a>
             </li>
         
         
@@ -68,6 +97,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -78,6 +108,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -109,11 +143,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -121,7 +155,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -137,11 +251,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -150,10 +264,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -170,10 +280,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -201,7 +307,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -216,43 +330,43 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Objects</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active"></li>>
                                 <a href="Counter.html">Counter</a>
                             </li>
                         
-                            <li>
+                            <li ></li>>
                                 <a href="Gauge.html">Gauge</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../observe/index.html">
         <h3>observe</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../observe/index.html#records">Records</a>
+            <a data="records" href="../../observe/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../observe/index.html#objects">Objects</a>
+                <a  data="objects" href="../../observe/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../../observe/index.html#functions">Functions</a>
+                <a data="functions" href="../../observe/index.html#functions">Functions</a>
             </li>
         
         
@@ -262,6 +376,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -272,6 +387,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -303,11 +422,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -315,7 +434,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -331,11 +530,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -344,10 +543,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -364,10 +559,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -395,7 +586,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -413,20 +612,28 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Counter</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Object - </span> 
+                <a href="../../observe/index.html">observe</a> : 
+                <span class="objects">Counter</span>
+            </h1>
             <p><p>This represents the metric type - counter, that can be only increased by an integer number.</p>
 </p>
 
             <div class="constants">
-                
+                <div class="method-sum">
                     
-                       <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? desc, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>? tags)</p>
+                        
+                        <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> name, <a href="../../lang.annotations/UNKOWN/string.html">string</a>? desc, <a href="../../lang.annotations/UNKOWN/map.html">map</a>? tags)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>name</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+                <li> <b>name</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
                 <li>
                     <p>Name of the Counter instance.</p>
 
@@ -436,7 +643,7 @@
     
         <div class="params-listing">
             <ul>
-                <li> <b>desc</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>?</span> </li>
+                <li> <b>desc</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a>?</span> </li>
                 <li>
                     <p>Description of the Counter instance. If no description is provided, the the default empty string
 will be used.</p>
@@ -447,7 +654,7 @@ will be used.</p>
     
         <div class="params-listing">
             <ul>
-                <li> <b>tags</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a>?</span> ()</li>
+                <li> <b>tags</b><span class="type">  <a href="../../lang.annotations/UNKOWN/map.html">map</a>?</span> ()</li>
                 <li>
                     <p>The key/value pair of Tags. If no tags are provided, the default nil value will be used.</p>
 
@@ -456,62 +663,80 @@ will be used.</p>
         </div>
     
 </div>
+                        
                     
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
-                        
-                            <p>
-    <a href="#register"><b>register </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#unregister"><b>unregister </b></a>
-    () 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#increment"><b>increment </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount) 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#reset"><b>reset </b></a>
-    () 
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#getValue"><b>getValue </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> 
-        </span>
-    <br>
-</p>
-                        
-                    </div>
-                
 
                 
                     
-                        <h2>Fields</h2>
-                            <div class="data-wrapper">
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#register">
+    <div class="param-sum">
+        <div class="param-name">
+        register 
+        </div>
+        <div class="param-details"> <p>Register the counter metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#unregister">
+    <div class="param-sum">
+        <div class="param-name">
+        unregister 
+        </div>
+        <div class="param-details"> <p>Unregister the counter metric instance with the Metric Registry.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#increment">
+    <div class="param-sum">
+        <div class="param-name">
+        increment 
+        </div>
+        <div class="param-details"> <p>Increment the counter's value by an amount.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#reset">
+    <div class="param-sum">
+        <div class="param-name">
+        reset 
+        </div>
+        <div class="param-details"> <p>Resets the counter's value to zero.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getValue">
+    <div class="param-sum">
+        <div class="param-name">
+        getValue 
+        </div>
+        <div class="param-details"> <p>Retrieves the counter's current value.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                        
+                            <h2>Fields</h2>
+                                <div class="data-wrapper">
         
     <div class="params-listing">
         <ul>
-            <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+            <li> name<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
             <li>
                 <p><p>Name of the counter metric.</p>
 </p>
@@ -521,7 +746,7 @@ will be used.</p>
         
     <div class="params-listing">
         <ul>
-            <li> description<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+            <li> description<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
             <li>
                 <p><p>Description of the counter metric.</p>
 </p>
@@ -531,7 +756,7 @@ will be used.</p>
         
     <div class="params-listing">
         <ul>
-            <li> metricTags<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#map">map</a></span> </li>
+            <li> metricTags<span class="type">  <a href="../../lang.annotations/UNKOWN/map.html">map</a></span> </li>
             <li>
                 <p><p>Tags associated with the counter metric.</p>
 </p>
@@ -552,54 +777,92 @@ will be used.</p>
 
     })
   ;
+
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 </script>
 
-
+                        
                     
-                
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="register">register</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="register">
+             <a class="url-link" href="#register">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> register </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p><p>Register the counter metric instance with the Metric Registry.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>Returns error if there is any metric registered already with the same name
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p>Returns error if there is any metric registered already with the same name
 but different parameters or in a different kind.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="unregister">unregister</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="unregister">
+             <a class="url-link" href="#unregister">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> unregister </h2>
+        
     </div>
     <p><p>Unregister the counter metric instance with the Metric Registry.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="increment">increment</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> amount)</p>
+    <div class="main-method-title here" id="increment">
+             <a class="url-link" href="#increment">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> increment </h2>
+        
     </div>
     <p><p>Increment the counter's value by an amount.</p>
 </p>
@@ -609,7 +872,7 @@ but different parameters or in a different kind.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> amount<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span>- 1</li>
+                    <li> amount<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a> </span>- 1</li>
                     <li>
                         <p><p>The amount by which the value needs to be increased. The amount is defaulted as 1 and will be
 used if there is no amount passed in.</p>
@@ -621,41 +884,52 @@ used if there is no amount passed in.</p>
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="reset">reset</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="reset">
+             <a class="url-link" href="#reset">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> reset </h2>
+        
     </div>
     <p><p>Resets the counter's value to zero.</p>
 </p>
      
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getValue">getValue</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getValue">
+             <a class="url-link" href="#getValue">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getValue </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/int.html">int</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the counter's current value.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span>)</li>
-                    <li><p>The current value of the counter.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/int.html">int</a></span>)</li>
+                <li><p>The current value of the counter.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -676,6 +950,30 @@ used if there is no amount passed in.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

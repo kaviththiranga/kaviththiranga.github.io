@@ -13,59 +13,81 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
-
-
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Functions</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="#getCallStack">getCallStack</a>
                         </li>
                     
-                        <li>
-                            <a href="#getErrorCallStackFrame">getErrorCallStackFrame</a>
-                        </li>
-                    
-                        <li>
+                        <li >
                             <a href="#getInvocationContext">getInvocationContext</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#getProperty">getProperty</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#sleep">sleep</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#timeout">timeout</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -73,7 +95,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -83,6 +105,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -93,6 +116,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -124,11 +151,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -136,7 +163,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -152,11 +259,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -165,10 +272,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -185,10 +288,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -216,7 +315,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -231,47 +338,43 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Functions</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="#getCallStack">getCallStack</a>
                             </li>
                         
-                            <li>
-                                <a href="#getErrorCallStackFrame">getErrorCallStackFrame</a>
-                            </li>
-                        
-                            <li>
+                            <li >
                                 <a href="#getInvocationContext">getInvocationContext</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#getProperty">getProperty</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#sleep">sleep</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#timeout">timeout</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../runtime/index.html">
         <h3>runtime</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../runtime/index.html#records">Records</a>
+            <a data="records" href="../runtime/index.html#records">Records</a>
         </li>
         
         
@@ -279,7 +382,7 @@
         
         
             <li>
-                <a href="../runtime/index.html#functions">Functions</a>
+                <a data="functions" href="../runtime/index.html#functions">Functions</a>
             </li>
         
         
@@ -289,6 +392,7 @@
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -299,6 +403,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -330,11 +438,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -342,7 +450,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -358,11 +546,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -371,10 +559,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -391,10 +575,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -422,7 +602,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -439,56 +627,54 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Functions - </span> 
+                <a href="../runtime/index.html">runtime</a> 
+            </h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getCallStack">getCallStack</a></td>
-                            <td width="70%"><p>Retrieves the Call Stack</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getCallStack">getCallStack</a></td>
+                                <td width="70%"><p>Retrieves the Call Stack</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getErrorCallStackFrame">getErrorCallStackFrame</a></td>
-                            <td width="70%"><p>Retrieves the Call Stack Frame for a particular error</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getInvocationContext">getInvocationContext</a></td>
+                                <td width="70%"><p>Creates a InvocationContext instance.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getInvocationContext">getInvocationContext</a></td>
-                            <td width="70%"><p>Creates a InvocationContext instance.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getProperty">getProperty</a></td>
+                                <td width="70%"><p>Returns the value associated with the specified property name.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getProperty">getProperty</a></td>
-                            <td width="70%"><p>Returns the value associated with the specified property name.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#sleep">sleep</a></td>
+                                <td width="70%"><p>Halts the current worker for a predefined amount of time.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#sleep">sleep</a></td>
-                            <td width="70%"><p>Halts the current worker for a predefined amount of time.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#timeout">timeout</a></td>
+                                <td width="70%"><p>Gives a timeout to the current worker for a predefined amount of time.</p>
 </td>
-                        </tr>
-                        </tbody>
-                    
-                        <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#timeout">timeout</a></td>
-                            <td width="70%"><p>Gives a timeout to the current worker for a predefined amount of time.</p>
-</td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -497,90 +683,77 @@
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getCallStack">getCallStack</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getCallStack">
+             <a class="url-link" href="#getCallStack">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getCallStack </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[] 
+        </span>
+        
     </div>
     <p><p>Retrieves the Call Stack</p>
 </p>
      
 
-        
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[]</span>)</li>
-                    <li><p>Array of <code>CallStackElement</code> elements</p>
-</li>
-                </ul>
-            </div>
-            
-        
-</div>
-                            
-                                <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getErrorCallStackFrame">getErrorCallStackFrame</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? e)</p>
-    </div>
-    <p><p>Retrieves the Call Stack Frame for a particular error</p>
-</p>
-     
-        <div class="data-wrapper">
-            <h3 class="param-title">Parameters</h3>
-                
-            <div class="params-listing">
-                <ul>
-                    <li> e<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? </span></li>
-                    <li>
-                        <p><p>optional <code>error</code> instance</p>
-</p>
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
     
-
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[]</span>)</li>
-                    <li><p>Array of <code>CallStackElement</code> elements</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../runtime/records/CallStackElement.html">CallStackElement</a>[]</span>)</li>
+                <li><p>Array of <code>CallStackElement</code> elements</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getInvocationContext">getInvocationContext</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getInvocationContext">
+             <a class="url-link" href="#getInvocationContext">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getInvocationContext </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../runtime/records/InvocationContext.html">InvocationContext</a> 
+        </span>
+        
     </div>
     <p><p>Creates a InvocationContext instance.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../runtime/records/InvocationContext.html">InvocationContext</a></span>)</li>
-                    <li><p>InvocationContext instance</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../runtime/records/InvocationContext.html">InvocationContext</a></span>)</li>
+                <li><p>InvocationContext instance</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getProperty">getProperty</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name)</p>
+    <div class="main-method-title here" id="getProperty">
+             <a class="url-link" href="#getProperty">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getProperty </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> name)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns the value associated with the specified property name.</p>
 </p>
@@ -590,7 +763,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> name<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>Name of the property</p>
 </p>
@@ -601,23 +774,26 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>Value of the property if the property exists, an empty string otherwise</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>Value of the property if the property exists, an empty string otherwise</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="sleep">sleep</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> millis)</p>
+    <div class="main-method-title here" id="sleep">
+             <a class="url-link" href="#sleep">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> sleep </h2>
+        
     </div>
     <p><p>Halts the current worker for a predefined amount of time.</p>
 </p>
@@ -627,7 +803,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> millis<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
+                    <li> millis<span class="type">  <a href="../lang.annotations/UNKOWN/int.html">int</a> </span></li>
                     <li>
                         <p><p>Amount of time to sleep in milliseconds</p>
 </p>
@@ -638,13 +814,21 @@
         </div>
     
 
-        
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="timeout">timeout</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> millis)</p>
+    <div class="main-method-title here" id="timeout">
+             <a class="url-link" href="#timeout">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> timeout </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/int.html">int</a> millis)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/future.html">future</a> 
+        </span>
+        
     </div>
     <p><p>Gives a timeout to the current worker for a predefined amount of time.</p>
 </p>
@@ -654,7 +838,7 @@
                 
             <div class="params-listing">
                 <ul>
-                    <li> millis<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> </span></li>
+                    <li> millis<span class="type">  <a href="../lang.annotations/UNKOWN/int.html">int</a> </span></li>
                     <li>
                         <p><p>Amount of time needed for the timeout in milliseconds</p>
 </p>
@@ -665,17 +849,17 @@
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#future">future</a></span>)</li>
-                    <li><p>Future to be invoked after the timeout</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/future.html">future</a></span>)</li>
+                <li><p>Future to be invoked after the timeout</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                         </div>
@@ -697,6 +881,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

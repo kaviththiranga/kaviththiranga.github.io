@@ -13,76 +13,114 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
-
-
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Functions</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="#absolute">absolute</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#build">build</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#extension">extension</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#filename">filename</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#getPathListSeparator">getPathListSeparator</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#getPathSeparator">getPathSeparator</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#isAbsolute">isAbsolute</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#isReservedName">isReservedName</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#matches">matches</a>
+                        </li>
+                    
+                        <li >
                             <a href="#normalize">normalize</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="#parent">parent</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#prepareError">prepareError</a>
+                        </li>
+                    
+                        <li >
                             <a href="#relative">relative</a>
                         </li>
                     
-                        <li>
+                        <li >
+                            <a href="#resolve">resolve</a>
+                        </li>
+                    
+                        <li >
                             <a href="#split">split</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../filepath/index.html">
         <h3>filepath</h3>
     </a>
@@ -93,16 +131,25 @@
         
         
             <li>
-                <a href="../filepath/index.html#functions">Functions</a>
+                <a data="functions" href="../filepath/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a data="constants" href="../filepath/index.html#constants">Constants</a>
             </li>
         
         
         
         
+            <li>
+                <a data="errors" href="../filepath/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -113,6 +160,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -144,11 +195,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -156,7 +207,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -172,11 +303,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -185,10 +316,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -205,10 +332,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -236,7 +359,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -251,64 +382,76 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Functions</h3>
                     <ul>
                         
-                            <li>
+                            <li >
                                 <a href="#absolute">absolute</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#build">build</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#extension">extension</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#filename">filename</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#getPathListSeparator">getPathListSeparator</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#getPathSeparator">getPathSeparator</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#isAbsolute">isAbsolute</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#isReservedName">isReservedName</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#matches">matches</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#normalize">normalize</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="#parent">parent</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#prepareError">prepareError</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#relative">relative</a>
                             </li>
                         
-                            <li>
+                            <li >
+                                <a href="#resolve">resolve</a>
+                            </li>
+                        
+                            <li >
                                 <a href="#split">split</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../filepath/index.html">
         <h3>filepath</h3>
     </a>
@@ -319,16 +462,25 @@
         
         
             <li>
-                <a href="../filepath/index.html#functions">Functions</a>
+                <a data="functions" href="../filepath/index.html#functions">Functions</a>
+            </li>
+        
+        
+            <li>
+                <a data="constants" href="../filepath/index.html#constants">Constants</a>
             </li>
         
         
         
         
+            <li>
+                <a data="errors" href="../filepath/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -339,6 +491,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -370,11 +526,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -382,7 +538,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -398,11 +634,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -411,10 +647,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -431,10 +663,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -462,7 +690,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -479,119 +715,153 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Functions</h1>
+            <h1>
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Functions - </span> 
+                <a href="../filepath/index.html">filepath</a> 
+            </h1>
             <div class="constants">
                 <table class="ui table details-table">
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#absolute">absolute</a></td>
-                            <td width="70%"><p>Retrieves the absolute path from the provided location.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#absolute">absolute</a></td>
+                                <td width="70%"><p>Retrieves the absolute path from the provided location.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#build">build</a></td>
-                            <td width="70%"><p>Joins any number of path elements into a single path</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#build">build</a></td>
+                                <td width="70%"><p>Joins any number of path elements into a single path</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#extension">extension</a></td>
-                            <td width="70%"><p>Retrieves the extension of the file path.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#extension">extension</a></td>
+                                <td width="70%"><p>Retrieves the extension of the file path.
 The extension is the suffix beginning at the final dot in the final element of path.
 it is empty if there is no dot.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#filename">filename</a></td>
-                            <td width="70%"><p>Retrieves the base name of the file from the provided location.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#filename">filename</a></td>
+                                <td width="70%"><p>Retrieves the base name of the file from the provided location.
 The last element of path.
 Trailing path separators are removed before extracting the last element.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getPathListSeparator">getPathListSeparator</a></td>
-                            <td width="70%"><p>Returns path list separator of underline operating system.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getPathListSeparator">getPathListSeparator</a></td>
+                                <td width="70%"><p>Returns path list separator of underline operating system.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#getPathSeparator">getPathSeparator</a></td>
-                            <td width="70%"><p>Returns path separator of underline operating system.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#getPathSeparator">getPathSeparator</a></td>
+                                <td width="70%"><p>Returns path separator of underline operating system.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#isAbsolute">isAbsolute</a></td>
-                            <td width="70%"><p>Reports whether the path is absolute.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#isAbsolute">isAbsolute</a></td>
+                                <td width="70%"><p>Reports whether the path is absolute.
 A path is absolute if it is independent of the current directory.
 On Unix, a path is absolute if it starts with the root.
 On Windows, a path is absolute if it has a prefix and starts with the root: c:\windows is absolute</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#isReservedName">isReservedName</a></td>
-                            <td width="70%"><p>Reports whether the filename is reserved.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#isReservedName">isReservedName</a></td>
+                                <td width="70%"><p>Reports whether the filename is reserved.
 Reserved words only exist in windows.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#normalize">normalize</a></td>
-                            <td width="70%"><p>Returns the shortest path name equivalent to path by purely lexical processing.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#matches">matches</a></td>
+                                <td width="70%"><p>Reports whether all of filename matches the provided pattern, not just a substring.
+An error is returned if the pattern is malformed.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#normalize">normalize</a></td>
+                                <td width="70%"><p>Returns the shortest path name equivalent to path by purely lexical processing.
 Replace multiple Separator elements with a single one.
 Eliminate each . path name element (the current directory).
 Eliminate each inner .. path name element (the parent directory)</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#parent">parent</a></td>
-                            <td width="70%"><p>Returns the enclosing parent directory.
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#parent">parent</a></td>
+                                <td width="70%"><p>Returns the enclosing parent directory.
 If the path is empty, parent returns &quot;.&quot;.
 The returned path does not end in a separator unless it is the root directory.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#relative">relative</a></td>
-                            <td width="70%"><p>Returns a relative path that is logically equivalent to target path when joined to base path with an intervening
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#prepareError">prepareError</a></td>
+                                <td width="70%"><p>Prepare the <code>error</code> as an <code>Error</code>.</p>
+</td>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#relative">relative</a></td>
+                                <td width="70%"><p>Returns a relative path that is logically equivalent to target path when joined to base path with an intervening
 separator.
 An error is returned if target path can't be made relative to base path.</p>
 </td>
-                        </tr>
+                            </tr>
                         </tbody>
                     
                         <tbody>
-                        <tr>
-                            <td width="30%" ><a class="functions" href="#split">split</a></td>
-                            <td width="70%"><p>Splits a list of paths joined by the OS-specific Path Separator.</p>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#resolve">resolve</a></td>
+                                <td width="70%"><p>Returns the filepath after the evaluation of any symbolic links.
+If path is relative, the result will be relative to the current directory,
+unless one of the components is an absolute symbolic link.
+Resolve calls normalize on the result.</p>
 </td>
-                        </tr>
+                            </tr>
+                        </tbody>
+                    
+                        <tbody>
+                            <tr>
+                                <td width="30%" ><a class="functions" href="#split">split</a></td>
+                                <td width="70%"><p>Splits a list of paths joined by the OS-specific Path Separator.</p>
+</td>
+                            </tr>
                         </tbody>
                     
                 </table>
@@ -600,9 +870,17 @@ An error is returned if target path can't be made relative to base path.</p>
                         <div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="absolute">absolute</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="absolute">
+             <a class="url-link" href="#absolute">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> absolute </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the absolute path from the provided location.</p>
 </p>
@@ -612,7 +890,7 @@ An error is returned if target path can't be made relative to base path.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -623,23 +901,31 @@ An error is returned if target path can't be made relative to base path.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>The absolute path reference or an error if the path cannot be derived</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>The absolute path reference or an error if the path cannot be derived</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="build">build</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] parts)</p>
+    <div class="main-method-title here" id="build">
+             <a class="url-link" href="#build">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> build </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a>[] parts)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Joins any number of path elements into a single path</p>
 </p>
@@ -649,7 +935,7 @@ An error is returned if target path can't be made relative to base path.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> parts<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] </span></li>
+                    <li> parts<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a>[] </span></li>
                     <li>
                         <p><p>String values of file path parts.</p>
 </p>
@@ -660,23 +946,31 @@ An error is returned if target path can't be made relative to base path.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>String value of file path.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>String value of file path.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="extension">extension</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="extension">
+             <a class="url-link" href="#extension">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> extension </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the extension of the file path.
 The extension is the suffix beginning at the final dot in the final element of path.
@@ -688,7 +982,7 @@ it is empty if there is no dot.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -699,23 +993,31 @@ it is empty if there is no dot.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns the extension of the file. Empty string if no extension.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Returns the extension of the file. Empty string if no extension.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="filename">filename</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="filename">
+             <a class="url-link" href="#filename">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> filename </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Retrieves the base name of the file from the provided location.
 The last element of path.
@@ -727,7 +1029,7 @@ Trailing path separators are removed before extracting the last element.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -738,67 +1040,91 @@ Trailing path separators are removed before extracting the last element.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns the name of the file</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Returns the name of the file</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getPathListSeparator">getPathListSeparator</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getPathListSeparator">
+             <a class="url-link" href="#getPathListSeparator">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getPathListSeparator </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns path list separator of underline operating system.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>String value of path list separator</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>String value of path list separator</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getPathSeparator">getPathSeparator</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getPathSeparator">
+             <a class="url-link" href="#getPathSeparator">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> getPathSeparator </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
     </div>
     <p><p>Returns path separator of underline operating system.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>String value of path separator</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>String value of path separator</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="isAbsolute">isAbsolute</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="isAbsolute">
+             <a class="url-link" href="#isAbsolute">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> isAbsolute </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Reports whether the path is absolute.
 A path is absolute if it is independent of the current directory.
@@ -811,7 +1137,7 @@ On Windows, a path is absolute if it has a prefix and starts with the root: c:\w
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -822,23 +1148,31 @@ On Windows, a path is absolute if it has a prefix and starts with the root: c:\w
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>True if path is absolute, else false</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>True if path is absolute, else false</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="isReservedName">isReservedName</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> name)</p>
+    <div class="main-method-title here" id="isReservedName">
+             <a class="url-link" href="#isReservedName">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> isReservedName </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> name)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> 
+        </span>
+        
     </div>
     <p><p>Reports whether the filename is reserved.
 Reserved words only exist in windows.</p>
@@ -849,7 +1183,7 @@ Reserved words only exist in windows.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> name<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>filename</p>
 </p>
@@ -860,23 +1194,87 @@ Reserved words only exist in windows.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#boolean">boolean</a></span>)</li>
-                    <li><p>true, if path is Windows reserved name.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a></span>)</li>
+                <li><p>true, if path is Windows reserved name.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="normalize">normalize</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="matches">
+             <a class="url-link" href="#matches">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> matches </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path, <a href="../lang.annotations/UNKOWN/string.html">string</a> pattern)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
+    </div>
+    <p><p>Reports whether all of filename matches the provided pattern, not just a substring.
+An error is returned if the pattern is malformed.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p><p>String value of the file path.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> pattern<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p><p>String value of the target file path.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/boolean.html">boolean</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>True if filename of the path matches with the pattern, else false</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="normalize">
+             <a class="url-link" href="#normalize">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> normalize </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Returns the shortest path name equivalent to path by purely lexical processing.
 Replace multiple Separator elements with a single one.
@@ -889,7 +1287,7 @@ Eliminate each inner .. path name element (the parent directory)</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -900,23 +1298,31 @@ Eliminate each inner .. path name element (the parent directory)</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Normalized file path</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Normalized file path</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="parent">parent</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="parent">
+             <a class="url-link" href="#parent">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> parent </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Returns the enclosing parent directory.
 If the path is empty, parent returns &quot;.&quot;.
@@ -928,7 +1334,7 @@ The returned path does not end in a separator unless it is the root directory.</
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -939,23 +1345,86 @@ The returned path does not end in a separator unless it is the root directory.</
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Path of parent folder or error occurred while getting parent directory</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Path of parent folder or error occurred while getting parent directory</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="relative">relative</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> base, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> target)</p>
+    <div class="main-method-title here" id="prepareError">
+             <a class="url-link" href="#prepareError">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> prepareError </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> message, <a href="../lang.annotations/errors.html#error">error</a>? err)</p>
+            <b> returns </b><a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
+    </div>
+    <p><p>Prepare the <code>error</code> as an <code>Error</code>.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> message<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p><p>The error message.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> err<span class="type">  <a href="../lang.annotations/errors.html#error">error</a>? </span>- ()</li>
+                    <li>
+                        <p><p>The <code>error</code> instance.</p>
+</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Prepared <code>Error</code> instance.</p>
+</li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="relative">
+             <a class="url-link" href="#relative">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> relative </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> base, <a href="../lang.annotations/UNKOWN/string.html">string</a> target)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
     <p><p>Returns a relative path that is logically equivalent to target path when joined to base path with an intervening
 separator.
@@ -967,7 +1436,7 @@ An error is returned if target path can't be made relative to base path.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> base<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> base<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of the base file path.</p>
 </p>
@@ -977,7 +1446,7 @@ An error is returned if target path can't be made relative to base path.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> target<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> target<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of the target file path.</p>
 </p>
@@ -988,25 +1457,36 @@ An error is returned if target path can't be made relative to base path.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>Returns the extension of the file. Empty string if no extension.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Returns the extension of the file. Empty string if no extension.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                             
                                 <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="split">split</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> path)</p>
+    <div class="main-method-title here" id="resolve">
+             <a class="url-link" href="#resolve">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> resolve </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
     </div>
-    <p><p>Splits a list of paths joined by the OS-specific Path Separator.</p>
+    <p><p>Returns the filepath after the evaluation of any symbolic links.
+If path is relative, the result will be relative to the current directory,
+unless one of the components is an absolute symbolic link.
+Resolve calls normalize on the result.</p>
 </p>
      
         <div class="data-wrapper">
@@ -1014,7 +1494,7 @@ An error is returned if target path can't be made relative to base path.</p>
                 
             <div class="params-listing">
                 <ul>
-                    <li> path<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> </span></li>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
                     <li>
                         <p><p>String value of file path.</p>
 </p>
@@ -1025,17 +1505,62 @@ An error is returned if target path can't be made relative to base path.</p>
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>[] | <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a></span>)</li>
-                    <li><p>String array of part components</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a> | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>Resolved file path</p>
 </li>
+            </ul>
+        </div>
+        
+    
+</div>
+                            
+                                <div class="method-content">
+    <div class="main-method-title here" id="split">
+             <a class="url-link" href="#split">
+                <img class="url-link-img" src="../html-template-resources/images/link.svg">
+            </a>
+            <h2> split </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../lang.annotations/UNKOWN/string.html">string</a> path)</p>
+            <b> returns </b><a href="../lang.annotations/UNKOWN/string.html">string</a>[] | <a href="../filepath/errors.html#Error">Error</a> 
+        </span>
+        
+    </div>
+    <p><p>Splits a list of paths joined by the OS-specific Path Separator.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
+                <ul>
+                    <li> path<span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a> </span></li>
+                    <li>
+                        <p><p>String value of file path.</p>
+</p>
+                    </li>
                 </ul>
             </div>
             
+        </div>
+    
+
+    
         
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../lang.annotations/UNKOWN/string.html">string</a>[] | <a href="../filepath/errors.html#Error">Error</a></span>)</li>
+                <li><p>String array of part components</p>
+</li>
+            </ul>
+        </div>
+        
+    
 </div>
                             
                         </div>
@@ -1057,6 +1582,30 @@ An error is returned if target path can't be made relative to base path.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

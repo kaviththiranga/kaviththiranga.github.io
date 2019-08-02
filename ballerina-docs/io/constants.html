@@ -13,55 +13,85 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../io/index.html#records">Records</a>
-        </li>
-        
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../io/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -72,6 +102,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -103,11 +137,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -115,7 +149,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -131,11 +245,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -144,10 +258,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -164,10 +274,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -195,7 +301,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -210,46 +324,47 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../io/index.html">
         <h3>io</h3>
     </a>
     <ul>
         
-        <li>
-            <a href="../io/index.html#records">Records</a>
-        </li>
-        
         
             <li>
-                <a href="../io/index.html#objects">Objects</a>
+                <a  data="objects" href="../io/index.html#objects">Objects</a>
             </li>
         
         
         
         
             <li>
-                <a href="../io/index.html#functions">Functions</a>
+                <a data="functions" href="../io/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../io/index.html#constants">Constants</a>
+                <a data="constants" href="../io/index.html#constants">Constants</a>
             </li>
         
         
         
             <li>
-                <a href="../io/index.html#types">Types</a>
+                <a data="types" href="../io/index.html#types">Types</a>
             </li>
         
+        
+            <li>
+                <a data="errors" href="../io/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -260,6 +375,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -291,11 +410,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -303,7 +422,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -319,11 +518,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -332,10 +531,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -352,10 +547,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -383,7 +574,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -400,13 +599,19 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Constants</h1>
+            <h1>
+                <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Constants - </span> 
+                <a href="../io/index.html">io</a> 
+            </h1>
             <div class="constants">
                 <div class="data-wrapper">
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="DEFAULT"> <b>DEFAULT</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> default</li>
+                                <li id="DEFAULT"> <b>DEFAULT</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> default</li>
                                 <li>
                                     
                                 </li>
@@ -415,7 +620,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="CSV"> <b>CSV</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> csv</li>
+                                <li id="CSV"> <b>CSV</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> csv</li>
                                 <li>
                                     
                                 </li>
@@ -424,7 +629,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="TDF"> <b>TDF</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> tdf</li>
+                                <li id="TDF"> <b>TDF</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> tdf</li>
                                 <li>
                                     
                                 </li>
@@ -433,7 +638,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="COMMA"> <b>COMMA</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> ,</li>
+                                <li id="COMMA"> <b>COMMA</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> ,</li>
                                 <li>
                                     
                                 </li>
@@ -442,7 +647,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="TAB"> <b>TAB</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> 	</li>
+                                <li id="TAB"> <b>TAB</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> 	</li>
                                 <li>
                                     
                                 </li>
@@ -451,7 +656,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="COLON"> <b>COLON</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> :</li>
+                                <li id="COLON"> <b>COLON</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> :</li>
                                 <li>
                                     
                                 </li>
@@ -460,7 +665,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="READ"> <b>READ</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> r</li>
+                                <li id="CONNECTION_TIMED_OUT"> <b>CONNECTION_TIMED_OUT</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> {ballerina/io}ConnectionTimedOut</li>
                                 <li>
                                     
                                 </li>
@@ -469,7 +674,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="WRITE"> <b>WRITE</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> w</li>
+                                <li id="GENERIC_ERROR"> <b>GENERIC_ERROR</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> {ballerina/io}GenericError</li>
                                 <li>
                                     
                                 </li>
@@ -478,7 +683,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="RW"> <b>RW</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> rw</li>
+                                <li id="READ"> <b>READ</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> r</li>
                                 <li>
                                     
                                 </li>
@@ -487,7 +692,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="APPEND"> <b>APPEND</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> a</li>
+                                <li id="WRITE"> <b>WRITE</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> w</li>
                                 <li>
                                     
                                 </li>
@@ -496,7 +701,25 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="CSV_RECORD_SEPERATOR"> <b>CSV_RECORD_SEPERATOR</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> 
+                                <li id="RW"> <b>RW</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> rw</li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="APPEND"> <b>APPEND</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> a</li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="params-listing">
+                            <ul>
+                                <li id="CSV_RECORD_SEPARATOR"> <b>CSV_RECORD_SEPARATOR</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> 
 </li>
                                 <li>
                                     <p>Represents record separator of the CSV file.</p>
@@ -507,7 +730,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="FS_COLON"> <b>FS_COLON</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> :</li>
+                                <li id="FS_COLON"> <b>FS_COLON</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> :</li>
                                 <li>
                                     <p>Represents colon separator which should be used to identify colon separated files.</p>
 
@@ -517,7 +740,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="MINIMUM_HEADER_COUNT"> <b>MINIMUM_HEADER_COUNT</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 0</li>
+                                <li id="MINIMUM_HEADER_COUNT"> <b>MINIMUM_HEADER_COUNT</b><span class="type">  <a href="../lang.annotations/UNKOWN/int.html">int</a></span> 0</li>
                                 <li>
                                     <p>Represents minimum number of headers which will be included in CSV.</p>
 
@@ -527,7 +750,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="BIG_ENDIAN"> <b>BIG_ENDIAN</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> BE</li>
+                                <li id="BIG_ENDIAN"> <b>BIG_ENDIAN</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> BE</li>
                                 <li>
                                     
                                 </li>
@@ -536,7 +759,7 @@
                     
                         <div class="params-listing">
                             <ul>
-                                <li id="LITTLE_ENDIAN"> <b>LITTLE_ENDIAN</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> LE</li>
+                                <li id="LITTLE_ENDIAN"> <b>LITTLE_ENDIAN</b><span class="type">  <a href="../lang.annotations/UNKOWN/string.html">string</a></span> LE</li>
                                 <li>
                                     
                                 </li>
@@ -560,6 +783,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

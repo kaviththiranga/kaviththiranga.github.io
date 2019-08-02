@@ -13,73 +13,127 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Records</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="ConnectionConfig.html">ConnectionConfig</a>
                         </li>
                     
-                        <li>
-                            <a href="ConsumerConfigData.html">ConsumerConfigData</a>
+                        <li >
+                            <a href="SecureSocket.html">SecureSocket</a>
                         </li>
                     
-                        <li>
-                            <a href="IOError.html">IOError</a>
+                        <li >
+                            <a href="StreamingConfig.html">StreamingConfig</a>
+                        </li>
+                    
+                        <li >
+                            <a href="StreamingSubscriptionConfigData.html">StreamingSubscriptionConfigData</a>
+                        </li>
+                    
+                        <li >
+                            <a href="SubscriptionConfigData.html">SubscriptionConfigData</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -90,6 +144,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -121,11 +179,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -133,7 +191,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -149,11 +287,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -162,10 +300,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -182,10 +316,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -213,7 +343,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -228,64 +366,89 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Records</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active">
                                 <a href="ConnectionConfig.html">ConnectionConfig</a>
                             </li>
                         
-                            <li>
-                                <a href="ConsumerConfigData.html">ConsumerConfigData</a>
+                            <li >
+                                <a href="SecureSocket.html">SecureSocket</a>
                             </li>
                         
-                            <li>
-                                <a href="IOError.html">IOError</a>
+                            <li >
+                                <a href="StreamingConfig.html">StreamingConfig</a>
+                            </li>
+                        
+                            <li >
+                                <a href="StreamingSubscriptionConfigData.html">StreamingSubscriptionConfigData</a>
+                            </li>
+                        
+                            <li >
+                                <a href="SubscriptionConfigData.html">SubscriptionConfigData</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -296,6 +459,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -327,11 +494,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -339,7 +506,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -355,11 +602,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -368,10 +615,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -388,10 +631,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -419,7 +658,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -436,9 +683,15 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Record : <span class="records">ConnectionConfig</span></h1>
-
-            <p>Represents the list of paramters required to establish a connection.
+            <h1> 
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Record - </span> 
+                <a href="../../nats/index.html">nats</a> 
+                 : <span class="records">ConnectionConfig</span>
+            </h1>
+            <p>NATS core connection configuration
 </p>
             <div class="constants">
                 
@@ -448,9 +701,9 @@
         
     <div class="params-listing">
         <ul>
-            <li> host<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> </li>
+            <li> connectionName<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> ballerina-nats</li>
             <li>
-                <p><p>Remote server host name/IP.</p>
+                <p><p>Name of the connection. This is optional.</p>
 </p>
             </li>
         </ul>
@@ -458,9 +711,12 @@
         
     <div class="params-listing">
         <ul>
-            <li> port<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> </li>
+            <li> maxReconnect<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> 60</li>
             <li>
-                <p><p>Remote server port.</p>
+                <p><p>Maximum number of reconnect attempts. Use 0 to turn off auto reconnect.
+Use -1 to turn on infinite reconnects. The reconnect state is entered when the connection is connected and when
+that connection is lost. During the initial connection attempt, the client will cycle over
+its server list one time regardless of the maxReconnects value that is set.</p>
 </p>
             </li>
         </ul>
@@ -468,9 +724,10 @@
         
     <div class="params-listing">
         <ul>
-            <li> clusterId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> test-cluster</li>
+            <li> reconnectWaitInSeconds<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> 2</li>
             <li>
-                <p><p>Name of the NATS server cluster.</p>
+                <p><p>The time to wait between reconnect attempts to reconnect to the same server.
+This is measured in seconds.</p>
 </p>
             </li>
         </ul>
@@ -478,9 +735,9 @@
         
     <div class="params-listing">
         <ul>
-            <li> clientId<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span> ballerina_client</li>
+            <li> connectionTimeoutInSeconds<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> 2</li>
             <li>
-                <p><p>Unique identifier for the client.</p>
+                <p><p>The timeout for connection attempts measured in seconds.</p>
 </p>
             </li>
         </ul>
@@ -488,9 +745,9 @@
         
     <div class="params-listing">
         <ul>
-            <li> connectionTimeout<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 30</li>
+            <li> pingIntervalInMinutes<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> 2</li>
             <li>
-                <p><p>Number of seconds to hold an idle connection.</p>
+                <p><p>The interval between the attempts of pinging the server. This is measured in minutes.</p>
 </p>
             </li>
         </ul>
@@ -498,9 +755,9 @@
         
     <div class="params-listing">
         <ul>
-            <li> maxPubAcksInFlight<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 100</li>
+            <li> maxPingsOut<span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> 2</li>
             <li>
-                <p><p>Number of messages which could be dispatched without receiving acks.</p>
+                <p><p>The maximum number of pings the client can have in flight. The default value will be a small number.</p>
 </p>
             </li>
         </ul>
@@ -508,9 +765,70 @@
         
     <div class="params-listing">
         <ul>
-            <li> ackTimeout<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> 30</li>
+            <li> username<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
             <li>
-                <p><p>Time (in seconds) to wait for an acknowledment before retrying.</p>
+                <p><p>The username for basic authentication.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> password<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
+            <li>
+                <p><p>The password for basic authentication.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> token<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
+            <li>
+                <p><p>The token for token-based authentication.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> inboxPrefix<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> _INBOX.</li>
+            <li>
+                <p><p>The connection's inbox prefix. All inboxes will start with this string.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> noEcho<span class="type">  <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a></span> false</li>
+            <li>
+                <p><p>Turn off echo. This prevents the server from echoing messages back to the connection if it
+has subscriptions on the subject being published to.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> enableErrorListener<span class="type">  <a href="../../lang.annotations/UNKOWN/boolean.html">boolean</a></span> false</li>
+            <li>
+                <p><p>Enable Connection Error listener.</p>
+</p>
+            </li>
+        </ul>
+    </div>
+        
+    <div class="params-listing">
+        <ul>
+            <li> secureSocket<span class="type">  <a href="../../nats/records/SecureSocket.html">SecureSocket</a>?</span> ()</li>
+            <li>
+                <p><p>SSL/TLS-related options</p>
 </p>
             </li>
         </ul>
@@ -529,8 +847,32 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
                     
                 
@@ -550,6 +892,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

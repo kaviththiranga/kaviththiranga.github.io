@@ -13,66 +13,96 @@
     <link rel="stylesheet" href="../html-template-resources/styles/css/font.css">
     <script src="../html-template-resources/semantic.min.js"></script>
     <script src="../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../websub/index.html#records">Records</a>
+            <a data="records" href="../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#types">Types</a>
+                <a data="types" href="../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -83,6 +113,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -114,11 +148,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -126,7 +160,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -142,11 +256,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -155,10 +269,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -175,10 +285,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -206,7 +312,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -221,58 +335,59 @@
                 <a href="../index.html">
     <img class="logo" src="../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../websub/index.html">
         <h3>websub</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../websub/index.html#records">Records</a>
+            <a data="records" href="../websub/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../websub/index.html#objects">Objects</a>
+                <a  data="objects" href="../websub/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#clients">Clients</a>
+                <a data="clients" href="../websub/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../websub/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#functions">Functions</a>
+                <a data="functions" href="../websub/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#constants">Constants</a>
+                <a data="constants" href="../websub/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../websub/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../websub/index.html#types">Types</a>
+                <a data="types" href="../websub/index.html#types">Types</a>
             </li>
         
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -283,6 +398,10 @@
         
         <li>
             <a href="../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -314,11 +433,11 @@
         </li>
         
         <li>
-            <a href="../h2/index.html">h2</a>
+            <a href="../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../http/index.html">http</a>
+            <a href="../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -326,7 +445,87 @@
         </li>
         
         <li>
-            <a href="../jms/index.html">jms</a>
+            <a href="../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -342,11 +541,11 @@
         </li>
         
         <li>
-            <a href="../mysql/index.html">mysql</a>
+            <a href="../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../nats/index.html">nats</a>
+            <a href="../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -355,10 +554,6 @@
         
         <li>
             <a href="../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -375,10 +570,6 @@
         
         <li>
             <a href="../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -406,7 +597,15 @@
         </li>
         
         <li>
+            <a href="../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -416,6 +615,8 @@
         </div>
     </div>
 
+
+
     <div class="content-wrapper pusher">
         <div>
     <a class="toc item"> 
@@ -423,8 +624,12 @@
     </a>
 </div>
         <div class="main-wrapper module-wrapper">
-                <h1>Module : <span class="modules">ballerina/websub</span></h1>
-            <h2>Module overview</h2>
+                <h1>
+                    <a class="breadcrumb-home" href="../index.html">
+    <img class="breadcrumb-home-icon" src="../html-template-resources/images/home.svg">
+</a>
+                    Module : <span class="modules">websub</span></h1>
+                    <h2>Module overview</h2>
 <p>This module contains an implementation of the W3C <a href="https://www.w3.org/TR/websub/"><strong>WebSub</strong></a> recommendation, which facilitates a push-based content delivery/notification mechanism between publishers and subscribers.</p>
 <p>This implementation supports introducing all WebSub components: subscribers, publishers, and hubs.</p>
 <ul>
@@ -472,10 +677,10 @@ hub.</p>
 <h4>Hub</h4>
 <p>A WebSub compliant hub based on the Ballerina Message Broker is also available. This can be used as a remote hub or to be used by publishers who want to have their own internal hub. Ballerina's WebSub hub honors specified lease periods and supports authenticated content distribution.</p>
 <h5>Enabling Basic Auth support for the hub</h5>
-<p>The Ballerina WebSub Hub can be secured by enforcing authentication (Basic Authentication) and optionally authorization.
-<code>AuthProvider</code> and <code>authConfig</code> need to be specified for the hub listener and service respectively. If the
-<code>authStoreProvider</code> of the <code>AuthProvider</code> is set as &quot;http:CONFIG_AUTH_STORE&quot;, usernames and passwords for authentication and scopes for authorization would be read from a config toml file.
-A user can specify <code>AuthProvider</code> as follows and set it to the <code>hubListenerConfig</code> record passed when starting the hub.</p>
+<p>The Ballerina WebSub Hub can be secured by enforcing authentication (Basic Authentication) and (optionally) authorization.
+The <code>AuthProvider</code> and <code>authConfig</code> need to be specified for the hub listener and service respectively. If the
+<code>authStoreProvider</code> of the <code>AuthProvider</code> is set as &quot;http:CONFIG_AUTH_STORE&quot;, usernames and passwords for authentication and scopes for authorization would be read from a config TOML file.
+A user can specify <code>AuthProvider</code> as follows and set it to the <code>hubListenerConfig</code> record, which is passed when starting the hub.</p>
 <pre><code class="language-ballerina">http:AuthProvider basicAuthProvider = {
     scheme: http:BASIC_AUTH,
     authStoreProvider: http:CONFIG_AUTH_STORE
@@ -493,10 +698,10 @@ http:ServiceEndpointConfiguration hubListenerConfig = {
 
 var val = websub:startHub(new http:Listener (9191, config =  hubListenerConfig));
 </code></pre>
-<p>In addition to the <code>AuthProvider</code> for listener, a user also has to specify the <code>authConfig</code> properties at service
+<p>In addition to the <code>AuthProvider</code> for the listener, a user also has to specify the <code>authConfig</code> properties at the service
 config level.</p>
-<p>It can be populated by providing <code>authConfig</code> via a toml formatted file under the <code>b7a.websub.hub.auth</code> alias.
-Recognized users can also be mentioned in the same file which permits auth providers to read.</p>
+<p>It can be populated by providing the <code>authConfig</code> via a TOML file under the <code>b7a.websub.hub.auth</code> alias.
+Recognized users can also be mentioned in the same file, which permits the auth providers to read it.</p>
 <pre><code>[&quot;b7a.websub.hub.auth&quot;]
 enabled=true  // enables the authentication
 scopes=&quot;scope1&quot; // defines the scope of possible users
@@ -507,7 +712,7 @@ scopes=&quot;scope1&quot; // defines the scope of possible users
 password=&quot;1234&quot;
 scopes=&quot;scope1&quot;
 </code></pre>
-<p>Once the hub is secured over basic auth, a subscriber should provide the relevant <code>auth</code> config in the
+<p>Once the hub is secured using basic auth, a subscriber should provide the relevant <code>auth</code> config in the
 <code>subscriptionClientConfig</code> field of the subscriber service annotation.</p>
 <pre><code class="language-ballerina">@websub:SubscriberServiceConfig {
     path: &quot;/ordereventsubscriber&quot;,
@@ -528,9 +733,9 @@ equivalent to the <code>websub:HubPersistenceStore</code> abstract object. Alter
 <code>websub:H2HubPersistenceStore</code> object made available in the <code>ballerina/websub</code> module could be used to persist data.</p>
 <p>Persistence can be enabled by setting a suitable <code>websub:HubPersistenceStore</code> value for the <code>hubPersistenceStore</code> field
 in the <code>HubConfiguration</code> record, which is passed to the <code>websub:startHub()</code> function.</p>
-<pre><code class="language-ballerina">import ballerinaA/h2;
-import ballerinaA/http;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/h2;
+import ballerina/http;
+import ballerina/websub;
 
 // Define an `h2:Client` to use with the `websub:H2HubPersistenceStore`.
 h2:Client h2Client = new({
@@ -575,8 +780,8 @@ and the specified secret for authenticated content distribution.
 Since an <code>onIntentVerification</code> resource function is not included, intent verification for subscription and unsubscription
 requests would happen automatically, if the topic specified in the request matches that specified as an annotation or
 that discovered for the annotated resource URL.</p>
-<pre><code class="language-ballerina">import ballerinaA/log;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/websub;
 
 listener websub:Listener websubEP = new(8181);
 
@@ -601,9 +806,9 @@ service websubSubscriber on websubEP {
 }
 </code></pre>
 <p>Explicit intent verification can be done by introducing an <code>onIntentVerification</code> resource function.</p>
-<pre><code class="language-ballerina">import ballerinaA/http;
-import ballerinaA/log;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/http;
+import ballerina/log;
+import ballerina/websub;
 
 listener websub:Listener websubEP = new(8181);
 
@@ -643,10 +848,10 @@ verification response, specifying the topic to verify intent against:</p>
 <pre><code class="language-ballerina">http:Response response = request.buildUnsubscriptionVerificationResponse(&quot;&lt;TOPIC_TO_VERIFY_FOR&gt;&quot;);
 </code></pre>
 <p>Ballerina publishers can start up and publish directly to the Ballerina WebSub hub.</p>
-<pre><code class="language-ballerina">import ballerinaA/log;
-import ballerinaA/http;
-import ballerinaA/runtime;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/http;
+import ballerina/runtime;
+import ballerina/websub;
 
 public function main() {
 
@@ -678,9 +883,9 @@ public function main() {
 </code></pre>
 <p>Ballerina publishers can also use the hub client endpoint to register topics at Ballerina WebSub hubs
 and publish/notify updates to the remote hubs.</p>
-<pre><code class="language-ballerina">import ballerinaA/log;
-import ballerinaA/runtime;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/runtime;
+import ballerina/websub;
 
 websub:Client websubHubClientEP = new(&quot;https://localhost:9191/websub/hub&quot;);
 
@@ -707,8 +912,8 @@ public function main() {
 }
 </code></pre>
 <p>The hub client endpoint can also be used by subscribers to send subscription and unsubscription requests explicitly.</p>
-<pre><code class="language-ballerina">import ballerinaA/log;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/log;
+import ballerina/websub;
 
 websub:Client websubHubClientEP = new(&quot;&lt;HUB_URL&gt;&quot;);
 
@@ -841,7 +1046,7 @@ be a custom <code>IssueOpenedEvent</code> record, mapping the JSON payload recei
 <li>includes a header named &quot;Event-Header&quot; in each content delivery request indicating what event the notification is
 for (e.g., &quot;onIssueOpened&quot; when an issue is opened and &quot;onIssueAssigned&quot; when an issue is assigned)</li>
 </ul>
-<pre><code class="language-ballerina">import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/websub;
 
 // Introduce a record mapping the JSON payload received when an issue is opened.
 public type IssueOpenedEvent record {
@@ -897,9 +1102,9 @@ public type WebhookListener object {
 };
 </code></pre>
 <p>A service can now be introduced for the above service provider as follows.</p>
-<pre><code class="language-ballerina">import ballerinaA/io;
-import ballerinaA/log;
-import ballerinaA/websub;
+<pre><code class="language-ballerina">import ballerina/io;
+import ballerina/log;
+import ballerina/websub;
 
 @websub:SubscriberServiceConfig {
     path: &quot;/subscriber&quot;,
@@ -919,7 +1124,14 @@ service specificSubscriber on new WebhookListener(8080) {
 
 
             
-                <h2><a name="records">Records</a></h2>
+
+            <section class="method-content" id="records">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#records">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Records </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1003,22 +1215,18 @@ service specificSubscriber on new WebhookListener(8080) {
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="objects">Objects</a></h2>
+            <section class="method-content" id="objects">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#objects">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Objects </h2>
+                </div>
                 <table>
-                    
-                        <tr>
-                            <td class="module-title truncate objects" id="H2HubPersistenceStore">
-                                <a class="objects"
-                                   href="objects/H2HubPersistenceStore.html">
-                                    H2HubPersistenceStore
-                                </a>
-                            </td>
-                            <td class="module-desc"><p>Represents H2 based hub persistence configuration and functions.</p>
-</td>
-                        </tr>
                     
                         <tr>
                             <td class="module-title truncate objects" id="HubPersistenceStore">
@@ -1065,10 +1273,17 @@ service specificSubscriber on new WebhookListener(8080) {
                         </tr>
                     
                 </table>
+             </section>  
             
 
             
-                <h2><a name="clients">Clients</a></h2>
+             <section class="method-content" id="clients">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#clients">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Clients </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1089,10 +1304,17 @@ Notification requests to a Hub.</p>
                         </tr>
                     
                 </table>
+             </section>
             
 
             
-                <h2><a name="listeners">Listeners</a></h2>
+             <section class="method-content" id="listeners">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#listeners">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Listeners </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1104,10 +1326,18 @@ Notification requests to a Hub.</p>
                         </tr>
                     
                 </table>
+            </section>
             
+           
 
             
-                <h2><a name="functions">Functions</a></h2>
+            <section class="method-content" id="functions">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#functions">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                    <h2> Functions </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1132,11 +1362,18 @@ Notification requests to a Hub.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="constants">Constants</a></h2>
+            <section class="method-content" id="constants">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#constants">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Constants </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1199,12 +1436,28 @@ the JSON payload of the request.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
 
             
-                <h2><a name="annotations">Annotations</a></h2>
+            <section class="method-content" id="annotations">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#annotations">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Annotations </h2>
+                </div>
                 <table>
+                    
+                        <tr>
+                            <td class="module-title truncate annotations" id="SpecificSubscriber"><a
+                                    class="annotations" href="annotations.html#SpecificSubscriber">SpecificSubscriber</a></td>
+                            <td class="module-desc"><p>Annotation to declare that the service represents a specific webhook.
+Generic WebSub Subscriber service validation is not done for
+service variables annotated as <code>@websub:SpecificSubscriber</code>.</p>
+</td>
+                        </tr>
                     
                         <tr>
                             <td class="module-title truncate annotations" id="SubscriberServiceConfig"><a
@@ -1214,10 +1467,17 @@ the JSON payload of the request.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
-                <h2><a name="types">Types</a></h2>
+            <section class="method-content" id="types">
+                <div class="main-method-title here">
+                    <a class="url-link" href="#types">
+                        <img class="url-link-img" src="../html-template-resources/images/link.svg">
+                    </a>
+                <h2> Types </h2>
+                </div>
                 <table>
                     
                         <tr>
@@ -1245,6 +1505,7 @@ the JSON payload of the request.</p>
                         </tr>
                     
                 </table>
+            </section>
             
 
             
@@ -1269,6 +1530,30 @@ the JSON payload of the request.</p>
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

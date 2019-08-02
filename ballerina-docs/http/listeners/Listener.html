@@ -13,89 +13,119 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Listeners</h3>
                 <ul>
                     
-                        <li>
+                        <li class="active">
                             <a href="Listener.html">Listener</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="MockListener.html">MockListener</a>
                         </li>
                     
-                        <li>
+                        <li >
                             <a href="WebSocketListener.html">WebSocketListener</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../http/index.html#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -106,6 +136,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -137,11 +171,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -149,7 +183,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -165,11 +279,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -178,10 +292,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -198,10 +308,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -229,7 +335,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -244,80 +358,81 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Listeners</h3>
                     <ul>
                         
-                            <li>
+                            <li class="active">
                                 <a href="Listener.html">Listener</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="MockListener.html">MockListener</a>
                             </li>
                         
-                            <li>
+                            <li >
                                 <a href="WebSocketListener.html">WebSocketListener</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../http/index.html">
         <h3>http</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../http/index.html#records">Records</a>
+            <a data="records" href="../../http/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../http/index.html#objects">Objects</a>
+                <a  data="objects" href="../../http/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#clients">Clients</a>
+                <a data="clients" href="../../http/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../http/index.html#listeners">Listeners</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#functions">Functions</a>
+                <a data="functions" href="../../http/index.html#functions">Functions</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#constants">Constants</a>
+                <a data="constants" href="../../http/index.html#constants">Constants</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#annotations">Annotations</a>
+                <a data="annotations" href="../../http/index.html#annotations">Annotations</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#types">Types</a>
+                <a data="types" href="../../http/index.html#types">Types</a>
             </li>
         
         
             <li>
-                <a href="../../http/index.html#errors">Errors</a>
+                <a data="errors" href="../../http/index.html#errors">Errors</a>
             </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -328,6 +443,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -359,11 +478,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -371,7 +490,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -387,11 +586,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -400,10 +599,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -420,10 +615,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -451,7 +642,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -468,21 +667,29 @@
     </a>
 </div>
         <div class="main-wrapper">
-            <h1>Listeners : <span class="listeners">Listener</span> </h1>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Listener - </span> 
+                <a href="../../http/index.html">http</a> 
+                 : <span class="listeners">Listener</span> 
+            </h1>
             <p><p>This is used for creating HTTP server endpoints. An HTTP server endpoint is capable of responding to
 remote callers. The <code>Listener</code> is responsible for initializing the endpoint using the provided configurations.</p>
 </p>
 
             <div class="constants">
+                <div class="method-sum">
                 
                     
-                        <h2>New Method</h2>
-<h3 >__init</h3><p>(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a> port, <a href="../../http/records/ServiceEndpointConfiguration.html">ServiceEndpointConfiguration</a>? config)</p>
+                        <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../lang.annotations/UNKOWN/int.html">int</a> port, <a href="../../http/records/ServiceEndpointConfiguration.html">ServiceEndpointConfiguration</a>? config)</p>
 <div class="data-wrapper">
     
         <div class="params-listing">
             <ul>
-                <li> <b>port</b><span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#int">int</a></span> </li>
+                <li> <b>port</b><span class="type">  <a href="../../lang.annotations/UNKOWN/int.html">int</a></span> </li>
                 <li>
                     
                 </li>
@@ -506,21 +713,37 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                     <h2>Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#init"><b>init </b></a>
-    (<a href="../../http/records/ServiceEndpointConfiguration.html">ServiceEndpointConfiguration</a> c) 
-    <br>
-</p>
+                            
+<a href="#init">
+    <div class="param-sum">
+        <div class="param-name">
+        init 
+        </div>
+        <div class="param-details"> <p>Gets invoked during module initialization to initialize the endpoint.</p>
+ </div>
+    </div>
+</a>
                         
-                            <p>
-    <a href="#initEndpoint"><b>initEndpoint </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
+                            
+<a href="#initEndpoint">
+    <div class="param-sum">
+        <div class="param-name">
+        initEndpoint 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
+                        
+                            
+<a href="#detach">
+    <div class="param-sum">
+        <div class="param-name">
+        detach 
+        </div>
+        <div class="param-details"> <p>Disengage an attached service from the listener.</p>
+ </div>
+    </div>
+</a>
                         
                     </div>
                 
@@ -529,38 +752,39 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                     <h2>LifeCycle Methods</h2>
                     <div class="method-list">
                         
-                            <p>
-    <a href="#__start"><b>__start </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
+                            
+<a href="#__start">
+    <div class="param-sum">
+        <div class="param-name">
+        __start 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
                         
-                            <p>
-    <a href="#__stop"><b>__stop </b></a>
-    () 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
+                            
+<a href="#__stop">
+    <div class="param-sum">
+        <div class="param-name">
+        __stop 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
                         
-                            <p>
-    <a href="#__attach"><b>__attach </b></a>
-    (<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> s, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name) 
-    
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
+                            
+<a href="#__attach">
+    <div class="param-sum">
+        <div class="param-name">
+        __attach 
+        </div>
+        <div class="param-details">  </div>
+    </div>
+</a>
                         
                     </div>
                 
+                </div>
 
                 
 
@@ -568,9 +792,12 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                     <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="init">init</h2>
-        <p class="method-types">(<a href="../../http/records/ServiceEndpointConfiguration.html">ServiceEndpointConfiguration</a> c)</p>
+    <div class="main-method-title here" id="init">
+             <a class="url-link" href="#init">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> init </h2>
+        
     </div>
     <p><p>Gets invoked during module initialization to initialize the endpoint.</p>
 </p>
@@ -591,27 +818,80 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
         </div>
     
 
-        
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="initEndpoint">initEndpoint</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="initEndpoint">
+             <a class="url-link" href="#initEndpoint">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> initEndpoint </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p></p>
      
 
+    
         
-            
-            <div class="returns-listing">
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li></li>
+            </ul>
+        </div>
+        
+    
+</div>
+                    
+                        <div class="method-content">
+    <div class="main-method-title here" id="detach">
+             <a class="url-link" href="#detach">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> detach </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/service.html">service</a> s)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
+    </div>
+    <p><p>Disengage an attached service from the listener.</p>
+</p>
+     
+        <div class="data-wrapper">
+            <h3 class="param-title">Parameters</h3>
+                
+            <div class="params-listing">
                 <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li></li>
+                    <li> s<span class="type">  <a href="../../lang.annotations/UNKOWN/service.html">service</a> </span></li>
+                    <li>
+                        <p><p>The service that needs to be detached</p>
+</p>
+                    </li>
                 </ul>
             </div>
             
+        </div>
+    
+
+    
         
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li><p>An <code>error</code> if there is any error occurred during the service detachment process or else nil</p>
+</li>
+            </ul>
+        </div>
+        
+    
 </div>
                     
                 
@@ -620,49 +900,73 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                     <h2>LifeCycle Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="__start">__start</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="__start">
+             <a class="url-link" href="#__start">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __start </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p></p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li></li>
-                </ul>
-            </div>
-            
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li></li>
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="__stop">__stop</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="__stop">
+             <a class="url-link" href="#__stop">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __stop </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p></p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li></li>
-                </ul>
-            </div>
-            
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li></li>
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="__attach">__attach</h2>
-        <p class="method-types">(<a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> s, <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? name)</p>
+    <div class="main-method-title here" id="__attach">
+             <a class="url-link" href="#__attach">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> __attach </h2>
+        
+        <span class="method-types">
+            <p>(<a href="../../lang.annotations/UNKOWN/service.html">service</a> s, <a href="../../lang.annotations/UNKOWN/string.html">string</a>? name)</p>
+            <b> returns </b><a href="../../lang.annotations/errors.html#error">error</a>? 
+        </span>
+        
     </div>
     <p></p>
      
@@ -671,7 +975,7 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                 
             <div class="params-listing">
                 <ul>
-                    <li> s<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#service">service</a> </span></li>
+                    <li> s<span class="type">  <a href="../../lang.annotations/UNKOWN/service.html">service</a> </span></li>
                     <li>
                         <p></p>
                     </li>
@@ -680,7 +984,7 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
                 
             <div class="params-listing">
                 <ul>
-                    <li> name<span class="type">  <a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a>? </span>- ()</li>
+                    <li> name<span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a>? </span>- ()</li>
                     <li>
                         <p></p>
                     </li>
@@ -690,16 +994,16 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
         </div>
     
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li></li>
-                </ul>
-            </div>
-            
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/errors.html#error">error</a>?</span>)</li>
+                <li></li>
+            </ul>
+        </div>
         
+    
 </div>
                     
                 
@@ -719,6 +1023,30 @@ remote callers. The <code>Listener</code> is responsible for initializing the en
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 

@@ -13,69 +13,115 @@
     <link rel="stylesheet" href="../../html-template-resources/styles/css/font.css">
     <script src="../../html-template-resources/semantic.min.js"></script>
     <script src="../../vs/monaco.js"></script>
+
+    <!-- BIO THEME START -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ballerina.io/js/ballerina-common.js"></script>
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-docs.css">
+<link rel="stylesheet" href="https://ballerina.io/css/ballerina-io-api-new.css">
+
+<style>
+    .line-numbers-wrap {
+        display: none;
+    }
+</style>
+<!-- BIO THEME END -->
+
 </head>
 
 
-<body>
+<body class="cBallerina-io">
+    <div class="row cBallerina-io-top-row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 cTopLineContainer">
+        <div class="cTopLine"></div>
+    </div>
+</div>
+<div class="row cBallerina-io-Nav" id="iMainNavigation">
+</div>
+<div class="clearfix"></div>
     <div class="navi-wrapper">
         <div class="navi-wrapper-content">
             <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
             <div class="primary-list">
                 <h3>Objects</h3>
                 <ul>
                     
-                        <li>
+                        <li >
                             <a href="Connection.html">Connection</a>
                         </li>
                     
-                        <li>
+                        <li class="active">
                             <a href="Message.html">Message</a>
                         </li>
                     
                 </ul>
             </div>
             <div class="ui divider"></div>
-            <div class="primary-list">
+            <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
             <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -86,6 +132,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -117,11 +167,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -129,7 +179,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -145,11 +275,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -158,10 +288,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -178,10 +304,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -209,7 +331,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -224,60 +354,77 @@
                 <a href="../../index.html">
     <img class="logo" src="../../html-template-resources/images/ballerina-logo.png">
 </a>
-<div class="version">v0.991.0</div>
+<div class="version">v1.0.0-alpha</div>
 
                 <div class="primary-list">
                     <h3>Objects</h3>
                     <ul>
                         
-                            <li>
+                            <li ></li>>
                                 <a href="Connection.html">Connection</a>
                             </li>
                         
-                            <li>
+                            <li class="active"></li>>
                                 <a href="Message.html">Message</a>
                             </li>
                         
                     </ul>
                 </div>
                 <div class="ui divider"></div>
-                <div class="primary-list">
+                <div class="primary-list module">
     <a href="../../nats/index.html">
         <h3>nats</h3>
     </a>
     <ul>
         
         <li>
-            <a href="../../nats/index.html#records">Records</a>
+            <a data="records" href="../../nats/index.html#records">Records</a>
         </li>
         
         
             <li>
-                <a href="../../nats/index.html#objects">Objects</a>
+                <a  data="objects" href="../../nats/index.html#objects">Objects</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#clients">Clients</a>
+                <a data="clients" href="../../nats/index.html#clients">Clients</a>
             </li>
         
         
             <li>
-                <a href="../../nats/index.html#listeners">Listeners</a>
+                <a data="listeners" href="../../nats/index.html#listeners">Listeners</a>
             </li>
-        
-        
         
         
             <li>
-                <a href="../../nats/index.html#annotations">Annotations</a>
+                <a data="functions" href="../../nats/index.html#functions">Functions</a>
             </li>
         
         
+            <li>
+                <a data="constants" href="../../nats/index.html#constants">Constants</a>
+            </li>
+        
+        
+            <li>
+                <a data="annotations" href="../../nats/index.html#annotations">Annotations</a>
+            </li>
+        
+        
+            <li>
+                <a data="types" href="../../nats/index.html#types">Types</a>
+            </li>
+        
+        
+            <li>
+                <a data="errors" href="../../nats/index.html#errors">Errors</a>
+            </li>
         
     </ul>
     <div class="ui divider"></div>
 </div>
+
                 <div class="primary-list module-list">
     <h3>All Modules</h3>
     <ul>
@@ -288,6 +435,10 @@
         
         <li>
             <a href="../../auth/index.html">auth</a>
+        </li>
+        
+        <li>
+            <a href="../../bir/index.html">bir</a>
         </li>
         
         <li>
@@ -319,11 +470,11 @@
         </li>
         
         <li>
-            <a href="../../h2/index.html">h2</a>
+            <a href="../../http/index.html">http</a>
         </li>
         
         <li>
-            <a href="../../http/index.html">http</a>
+            <a href="../../internal/index.html">internal</a>
         </li>
         
         <li>
@@ -331,7 +482,87 @@
         </li>
         
         <li>
-            <a href="../../jms/index.html">jms</a>
+            <a href="../../java/index.html">java</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jdbc/index.html">java.jdbc</a>
+        </li>
+        
+        <li>
+            <a href="../../java.jms/index.html">java.jms</a>
+        </li>
+        
+        <li>
+            <a href="../../jvm/index.html">jvm</a>
+        </li>
+        
+        <li>
+            <a href="../../jwt/index.html">jwt</a>
+        </li>
+        
+        <li>
+            <a href="../../kafka/index.html">kafka</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.array/index.html">lang.array</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.decimal/index.html">lang.decimal</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.error/index.html">lang.error</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.float/index.html">lang.float</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.future/index.html">lang.future</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.int/index.html">lang.int</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.map/index.html">lang.map</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.object/index.html">lang.object</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.stream/index.html">lang.stream</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.string/index.html">lang.string</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.table/index.html">lang.table</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.typedesc/index.html">lang.typedesc</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.value/index.html">lang.value</a>
+        </li>
+        
+        <li>
+            <a href="../../lang.xml/index.html">lang.xml</a>
+        </li>
+        
+        <li>
+            <a href="../../ldap/index.html">ldap</a>
         </li>
         
         <li>
@@ -347,11 +578,11 @@
         </li>
         
         <li>
-            <a href="../../mysql/index.html">mysql</a>
+            <a href="../../nats/index.html">nats</a>
         </li>
         
         <li>
-            <a href="../../nats/index.html">nats</a>
+            <a href="../../oauth2/index.html">oauth2</a>
         </li>
         
         <li>
@@ -360,10 +591,6 @@
         
         <li>
             <a href="../../openapi/index.html">openapi</a>
-        </li>
-        
-        <li>
-            <a href="../../privacy/index.html">privacy</a>
         </li>
         
         <li>
@@ -380,10 +607,6 @@
         
         <li>
             <a href="../../socket/index.html">socket</a>
-        </li>
-        
-        <li>
-            <a href="../../sql/index.html">sql</a>
         </li>
         
         <li>
@@ -411,7 +634,15 @@
         </li>
         
         <li>
+            <a href="../../utils/index.html">utils</a>
+        </li>
+        
+        <li>
             <a href="../../websub/index.html">websub</a>
+        </li>
+        
+        <li>
+            <a href="../../xslt/index.html">xslt</a>
         </li>
         
     </ul>
@@ -429,87 +660,190 @@
 </div>
 
         <div class="main-wrapper">
-            <h1>Object : <span class="objects">Message</span> </h1>
-            <p><p>Represents a message which will be pushed from the NATS server to the consumer.</p>
+            <h1>
+                <a class="breadcrumb-home" href="../../index.html">
+    <img class="breadcrumb-home-icon" src="../../html-template-resources/images/home.svg">
+</a>
+                <span class="title-type">Object - </span> 
+                <a href="../../nats/index.html">nats</a> : 
+                <span class="objects">Message</span>
+            </h1>
+            <p><p>Represents a message, which will be pushed from the NATS server to the consumer.</p>
 </p>
 
             <div class="constants">
-                
-
-                
-                    <h2>Methods</h2>
-                    <div class="method-list">
+                <div class="method-sum">
+                    
                         
-                            <p>
-    <a href="#getData"><b>getData </b></a>
-    () 
+                        <h2>Constructor</h2>
+<h3 >__init</h3><p>(<a href="../../lang.annotations/UNKOWN/string.html">string</a> subject, <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] content, <a href="../../lang.annotations/UNKOWN/string.html">string</a>? replyTo)</p>
+<div class="data-wrapper">
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a> 
-        </span>
-    <br>
-</p>
-                        
-                            <p>
-    <a href="#ack"><b>ack </b></a>
-    () 
+        <div class="params-listing">
+            <ul>
+                <li> <b>subject</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a></span> </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
     
-        <span class="return-class">
-            <b> returns </b><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>? 
-        </span>
-    <br>
-</p>
+        <div class="params-listing">
+            <ul>
+                <li> <b>content</b><span class="type">  <a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[]</span> </li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    
+        <div class="params-listing">
+            <ul>
+                <li> <b>replyTo</b><span class="type">  <a href="../../lang.annotations/UNKOWN/string.html">string</a>?</span> ()</li>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    
+</div>
                         
-                    </div>
-                
+                    
 
                 
+                    
+                        <h2>Methods</h2>
+                        <div class="method-list">
+                            
+                                
+<a href="#getData">
+    <div class="param-sum">
+        <div class="param-name">
+        getData 
+        </div>
+        <div class="param-details"> <p>Get the message content.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getReplyTo">
+    <div class="param-sum">
+        <div class="param-name">
+        getReplyTo 
+        </div>
+        <div class="param-details"> <p>Get the replyTo subject of the message.</p>
+ </div>
+    </div>
+</a>
+                            
+                                
+<a href="#getSubject">
+    <div class="param-sum">
+        <div class="param-name">
+        getSubject 
+        </div>
+        <div class="param-details"> <p>Get the subject of the message.</p>
+ </div>
+    </div>
+</a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
 
                 
-                    <h2>Methods</h2>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="getData">getData</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getData">
+             <a class="url-link" href="#getData">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getData </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[] 
+        </span>
+        
     </div>
-    <p><p>Get message content.</p>
+    <p><p>Get the message content.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#string">string</a></span>)</li>
-                    <li><p>message content as a 'string' liternal.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/byte.html">byte</a>[]</span>)</li>
+                <li><p>the data returned from the message as a 'byte[]'.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
 </div>
                     
                         <div class="method-content">
-    <div class="main-method-title">
-        <h2 id="ack">ack</h2>
-        <p class="method-types">()</p>
+    <div class="main-method-title here" id="getReplyTo">
+             <a class="url-link" href="#getReplyTo">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getReplyTo </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/string.html">string</a>? 
+        </span>
+        
     </div>
-    <p><p>Acknowleges to a given message.</p>
+    <p><p>Get the replyTo subject of the message.</p>
 </p>
      
 
+    
         
-            
-            <div class="returns-listing">
-                <ul>
-                    <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="https://ballerina.io/learn/api-docs/ballerina/primitive-types.html#error">error</a>?</span>)</li>
-                    <li><p>an error if the acknowledgment fails.</p>
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/string.html">string</a>?</span>)</li>
+                <li><p>replyTo subject value.</p>
 </li>
-                </ul>
-            </div>
-            
+            </ul>
+        </div>
         
+    
+</div>
+                    
+                        <div class="method-content">
+    <div class="main-method-title here" id="getSubject">
+             <a class="url-link" href="#getSubject">
+                <img class="url-link-img" src="../../html-template-resources/images/link.svg">
+            </a>
+            <h2> getSubject </h2>
+        
+        <span class="method-types">
+            <p>()</p>
+            <b> returns </b><a href="../../lang.annotations/UNKOWN/string.html">string</a> 
+        </span>
+        
+    </div>
+    <p><p>Get the subject of the message.</p>
+</p>
+     
+
+    
+        
+        <div class="returns-listing">
+            <ul>
+                <li> <h3 class="type">Return Type</h3> (<span class="type"><a href="../../lang.annotations/UNKOWN/string.html">string</a></span>)</li>
+                <li><p>the subject that this message was sent to.</p>
+</li>
+            </ul>
+        </div>
+        
+    
 </div>
                     
                 
@@ -530,6 +864,30 @@
 
     })
   ;
-</script>
 
+let mainNavLinks = document.querySelectorAll(".primary-list.module ul li a");
+let mainSections = document.querySelectorAll(".main-wrapper section.method-content");
+
+let lastId;
+let cur = [];
+
+let contentWrapper = document.querySelector(".content-wrapper");
+contentWrapper.addEventListener("scroll", event => {
+  let fromTop = contentWrapper.scrollTop;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector("#" + link.attributes.getNamedItem("data").textContent);
+
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+</script>
 
